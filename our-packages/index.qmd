@@ -5,7 +5,7 @@ title: "Our packages"
 ::: {.package-grid}
 
 ::: {.package-card}
-![](../img/hex-palaeoverse.png){.package-hex}
+![](../_img/hex-palaeoverse.png){.package-hex}
 
 ### palaeoverse
 
@@ -20,7 +20,7 @@ title: "Our packages"
 :::
 
 ::: {.package-card}
-![](../img/hex-rmacrostrat.png){.package-hex}
+![](../_img/hex-rmacrostrat.png){.package-hex}
 
 ### rmacrostrat
 
@@ -35,7 +35,7 @@ title: "Our packages"
 :::
 
 ::: {.package-card}
-![](../img/hex-rphylopic.png){.package-hex}
+![](../_img/hex-rphylopic.png){.package-hex}
 
 ### rphylopic
 
@@ -50,7 +50,7 @@ title: "Our packages"
 :::
 
 ::: {.package-card}
-![](../img/hex-sepkoski.png){.package-hex}
+![](../_img/hex-sepkoski.png){.package-hex}
 
 ### sepkoski
 

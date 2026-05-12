@@ -5,23 +5,23 @@ title: "Cheat sheets"
 ::: {.package-grid}
 
 ::: {.package-card}
-![](../img/cheatsheet-palaeoverse.png){.cheatsheet-img}
+![](../_img/cheatsheet-palaeoverse.png){.cheatsheet-img}
 
 ### palaeoverse
 
 ::: {.package-actions}
-[Download](../img/cheatsheet-palaeoverse.png){.package-btn target="_blank"}
+[Download](../_img/cheatsheet-palaeoverse.png){.package-btn target="_blank"}
 :::
 :::
 
 
 ::: {.package-card}
-![](../img/cheatsheet-rphylopic.png){.cheatsheet-img}
+![](../_img/cheatsheet-rphylopic.png){.cheatsheet-img}
 
 ### rphylopic
 
 ::: {.package-actions}
-[Download](../img/cheatsheet-rphylopic.png){.package-btn target="_blank"}
+[Download](../_img/cheatsheet-rphylopic.png){.package-btn target="_blank"}
 :::
 :::
 

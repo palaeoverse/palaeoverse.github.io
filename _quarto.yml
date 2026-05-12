@@ -7,7 +7,7 @@ website:
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
   navbar:
     right:
-      - href: zulip.qmd
+      - href: zulip
         text: Zulip
       - text: Software
         menu:
@@ -17,9 +17,9 @@ website:
             text: Cheat sheets
           - href: contributing
             text: Contributing
-      - href: people.qmd
+      - href: people
         text: People
-      - href: events.qmd
+      - href: events
         text: Events
       - text: Resources
         menu:
@@ -33,9 +33,9 @@ website:
             target: _blank
           - href: external-courses.qmd
             text: External resources
-      - href: blog.qmd
+      - href: blog
         text: Blog
-      - href: about.qmd
+      - href: about
         text: About
 
 format:
