@@ -25,7 +25,7 @@
     "href": "external-resources/index.html",
     "title": "Palaeoverse",
     "section": "",
-    "text": "Hello, this is the page about external resources."
+    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit"
   },
   {
     "objectID": "our-packages/index.html",
@@ -58,9 +58,23 @@
   {
     "objectID": "events/index.html",
     "href": "events/index.html",
-    "title": "Palaeoverse",
+    "title": "Events",
     "section": "",
-    "text": "Hello, this is the page about events."
+    "text": "Workshop\n    \n    Date · Location\n    Short description of the event.\n  \n  \n    Hackathon\n    \n    Date · Location\n    Short description of the event.\n  \n  \n    Lecture series\n    \n    Date · Location\n    Short description of the event."
+  },
+  {
+    "objectID": "events/index.html#future-events",
+    "href": "events/index.html#future-events",
+    "title": "Events",
+    "section": "",
+    "text": "Workshop\n    \n    Date · Location\n    Short description of the event.\n  \n  \n    Hackathon\n    \n    Date · Location\n    Short description of the event.\n  \n  \n    Lecture series\n    \n    Date · Location\n    Short description of the event."
+  },
+  {
+    "objectID": "events/index.html#past-events",
+    "href": "events/index.html#past-events",
+    "title": "Events",
+    "section": "Past events",
+    "text": "Past events\n\n  \n    Workshop\n    Event title\n    Date · Location\n    Short description of the event.\n  \n  \n    Hackathon\n    Event title\n    Date · Location\n    Short description of the event.\n  \n  \n    Lecture series\n    Event title\n    Date · Location\n    Short description of the event."
   },
   {
     "objectID": "cheatsheets/index.html",
