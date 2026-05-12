@@ -1,0 +1,28 @@
+---
+title: "Cheat sheets"
+---
+
+::: {.package-grid}
+
+::: {.package-card}
+![](../_img/cheatsheet-palaeoverse.png){.cheatsheet-img}
+
+### palaeoverse
+
+::: {.package-actions}
+[Download](../_img/cheatsheet-palaeoverse.png){.package-btn target="_blank"}
+:::
+:::
+
+
+::: {.package-card}
+![](../_img/cheatsheet-rphylopic.png){.cheatsheet-img}
+
+### rphylopic
+
+::: {.package-actions}
+[Download](../_img/cheatsheet-rphylopic.png){.package-btn target="_blank"}
+:::
+:::
+
+:::

@@ -1,0 +1,51 @@
+project:
+  type: website
+
+website:
+  title: "Palaeoverse"
+  # TODO: update this link when we make this the actual website
+  repo-url: https://github.com/palaeoverse/palaeoverse.github.io
+  navbar:
+    right:
+      - href: zulip
+        text: Zulip
+      - text: Software
+        menu:
+          - href: our-packages
+            text: Our packages
+          - href: cheatsheets
+            text: Cheat sheets
+          - href: contributing
+            text: Contributing
+      - href: people
+        text: People
+      - href: events
+        text: Events
+      - text: Resources
+        menu:
+          - href: https://workshop.palaeoverse.org/
+            text: Courses
+            icon: box-arrow-up-right
+            target: _blank
+          - href: https://dashboard.palaeoverse.org/
+            text: Dashboard
+            icon: box-arrow-up-right
+            target: _blank
+          - href: external-resources
+            text: External resources
+      - href: blog
+        text: Blog
+      - href: about
+        text: About
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    anchor-sections: false
+
+
+
