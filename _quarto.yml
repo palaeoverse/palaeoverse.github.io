@@ -31,7 +31,7 @@ website:
             text: Dashboard
             icon: box-arrow-up-right
             target: _blank
-          - href: external-courses.qmd
+          - href: external-resources
             text: External resources
       - href: blog
         text: Blog
