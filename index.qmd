@@ -1,10 +1,9 @@
 ---
 title: "Palaeoverse"
-engine: knitr
 ---
 
-```{css}
-/*| echo: false */
+```{=html}
+<style>
 .button {
   border: none;
   color: white;
@@ -23,6 +22,7 @@ engine: knitr
   color: black;
   border: 2px solid #04AA6D;
 }
+</style>
 ```
 
 <p class="tagline">Palaeoverse is a community-driven initiative advancing open science through shared tools, training, and resources.</p>
