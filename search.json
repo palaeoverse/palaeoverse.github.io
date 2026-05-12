@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "zulip/index.html",
-    "href": "zulip/index.html",
+    "objectID": "contributing/index.html",
+    "href": "contributing/index.html",
     "title": "Palaeoverse",
     "section": "",
-    "text": "Hello, this is how to use Zulip."
+    "text": "Hello, this is how to contribute."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Palaeoverse",
+    "section": "",
+    "text": "Palaeoverse is a community-driven initiative advancing open science through shared tools, training, and resources.\n\n\nJoin the community on Zulip"
   },
   {
     "objectID": "about/index.html",
@@ -21,11 +28,39 @@
     "text": "Hello, this is the page about external resources."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
+    "objectID": "our-packages/index.html",
+    "href": "our-packages/index.html",
+    "title": "Our packages",
+    "section": "",
+    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
+  },
+  {
+    "objectID": "people/index.html",
+    "href": "people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "NOTE FOR DEV: the assignment between active and inactive is random, it’s just to see how it would look like."
+  },
+  {
+    "objectID": "people/index.html#active-contributors",
+    "href": "people/index.html#active-contributors",
+    "title": "People",
+    "section": "Active contributors",
+    "text": "Active contributors\n\n  \n    \n    Lewis Jones\n  \n  \n    \n    Bethany Allen\n  \n  \n    \n    Harriet Drage\n  \n  \n    \n    Joe Flannery-Sutherland\n  \n  \n    \n    Will Gearty\n  \n  \n    \n    Cecily Nicholl\n  \n  \n    \n    Pedro Godoy\n  \n  \n    \n    Miranta Kouvari\n  \n  \n    \n    Sofía Galván\n  \n  \n    \n    Christopher Dean"
+  },
+  {
+    "objectID": "people/index.html#past-contributors",
+    "href": "people/index.html#past-contributors",
+    "title": "People",
+    "section": "Past contributors",
+    "text": "Past contributors\n\n  \n    \n    Kilian Eichenseer\n  \n  \n    \n    Erin Dillon\n  \n  \n    \n    Bruna Farina\n  \n  \n    \n    Lucas Buffan\n  \n  \n    \n    Alessandro Chiarenza"
+  },
+  {
+    "objectID": "events/index.html",
+    "href": "events/index.html",
     "title": "Palaeoverse",
     "section": "",
-    "text": "Hello, this is the page about blog posts."
+    "text": "Hello, this is the page about events."
   },
   {
     "objectID": "cheatsheets/index.html",
@@ -35,38 +70,17 @@
     "text": "palaeoverse\n\nDownload\n\n\n\n\n\n\nrphylopic\n\nDownload"
   },
   {
-    "objectID": "contributing/index.html",
-    "href": "contributing/index.html",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
     "title": "Palaeoverse",
     "section": "",
-    "text": "Hello, this is how to contribute."
+    "text": "Hello, this is the page about blog posts."
   },
   {
-    "objectID": "people/index.html",
-    "href": "people/index.html",
+    "objectID": "zulip/index.html",
+    "href": "zulip/index.html",
     "title": "Palaeoverse",
     "section": "",
-    "text": "Hello, this is the page about people."
-  },
-  {
-    "objectID": "our-packages/index.html",
-    "href": "our-packages/index.html",
-    "title": "Our packages",
-    "section": "",
-    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Palaeoverse",
-    "section": "",
-    "text": "Palaeoverse is a community-driven initiative advancing open science through shared tools, training, and resources.\n\n\nJoin the community on Zulip"
-  },
-  {
-    "objectID": "events/index.html",
-    "href": "events/index.html",
-    "title": "Palaeoverse",
-    "section": "",
-    "text": "Hello, this is the page about events."
+    "text": "Hello, this is how to use Zulip."
   }
 ]
