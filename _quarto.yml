@@ -11,11 +11,11 @@ website:
         text: Zulip
       - text: Software
         menu:
-          - href: our-packages.qmd
+          - href: our-packages
             text: Our packages
-          - href: cheat-sheets.qmd
+          - href: cheatsheets
             text: Cheat sheets
-          - href: contributing.qmd
+          - href: contributing
             text: Contributing
       - href: people.qmd
         text: People
