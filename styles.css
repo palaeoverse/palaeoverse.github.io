@@ -236,3 +236,84 @@
     grid-template-columns: 1fr;
   }
 }
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.event-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.event-tag {
+  align-self: flex-start;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.event-date {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.event-workshop {
+  background: #eaf3fb;
+}
+.event-workshop .event-tag {
+  background: #2f6fa3;
+  color: #fff;
+}
+
+.event-hackathon {
+  background: #fdf1e6;
+}
+.event-hackathon .event-tag {
+  background: #c75a1b;
+  color: #fff;
+}
+
+.event-lecture {
+  background: #eef5ec;
+}
+.event-lecture .event-tag {
+  background: #3f7a3a;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
