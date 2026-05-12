@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - _img/
 
 website:
   title: "Palaeoverse"

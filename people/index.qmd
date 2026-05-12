@@ -1,1 +1,79 @@
-Hello, this is the page about people.
+---
+title: "People"
+---
+
+**NOTE FOR DEV:** the assignment between active and inactive is random, it's just to see how it would look like.
+
+## Active contributors
+
+```{=html}
+<div class="person-grid">
+  <a href="lewis.qmd" class="person-card">
+    <img src="../_img/profiles/Lewis.JPG" class="person-avatar" alt="Lewis">
+    <div class="person-info"><h3>Lewis</h3></div>
+  </a>
+  <a href="bethany.qmd" class="person-card">
+    <img src="../_img/profiles/Bethany.jpeg" class="person-avatar" alt="Bethany">
+    <div class="person-info"><h3>Bethany</h3></div>
+  </a>
+  <a href="harriet.qmd" class="person-card">
+    <img src="../_img/profiles/Harriet.jpg" class="person-avatar" alt="Harriet">
+    <div class="person-info"><h3>Harriet</h3></div>
+  </a>
+  <a href="joe.qmd" class="person-card">
+    <img src="../_img/profiles/Joe.jpg" class="person-avatar" alt="Joe">
+    <div class="person-info"><h3>Joe</h3></div>
+  </a>
+  <a href="will.qmd" class="person-card">
+    <img src="../_img/profiles/Will.jpeg" class="person-avatar" alt="Will">
+    <div class="person-info"><h3>Will</h3></div>
+  </a>
+  <a href="cecily.qmd" class="person-card">
+    <img src="../_img/profiles/Cecily.png" class="person-avatar" alt="Cecily">
+    <div class="person-info"><h3>Cecily</h3></div>
+  </a>
+  <a href="pedro.qmd" class="person-card">
+    <img src="../_img/profiles/Pedro.jpeg" class="person-avatar" alt="Pedro">
+    <div class="person-info"><h3>Pedro</h3></div>
+  </a>
+  <a href="miranta.qmd" class="person-card">
+    <img src="../_img/profiles/Miranta.jpeg" class="person-avatar" alt="Miranta">
+    <div class="person-info"><h3>Miranta</h3></div>
+  </a>
+  <a href="sofia.qmd" class="person-card">
+    <img src="../_img/profiles/Sofia.jpeg" class="person-avatar" alt="Sofia">
+    <div class="person-info"><h3>Sofia</h3></div>
+  </a>
+  <a href="chris.qmd" class="person-card">
+    <img src="../_img/profiles/Chris.jpeg" class="person-avatar" alt="Chris">
+    <div class="person-info"><h3>Chris</h3></div>
+  </a>
+</div>
+```
+
+## Past contributors
+
+```{=html}
+<div class="person-grid">
+  <a href="kilian.qmd" class="person-card">
+    <img src="../_img/profiles/Kilian.jpeg" class="person-avatar" alt="Kilian">
+    <div class="person-info"><h3>Kilian</h3></div>
+  </a>
+  <a href="erin.qmd" class="person-card">
+    <img src="../_img/profiles/Erin.png" class="person-avatar" alt="Erin">
+    <div class="person-info"><h3>Erin</h3></div>
+  </a>
+  <a href="bruna.qmd" class="person-card">
+    <img src="../_img/profiles/Bruna.jpeg" class="person-avatar" alt="Bruna">
+    <div class="person-info"><h3>Bruna</h3></div>
+  </a>
+  <a href="lucas.qmd" class="person-card">
+    <img src="../_img/profiles/Lucas.jpeg" class="person-avatar" alt="Lucas">
+    <div class="person-info"><h3>Lucas</h3></div>
+  </a>
+  <a href="alessandro.qmd" class="person-card">
+    <img src="../_img/profiles/Alessandro.jpg" class="person-avatar" alt="Alessandro">
+    <div class="person-info"><h3>Alessandro</h3></div>
+  </a>
+</div>
+```
