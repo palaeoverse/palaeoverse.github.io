@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Our packages – Palaeoverse</title>
+<title>Cheat sheets – Palaeoverse</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Our packages</h1>
+<h1 class="title">Cheat sheets</h1>
 </div>
 
 
@@ -189,63 +189,24 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="package-grid">
 <div class="package-card">
-<p><img src="img/hex-palaeoverse.png" class="package-hex img-fluid"></p>
+<p><img src="img/cheatsheet-palaeoverse.png" class="cheatsheet-img img-fluid"></p>
 <section id="palaeoverse" class="level3">
 <h3 data-anchor-id="palaeoverse">palaeoverse</h3>
-<p><span class="package-subtitle">Prepare and Explore Data for Palaeobiological Analyses</span></p>
 <div class="package-actions">
-<p><a href="https://palaeoverse.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<p><a href="img/cheatsheet-palaeoverse.png" class="package-btn" target="_blank">Download</a></p>
 </div>
 </section>
 </div>
 <div class="package-card">
-<p><img src="img/hex-rmacrostrat.png" class="package-hex img-fluid"></p>
-<section id="rmacrostrat" class="level3">
-<h3 data-anchor-id="rmacrostrat">rmacrostrat</h3>
-<p><span class="package-subtitle">Fetch Geologic Data from the ‘Macrostrat’ Platform</span></p>
-<div class="package-actions">
-<p><a href="https://rmacrostrat.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
-</div>
-</section>
-</div>
-<div class="package-card">
-<p><img src="img/hex-rphylopic.png" class="package-hex img-fluid"></p>
+<p><img src="img/cheatsheet-rphylopic.png" class="cheatsheet-img img-fluid"></p>
 <section id="rphylopic" class="level3">
 <h3 data-anchor-id="rphylopic">rphylopic</h3>
-<p><span class="package-subtitle">Get Silhouettes of Organisms from PhyloPic</span></p>
 <div class="package-actions">
-<p><a href="https://rphylopic.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
-</div>
-</section>
-</div>
-<div class="package-card">
-<p><img src="img/hex-sepkoski.png" class="package-hex img-fluid"></p>
-<section id="sepkoski" class="level3">
-<h3 data-anchor-id="sepkoski">sepkoski</h3>
-<p><span class="package-subtitle">Sepkoski’s Fossil Marine Animal Genera Compendium</span></p>
-<div class="package-actions">
-<p><a href="https://sepkoski.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<p><a href="img/cheatsheet-rphylopic.png" class="package-btn" target="_blank">Download</a></p>
 </div>
 </section>
 </div>
 </div>
-<script>
-document.querySelectorAll('.package-stars').forEach(el => {
-  const repo = el.dataset.repo;
-  fetch(`https://api.github.com/repos/${repo}`)
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (data && typeof data.stargazers_count === 'number') {
-        el.querySelector('.star-count').textContent = data.stargazers_count;
-      }
-    })
-    .catch(() => {});
-});
-</script>
 
 
 
