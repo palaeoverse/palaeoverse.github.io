@@ -1,5 +1,6 @@
 ---
 title: "People"
+toc: false
 ---
 
 **NOTE FOR DEV:** the assignment between active and inactive is random, it's just to see how it would look like.
