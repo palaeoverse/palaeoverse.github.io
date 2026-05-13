@@ -43,7 +43,7 @@
   margin-bottom: 0.25rem;
 }
 
-.package-card > p:has(img),
+.package-card>p:has(img),
 .package-card figure {
   margin-bottom: 0;
 }
@@ -301,6 +301,7 @@
 
 .event-workshop {
   background: $primary;
+
   .event-tag {
     background: $brand-dark-blue;
     color: $brand-black;
@@ -309,6 +310,7 @@
 
 .event-hackathon {
   background: $brand-beige;
+
   .event-tag {
     background: $brand-dark-peach;
     color: $body-bg;
@@ -317,6 +319,7 @@
 
 .event-lecture {
   background: mix($body-bg, $brand-light-green, 70%);
+
   .event-tag {
     background: $secondary;
     color: $body-bg;
@@ -325,6 +328,7 @@
 
 .event-conference {
   background: $brand-light-pink;
+
   .event-tag {
     background: $brand-brown;
     color: $body-bg;
@@ -336,6 +340,7 @@ a.event-link {
   color: inherit;
   display: contents;
 }
+
 a.event-link .event-card {
   cursor: pointer;
 }
@@ -350,4 +355,12 @@ a.event-link .event-card {
   .event-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }

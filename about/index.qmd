@@ -4,12 +4,15 @@ Hello, this is the page about Palaeoverse.
 
 
 ```{=html}
-<div class="resource-grid">
+<div class="about-grid">
   <a href="governance.qmd" class="resource-card resource-card-link">
     <h3>Governance</h3>
   </a>
   <a href="code-of-conduct.qmd" class="resource-card resource-card-link">
     <h3>Code of Conduct</h3>
+  </a>
+  <a href="ai-policy.qmd" class="resource-card resource-card-link">
+    <h3>AI policy</h3>
   </a>
 </div>
 ```
