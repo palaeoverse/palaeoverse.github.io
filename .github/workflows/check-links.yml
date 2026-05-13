@@ -1,0 +1,35 @@
+name: Check links
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+  schedule:
+    # Every day at 23:00
+    - cron: "0 23 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      # We don't want lychee to check qmd files since those might contain incomplete links that
+      # are being programmatically built, or links that are never explicitly written because they
+      # come from external data sources.
+      # Check only the rendered website in the branch that contains it. 
+      - uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # TODO: those special cases should be removed
+          args: |
+            . --exclude '(dashboard\.palaeoverse\.org$)|(/people/)|(/about/)' 
+          fail: true
