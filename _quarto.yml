@@ -7,6 +7,9 @@ website:
   title: "Palaeoverse"
   # TODO: update this link when we make this the actual website
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
+  
+  favicon: _brand/logos/favicon.png
+
   page-footer:
     border: false
     center: >
