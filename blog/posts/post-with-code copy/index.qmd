@@ -10,7 +10,7 @@ Hello there! Let's load the `palaeoverse` package:
 
 
 ```{r}
-library(palaeoverse)
+library(dplyr)
 
-head(palaeoverse::GTS2020)
+head(dplyr::starwars)
 ```
