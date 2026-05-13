@@ -1,0 +1,16 @@
+---
+title: "Post With Code"
+author: "Harlow Malloc"
+date: "2026-05-13"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+Hello there! Let's load the `palaeoverse` package:
+
+
+```{r}
+library(palaeoverse)
+
+head(palaeoverse::GTS2020)
+```
