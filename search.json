@@ -7,6 +7,27 @@
     "text": "Hello, this is how to contribute."
   },
   {
+    "objectID": "contributing/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "href": "contributing/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "title": "Palaeoverse",
+    "section": "The standard Lorem Ipsum passage, used since the 1500s",
+    "text": "The standard Lorem Ipsum passage, used since the 1500s\n“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
+  },
+  {
+    "objectID": "contributing/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "href": "contributing/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "title": "Palaeoverse",
+    "section": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC",
+    "text": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC\n“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”"
+  },
+  {
+    "objectID": "contributing/index.html#translation-by-h.-rackham",
+    "href": "contributing/index.html#translation-by-h.-rackham",
+    "title": "Palaeoverse",
+    "section": "1914 translation by H. Rackham",
+    "text": "1914 translation by H. Rackham\n“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Palaeoverse",
@@ -14,11 +35,18 @@
     "text": "Palaeoverse is a community-driven initiative advancing open science through shared tools, training, and resources.\n\n\nJoin the community on Zulip"
   },
   {
-    "objectID": "blog/posts/post-with-code/index.html",
-    "href": "blog/posts/post-with-code/index.html",
+    "objectID": "blog/posts/post-with-code copy/index.html",
+    "href": "blog/posts/post-with-code copy/index.html",
     "title": "Post With Code",
     "section": "",
-    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(palaeoverse)\n\nhead(palaeoverse::GTS2020)\n\n  interval_number     interval_name  rank max_ma  mid_ma min_ma duration_myr\n1               1        Meghalayan stage 0.0042 0.00210 0.0000       0.0042\n2               2     Northgrippian stage 0.0082 0.00620 0.0042       0.0040\n3               3      Greenlandian stage 0.0117 0.00995 0.0082       0.0035\n4               4 Upper Pleistocene stage 0.1290 0.07035 0.0117       0.1173\n5               5         Chibanian stage 0.7740 0.45150 0.1290       0.6450\n6               6         Calabrian stage 1.8000 1.28700 0.7740       1.0260\n   font  colour abbr\n1 black #FDEDEC &lt;NA&gt;\n2 black #FDECE4 &lt;NA&gt;\n3 black #FEECDB &lt;NA&gt;\n4 black #FFF2D3 &lt;NA&gt;\n5 black #FFF2C7 &lt;NA&gt;\n6 black #FFF2BA &lt;NA&gt;"
+    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
+  },
+  {
+    "objectID": "blog/posts/welcome copy/index.html",
+    "href": "blog/posts/welcome copy/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
     "objectID": "about/code-of-conduct.html",
@@ -224,11 +252,18 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
+    "objectID": "blog/posts/post-with-code/index.html",
+    "href": "blog/posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 13, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 10, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "zulip/index.html",
@@ -236,5 +271,26 @@
     "title": "Palaeoverse",
     "section": "",
     "text": "Hello, this is how to use Zulip."
+  },
+  {
+    "objectID": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "href": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "title": "Palaeoverse",
+    "section": "The standard Lorem Ipsum passage, used since the 1500s",
+    "text": "The standard Lorem Ipsum passage, used since the 1500s\n“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
+  },
+  {
+    "objectID": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "href": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "title": "Palaeoverse",
+    "section": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC",
+    "text": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC\n“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”"
+  },
+  {
+    "objectID": "zulip/index.html#translation-by-h.-rackham",
+    "href": "zulip/index.html#translation-by-h.-rackham",
+    "title": "Palaeoverse",
+    "section": "1914 translation by H. Rackham",
+    "text": "1914 translation by H. Rackham\n“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”"
   }
 ]
