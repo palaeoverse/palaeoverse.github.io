@@ -1,3 +1,7 @@
+---
+title: "About"
+---
+
 Hello, this is the page about Palaeoverse.
 
 *Small description of the history of the Palaeoverse?*

@@ -1,3 +1,6 @@
+---
+title: "External resources"
+---
 
 ```{=html}
 <div class="resource-grid">
