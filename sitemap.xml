@@ -2,46 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://palaeoverse.github.io/contributing/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.github.io/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
   </url>
   <url>
-    <loc>https://palaeoverse.github.io/about/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.046Z</lastmod>
+    <loc>https://palaeoverse.github.io/about/code-of-conduct.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
   </url>
   <url>
-    <loc>https://palaeoverse.github.io/external-resources/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://palaeoverse.github.io/our-packages/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://palaeoverse.github.io/people/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://palaeoverse.github.io/events/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://palaeoverse.github.io/cheatsheets/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <loc>https://palaeoverse.github.io/about/ai-policy.html</loc>
+    <lastmod>2026-05-13T13:54:10.431Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.github.io/styling.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/cheatsheets/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/events/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/lewis-jones.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/miranta-kouvari.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/erin-dillon.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/bruna-farina.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/sofia-galvan.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/cecily-nicholl.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/lucas-buffan.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/alessandro-chiarenza.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/harriet-drage.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/will-gearty.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/pedro-godoy.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/joe-flannery-sutherland.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/christopher-dean.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/bethany-allen.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/people/kilian-eichenseer.html</loc>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/our-packages/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/external-resources/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/about/governance.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.github.io/about/index.html</loc>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.github.io/blog/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <lastmod>2026-05-13T13:54:10.433Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.github.io/zulip/index.html</loc>
-    <lastmod>2026-05-13T13:33:42.047Z</lastmod>
+    <lastmod>2026-05-13T13:54:10.434Z</lastmod>
   </url>
 </urlset>
