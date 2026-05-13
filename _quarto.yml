@@ -30,10 +30,6 @@ website:
             text: Cheat sheets
           - href: contributing
             text: Contributing
-      - href: people
-        text: People
-      - href: events
-        text: Events
       - text: Resources
         menu:
           - href: https://workshop.palaeoverse.org/
@@ -46,8 +42,12 @@ website:
             target: _blank
           - href: external-resources
             text: External resources
+      - href: events
+        text: Events
       - href: blog
         text: Blog
+      - href: people
+        text: People
       - href: about
         text: About
       - icon: github
