@@ -319,6 +319,23 @@
   color: #fff;
 }
 
+.event-conference {
+  background: #f3eef8;
+}
+.event-conference .event-tag {
+  background: #6b3fa0;
+  color: #fff;
+}
+
+a.event-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+a.event-link .event-card {
+  cursor: pointer;
+}
+
 @media (max-width: 992px) {
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
