@@ -6,4 +6,11 @@ categories: [news, code, analysis]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+Hello there! Let's load the `palaeoverse` package:
+
+
+```{r}
+library(palaeoverse)
+
+head(palaeoverse::GTS2020)
+```

@@ -1,0 +1,15 @@
+{
+  "hash": "4d66e4bea87bdfd5dc48d6ba23338fef",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Harlow Malloc\"\ndate: \"2026-05-13\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\nHello there! Let's load the `palaeoverse` package:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(palaeoverse)\n\nhead(palaeoverse::GTS2020)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n  interval_number     interval_name  rank max_ma  mid_ma min_ma duration_myr\n1               1        Meghalayan stage 0.0042 0.00210 0.0000       0.0042\n2               2     Northgrippian stage 0.0082 0.00620 0.0042       0.0040\n3               3      Greenlandian stage 0.0117 0.00995 0.0082       0.0035\n4               4 Upper Pleistocene stage 0.1290 0.07035 0.0117       0.1173\n5               5         Chibanian stage 0.7740 0.45150 0.1290       0.6450\n6               6         Calabrian stage 1.8000 1.28700 0.7740       1.0260\n   font  colour abbr\n1 black #FDEDEC <NA>\n2 black #FDECE4 <NA>\n3 black #FEECDB <NA>\n4 black #FFF2D3 <NA>\n5 black #FFF2C7 <NA>\n6 black #FFF2BA <NA>\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
