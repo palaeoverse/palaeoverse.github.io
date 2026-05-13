@@ -21,7 +21,34 @@
 
 
 
-<p>This is a post with executable code.</p>
+<p>Hello there! Let’s load the <code>palaeoverse</code> package:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(palaeoverse)</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(palaeoverse<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span>GTS2020)</span></code></pre></div></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  interval_number     interval_name  rank max_ma  mid_ma min_ma duration_myr
+1               1        Meghalayan stage 0.0042 0.00210 0.0000       0.0042
+2               2     Northgrippian stage 0.0082 0.00620 0.0042       0.0040
+3               3      Greenlandian stage 0.0117 0.00995 0.0082       0.0035
+4               4 Upper Pleistocene stage 0.1290 0.07035 0.0117       0.1173
+5               5         Chibanian stage 0.7740 0.45150 0.1290       0.6450
+6               6         Calabrian stage 1.8000 1.28700 0.7740       1.0260
+   font  colour abbr
+1 black #FDEDEC &lt;NA&gt;
+2 black #FDECE4 &lt;NA&gt;
+3 black #FEECDB &lt;NA&gt;
+4 black #FFF2D3 &lt;NA&gt;
+5 black #FFF2C7 &lt;NA&gt;
+6 black #FFF2BA &lt;NA&gt;</code></pre>
+</div>
+</div>
 
 
 

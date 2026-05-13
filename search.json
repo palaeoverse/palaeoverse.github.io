@@ -18,7 +18,7 @@
     "href": "blog/posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(palaeoverse)\n\nhead(palaeoverse::GTS2020)\n\n  interval_number     interval_name  rank max_ma  mid_ma min_ma duration_myr\n1               1        Meghalayan stage 0.0042 0.00210 0.0000       0.0042\n2               2     Northgrippian stage 0.0082 0.00620 0.0042       0.0040\n3               3      Greenlandian stage 0.0117 0.00995 0.0082       0.0035\n4               4 Upper Pleistocene stage 0.1290 0.07035 0.0117       0.1173\n5               5         Chibanian stage 0.7740 0.45150 0.1290       0.6450\n6               6         Calabrian stage 1.8000 1.28700 0.7740       1.0260\n   font  colour abbr\n1 black #FDEDEC &lt;NA&gt;\n2 black #FDECE4 &lt;NA&gt;\n3 black #FEECDB &lt;NA&gt;\n4 black #FFF2D3 &lt;NA&gt;\n5 black #FFF2C7 &lt;NA&gt;\n6 black #FFF2BA &lt;NA&gt;"
   },
   {
     "objectID": "about/code-of-conduct.html",
