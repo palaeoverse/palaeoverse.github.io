@@ -49,7 +49,7 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.css
+      - styles.scss
     toc: true
     anchor-sections: false
 
