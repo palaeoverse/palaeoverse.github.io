@@ -16,6 +16,8 @@ website:
       Copyright 2026, Palaeoverse &middot;&nbsp;
       <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp;
       <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp;
       <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>
 
   navbar:
@@ -55,6 +57,22 @@ website:
       - icon: github
         href: https://github.com/palaeoverse
         aria-label: GitHub
+        target: _blank
+      - icon: bluesky
+        href: https://bsky.app/profile/palaeoverse.bsky.social
+        aria-label: BlueSky
+        target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/company/palaeoverse
+        aria-label: LinkedIn
+        target: _blank
+      - icon: instagram
+        href: https://www.instagram.com/palaeoverse/
+        aria-label: Instagram
+        target: _blank
+      - icon: youtube
+        href: https://www.youtube.com/@ThePalaeoverse
+        aria-label: YouTube
         target: _blank
 
 format:
