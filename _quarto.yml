@@ -24,6 +24,18 @@ website:
     logo: _brand/logos/logo.png
 
     right:
+      - text: About
+        menu:
+          - href: about/people
+            text: People
+          - href: about/governance
+            text: Governance
+          - href: about/code-of-conduct
+            text: Code of Conduct
+          - href: about/ai-policy
+            text: AI policy
+          - href: about/sponsors
+            text: Sponsors
       - href: zulip
         text: Zulip
       - text: Software
@@ -50,18 +62,6 @@ website:
         text: Events
       - href: blog
         text: Blog
-      - text: About
-        menu:
-          - href: about/people
-            text: People
-          - href: about/governance
-            text: Governance
-          - href: about/code-of-conduct
-            text: Code of Conduct
-          - href: about/ai-policy
-            text: AI policy
-          - href: about/sponsors
-            text: Sponsors
       - icon: github
         href: https://github.com/palaeoverse
         aria-label: GitHub
