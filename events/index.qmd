@@ -60,17 +60,33 @@ type_to_css <- function(type) {
   )
 }
 
+to_filter_key <- function(type) tolower(gsub(" ", "-", type))
+
+render_filter <- function(all_events) {
+  categories <- sort(unique(all_events$Post))
+  buttons <- sapply(categories, function(cat) {
+    sprintf(
+      '<button class="event-filter-btn active" data-filter="%s">%s<i class="bi bi-check"></i></button>',
+      to_filter_key(cat),
+      cat
+    )
+  })
+  knitr::asis_output(paste0(
+    '<div class="event-filter-bar">\n',
+    paste(buttons, collapse = "\n"),
+    '\n</div>'
+  ))
+}
+
 render_cards <- function(df) {
-  if (nrow(df) == 0) {
-    return(knitr::asis_output("<p><em>No events to display.</em></p>"))
-  }
   parts <- '<div class="event-grid">'
   for (i in seq_len(nrow(df))) {
     row <- df[i, ]
     css <- type_to_css(row$Post)
+    filter_key <- to_filter_key(row$Post)
     date_str <- format(row$Date, "%B %d, %Y")
     has_link <- !is.na(row$Link) && nzchar(row$Link)
-    inner <- sprintf(
+    card_div <- sprintf(
       '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s · %s</p></div>',
       css,
       row$Post,
@@ -79,26 +95,38 @@ render_cards <- function(df) {
       row$Location
     )
     if (has_link) {
-      parts <- c(
-        parts,
-        sprintf(
-          '<a href="%s" target="_blank" class="event-link">%s</a>',
-          row$Link,
-          inner
-        )
+      item <- sprintf(
+        '<a href="%s" target="_blank" class="event-link" data-type="%s">%s</a>',
+        row$Link,
+        filter_key,
+        card_div
       )
     } else {
-      parts <- c(parts, inner)
+      item <- sprintf(
+        '<div class="event-item" data-type="%s">%s</div>',
+        filter_key,
+        card_div
+      )
     }
+    parts <- c(parts, item)
   }
   parts <- c(parts, "</div>")
+  parts <- c(
+    parts,
+    '<p class="event-empty-msg" style="display:none"><em>No events match the selected filters.</em></p>'
+  )
   knitr::asis_output(paste(parts, collapse = "\n"))
 }
 ```
 
-We organize workshops dedicated to the Palaeoverse, either along conferences or as separate events. 
-
 ***DEV NOTES:** I manually added cards (with wrong details) to the list so that "Future events" isn't empty.*
+
+We organize workshops dedicated to the Palaeoverse, either along conferences or as separate events.
+
+Select the type of events to display:
+```{r}
+render_filter(events)
+```
 
 ## Future events
 
@@ -110,4 +138,41 @@ render_cards(future_events)
 
 ```{r}
 render_cards(past_events)
+```
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('.event-filter-btn');
+
+  function getActiveFilters() {
+    return Array.from(buttons)
+      .filter(b => b.classList.contains('active'))
+      .map(b => b.dataset.filter);
+  }
+
+  function updateVisibility() {
+    const active = getActiveFilters();
+    document.querySelectorAll('[data-type]').forEach(el => {
+      el.style.display = active.includes(el.dataset.type) ? '' : 'none';
+    });
+    document.querySelectorAll('.event-grid').forEach(grid => {
+      const hasVisible = Array.from(grid.querySelectorAll('[data-type]'))
+        .some(el => el.style.display !== 'none');
+      const msg = grid.nextElementSibling;
+      if (msg && msg.classList.contains('event-empty-msg')) {
+        grid.style.display = hasVisible ? '' : 'none';
+        msg.style.display = hasVisible ? 'none' : '';
+      }
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      this.classList.toggle('active');
+      updateVisibility();
+    });
+  });
+});
+</script>
 ```
