@@ -46,6 +46,56 @@
   }
 }
 
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid $brand-light-grey;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.1rem;
+  color: $secondary;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-suffix {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $body-color;
+}
+
+@media (max-width: 480px) {
+  .stats-section {
+    gap: 2.5rem;
+  }
+  .stat-value {
+    font-size: 2.25rem;
+  }
+  .stat-suffix {
+    font-size: 1.9rem;
+  }
+}
+
 .navbar {
   background: $body-bg;
   border-bottom: 1px solid $secondary;
