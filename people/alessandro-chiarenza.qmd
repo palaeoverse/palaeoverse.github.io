@@ -1,8 +1,0 @@
----
-title: "Alessandro Chiarenza"
-toc: false
----
-
-![](../_img/profiles/Alessandro.jpg){.person-avatar style="max-width:200px; border-radius:50%; display:block; margin:0 auto 1.5rem;"}
-
-*Placeholder — bio coming soon.*

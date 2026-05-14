@@ -1,0 +1,8 @@
+---
+title: "Bruna Farina"
+toc: false
+---
+
+![](../../_img/profiles/Bruna.jpeg){.person-avatar style="max-width:200px; border-radius:50%; display:block; margin:0 auto 1.5rem;"}
+
+*Placeholder — bio coming soon.*

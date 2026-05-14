@@ -50,10 +50,18 @@ website:
         text: Events
       - href: blog
         text: Blog
-      - href: people
-        text: People
-      - href: about
-        text: About
+      - text: About
+        menu:
+          - href: about/people
+            text: People
+          - href: about/governance
+            text: Governance
+          - href: about/code-of-conduct
+            text: Code of Conduct
+          - href: about/ai-policy
+            text: AI policy
+          - href: about/sponsors
+            text: Sponsors
       - icon: github
         href: https://github.com/palaeoverse
         aria-label: GitHub
