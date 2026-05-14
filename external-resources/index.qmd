@@ -17,7 +17,7 @@ title: "External resources"
   <div class="resource-card">
     <h3>Lecture series</h3>
     <p>A collection of online monthly presentations dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work.</p>
-    <a href="https://www.youtube.com/@ThePalaeoverse/videos" target="_blank" class="package-btn">Visit <i class="bi bi-box-arrow-up-right"></i></a>
+    <a href="lecture-series" target="_blank" class="package-btn">Visit</a>
   </div>
 </div>
 ```
