@@ -19,6 +19,8 @@ website:
       <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>
 
   navbar:
+    logo: _brand/logos/logo.png
+
     right:
       - href: zulip
         text: Zulip
