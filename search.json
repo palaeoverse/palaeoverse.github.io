@@ -119,11 +119,18 @@
     "text": "Placeholder — bio coming soon."
   },
   {
-    "objectID": "cheatsheets/index.html",
-    "href": "cheatsheets/index.html",
-    "title": "Cheat sheets",
+    "objectID": "external-resources/lecture-series/index.html",
+    "href": "external-resources/lecture-series/index.html",
+    "title": "Lecture series",
     "section": "",
-    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
+    "text": "The Palaeoverse Lecture Series is a monthly online presentation dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work. The format remains flexible and will generally include a short seminar followed by a demonstration of the speaker’s software toolkit and/or method, concluding with a Q&A session.\nImportant information:\n\nSee past and future lectures on our Events page\nLectures will be held from 15:00–16:00 UTC\nRegister here\nAll are welcome to join and we ask that all participants abide by the Palaeoverse Code of Conduct"
+  },
+  {
+    "objectID": "our-packages/index.html",
+    "href": "our-packages/index.html",
+    "title": "Our packages",
+    "section": "",
+    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
   },
   {
     "objectID": "events/index.html",
@@ -147,18 +154,18 @@
     "text": "Past events\n\n\n\nConferenceThe Palaeontological Association Annual Meeting 2024March 04, 2024 · Erlangen, Germany\nConferenceProgressive Palaeontology 2024March 04, 2024 · Bristol, UK\nConference7th International Palaeontological CongressDecember 09, 2023 · Cape Town, South Africa\nConference12th North American Paleontological ConventionDecember 07, 2023 · Ann Arbor, USA\nConference3rd Joint Congress on Evolutionary BiologyDecember 07, 2023 · Montreal, Canada\nWorkshopR for Palaeobiologists: Getting started with the palaeoverse R packageDecember 07, 2023 · Ann Arbor, USA\nConferenceIBS Biennial ConferenceJuly 20, 2023 · Prague, Czechia\nConferenceAcross the End Permian \"Great Extinction\"May 16, 2023 · Lausanne, Switzerland\nConferencePalaeo Down Under 3March 28, 2023 · Perth, Australia\nConference14th Romanian Symposium of PalaeontologyMarch 28, 2023 · Bucharest, Romania\nConferenceConferenceMarch 25, 2023 · Birmingham, UK\nConferenceLife and PlanetMarch 10, 2023 · London, UK\nConferenceCrossing the Palaeontological-Ecological GapMarch 02, 2023 · Vilnius, Lithuania\nWorkshopTaming the BEASTFebruary 23, 2023 · Squamish, Canada\nConferenceProgressive Palaeontology 2023February 20, 2023 · Liverpool, UK\nWorkshopQuantitative methods for population dynamics in RFebruary 09, 2023 · Montpellier, France\nConference14th Symposium of the International Fossil Coral and Reef Society (IFCRS)January 26, 2023 · 26-060, Poland\nConferenceXX Annual Meeting of the European Association of Vertebrate PalaeontologistsJanuary 26, 2023 · Sabadell, Spain\nConferenceXII Brazilian Vertebrate Paleontology SymposiumJanuary 26, 2023 · Santa Maria, Brazil\nConferenceMacroecology and Biogeography 2023January 17, 2023 · Bayreuth, Germany\nWorkshopAnalytical PaleobiologyJanuary 16, 2023 · Erlangen, Germany\nWorkshopModelling species distributions under global changeJanuary 05, 2023 · Copenhagen, Denmark\nConferenceEvolution 2023December 21, 2022 · Albuquerque, USA\nConferenceMathematical and Computational Evolutionary BiologyDecember 15, 2022 · Cargèse, France\nConferenceEJIP/IMERP 2023December 06, 2022 · Lourinhã, Portugal\nConferencePalAss Annual Meeting 2023December 05, 2022 · Cambridge, England\nWorkshopIntroduction to Analytical PalaeobiologyDecember 05, 2022 · Berlin, Germany\nConferenceEGU 2023December 05, 2022 · Vienna, Austria\n\nNo events match the selected filters."
   },
   {
-    "objectID": "our-packages/index.html",
-    "href": "our-packages/index.html",
-    "title": "Our packages",
+    "objectID": "cheatsheets/index.html",
+    "href": "cheatsheets/index.html",
+    "title": "Cheat sheets",
     "section": "",
-    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
+    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
   },
   {
     "objectID": "external-resources/index.html",
     "href": "external-resources/index.html",
     "title": "External resources",
     "section": "",
-    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit"
+    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit \n  \n  \n    Lecture series\n    A collection of online monthly presentations dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work.\n    Visit"
   },
   {
     "objectID": "about/people/lucas-buffan.html",
