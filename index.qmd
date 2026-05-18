@@ -46,7 +46,7 @@ n_downloads <- cranlogs::cran_downloads(
 (function () {
   function animateCounter(el) {
     var target = parseInt(el.dataset.target, 10);
-    var duration = 1000;
+    var duration = 800;
     var start = performance.now();
     function update(now) {
       var progress = Math.min((now - start) / duration, 1);
