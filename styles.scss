@@ -88,9 +88,11 @@
   .stats-section {
     gap: 2.5rem;
   }
+
   .stat-value {
     font-size: 2.25rem;
   }
+
   .stat-suffix {
     font-size: 1.9rem;
   }
@@ -101,6 +103,10 @@
   border-bottom: 1px solid $secondary;
   margin-bottom: 1em;
   text-transform: uppercase;
+}
+
+.navbar-logo {
+  max-height: 45px;
 }
 
 .package-grid {

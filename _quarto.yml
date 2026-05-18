@@ -4,7 +4,6 @@ project:
     - _img/
 
 website:
-  title: "Palaeoverse"
   # TODO: update this link when we make this the actual website
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
   
@@ -21,7 +20,7 @@ website:
       <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>
 
   navbar:
-    logo: _brand/logos/logo.png
+    logo: _brand/logos/logo-text.png
 
     right:
       - text: About
