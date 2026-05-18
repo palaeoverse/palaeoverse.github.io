@@ -86,7 +86,9 @@
 
 @media (max-width: 480px) {
   .stats-section {
-    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .stat-value {
