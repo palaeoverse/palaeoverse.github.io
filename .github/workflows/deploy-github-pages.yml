@@ -20,7 +20,7 @@ jobs:
           use-public-rspm: true
 
       - name: Install R dependencies
-        run: install.packages(c("dplyr", "googlesheets4", "rmarkdown", "cranlogs", "openalexR"))
+        run: install.packages(c("dplyr", "googlesheets4", "rmarkdown", "cranlogs", "openalexR", "mapgl"))
         shell: Rscript {0}
 
       - name: Set up Quarto
