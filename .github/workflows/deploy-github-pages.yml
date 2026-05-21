@@ -19,8 +19,11 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install required dependency for mapgl
-        run: sudo apt install libudunits2-dev
+      # List generated with pak::pkg_sysreqs("mapgl")
+      - name: Install required dependencies for mapgl
+        run: sudo apt install libudunits2-dev cmake make libuv1-dev zlib1g-dev pandoc \
+                libpng-dev libabsl-dev libssl-dev libgdal-dev \
+                gdal-bin libgeos-dev libproj-dev libsqlite3-dev libudunits2-dev
 
       - name: Install R dependencies
         run: install.packages(c("dplyr", "googlesheets4", "rmarkdown", "cranlogs", "openalexR", "mapgl"))
