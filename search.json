@@ -226,9 +226,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "Palaeoverse",
     "section": "",
-    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip \n  Check our packages\n  See our next events\n\n\n  \n    \n      0\n      +\n    \n    Package Downloads\n  \n  \n    \n      0\n      +\n    \n    Citations"
+    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip \n  Check our packages\n  See our next events\n\n\n\nWarning in get_scholar_resp(url, attempts_left - 1): Cannot connect to Google\nScholar. Is the ID you provided correct?\nWarning in get_scholar_resp(url, attempts_left - 1): Cannot connect to Google\nScholar. Is the ID you provided correct?\nWarning in get_scholar_resp(url, attempts_left - 1): Cannot connect to Google\nScholar. Is the ID you provided correct?\n\n\n\n  \n    \n      0\n    \n    Package Downloads\n  \n  \n    \n      0\n    \n    Citations"
   },
   {
     "objectID": "blog/posts/post-with-code copy/index.html",
