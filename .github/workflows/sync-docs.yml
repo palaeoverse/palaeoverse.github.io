@@ -28,7 +28,7 @@ jobs:
 
       - name: Download files from resources repo
         run: |
-          BASE="https://raw.githubusercontent.com/palaeoverse/resources/main"
+          BASE="https://raw.githubusercontent.com/palaeoverse/resources/blob/main"
           curl -fsSL "$BASE/AI_policy.md"       -o about/ai-policy/index.qmd
           curl -fsSL "$BASE/CODE_OF_CONDUCT.md" -o about/code-of-conduct/index.qmd
           curl -fsSL "$BASE/CONTRIBUTING.md"    -o contributing/index.qmd
