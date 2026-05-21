@@ -19,48 +19,48 @@ engine: knitr
 ```{r}
 #| echo: false
 ### Number of citations
-library(scholar)
-
-lewis_id <- "X0AvsOkAAAAJ"
-palaeoverse_id <- "YsMSGLbcyi4C"
-rphylopic_id <- "_FxGoFyzp5QC"
-rmacrostrat_id <- "ZeXyd9-uunAC"
-
-palaeoverse_citations <- get_article_cite_history(
-  lewis_id,
-  palaeoverse_id
-)$cites
-rphylopic_citations <- get_article_cite_history(lewis_id, rphylopic_id)$cites
-rmacrostrat_citations <- get_article_cite_history(
-  lewis_id,
-  rmacrostrat_id
-)$cites
-
-total_citations <- sum(
-  palaeoverse_citations,
-  rphylopic_citations,
-  rmacrostrat_citations
+library(openalexR)
+citations_raw <- oa_fetch(
+  entity = "works",
+  doi = c(
+    # palaeoverse
+    "https://doi.org/10.1111/2041-210x.14099",
+    # rmacrostrat
+    "10.1130/GES02815.1",
+    # rphylopic
+    "10.1111/2041-210X.14221"
+  )
 )
 
-### Alternative with openalex (gives a bit less citations)
-# library(openalexR)
-# citations_raw <- oa_fetch(
-#   entity = "works",
-#   doi = c(
-#     # palaeoverse
-#     "https://doi.org/10.1111/2041-210x.14099",
-#     # rmacrostrat
-#     "10.1130/GES02815.1",
-#     # rphylopic
-#     "10.1111/2041-210X.14221"
-#   ),
-#   verbose = TRUE
+citations <- citations_raw[, c("title", "cited_by_count")]
+
+total_citations <- sum(citations$cited_by_count)
+
+### Alternative with scholar which works locally but always has a warning
+### "Cannot connect to Google Scholar. Is the ID you provided correct?"
+### in CI.
+# library(scholar)
+
+# lewis_id <- "X0AvsOkAAAAJ"
+# palaeoverse_id <- "YsMSGLbcyi4C"
+# rphylopic_id <- "_FxGoFyzp5QC"
+# rmacrostrat_id <- "ZeXyd9-uunAC"
+
+# palaeoverse_citations <- get_article_cite_history(
+#   lewis_id,
+#   palaeoverse_id
+# )$cites
+# rphylopic_citations <- get_article_cite_history(lewis_id, rphylopic_id)$cites
+# rmacrostrat_citations <- get_article_cite_history(
+#   lewis_id,
+#   rmacrostrat_id
+# )$cites
+
+# total_citations <- sum(
+#   palaeoverse_citations,
+#   rphylopic_citations,
+#   rmacrostrat_citations
 # )
-
-# citations <- citations_raw |>
-#   select(title, cited_by_count)
-
-# sum(citations$cited_by_count)
 
 ### Number of downloads
 n_downloads <- cranlogs::cran_downloads(
@@ -75,12 +75,14 @@ n_downloads <- cranlogs::cran_downloads(
   <div class="stat-item">
     <div class="stat-value">
       <span class="stat-number" data-target=`r paste0(sum(n_downloads$count))`>0</span>
+      <span class="stat-suffix">+</span>
     </div>
     <span class="stat-label">Package Downloads</span>
   </div>
   <div class="stat-item">
     <div class="stat-value">
       <span class="stat-number" data-target=`r paste0(total_citations)`>0</span>
+      <span class="stat-suffix">+</span>
     </div>
     <span class="stat-label">Citations</span>
   </div>
