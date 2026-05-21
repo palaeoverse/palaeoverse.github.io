@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PALAEOVERSE_WEBSITE_TRIGGER_DEPLOYMENT }}
 
       - name: Download files from resources repo
         run: |
