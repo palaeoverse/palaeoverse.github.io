@@ -1,5 +1,5 @@
 ---
-title: "Palaeoverse"
+pagetitle: "Palaeoverse"
 toc: false
 engine: knitr
 ---
