@@ -1,0 +1,43 @@
+# This workflow downloads files stored in "palaeoverse/resources" and commits them 
+# to the repo. It triggers when there is a new commit in "palaeoverse/resources",
+# but it creates the commit only if any of the files we're interested it have changed.
+# The potential new commit is made on the main branch so it will then trigger the 
+# workflow to render the website. 
+#
+# The files we are interested in are:
+# - AI_policy.md
+# - CODE_OF_CONDUCT.md
+# - CONTRIBUTING.md
+
+on:
+  workflow_dispatch: # Let us trigger this workflow manually.
+  repository_dispatch: # Trigger this workflow when there is a change in 
+                       # palaeoverse/resources. See the workflow there.
+    types: [sync-docs]
+
+name: Sync docs from palaeoverse/resources
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download files from resources repo
+        run: |
+          BASE="https://raw.githubusercontent.com/palaeoverse/resources/main"
+          curl -fsSL "$BASE/AI_policy.md"       -o about/ai-policy/index.qmd
+          curl -fsSL "$BASE/CODE_OF_CONDUCT.md" -o about/code-of-conduct/index.qmd
+          curl -fsSL "$BASE/CONTRIBUTING.md"    -o contributing/index.qmd
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add about/ai-policy/index.qmd about/code-of-conduct/index.qmd contributing/index.qmd
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: sync docs from palaeoverse/resources"
+          git push
