@@ -4,10 +4,10 @@ project:
     - _img/
 
 website:
-  # TODO: update this link when we make this the actual website
-  repo-url: https://github.com/palaeoverse/palaeoverse.github.io
-  
+  repo-url: https://github.com/palaeoverse/palaeoverse-quarto
+  site-url: https://palaeoverse.org
   favicon: _brand/logos/favicon.png
+  open-graph: true
 
   page-footer:
     border: false
