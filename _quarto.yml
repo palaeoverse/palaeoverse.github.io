@@ -7,7 +7,11 @@ website:
   repo-url: https://github.com/palaeoverse/palaeoverse-quarto
   site-url: https://palaeoverse.org
   favicon: _brand/logos/favicon.png
-  open-graph: true
+  open-graph:
+    title: Palaeoverse
+    description: A community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.
+    image: _brand/logos/logo-text.png
+    locale: en_GB
 
   page-footer:
     border: false
