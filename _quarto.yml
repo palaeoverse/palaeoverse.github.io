@@ -12,7 +12,7 @@ website:
   open-graph:
     title: Palaeoverse
     description: A community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.
-    image: _brand/logos/logo-text.png
+    image: _brand/logos/logo-text-opengraph.png
     locale: en_GB
 
   page-footer:
