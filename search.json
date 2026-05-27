@@ -28,179 +28,67 @@
     "text": "Please note that by contributing to Palaeoverse you agree to our Code of Conduct."
   },
   {
-    "objectID": "external-resources/lecture-series/index.html",
-    "href": "external-resources/lecture-series/index.html",
-    "title": "Lecture series",
+    "objectID": "external-resources/index.html",
+    "href": "external-resources/index.html",
+    "title": "External resources",
     "section": "",
-    "text": "The Palaeoverse Lecture Series is a monthly online presentation dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work. The format remains flexible and will generally include a short seminar followed by a demonstration of the speaker’s software toolkit and/or method, concluding with a Q&A session.\nImportant information:\n\nSee past and future lectures on our Events page\nLectures will be held from 15:00–16:00 UTC\nRegister here\nAll are welcome to join and we ask that all participants abide by the Palaeoverse Code of Conduct"
+    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit \n  \n  \n    Lecture series\n    A collection of online monthly presentations dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work.\n    Visit"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "zulip/index.html",
+    "href": "zulip/index.html",
+    "title": "Zulip",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello, this is how to use Zulip."
   },
   {
-    "objectID": "blog/posts/welcome copy/index.html",
-    "href": "blog/posts/welcome copy/index.html",
+    "objectID": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "href": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "title": "Zulip",
+    "section": "The standard Lorem Ipsum passage, used since the 1500s",
+    "text": "The standard Lorem Ipsum passage, used since the 1500s\n“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
+  },
+  {
+    "objectID": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "href": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "title": "Zulip",
+    "section": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC",
+    "text": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC\n“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”"
+  },
+  {
+    "objectID": "zulip/index.html#translation-by-h.-rackham",
+    "href": "zulip/index.html#translation-by-h.-rackham",
+    "title": "Zulip",
+    "section": "1914 translation by H. Rackham",
+    "text": "1914 translation by H. Rackham\n“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "blog/posts/post-with-code/index.html",
-    "href": "blog/posts/post-with-code/index.html",
+    "objectID": "blog/posts/post-with-code copy/index.html",
+    "href": "blog/posts/post-with-code copy/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
   },
   {
-    "objectID": "our-packages/index.html",
-    "href": "our-packages/index.html",
-    "title": "Our packages",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
     "section": "",
-    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
+    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip \n  Check our packages\n  See our next events\n\n\n  \n    \n      0\n      +\n    \n    Package Downloads\n  \n  \n    \n      0\n      +\n    \n    Citations"
   },
   {
-    "objectID": "about/sponsors/index.html",
-    "href": "about/sponsors/index.html",
-    "title": "Sponsors",
+    "objectID": "cheatsheets/index.html",
+    "href": "cheatsheets/index.html",
+    "title": "Cheat sheets",
     "section": "",
-    "text": "Sponsors"
-  },
-  {
-    "objectID": "about/people/cecily-nicholl.html",
-    "href": "about/people/cecily-nicholl.html",
-    "title": "Cecily Nicholl",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/lewis-jones.html",
-    "href": "about/people/lewis-jones.html",
-    "title": "Lewis Jones",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/lucas-buffan.html",
-    "href": "about/people/lucas-buffan.html",
-    "title": "Lucas Buffan",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/kilian-eichenseer.html",
-    "href": "about/people/kilian-eichenseer.html",
-    "title": "Kilian Eichenseer",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/index.html",
-    "href": "about/people/index.html",
-    "title": "People",
-    "section": "",
-    "text": "NOTE FOR DEV: the assignment between active and inactive is random, it’s just to see how it would look like."
-  },
-  {
-    "objectID": "about/people/index.html#active-contributors",
-    "href": "about/people/index.html#active-contributors",
-    "title": "People",
-    "section": "Active contributors",
-    "text": "Active contributors\n\n  \n    \n    Lewis Jones\n  \n  \n    \n    Bethany Allen\n  \n  \n    \n    Harriet Drage\n  \n  \n    \n    Joe Flannery-Sutherland\n  \n  \n    \n    Will Gearty\n  \n  \n    \n    Cecily Nicholl\n  \n  \n    \n    Pedro Godoy\n  \n  \n    \n    Miranta Kouvari\n  \n  \n    \n    Sofía Galván\n  \n  \n    \n    Christopher Dean"
-  },
-  {
-    "objectID": "about/people/index.html#past-contributors",
-    "href": "about/people/index.html#past-contributors",
-    "title": "People",
-    "section": "Past contributors",
-    "text": "Past contributors\n\n  \n    \n    Kilian Eichenseer\n  \n  \n    \n    Erin Dillon\n  \n  \n    \n    Bruna Farina\n  \n  \n    \n    Lucas Buffan\n  \n  \n    \n    Alessandro Chiarenza"
-  },
-  {
-    "objectID": "about/people/alessandro-chiarenza.html",
-    "href": "about/people/alessandro-chiarenza.html",
-    "title": "Alessandro Chiarenza",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/joe-flannery-sutherland.html",
-    "href": "about/people/joe-flannery-sutherland.html",
-    "title": "Joe Flannery-Sutherland",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/erin-dillon.html",
-    "href": "about/people/erin-dillon.html",
-    "title": "Erin Dillon",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/governance/index.html",
-    "href": "about/governance/index.html",
-    "title": "Governance",
-    "section": "",
-    "text": "Governance"
-  },
-  {
-    "objectID": "about/people/will-gearty.html",
-    "href": "about/people/will-gearty.html",
-    "title": "Will Gearty",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/christopher-dean.html",
-    "href": "about/people/christopher-dean.html",
-    "title": "Christopher Dean",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/bethany-allen.html",
-    "href": "about/people/bethany-allen.html",
-    "title": "Bethany Allen",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/miranta-kouvari.html",
-    "href": "about/people/miranta-kouvari.html",
-    "title": "Miranta Kouvari",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/harriet-drage.html",
-    "href": "about/people/harriet-drage.html",
-    "title": "Harriet Drage",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/pedro-godoy.html",
-    "href": "about/people/pedro-godoy.html",
-    "title": "Pedro Godoy",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/sofia-galvan.html",
-    "href": "about/people/sofia-galvan.html",
-    "title": "Sofía Galván",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
-  },
-  {
-    "objectID": "about/people/bruna-farina.html",
-    "href": "about/people/bruna-farina.html",
-    "title": "Bruna Farina",
-    "section": "",
-    "text": "Placeholder — bio coming soon."
+    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
   },
   {
     "objectID": "about/code-of-conduct/index.html",
@@ -259,67 +147,179 @@
     "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
-    "objectID": "cheatsheets/index.html",
-    "href": "cheatsheets/index.html",
-    "title": "Cheat sheets",
+    "objectID": "about/people/bruna-farina.html",
+    "href": "about/people/bruna-farina.html",
+    "title": "Bruna Farina",
     "section": "",
-    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
+    "text": "Placeholder — bio coming soon."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
+    "objectID": "about/people/sofia-galvan.html",
+    "href": "about/people/sofia-galvan.html",
+    "title": "Sofía Galván",
     "section": "",
-    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip \n  Check our packages\n  See our next events\n\n\n  \n    \n      0\n      +\n    \n    Package Downloads\n  \n  \n    \n      0\n      +\n    \n    Citations"
+    "text": "Placeholder — bio coming soon."
   },
   {
-    "objectID": "blog/posts/post-with-code copy/index.html",
-    "href": "blog/posts/post-with-code copy/index.html",
+    "objectID": "about/people/pedro-godoy.html",
+    "href": "about/people/pedro-godoy.html",
+    "title": "Pedro Godoy",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/harriet-drage.html",
+    "href": "about/people/harriet-drage.html",
+    "title": "Harriet Drage",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/miranta-kouvari.html",
+    "href": "about/people/miranta-kouvari.html",
+    "title": "Miranta Kouvari",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/bethany-allen.html",
+    "href": "about/people/bethany-allen.html",
+    "title": "Bethany Allen",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/christopher-dean.html",
+    "href": "about/people/christopher-dean.html",
+    "title": "Christopher Dean",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/will-gearty.html",
+    "href": "about/people/will-gearty.html",
+    "title": "Will Gearty",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/governance/index.html",
+    "href": "about/governance/index.html",
+    "title": "Governance",
+    "section": "",
+    "text": "Governance"
+  },
+  {
+    "objectID": "about/people/erin-dillon.html",
+    "href": "about/people/erin-dillon.html",
+    "title": "Erin Dillon",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/joe-flannery-sutherland.html",
+    "href": "about/people/joe-flannery-sutherland.html",
+    "title": "Joe Flannery-Sutherland",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/alessandro-chiarenza.html",
+    "href": "about/people/alessandro-chiarenza.html",
+    "title": "Alessandro Chiarenza",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/index.html",
+    "href": "about/people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "NOTE FOR DEV: the assignment between active and inactive is random, it’s just to see how it would look like."
+  },
+  {
+    "objectID": "about/people/index.html#active-contributors",
+    "href": "about/people/index.html#active-contributors",
+    "title": "People",
+    "section": "Active contributors",
+    "text": "Active contributors\n\n  \n    \n    Lewis Jones\n  \n  \n    \n    Bethany Allen\n  \n  \n    \n    Harriet Drage\n  \n  \n    \n    Joe Flannery-Sutherland\n  \n  \n    \n    Will Gearty\n  \n  \n    \n    Cecily Nicholl\n  \n  \n    \n    Pedro Godoy\n  \n  \n    \n    Miranta Kouvari\n  \n  \n    \n    Sofía Galván\n  \n  \n    \n    Christopher Dean"
+  },
+  {
+    "objectID": "about/people/index.html#past-contributors",
+    "href": "about/people/index.html#past-contributors",
+    "title": "People",
+    "section": "Past contributors",
+    "text": "Past contributors\n\n  \n    \n    Kilian Eichenseer\n  \n  \n    \n    Erin Dillon\n  \n  \n    \n    Bruna Farina\n  \n  \n    \n    Lucas Buffan\n  \n  \n    \n    Alessandro Chiarenza"
+  },
+  {
+    "objectID": "about/people/kilian-eichenseer.html",
+    "href": "about/people/kilian-eichenseer.html",
+    "title": "Kilian Eichenseer",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/lucas-buffan.html",
+    "href": "about/people/lucas-buffan.html",
+    "title": "Lucas Buffan",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/lewis-jones.html",
+    "href": "about/people/lewis-jones.html",
+    "title": "Lewis Jones",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/people/cecily-nicholl.html",
+    "href": "about/people/cecily-nicholl.html",
+    "title": "Cecily Nicholl",
+    "section": "",
+    "text": "Placeholder — bio coming soon."
+  },
+  {
+    "objectID": "about/sponsors/index.html",
+    "href": "about/sponsors/index.html",
+    "title": "Sponsors",
+    "section": "",
+    "text": "Sponsors"
+  },
+  {
+    "objectID": "our-packages/index.html",
+    "href": "our-packages/index.html",
+    "title": "Our packages",
+    "section": "",
+    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\nWebsite\n– \n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\nWebsite\n– \n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\nWebsite\n– \n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\nWebsite\n–"
+  },
+  {
+    "objectID": "blog/posts/post-with-code/index.html",
+    "href": "blog/posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
   },
   {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
+    "objectID": "blog/posts/welcome copy/index.html",
+    "href": "blog/posts/welcome copy/index.html",
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "zulip/index.html",
-    "href": "zulip/index.html",
-    "title": "Zulip",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Hello, this is how to use Zulip."
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
-    "href": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
-    "title": "Zulip",
-    "section": "The standard Lorem Ipsum passage, used since the 1500s",
-    "text": "The standard Lorem Ipsum passage, used since the 1500s\n“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
-  },
-  {
-    "objectID": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
-    "href": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
-    "title": "Zulip",
-    "section": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC",
-    "text": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC\n“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”"
-  },
-  {
-    "objectID": "zulip/index.html#translation-by-h.-rackham",
-    "href": "zulip/index.html#translation-by-h.-rackham",
-    "title": "Zulip",
-    "section": "1914 translation by H. Rackham",
-    "text": "1914 translation by H. Rackham\n“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”"
-  },
-  {
-    "objectID": "external-resources/index.html",
-    "href": "external-resources/index.html",
-    "title": "External resources",
+    "objectID": "external-resources/lecture-series/index.html",
+    "href": "external-resources/lecture-series/index.html",
+    "title": "Lecture series",
     "section": "",
-    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit \n  \n  \n    Lecture series\n    A collection of online monthly presentations dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work.\n    Visit"
+    "text": "The Palaeoverse Lecture Series is a monthly online presentation dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work. The format remains flexible and will generally include a short seminar followed by a demonstration of the speaker’s software toolkit and/or method, concluding with a Q&A session.\nImportant information:\n\nSee past and future lectures on our Events page\nLectures will be held from 15:00–16:00 UTC\nRegister here\nAll are welcome to join and we ask that all participants abide by the Palaeoverse Code of Conduct"
   },
   {
     "objectID": "events/index.html",
