@@ -46,13 +46,11 @@ website:
       - href: zulip
         text: Zulip
       - text: Software
-        menu:
-          - href: our-packages
-            text: Our packages
+        href: our-packages
           # - href: cheatsheets
           #   text: Cheat sheets
-          - href: contributing
-            text: Contributing
+          # - href: contributing
+          #   text: Contributing
       - text: Resources
         menu:
           - href: https://workshop.palaeoverse.org/

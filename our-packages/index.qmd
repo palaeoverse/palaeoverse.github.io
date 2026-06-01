@@ -6,6 +6,8 @@ toc: false
 ```{r}
 #| echo: false
 library(cranlogs)
+library(gh)
+
 n_downloads <- cranlogs::cran_downloads(
   packages = c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
   from = "2015-01-01",
@@ -17,6 +19,35 @@ nms <- names(n_downloads)
 n_downloads <- round(n_downloads, digits = 1)
 n_downloads <- paste0(round(n_downloads, digits = -3) / 1000, "k+")
 names(n_downloads) <- nms
+
+stars_palaeoverse <- gh(
+  "GET /repos/palaeoverse/palaeoverse/stargazers",
+  .accept = "application/vnd.github.star+json",
+  .limit = Inf
+)
+stars_sepkoski <- gh(
+  "GET /repos/LewisAJones/sepkoski/stargazers",
+  .accept = "application/vnd.github.star+json",
+  .limit = Inf
+)
+stars_rphylopic <- gh(
+  "GET /repos/palaeoverse/rphylopic/stargazers",
+  .accept = "application/vnd.github.star+json",
+  .limit = Inf
+)
+stars_rmacrostrat <- gh(
+  "GET /repos/palaeoverse/rmacrostrat/stargazers",
+  .accept = "application/vnd.github.star+json",
+  .limit = Inf
+)
+
+stars <- c(
+  length(stars_palaeoverse),
+  length(stars_sepkoski),
+  length(stars_rphylopic),
+  length(stars_rmacrostrat)
+)
+names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 ```
 
 ::: {.package-grid}
@@ -29,9 +60,11 @@ names(n_downloads) <- nms
 [Prepare and Explore Data for Palaeobiological Analyses]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
-<a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i>`r stars["palaeoverse"]`</span>
+&nbsp;
 <span><i class="bi bi-download"></i><p>`r n_downloads["palaeoverse"]`</p></span>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 
 :::
 
@@ -49,9 +82,11 @@ names(n_downloads) <- nms
 [Fetch Geologic Data from the 'Macrostrat' Platform]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
-<a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i>`r stars["rmacrostrat"]`</span>
+&nbsp;
 <span><i class="bi bi-download"></i><p>`r n_downloads["rmacrostrat"]`</p></span>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 :::
 
 <br>
@@ -66,9 +101,11 @@ names(n_downloads) <- nms
 [Get Silhouettes of Organisms from PhyloPic]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
-<a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i>`r stars["rphylopic"]`</span>
+&nbsp;
 <span><i class="bi bi-download"></i><p>`r n_downloads["rphylopic"]`</p></span>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 :::
 
 <br>
@@ -83,9 +120,11 @@ names(n_downloads) <- nms
 [Sepkoski's Fossil Marine Animal Genera Compendium]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
-<a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i>`r stars["sepkoski"]`</span>
+&nbsp;
 <span><i class="bi bi-download"></i><p>`r n_downloads["sepkoski"]`</p></span>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 :::
 
 <br>
@@ -93,17 +132,3 @@ names(n_downloads) <- nms
 :::
 
 :::
-
-<script>
-document.querySelectorAll('.package-stars').forEach(el => {
-  const repo = el.dataset.repo;
-  fetch(`https://api.github.com/repos/${repo}`)
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (data && typeof data.stargazers_count === 'number') {
-        el.querySelector('.star-count').textContent = data.stargazers_count;
-      }
-    })
-    .catch(() => {});
-});
-</script>

@@ -134,6 +134,8 @@
   position: relative;
   color: inherit;
   text-decoration: none;
+  transform: translateY(0);
+  will-change: transform;
 }
 
 .package-card .package-actions {
@@ -213,9 +215,12 @@
   gap: 0.35rem;
   font-size: 0.95rem;
   line-height: 1;
-  color: $secondary;
   position: relative;
   z-index: 1;
+}
+
+.package-repo {
+  color: $secondary;
 }
 
 .package-stars i,
