@@ -157,6 +157,18 @@
   z-index: 0;
 }
 
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.package-card .package-actions,
+.package-card > div[style] {
+  position: relative;
+  z-index: 1;
+}
+
 .package-card h3 {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;

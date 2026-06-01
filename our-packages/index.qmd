@@ -53,6 +53,8 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 ::: {.package-grid}
 
 ::: {.package-card}
+<a class="card-link" href="https://palaeoverse.palaeoverse.org/" target="_blank" aria-label="Visit palaeoverse website"></a>
+
 ![](../_img/hex-palaeoverse.png){.package-hex}
 
 ### palaeoverse
@@ -75,6 +77,8 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 ::: {.package-card}
+<a class="card-link" href="https://rmacrostrat.palaeoverse.org/" target="_blank" aria-label="Visit rmacrostrat website"></a>
+
 ![](../_img/hex-rmacrostrat.png){.package-hex}
 
 ### rmacrostrat
@@ -94,6 +98,8 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 ::: {.package-card}
+<a class="card-link" href="https://rphylopic.palaeoverse.org/" target="_blank" aria-label="Visit rphylopic website"></a>
+
 ![](../_img/hex-rphylopic.png){.package-hex}
 
 ### rphylopic
@@ -113,6 +119,8 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 ::: {.package-card}
+<a class="card-link" href="https://sepkoski.palaeoverse.org/" target="_blank" aria-label="Visit sepkoski website"></a>
+
 ![](../_img/hex-sepkoski.png){.package-hex}
 
 ### sepkoski
