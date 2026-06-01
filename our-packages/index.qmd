@@ -20,26 +20,28 @@ n_downloads <- round(n_downloads, digits = 1)
 n_downloads <- paste0(round(n_downloads, digits = -3) / 1000, "k+")
 names(n_downloads) <- nms
 
-stars_palaeoverse <- gh(
-  "GET /repos/palaeoverse/palaeoverse/stargazers",
-  .accept = "application/vnd.github.star+json",
-  .limit = Inf
-)
-stars_sepkoski <- gh(
-  "GET /repos/LewisAJones/sepkoski/stargazers",
-  .accept = "application/vnd.github.star+json",
-  .limit = Inf
-)
-stars_rphylopic <- gh(
-  "GET /repos/palaeoverse/rphylopic/stargazers",
-  .accept = "application/vnd.github.star+json",
-  .limit = Inf
-)
-stars_rmacrostrat <- gh(
-  "GET /repos/palaeoverse/rmacrostrat/stargazers",
-  .accept = "application/vnd.github.star+json",
-  .limit = Inf
-)
+suppressMessages({
+  stars_palaeoverse <- gh(
+    "GET /repos/palaeoverse/palaeoverse/stargazers",
+    .accept = "application/vnd.github.star+json",
+    .limit = Inf
+  )
+  stars_sepkoski <- gh(
+    "GET /repos/LewisAJones/sepkoski/stargazers",
+    .accept = "application/vnd.github.star+json",
+    .limit = Inf
+  )
+  stars_rphylopic <- gh(
+    "GET /repos/palaeoverse/rphylopic/stargazers",
+    .accept = "application/vnd.github.star+json",
+    .limit = Inf
+  )
+  stars_rmacrostrat <- gh(
+    "GET /repos/palaeoverse/rmacrostrat/stargazers",
+    .accept = "application/vnd.github.star+json",
+    .limit = Inf
+  )
+})
 
 stars <- c(
   length(stars_palaeoverse),
