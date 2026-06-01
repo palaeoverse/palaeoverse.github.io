@@ -26,6 +26,7 @@ website:
       <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>
 
   navbar:
+    pinned: true
     logo: _brand/logos/logo-text.png
 
     right:
