@@ -1,6 +1,23 @@
 ---
 title: "Our packages"
+toc: false
 ---
+
+```{r}
+#| echo: false
+library(cranlogs)
+n_downloads <- cranlogs::cran_downloads(
+  packages = c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
+  from = "2015-01-01",
+  to = Sys.Date()
+)
+n_downloads <- n_downloads[, c("count", "package")]
+n_downloads <- tapply(n_downloads$count, n_downloads$package, sum)
+nms <- names(n_downloads)
+n_downloads <- round(n_downloads, digits = 1)
+n_downloads <- paste0(round(n_downloads, digits = -3) / 1000, "k+")
+names(n_downloads) <- nms
+```
 
 ::: {.package-grid}
 
@@ -12,11 +29,16 @@ title: "Our packages"
 [Prepare and Explore Data for Palaeobiological Analyses]{.package-subtitle}
 
 ::: {.package-actions}
-[Website](https://palaeoverse.palaeoverse.org/){.package-btn target="_blank"}
-
 <span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
 <a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span><i class="bi bi-download"></i><p>`r n_downloads["palaeoverse"]`</p></span>
+
 :::
+
+<br>
+<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1111/2041-210X.14099">DOI: 10.1111/2041-210X.14099</a></div>
+
+
 :::
 
 ::: {.package-card}
@@ -27,11 +49,13 @@ title: "Our packages"
 [Fetch Geologic Data from the 'Macrostrat' Platform]{.package-subtitle}
 
 ::: {.package-actions}
-[Website](https://rmacrostrat.palaeoverse.org/){.package-btn target="_blank"}
-
 <span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
 <a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span><i class="bi bi-download"></i><p>`r n_downloads["rmacrostrat"]`</p></span>
 :::
+
+<br>
+<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1130/GES02815.1">DOI: 10.1130/GES02815.1</a></div>
 :::
 
 ::: {.package-card}
@@ -42,11 +66,13 @@ title: "Our packages"
 [Get Silhouettes of Organisms from PhyloPic]{.package-subtitle}
 
 ::: {.package-actions}
-[Website](https://rphylopic.palaeoverse.org/){.package-btn target="_blank"}
-
 <span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
 <a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span><i class="bi bi-download"></i><p>`r n_downloads["rphylopic"]`</p></span>
 :::
+
+<br>
+<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1111/2041-210X.14221">DOI: 10.1111/2041-210X.14221</a></div>
 :::
 
 ::: {.package-card}
@@ -57,11 +83,13 @@ title: "Our packages"
 [Sepkoski's Fossil Marine Animal Genera Compendium]{.package-subtitle}
 
 ::: {.package-actions}
-[Website](https://sepkoski.palaeoverse.org/){.package-btn target="_blank"}
-
 <span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span>
 <a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<span><i class="bi bi-download"></i><p>`r n_downloads["sepkoski"]`</p></span>
 :::
+
+<br>
+<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.5281/zenodo.7342194">DOI: 10.5281/zenodo.7342194</a></div>
 :::
 
 :::
