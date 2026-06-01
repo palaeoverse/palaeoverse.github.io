@@ -64,8 +64,14 @@ website:
           #   target: _blank
           - href: external-resources
             text: External resources
-      - href: events
-        text: Events
+      - text: Events
+        menu:
+          - href: events/all-events
+            text: All events
+          - href: events/lecture-series
+            text: Lecture series
+          - href: events/workshops
+            text: Workshops
       # - href: blog
       #   text: Blog
       - icon: github
