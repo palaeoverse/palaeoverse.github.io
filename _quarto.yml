@@ -58,10 +58,10 @@ website:
             text: Courses
             icon: box-arrow-up-right
             target: _blank
-          - href: https://dashboard.palaeoverse.org/
-            text: Dashboard
-            icon: box-arrow-up-right
-            target: _blank
+          # - href: https://dashboard.palaeoverse.org/
+          #   text: Dashboard
+          #   icon: box-arrow-up-right
+          #   target: _blank
           - href: external-resources
             text: External resources
       - href: events
