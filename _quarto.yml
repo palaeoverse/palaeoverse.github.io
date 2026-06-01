@@ -48,8 +48,8 @@ website:
         menu:
           - href: our-packages
             text: Our packages
-          - href: cheatsheets
-            text: Cheat sheets
+          # - href: cheatsheets
+          #   text: Cheat sheets
           - href: contributing
             text: Contributing
       - text: Resources
