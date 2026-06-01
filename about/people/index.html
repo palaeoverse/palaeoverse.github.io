@@ -27,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -44,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2c2fe380ac7a2328c4f64fdb1f27e0c1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7bee9b5a9c4f59ab29bb7b92cb5d5540.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-0de8c814cddc11077f314d7e49e8cedd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-7bee9b5a9c4f59ab29bb7b92cb5d5540.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d4a2afca93bd05307cfab9ecab66d35c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c0de22692aea7fb7f1e6c14c2f1587be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d4a2afca93bd05307cfab9ecab66d35c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,10 +109,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">People</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../about/governance">
- <span class="dropdown-text">Governance</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../about/code-of-conduct">
  <span class="dropdown-text">Code of Conduct</span></a>
   </li>  
@@ -141,10 +136,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Our packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../cheatsheets">
- <span class="dropdown-text">Cheat sheets</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../contributing">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
@@ -161,24 +152,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://dashboard.palaeoverse.org/" target="_blank"><i class="bi bi-box-arrow-up-right" role="img">
-</i> 
- <span class="dropdown-text">Dashboard</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../external-resources">
  <span class="dropdown-text">External resources</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../../events"> 
-<span class="menu-text">Events</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="../../events/all-events">
+ <span class="dropdown-text">All events</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog"> 
-<span class="menu-text">Blog</span></a>
+        <li>
+    <a class="dropdown-item" href="../../events/lecture-series">
+ <span class="dropdown-text">Lecture series</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../events/workshops">
+ <span class="dropdown-text">Workshops</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/palaeoverse" target="_blank"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -238,76 +235,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>NOTE FOR DEV:</strong> the assignment between active and inactive is random, it’s just to see how it would look like.</p>
-<section id="active-contributors" class="level2">
-<h2 data-anchor-id="active-contributors">Active contributors</h2>
+<section id="core-team" class="level2">
+<h2 data-anchor-id="core-team">Core team</h2>
 <div class="person-grid">
-  <a href="../../about/people/lewis-jones.html" class="person-card">
-    <img src="../../_img/profiles/Lewis.JPG" class="person-avatar" alt="Lewis Jones">
-    <div class="person-info"><h3>Lewis Jones</h3></div>
-  </a>
-  <a href="../../about/people/bethany-allen.html" class="person-card">
-    <img src="../../_img/profiles/Bethany.jpeg" class="person-avatar" alt="Bethany Allen">
-    <div class="person-info"><h3>Bethany Allen</h3></div>
-  </a>
-  <a href="../../about/people/harriet-drage.html" class="person-card">
-    <img src="../../_img/profiles/Harriet.jpg" class="person-avatar" alt="Harriet Drage">
-    <div class="person-info"><h3>Harriet Drage</h3></div>
-  </a>
-  <a href="../../about/people/joe-flannery-sutherland.html" class="person-card">
-    <img src="../../_img/profiles/Joe.jpg" class="person-avatar" alt="Joe Flannery-Sutherland">
-    <div class="person-info"><h3>Joe Flannery-Sutherland</h3></div>
-  </a>
-  <a href="../../about/people/will-gearty.html" class="person-card">
-    <img src="../../_img/profiles/Will.jpeg" class="person-avatar" alt="Will Gearty">
-    <div class="person-info"><h3>Will Gearty</h3></div>
-  </a>
-  <a href="../../about/people/cecily-nicholl.html" class="person-card">
-    <img src="../../_img/profiles/Cecily.png" class="person-avatar" alt="Cecily Nicholl">
-    <div class="person-info"><h3>Cecily Nicholl</h3></div>
-  </a>
-  <a href="../../about/people/pedro-godoy.html" class="person-card">
-    <img src="../../_img/profiles/Pedro.jpeg" class="person-avatar" alt="Pedro Godoy">
-    <div class="person-info"><h3>Pedro Godoy</h3></div>
-  </a>
-  <a href="../../about/people/miranta-kouvari.html" class="person-card">
-    <img src="../../_img/profiles/Miranta.jpeg" class="person-avatar" alt="Miranta Kouvari">
-    <div class="person-info"><h3>Miranta Kouvari</h3></div>
-  </a>
-  <a href="../../about/people/sofia-galvan.html" class="person-card">
-    <img src="../../_img/profiles/Sofia.jpeg" class="person-avatar" alt="Sofía Galván">
-    <div class="person-info"><h3>Sofía Galván</h3></div>
-  </a>
-  <a href="../../about/people/christopher-dean.html" class="person-card">
-    <img src="../../_img/profiles/Chris.jpeg" class="person-avatar" alt="Christopher Dean">
-    <div class="person-info"><h3>Christopher Dean</h3></div>
-  </a>
+<div class="person-card">
+<img src="../../_img/profiles/Etienne.png" class="person-avatar" alt="Etienne Bacher">
+<div class="person-info">
+<h3>
+Etienne Bacher
+</h3>
+<p class="person-affiliation">
+University College London
+</p>
+<div class="person-icons">
+<a href="mailto:etienne.bacher@protonmail.com" title="Email" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-envelope"></i></a><a href="https://etiennebacher.com" title="Website" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-globe"></i></a><a href="https://bsky.app/profile/etiennebacher" title="Bluesky" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-bluesky"></i></a><a href="https://github.com/etiennebacher" title="GitHub" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-github"></i></a>
+</div>
+</div>
+</div>
+<div class="person-card">
+<img src="../../_img/profiles/Cecily.png" class="person-avatar" alt="Cecily Nicholl">
+<div class="person-info">
+<h3>
+Cecily Nicholl
+</h3>
+<p class="person-affiliation">
+University College London
+</p>
+<div class="person-icons">
+<a href="mailto:cecily.nicholl@ucl.ac.uk" title="Email" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-envelope"></i></a><a href="https://bsky.app/profile/piginatutu" title="Bluesky" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-bluesky"></i></a><a href="https://github.com/CecilyNicholl" title="GitHub" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-github"></i></a><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/cecily-nicholl-phd-505094aa/" title="LinkedIn" target="_blank" rel="noopener" class="person-icon"><i class="bi bi-linkedin"></i></a>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="past-contributors" class="level2">
 <h2 data-anchor-id="past-contributors">Past contributors</h2>
-<div class="person-grid">
-  <a href="../../about/people/kilian-eichenseer.html" class="person-card">
-    <img src="../../_img/profiles/Kilian.jpeg" class="person-avatar" alt="Kilian Eichenseer">
-    <div class="person-info"><h3>Kilian Eichenseer</h3></div>
-  </a>
-  <a href="../../about/people/erin-dillon.html" class="person-card">
-    <img src="../../_img/profiles/Erin.png" class="person-avatar" alt="Erin Dillon">
-    <div class="person-info"><h3>Erin Dillon</h3></div>
-  </a>
-  <a href="../../about/people/bruna-farina.html" class="person-card">
-    <img src="../../_img/profiles/Bruna.jpeg" class="person-avatar" alt="Bruna Farina">
-    <div class="person-info"><h3>Bruna Farina</h3></div>
-  </a>
-  <a href="../../about/people/lucas-buffan.html" class="person-card">
-    <img src="../../_img/profiles/Lucas.jpeg" class="person-avatar" alt="Lucas Buffan">
-    <div class="person-info"><h3>Lucas Buffan</h3></div>
-  </a>
-  <a href="../../about/people/alessandro-chiarenza.html" class="person-card">
-    <img src="../../_img/profiles/Alessandro.jpg" class="person-avatar" alt="Alessandro Chiarenza">
-    <div class="person-info"><h3>Alessandro Chiarenza</h3></div>
-  </a>
-</div>
+<p><strong>TO CHECK AND TO COMPLETE</strong></p>
+<ul>
+<li>Lucas Buffan</li>
+<li>Kilian Eichenseer</li>
+<li>Bruna Farina</li>
+<li>Sofía Galván</li>
+</ul>
 
 
 </section>
@@ -713,7 +682,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright 2026, Palaeoverse ·&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a></p>
+<p>Copyright 2026, Palaeoverse ·&nbsp; <a href="mailto:LewisA.Jones@outlook.com">Contact us</a> ·&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

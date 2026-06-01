@@ -27,7 +27,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -44,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2c2fe380ac7a2328c4f64fdb1f27e0c1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7bee9b5a9c4f59ab29bb7b92cb5d5540.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-0de8c814cddc11077f314d7e49e8cedd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-7bee9b5a9c4f59ab29bb7b92cb5d5540.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d4a2afca93bd05307cfab9ecab66d35c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c0de22692aea7fb7f1e6c14c2f1587be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d4a2afca93bd05307cfab9ecab66d35c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:locale" content="en_GB">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -108,10 +107,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../about/people">
  <span class="dropdown-text">People</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../about/governance">
- <span class="dropdown-text">Governance</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../about/code-of-conduct">
@@ -141,10 +136,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Our packages</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../cheatsheets">
- <span class="dropdown-text">Cheat sheets</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../contributing">
  <span class="dropdown-text">Contributing</span></a>
   </li>  
@@ -161,24 +152,30 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://dashboard.palaeoverse.org/" target="_blank"><i class="bi bi-box-arrow-up-right" role="img">
-</i> 
- <span class="dropdown-text">Dashboard</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../external-resources">
  <span class="dropdown-text">External resources</span></a>
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../events"> 
-<span class="menu-text">Events</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Events</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
+        <li>
+    <a class="dropdown-item" href="../events/all-events">
+ <span class="dropdown-text">All events</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../blog"> 
-<span class="menu-text">Blog</span></a>
+        <li>
+    <a class="dropdown-item" href="../events/lecture-series">
+ <span class="dropdown-text">Lecture series</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../events/workshops">
+ <span class="dropdown-text">Workshops</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/palaeoverse" target="_blank"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -215,9 +212,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -247,8 +242,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="palaeoverse">palaeoverse</h3>
 <p><span class="package-subtitle">Prepare and Explore Data for Palaeobiological Analyses</span></p>
 <div class="package-actions">
-<p><a href="https://palaeoverse.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a> <span><i class="bi bi-download"></i>
+<p>
+18k+
+</p>
+<p></p>
+</span></div>
+<br>
+<div style="width: 100%; text-align: center;">
+<a href="https://doi.org/10.1111/2041-210X.14099">DOI: 10.1111/2041-210X.14099</a>
 </div>
 </section>
 </div>
@@ -258,8 +260,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="rmacrostrat">rmacrostrat</h3>
 <p><span class="package-subtitle">Fetch Geologic Data from the ‘Macrostrat’ Platform</span></p>
 <div class="package-actions">
-<p><a href="https://rmacrostrat.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a> <span><i class="bi bi-download"></i>
+<p>
+6k+
+</p>
+<p></p>
+</span></div>
+<br>
+<div style="width: 100%; text-align: center;">
+<a href="https://doi.org/10.1130/GES02815.1">DOI: 10.1130/GES02815.1</a>
 </div>
 </section>
 </div>
@@ -269,8 +278,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="rphylopic">rphylopic</h3>
 <p><span class="package-subtitle">Get Silhouettes of Organisms from PhyloPic</span></p>
 <div class="package-actions">
-<p><a href="https://rphylopic.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a> <span><i class="bi bi-download"></i>
+<p>
+50k+
+</p>
+<p></p>
+</span></div>
+<br>
+<div style="width: 100%; text-align: center;">
+<a href="https://doi.org/10.1111/2041-210X.14221">DOI: 10.1111/2041-210X.14221</a>
 </div>
 </section>
 </div>
@@ -280,8 +296,15 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="sepkoski">sepkoski</h3>
 <p><span class="package-subtitle">Sepkoski’s Fossil Marine Animal Genera Compendium</span></p>
 <div class="package-actions">
-<p><a href="https://sepkoski.palaeoverse.org/" class="package-btn" target="_blank">Website</a></p>
-<p><span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a></p>
+<span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i><span class="star-count">–</span></span> <a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a> <span><i class="bi bi-download"></i>
+<p>
+8k+
+</p>
+<p></p>
+</span></div>
+<br>
+<div style="width: 100%; text-align: center;">
+<a href="https://doi.org/10.5281/zenodo.7342194">DOI: 10.5281/zenodo.7342194</a>
 </div>
 </section>
 </div>
@@ -703,7 +726,7 @@ document.querySelectorAll('.package-stars').forEach(el => {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright 2026, Palaeoverse ·&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a></p>
+<p>Copyright 2026, Palaeoverse ·&nbsp; <a href="mailto:LewisA.Jones@outlook.com">Contact us</a> ·&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
