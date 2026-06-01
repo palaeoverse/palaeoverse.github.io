@@ -34,8 +34,8 @@ website:
         menu:
           - href: about/people
             text: People
-          - href: about/governance
-            text: Governance
+          # - href: about/governance
+          #   text: Governance
           - href: about/code-of-conduct
             text: Code of Conduct
           - href: about/ai-policy
@@ -66,8 +66,8 @@ website:
             text: External resources
       - href: events
         text: Events
-      - href: blog
-        text: Blog
+      # - href: blog
+      #   text: Blog
       - icon: github
         href: https://github.com/palaeoverse
         aria-label: GitHub
