@@ -13,6 +13,7 @@ engine: knitr
   <a href="zulip" class="landing-page-btn" target="_blank">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a>
   <a href="our-packages" class="landing-page-btn">Check our packages</a>
   <a href="events" class="landing-page-btn">See our next events</a>
+  <a href="lecture-series" class="landing-page-btn">Attend our lecture series</a>
 </div>
 ```
 
