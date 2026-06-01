@@ -1,80 +1,124 @@
 ---
 title: "People"
 toc: false
+execute:
+  echo: false
+  message: false
+  warning: false
 ---
 
-**NOTE FOR DEV:** the assignment between active and inactive is random, it's just to see how it would look like.
+## Core team
 
-## Active contributors
+```{r}
+#| output: asis
+library(googlesheets4)
 
-```{=html}
-<div class="person-grid">
-  <a href="lewis-jones.qmd" class="person-card">
-    <img src="../../_img/profiles/Lewis.JPG" class="person-avatar" alt="Lewis Jones">
-    <div class="person-info"><h3>Lewis Jones</h3></div>
-  </a>
-  <a href="bethany-allen.qmd" class="person-card">
-    <img src="../../_img/profiles/Bethany.jpeg" class="person-avatar" alt="Bethany Allen">
-    <div class="person-info"><h3>Bethany Allen</h3></div>
-  </a>
-  <a href="harriet-drage.qmd" class="person-card">
-    <img src="../../_img/profiles/Harriet.jpg" class="person-avatar" alt="Harriet Drage">
-    <div class="person-info"><h3>Harriet Drage</h3></div>
-  </a>
-  <a href="joe-flannery-sutherland.qmd" class="person-card">
-    <img src="../../_img/profiles/Joe.jpg" class="person-avatar" alt="Joe Flannery-Sutherland">
-    <div class="person-info"><h3>Joe Flannery-Sutherland</h3></div>
-  </a>
-  <a href="will-gearty.qmd" class="person-card">
-    <img src="../../_img/profiles/Will.jpeg" class="person-avatar" alt="Will Gearty">
-    <div class="person-info"><h3>Will Gearty</h3></div>
-  </a>
-  <a href="cecily-nicholl.qmd" class="person-card">
-    <img src="../../_img/profiles/Cecily.png" class="person-avatar" alt="Cecily Nicholl">
-    <div class="person-info"><h3>Cecily Nicholl</h3></div>
-  </a>
-  <a href="pedro-godoy.qmd" class="person-card">
-    <img src="../../_img/profiles/Pedro.jpeg" class="person-avatar" alt="Pedro Godoy">
-    <div class="person-info"><h3>Pedro Godoy</h3></div>
-  </a>
-  <a href="miranta-kouvari.qmd" class="person-card">
-    <img src="../../_img/profiles/Miranta.jpeg" class="person-avatar" alt="Miranta Kouvari">
-    <div class="person-info"><h3>Miranta Kouvari</h3></div>
-  </a>
-  <a href="sofia-galvan.qmd" class="person-card">
-    <img src="../../_img/profiles/Sofia.jpeg" class="person-avatar" alt="Sofía Galván">
-    <div class="person-info"><h3>Sofía Galván</h3></div>
-  </a>
-  <a href="christopher-dean.qmd" class="person-card">
-    <img src="../../_img/profiles/Chris.jpeg" class="person-avatar" alt="Christopher Dean">
-    <div class="person-info"><h3>Christopher Dean</h3></div>
-  </a>
-</div>
+gs4_deauth()
+
+people <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/154vEZLxSaBz1Vc6_8za9k0ymMbjI3GKMWypRVown7Lc/edit?gid=0#gid=0",
+) |>
+  sort_by(~last_name) |>
+  transform(
+    full_name = paste(first_name, last_name)
+  )
+
+
+make_icon <- function(href, icon_class, label) {
+  sprintf(
+    '<a href="%s" title="%s" target="_blank" rel="noopener" class="person-icon"><i class="bi %s"></i></a>',
+    href,
+    label,
+    icon_class
+  )
+}
+
+make_card <- function(row) {
+  icons <- character(0)
+
+  if (!is.na(row$email_address) && nzchar(row$email_address)) {
+    icons <- c(
+      icons,
+      make_icon(paste0("mailto:", row$email_address), "bi-envelope", "Email")
+    )
+  }
+  if (!is.na(row$personal_website) && nzchar(row$personal_website)) {
+    icons <- c(icons, make_icon(row$personal_website, "bi-globe", "Website"))
+  }
+  if (!is.na(row$bluesky_username) && nzchar(row$bluesky_username)) {
+    icons <- c(
+      icons,
+      make_icon(
+        paste0("https://bsky.app/profile/", row$bluesky_username),
+        "bi-bluesky",
+        "Bluesky"
+      )
+    )
+  }
+  if (!is.na(row$github_username) && nzchar(row$github_username)) {
+    icons <- c(
+      icons,
+      make_icon(
+        paste0("https://github.com/", row$github_username),
+        "bi-github",
+        "GitHub"
+      )
+    )
+  }
+  if (!is.na(row$linkedin_username) && nzchar(row$linkedin_username)) {
+    icons <- c(
+      icons,
+      make_icon(
+        paste0("https://www.linkedin.com/in/", row$linkedin_username),
+        "bi-linkedin",
+        "LinkedIn"
+      )
+    )
+  }
+
+  icons_html <- if (length(icons) > 0) {
+    paste0('<div class="person-icons">', paste(icons, collapse = ""), "</div>")
+  } else {
+    ""
+  }
+
+  affiliation_html <- if (!is.na(row$affiliation) && nzchar(row$affiliation)) {
+    paste0('<p class="person-affiliation">', row$affiliation, "</p>")
+  } else {
+    ""
+  }
+
+  paste0(
+    '<div class="person-card">',
+    '<img src="../../_img/profiles/',
+    row$first_name,
+    '.png" class="person-avatar" alt="',
+    row$full_name,
+    '">',
+    '<div class="person-info">',
+    '<h3>',
+    row$full_name,
+    "</h3>",
+    affiliation_html,
+    icons_html,
+    "</div>",
+    "</div>"
+  )
+}
+
+cards <- vapply(
+  seq_len(nrow(people)),
+  function(i) make_card(people[i, ]),
+  character(1)
+)
+cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 ```
 
 ## Past contributors
 
-```{=html}
-<div class="person-grid">
-  <a href="kilian-eichenseer.qmd" class="person-card">
-    <img src="../../_img/profiles/Kilian.jpeg" class="person-avatar" alt="Kilian Eichenseer">
-    <div class="person-info"><h3>Kilian Eichenseer</h3></div>
-  </a>
-  <a href="erin-dillon.qmd" class="person-card">
-    <img src="../../_img/profiles/Erin.png" class="person-avatar" alt="Erin Dillon">
-    <div class="person-info"><h3>Erin Dillon</h3></div>
-  </a>
-  <a href="bruna-farina.qmd" class="person-card">
-    <img src="../../_img/profiles/Bruna.jpeg" class="person-avatar" alt="Bruna Farina">
-    <div class="person-info"><h3>Bruna Farina</h3></div>
-  </a>
-  <a href="lucas-buffan.qmd" class="person-card">
-    <img src="../../_img/profiles/Lucas.jpeg" class="person-avatar" alt="Lucas Buffan">
-    <div class="person-info"><h3>Lucas Buffan</h3></div>
-  </a>
-  <a href="alessandro-chiarenza.qmd" class="person-card">
-    <img src="../../_img/profiles/Alessandro.jpg" class="person-avatar" alt="Alessandro Chiarenza">
-    <div class="person-info"><h3>Alessandro Chiarenza</h3></div>
-  </a>
-</div>
-```
+**TO CHECK AND TO COMPLETE**
+
+* Lucas Buffan
+* Kilian Eichenseer
+* Bruna Farina
+* Sofía Galván
