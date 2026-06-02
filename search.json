@@ -60,7 +60,7 @@
     "href": "external-resources/index.html",
     "title": "External resources",
     "section": "",
-    "text": "CRAN Task View for Paleontology\n    A curated list of R packages relevant to palaeontology, maintained on CRAN. A good entry point to discover the wider R ecosystem for deep-time analyses.\n    Visit \n  \n  \n    External resources\n    A collection of relevant palaeobiological resources created by Christopher Dean and Erin Dillon.\n    Visit \n  \n  \n    Lecture series\n    A collection of online monthly presentations dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work.\n    Visit"
+    "text": "This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.\nIf you notice any issues with this page or wish to add a resource, please contact Christopher Dean or Erin Dillon."
   },
   {
     "objectID": "zulip/index.html",
