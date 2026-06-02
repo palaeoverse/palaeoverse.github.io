@@ -91,11 +91,16 @@ make_card <- function(row) {
     ""
   }
 
+  path_to_picture <- paste0("../../_img/profiles/", row$first_name, ".png")
+  if (!file.exists(path_to_picture)) {
+    path_to_picture <- "../../_img/profiles/default.png"
+  }
+
   paste0(
     '<div class="person-card">',
-    '<img src="../../_img/profiles/',
-    row$first_name,
-    '.png" class="person-avatar" alt="',
+    '<img src="',
+    path_to_picture,
+    '" class="person-avatar" alt="',
     row$full_name,
     '">',
     '<div class="person-info">',
