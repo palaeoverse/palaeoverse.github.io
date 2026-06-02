@@ -164,7 +164,7 @@
 }
 
 .package-card .package-actions,
-.package-card > div[style] {
+.package-card>div[style] {
   position: relative;
   z-index: 1;
 }
@@ -398,6 +398,13 @@
   .resource-grid {
     grid-template-columns: 1fr;
   }
+}
+
+// Quarto sets overflow-x: auto on .cell-output-display; suppress it 
+// in the grid with event cards to avoid horizontal scrolling. 
+.cell-output-display:has(.event-grid),
+.cell-output-display:has(.event-filter-bar) {
+  overflow-x: visible;
 }
 
 .event-grid {
