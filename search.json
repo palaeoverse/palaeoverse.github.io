@@ -67,28 +67,49 @@
     "href": "zulip/index.html",
     "title": "Zulip",
     "section": "",
-    "text": "Hello, this is how to use Zulip."
+    "text": "[TO UPDATE]"
   },
   {
-    "objectID": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
-    "href": "zulip/index.html#the-standard-lorem-ipsum-passage-used-since-the-1500s",
+    "objectID": "zulip/index.html#introduction",
+    "href": "zulip/index.html#introduction",
     "title": "Zulip",
-    "section": "The standard Lorem Ipsum passage, used since the 1500s",
-    "text": "The standard Lorem Ipsum passage, used since the 1500s\n“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”"
+    "section": "Introduction",
+    "text": "Introduction\nZulip is an organized, asynchronous team chat app (mobile and desktop) for distributed teams of all sizes. The application has many useful features that allow for the creation of easy-to-follow, well-organised conversations that will not disappear, and can be viewed/interacted with at any time by users around the world."
   },
   {
-    "objectID": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
-    "href": "zulip/index.html#section-1.10.32-of-de-finibus-bonorum-et-malorum-written-by-cicero-in-45-bc",
+    "objectID": "zulip/index.html#zulip-structure-interaction",
+    "href": "zulip/index.html#zulip-structure-interaction",
     "title": "Zulip",
-    "section": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC",
-    "text": "Section 1.10.32 of “de Finibus Bonorum et Malorum”, written by Cicero in 45 BC\n“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”"
+    "section": "Zulip Structure & Interaction",
+    "text": "Zulip Structure & Interaction\nZulip organises conversations into channels (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:\n\nEvents\nJobs\nPublications\nFunding\nResources\nHelp\nPalaeoverse Announcements\n\nAs a guest user, you will be able to post in the first six of these, and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.\nWithin each channel, conversations are organised into topics. This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows:\n\nChoose a relevant channel.\nClick the “start a new topic” button (square with a plus symbol inside) located next to the channel name.\nEnter the topic name (see below on how this should be formatted).\nCompose your message in the text box. If you would like to, you can preview your message before it is sent.\nClick the “send” button (arrow shaped).\n\nOnce a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message #Channel Name &gt; Topic Name (Fig. X). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised!"
   },
   {
-    "objectID": "zulip/index.html#translation-by-h.-rackham",
-    "href": "zulip/index.html#translation-by-h.-rackham",
+    "objectID": "zulip/index.html#topic-templates",
+    "href": "zulip/index.html#topic-templates",
     "title": "Zulip",
-    "section": "1914 translation by H. Rackham",
-    "text": "1914 translation by H. Rackham\n“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”"
+    "section": "Topic templates",
+    "text": "Topic templates\nTo keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. Topics within each channel should broadly be formatted as such:\n\nConferences & Workshops\nThe Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as relevant topics such as ecology and conservation science.\nTopics posted within the Conferences & Workshop channel should aim to take the full name of the conference or workshop being advertised (Fig. X).\nThe initial post within the topic thread should take the following format:\nConference or workshop name (in bold)\nDates:\nLocation:\nAdditional Details:\nLink to the conference web page:\nAll other information (e.g. registration reminders, circular updates) and discussion relating to a specific conference or workshop should be posted below the relevant topic.\n\n\nPublications\nRelevant publications on the themes of phylogenetics, palaeobiogeography, palaeoecology, palaeoclimate, diversity dynamics, geometric morphometrics, statistical analyses, conservation, open science, etc., should be posted here.\nTopics within the Publications channel should take the full title of the paper, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit).\nThe initial post within the topic should aim to take the following format:\nAPA-format citation (in bold):\nDOI link:\nAbstract/Additional Details:\nAll discussion relating to the research paper should be posted below the relevant topic.\n\n\nFunding\nThe Palaeoverse Zulip workspace welcomes all relevant funding advertisements. Grant opportunities are encouraged for all career stages, and can target both academic and non-academic audiences.\nTopics within the Funding channel should aim to take the grant name and funding body being advertised.\nThe initial post within the topic should take the following format:\nGrant title (in bold)\nAwarding body:\nClosing Date:\nAdditional Details:\nLink to application page\nAny other information relating to the funding opportunity should be posted below the relevant topic.\n\n\nResources\nThe Resources channel is broad in its scope. Posts are welcomed on topics such as websites, books, talks, and course materials. As the breadth of subjects posted here cover a wider range, no specific post template is provided; however, the topic title should remain short and descriptive.\nAll discussion relating to the advertised resource should be posted in the relevant topic thread.\n\n\nGeneral Help\nThe General Help channel can be used for questions relating to the topics of palaeontology, ecology, open science, conservation science, etc. As the breadth of subjects posted here will cover quite a wide range, no template is provided; however, the topic title should remain short and descriptive.\nAll responses to questions should be placed in the relevant topic thread.\n\n\nPalaeoverse Announcements\nPosts within the Palaeoverse Announcements channel will be used for announcements relating to the workspace, e.g. changes in operation, code of conduct, and wider user messages. These messages will only be permitted from members and administrators; however, as a user you will be able to interact with these."
+  },
+  {
+    "objectID": "zulip/index.html#reporting-misconduct",
+    "href": "zulip/index.html#reporting-misconduct",
+    "title": "Zulip",
+    "section": "Reporting Misconduct",
+    "text": "Reporting Misconduct\nWhen using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows:\n\nHover over the problematic message to reveal three icons on the right.\nSelect “report message”.\nFill out the requested information. Moderators will see the message you’re reporting when they review your report.\nClick “Submit” to send."
+  },
+  {
+    "objectID": "zulip/index.html#creditattribution-for-shared-work",
+    "href": "zulip/index.html#creditattribution-for-shared-work",
+    "title": "Zulip",
+    "section": "Credit/Attribution for Shared Work",
+    "text": "Credit/Attribution for Shared Work\n\nPublished work\nWhen sharing work (e.g. published papers, artwork) the appropriate credit should always be provided in the same post if it is not immediately obvious who the work can be attributed to.\nExample 1: a post with a link to a paper does not need to be accompanied by any additional text as all accreditations (e.g. authors and publisher) are made clear within the link.\nExample 2: a post comprising a single illustration file should be accompanied by additional text to provide accreditation.\n\n\nUnpublished work\nUnpublished data should not be posted unless there is explicit approval from its creator/owner. It is important to remember that all posts in the public channels can be viewed by anybody with access to the internet."
+  },
+  {
+    "objectID": "zulip/index.html#tips-and-tricks-for-zulip",
+    "href": "zulip/index.html#tips-and-tricks-for-zulip",
+    "title": "Zulip",
+    "section": "Tips and Tricks for Zulip",
+    "text": "Tips and Tricks for Zulip\nGlobal time zones: Zulip features a very useful time-stamping tool which automatically converts the displayed time to the local time zone of whoever is reading it. To use this:\n\nOpen the compose box for a message.\n\nClick the “add global time” clock icon beneath the box.\n\nSelect your intended Universal Time using the date and time picker.\n\nClick Confirm to insert the time code into your message."
   },
   {
     "objectID": "about/governance/index.html",
@@ -165,14 +186,14 @@
     "href": "about/people/index.html",
     "title": "People",
     "section": "",
-    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
   },
   {
     "objectID": "about/people/index.html#core-team",
     "href": "about/people/index.html#core-team",
     "title": "People",
     "section": "",
-    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
   },
   {
     "objectID": "about/people/index.html#past-contributors",
