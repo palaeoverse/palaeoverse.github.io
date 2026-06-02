@@ -49,7 +49,11 @@ make_card <- function(row) {
     icons <- c(
       icons,
       make_icon(
-        paste0("https://bsky.app/profile/", row$bluesky_username),
+        paste0(
+          "https://bsky.app/profile/",
+          row$bluesky_username,
+          ".bsky.social"
+        ),
         "bi-bluesky",
         "Bluesky"
       )
@@ -66,13 +70,12 @@ make_card <- function(row) {
     )
   }
   if (!is.na(row$linkedin_username) && nzchar(row$linkedin_username)) {
+    if (!startsWith(row$linkedin_username, "http")) {
+      row$linkedin_username <- paste0("https://", row$linkedin_username)
+    }
     icons <- c(
       icons,
-      make_icon(
-        paste0("https://www.linkedin.com/in/", row$linkedin_username),
-        "bi-linkedin",
-        "LinkedIn"
-      )
+      make_icon(row$linkedin_username, "bi-linkedin", "LinkedIn")
     )
   }
 
