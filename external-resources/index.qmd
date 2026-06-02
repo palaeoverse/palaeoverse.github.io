@@ -14,6 +14,8 @@ If you notice any issues with this page or wish to add a resource, please contac
 library(googlesheets4)
 library(reactable)
 
+gs4_deauth()
+
 read_sheet(
   "https://docs.google.com/spreadsheets/d/1w0K1gWOBQjMH6q5pYGkY7FNFyBjNt42Pbv9N2JFbquc/edit?gid=0#gid=0"
 ) |>
