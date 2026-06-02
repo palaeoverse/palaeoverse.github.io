@@ -10,26 +10,74 @@ This external resource table was created by Christopher Dean and Erin Dillon to 
 
 If you notice any issues with this page or wish to add a resource, please contact [Christopher Dean](christopherdaviddean@gmail.com) or [Erin Dillon](emdillon23@gmail.com).
 
+```{css}
+.rt-td-inner > a {
+  color: inherit !important;
+}
+```
+
 ```{r}
+library(brand.yml)
 library(googlesheets4)
 library(reactable)
 
 gs4_deauth()
 
-read_sheet(
+brand <- read_brand_yml()
+
+dat <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1w0K1gWOBQjMH6q5pYGkY7FNFyBjNt42Pbv9N2JFbquc/edit?gid=0#gid=0"
 ) |>
-  reactable(
-    columns = list(
-      `Link` = colDef(cell = function(value) {
-        htmltools::tags$a(
-          href = value,
-          target = "_blank",
-          value
-        )
-      })
-    ),
-    filterable = TRUE,
-    searchable = TRUE
-  )
+  as.data.frame()
+
+reactable(
+  dat,
+  columns = list(
+    `Link` = colDef(cell = function(value) {
+      htmltools::tags$a(
+        href = value,
+        target = "_blank",
+        value
+      )
+    })
+  ),
+  rowStyle = function(index) {
+    switch(
+      dat[index, "Category"],
+      "Occurrence" = list(
+        background = brand$color$palette$light_blue
+      ),
+      "3D Data" = list(
+        background = brand$color$palette$mid_blue
+      ),
+      "Traits" = list(
+        background = brand$color$palette$beige
+      ),
+      "Covariates" = list(
+        background = brand$color$palette$light_pink
+      ),
+      "Other Database Resources" = list(
+        background = brand$color$palette$mid_grey
+      ),
+      "Coding Resources" = list(
+        background = brand$color$palette$light_green
+      ),
+      "Data Visualization" = list(
+        background = brand$color$palette$dark_green,
+        color = "white"
+      ),
+      "Associations and Networks" = list(
+        background = brand$color$palette$dark_peach,
+        color = "white"
+      ),
+      "E-Books" = list(
+        background = brand$color$palette$dark_orange,
+        color = "white"
+      ),
+      "unreachable"
+    )
+  },
+  filterable = TRUE,
+  searchable = TRUE
+)
 ```
