@@ -60,13 +60,12 @@ lectures <- lectures |>
       !is.na(Affiliation),
       paste0(Name, " · ", Affiliation),
       Name
-    ),
-    Link = ""
+    )
   ) |>
   mutate(
     Location = paste0(`Time (UTC)`, " <br> ", Location)
   ) |>
-  select(Post, Date, Title, Location, Link)
+  select(Post, Date, Title, Location, Link = `Youtube link`)
 
 events <- bind_rows(events, lectures)
 
@@ -114,15 +113,24 @@ render_cards <- function(df) {
     filter_key <- to_filter_key(row$Post)
     date_str <- format(row$Date, "%B %d, %Y")
     has_link <- !is.na(row$Link) && nzchar(row$Link)
+    youtube_badge <- if (row$Post == "Lecture Series" && has_link) {
+      sprintf(
+        '<p class="event-youtube"><i class="bi bi-youtube"></i>&nbsp;<a href="%s" target="_blank">Watch on YouTube</a></p>',
+        row$Link
+      )
+    } else {
+      ""
+    }
     card_div <- sprintf(
-      '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s · %s</p></div>',
+      '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s · %s</p>%s</div>',
       css,
       row$Post,
       row$Title,
       date_str,
-      row$Location
+      row$Location,
+      youtube_badge
     )
-    if (has_link) {
+    if (has_link && row$Post != "Lecture Series") {
       item <- sprintf(
         '<a href="%s" target="_blank" class="event-link" data-type="%s">%s</a>',
         row$Link,
