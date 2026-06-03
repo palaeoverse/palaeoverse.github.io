@@ -273,7 +273,6 @@
   object-fit: contain;
   margin: 0 auto;
   display: block;
-  border: 1px solid $brand-mid-grey;
   border-radius: 4px;
 }
 
@@ -295,7 +294,6 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid $brand-mid-grey;
   border-radius: 8px;
   background: $body-bg;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -367,7 +365,6 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border: 1px solid $brand-mid-grey;
   border-radius: 8px;
   background: $body-bg;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -426,7 +423,6 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border: 1px solid $brand-mid-grey;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -460,37 +456,53 @@
 }
 
 .event-workshop {
-  background: $primary;
+  background: mix($brand-dark-blue, black, 60%);
 
   .event-tag {
-    background: $brand-dark-blue;
-    color: $brand-black;
+    background: mix($brand-dark-blue, black, 75%);
+    color: $brand-white;
+  }
+
+  * {
+    color: $body-bg;
   }
 }
 
 .event-hackathon {
-  background: $brand-light-beige;
+  background: mix($brand-dark-peach, black, 60%);
 
   .event-tag {
-    background: $brand-dark-peach;
+    background: mix($brand-dark-peach, white, 90%);
+    color: $brand-white;
+  }
+
+  * {
     color: $body-bg;
   }
 }
 
 .event-lecture {
-  background: mix($body-bg, $brand-light-green, 70%);
+  background: $secondary;
 
   .event-tag {
-    background: $secondary;
+    background: $brand-light-green;
+    color: $brand-black;
+  }
+
+  * {
     color: $body-bg;
   }
 }
 
 .event-conference {
-  background: $brand-light-pink;
+  background: mix($brand-dark-pink, black, 70%);
 
   .event-tag {
-    background: $brand-brown;
+    background: $brand-dark-pink;
+    color: $brand-black;
+  }
+
+  * {
     color: $body-bg;
   }
 }
@@ -526,7 +538,6 @@ a.event-link .event-card {
 .event-filter-btn {
   padding: 0.35rem 1rem;
   border-radius: 999px;
-  border: 2px solid $brand-mid-grey;
   background: transparent;
   color: $body-color;
   font-size: 0.85rem;
@@ -577,7 +588,6 @@ a.event-link .event-card {
   gap: 0.4rem;
   padding: 0.35rem 1rem;
   border-radius: 999px;
-  border: 2px solid $brand-mid-grey;
   background: transparent;
   color: $body-color;
   font-size: 0.85rem;
@@ -617,4 +627,8 @@ a.event-link .event-card {
   gap: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid $secondary;
 }
