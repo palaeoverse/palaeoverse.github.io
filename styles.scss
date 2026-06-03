@@ -124,11 +124,11 @@
 .package-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid $brand-mid-grey;
+  min-height: 320px;
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  background: $body-bg;
+  background: #aad4d6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
   position: relative;
@@ -138,8 +138,15 @@
   will-change: transform;
 }
 
+.package-card>section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .package-card .package-actions {
-  margin-top: auto;
+  margin-top: auto !important;
+  margin-bottom: 0.5rem;
 }
 
 .package-card:hover {
@@ -462,7 +469,7 @@
 }
 
 .event-hackathon {
-  background: $brand-beige;
+  background: $brand-light-beige;
 
   .event-tag {
     background: $brand-dark-peach;

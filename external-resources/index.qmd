@@ -51,7 +51,7 @@ reactable(
         background = brand$color$palette$mid_blue
       ),
       "Traits" = list(
-        background = brand$color$palette$beige
+        background = brand$color$palette$light_beige
       ),
       "Covariates" = list(
         background = brand$color$palette$light_pink
