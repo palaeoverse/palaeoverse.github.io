@@ -214,7 +214,7 @@
     "href": "events/all-events/index.html",
     "title": "All events",
     "section": "",
-    "text": "DEV NOTES: I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.\nWe organize workshops dedicated to the Palaeoverse, either along conferences or as separate events.\nSelect the type of events to display:\nConference\nHackathon\nLecture Series\nWorkshop\nSelect the view mode:"
+    "text": "DEV NOTES: I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.\nSelect the type of events to display:\nConference\nHackathon\nLecture Series\nWorkshop\nSelect the view mode:"
   },
   {
     "objectID": "events/all-events/index.html#future-events",
