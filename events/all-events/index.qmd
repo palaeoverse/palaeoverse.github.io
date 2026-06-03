@@ -58,10 +58,13 @@ lectures <- lectures |>
     Date = as.Date(Date),
     Location = if_else(
       !is.na(Affiliation),
-      paste0(Name, ", ", Affiliation),
+      paste0(Name, " · ", Affiliation),
       Name
     ),
     Link = ""
+  ) |>
+  mutate(
+    Location = paste0(`Time (UTC)`, " <br> ", Location)
   ) |>
   select(Post, Date, Title, Location, Link)
 
