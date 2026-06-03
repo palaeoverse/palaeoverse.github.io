@@ -157,8 +157,6 @@ render_cards <- function(df) {
 
 ***DEV NOTES:** I manually added cards (with wrong details) to the list so that "Future events" isn't empty.*
 
-We organize workshops dedicated to the Palaeoverse, either along conferences or as separate events.
-
 Select the type of events to display:
 ```{r}
 render_filter(events)
