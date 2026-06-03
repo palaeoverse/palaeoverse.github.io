@@ -499,6 +499,16 @@ a.event-link .event-card {
   cursor: pointer;
 }
 
+.event-youtube {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  margin-bottom: 0;
+
+  .bi-youtube {
+    font-size: 0.85em;
+  }
+}
+
 .event-filter-bar {
   display: flex;
   flex-wrap: wrap;
