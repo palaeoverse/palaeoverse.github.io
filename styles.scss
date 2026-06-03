@@ -485,8 +485,8 @@
   background: $secondary;
 
   .event-tag {
-    background: $brand-light-green;
-    color: $brand-black;
+    background: mix($brand-light-green, black, 80%);
+    color: $brand-white;
   }
 
   * {
