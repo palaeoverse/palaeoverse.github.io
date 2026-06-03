@@ -192,6 +192,7 @@ render_cards(past_events)
 library(mapgl)
 
 map_dat <- events |>
+  filter(Date >= today) |>
   filter(!is.na(long) & !is.na(lat)) |>
   sf::st_as_sf(coords = c("long", "lat"), crs = 4326) |>
   mutate(
