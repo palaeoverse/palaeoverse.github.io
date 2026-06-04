@@ -498,8 +498,8 @@
   background: mix($brand-dark-pink, black, 70%);
 
   .event-tag {
-    background: $brand-dark-pink;
-    color: $brand-black;
+    background: mix($brand-dark-pink, black, 90%);
+    color: $brand-white;
   }
 
   * {
