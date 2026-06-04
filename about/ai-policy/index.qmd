@@ -1,0 +1,25 @@
+# AI Policy
+
+[**TO UPDATE**]
+
+Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. The objective of this initiative is also to enable researchers at every career stage to learn and develop new skills. The human aspect of this project is therefore important to us. We acknowledge the potential usefulness and growing prevalence of AI, but wish to see it used only where reasonable and appropriate. 
+
+The objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from Zulip’s AI policy.
+
+## AI for communication
+
+Do not post AI-generated messages, i.e., Zulip messages, Github issues, pull requests description, and other messages must be written by humans. You can use whatever tools you like for help with spelling, grammar, or translation.
+
+If you need to quote an LLM answer in a conversation, put the answer in a quote block, to distinguish LLM output from your own thoughts.  
+
+## AI for coding
+
+You can use any tools that help you understand the codebase and write good code, including AI tools. If you used AI to generate code, you must disclose it in the PR description. Additionally, you always need to understand and explain the changes you're proposing to make, whether or not you used an LLM as part of your process to produce them. The answer to "Why is X an improvement?" should never be "I'm not sure. The AI did it.".
+
+Do not submit an AI-generated PR you haven't personally understood and tested, as this wastes maintainers' time. 
+
+Changes in documentation (e.g., documenting a new function argument, adding a vignette, editing the changelog) can be based on LLM output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. A good rule of thumb is that if you can't make yourself carefully read some LLM output that you generated, nobody else will want to read it either.
+
+## Rule violations
+
+Violating these rules may lead to message deletions or pull requests being closed, and repeated offences may lead to temporary or permanent bans.

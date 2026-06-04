@@ -124,7 +124,7 @@ cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 
 ## Past contributors
 
-**TO CHECK AND TO COMPLETE**
+[**TO CHECK AND TO COMPLETE**]
 
 * Lucas Buffan
 * Kilian Eichenseer
