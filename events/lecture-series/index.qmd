@@ -10,11 +10,11 @@ The Palaeoverse Lecture Series is a monthly online presentation dedicated to sof
 
 Important information:
 
-- See past and future lectures on our [Events page](/events/)
+- See past and future lectures on our [Events page](/events/all-events/)
 - Lectures will be held from 15:00--16:00 UTC
 - Register [here](https://bit.ly/palaeoverse-lectures) 
 - All are welcome to join and we ask that all participants abide by the [Palaeoverse Code of Conduct](/about/code-of-conduct/)
 
 ## I want to present
 
-If you want to present a topic that matches the theme of this Lecture Series, please get in touch with **[SOMEONE]**. We review talk proposals on a rolling basis **[TO CHECK]**, but note that the first available slot might be in a few months. Check the [Events page](/events/) to see the list of future lectures. 
+If you want to present a topic that matches the theme of this Lecture Series, please get in touch with **[SOMEONE]**. We review talk proposals on a rolling basis **[TO CHECK]**, but note that the first available slot might be in a few months. Check the [Events page](/events/all-events/) to see the list of future lectures. 
