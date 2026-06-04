@@ -72,8 +72,19 @@ events <- bind_rows(events, lectures)
 
 today <- Sys.Date()
 
-future_events <- events |> filter(Date >= today) |> arrange(Date)
-past_events <- events |> filter(Date < today) |> arrange(desc(Date))
+future_events <- events |>
+  filter(Date >= today) |>
+  arrange(Date) |>
+  mutate(
+    Link = if_else(
+      Post == "Lecture Series",
+      "https://ucl.zoom.us/webinar/register/WN_iUjEJ46wTaidN4gAGV-wVQ",
+      Link
+    )
+  )
+past_events <- events |>
+  filter(Date < today) |>
+  arrange(desc(Date))
 
 type_to_css <- function(type) {
   switch(
@@ -113,9 +124,18 @@ render_cards <- function(df) {
     filter_key <- to_filter_key(row$Post)
     date_str <- format(row$Date, "%B %d, %Y")
     has_link <- !is.na(row$Link) && nzchar(row$Link)
-    youtube_badge <- if (row$Post == "Lecture Series" && has_link) {
+    badge <- if (
+      row$Post == "Lecture Series" && has_link && grepl("youtube", row$Link)
+    ) {
       sprintf(
         '<p class="event-youtube"><i class="bi bi-youtube"></i>&nbsp;<a href="%s" target="_blank">Watch on YouTube</a></p>',
+        row$Link
+      )
+    } else if (
+      row$Post == "Lecture Series" && has_link && !grepl("youtube", row$Link)
+    ) {
+      sprintf(
+        '<p class="event-register"><i class="bi bi-box-arrow-up-right"></i>&nbsp;<a href="%s" target="_blank">Register</a></p>',
         row$Link
       )
     } else {
@@ -128,7 +148,7 @@ render_cards <- function(df) {
       row$Title,
       date_str,
       row$Location,
-      youtube_badge
+      badge
     )
     if (has_link && row$Post != "Lecture Series") {
       item <- sprintf(

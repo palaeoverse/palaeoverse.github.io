@@ -525,8 +525,20 @@ a.event-link .event-card {
   margin-top: auto;
   padding-top: 0.75rem;
   margin-bottom: 0;
+  text-align: center;
 
   .bi-youtube {
+    font-size: 0.85em;
+  }
+}
+
+.event-register {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  margin-bottom: 0;
+  text-align: center;
+
+  .bi-box-arrow-up-right {
     font-size: 0.85em;
   }
 }
