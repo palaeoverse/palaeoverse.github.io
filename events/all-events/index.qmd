@@ -33,14 +33,21 @@ events <- bind_rows(
     Date = as.Date("2026-11-25"),
     Title = "Palaeoverse workshop at IPC",
     Location = "Cape Town, South Africa",
-    Link = "https://google.com"
+    Link = "https://www.ipc7.site/index.html"
   ),
   tibble(
-    Post = "Hackathon",
-    Date = as.Date("2026-11-30"),
-    Title = "Hackathon for demo",
-    Location = "Somewhere",
-    Link = "https://google.com"
+    Post = "Workshop",
+    Date = as.Date("2027-01-15"),
+    Title = "Palaeoverse workshop",
+    Location = "UCL, London, United Kingdom",
+    Link = ""
+  ),
+  tibble(
+    Post = "Workshop",
+    Date = as.Date("2027-08-06"),
+    Title = "Palaeoverse workshop at CPEG",
+    Location = "UCL, London, United Kingdom",
+    Link = "https://pastglobalchanges.org/calendar/138858"
   )
 )
 
