@@ -127,6 +127,7 @@ cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 [**TO CHECK AND TO COMPLETE**]
 
 * Lucas Buffan
+* Harriet Drage
 * Kilian Eichenseer
 * Bruna Farina
 * Sofía Galván
