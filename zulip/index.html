@@ -250,6 +250,34 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>[<strong>TO UPDATE</strong>]</p>
+<p><label class="container"> <input type="checkbox" id="coc-agree"> <span class="checkmark">I agree to follow the <a href="about/code-of-conduct">Code of Conduct</a> and I have read the <a href="">User Guide</a>.</span> </label></p>
+<div class="hero-buttons">
+<p><a href="zulip" id="zulip-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a></p>
+</div>
+<style>
+.landing-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("coc-agree");
+  const button = document.getElementById("zulip-btn");
+  checkbox.addEventListener("change", function () {
+    const enabled = checkbox.checked;
+    button.classList.toggle("disabled", !enabled);
+    button.setAttribute("aria-disabled", String(!enabled));
+  });
+  // block navigation while disabled (keeps pointer events so the
+  // cursor styling applies only over the link itself)
+  button.addEventListener("click", function (e) {
+    if (button.classList.contains("disabled")) {
+      e.preventDefault();
+    }
+  });
+});
+</script>
 <section id="introduction" class="level2">
 <h2 data-anchor-id="introduction">Introduction</h2>
 <p>Zulip is an organized, asynchronous team chat app (mobile and desktop) for distributed teams of all sizes. The application has many useful features that allow for the creation of easy-to-follow, well-organised conversations that will not disappear, and can be viewed/interacted with at any time by users around the world.</p>
