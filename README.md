@@ -46,7 +46,7 @@ Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Web
 
 1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
 
-![](readme_files/triggering_deployment_1.png)
+![](readme_files/triggering_deployment_2.png)
 
 1. wait a few minutes for the website to update
 
