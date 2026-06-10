@@ -93,7 +93,7 @@ render_filter <- function(all_events) {
   categories <- sort(unique(all_events$Post))
   buttons <- sapply(categories, function(cat) {
     sprintf(
-      '<button class="event-filter-btn active" data-filter="%s" data-post="%s">%s<i class="bi bi-check"></i></button>',
+      '<button class="event-filter-btn" data-filter="%s" data-post="%s">%s<i class="bi bi-check"></i></button>',
       to_filter_key(cat),
       cat,
       cat
@@ -167,7 +167,7 @@ render_cards <- function(df) {
 
 ***DEV NOTES:** I manually added cards (with wrong details) to the list so that "Future events" isn't empty.*
 
-Select the type of events to display:
+All events are shown by default. Select one or more types to filter:
 ```{r}
 render_filter(events)
 ```
@@ -299,8 +299,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateListVisibility() {
     const active = getActiveFilters();
+    // No filter selected => show all events
+    const showAll = active.length === 0;
     document.querySelectorAll('[data-type]').forEach(el => {
-      el.style.display = active.includes(el.dataset.type) ? '' : 'none';
+      el.style.display = (showAll || active.includes(el.dataset.type)) ? '' : 'none';
     });
     document.querySelectorAll('.event-grid').forEach(grid => {
       const hasVisible = Array.from(grid.querySelectorAll('[data-type]'))
@@ -317,7 +319,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window._palaeoMap) return;
     const activeTypes = getActivePostTypes();
     if (activeTypes.length === 0) {
-      window._palaeoMap.setFilter('poi-layer', ['==', ['get', 'Post'], '']);
+      // No filter selected => show all events
+      window._palaeoMap.setFilter('poi-layer', null);
     } else {
       window._palaeoMap.setFilter('poi-layer', ['in', ['get', 'Post'], ['literal', activeTypes]]);
     }
