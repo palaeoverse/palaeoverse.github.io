@@ -1,5 +1,15 @@
 This repository contains the code to build palaeoverse.org. This document details how to contribute to this website.
 
+* [Technical requirements](#technical-requirements)
+    * [Quarto](#quarto)
+    * [R packages](#r-packages)
+* [How-to guide](#how-to-guide)
+    * [I want to modify the "Events" page](#i-want-to-modify-the-events-page)
+    * [I want to modify the "People" page](#i-want-to-modify-the-people-page)
+    * [I want to modify the Code of Conduct, AI policy, or Zulip page](#i-want-to-modify-the-code-of-conduct-ai-policy-or-zulip-page)
+    * [I want to modify the style of the website](#i-want-to-modify-the-style-of-the-website)
+    * [I want to modify another page not listed above](#i-want-to-modify-another-page-not-listed-above)
+
 ## Technical requirements
 
 This section details the tools required to build and modify the website locally.
@@ -24,11 +34,11 @@ install.packages(c(
 
 ## How-to guide
 
-### I want to add an item in the "Events" page
+### I want to modify the "Events" page
 
 
 
-### I want to add an item in the "People" page
+### I want to modify the "People" page
 
 **I want to add or modify information in the "Core team" section**
 
