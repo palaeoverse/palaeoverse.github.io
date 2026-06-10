@@ -44,7 +44,7 @@ Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Web
 
 ![](readme_files/triggering_deployment_1.png)
 
-1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
+1. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
 
 ![](readme_files/triggering_deployment_2.png)
 
@@ -61,7 +61,7 @@ The information for all team members is stored in the "Team info" Google sheet (
 
 ![](readme_files/triggering_deployment_1.png)
 
-1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
+1. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
 
 ![](readme_files/triggering_deployment_2.png)
 
