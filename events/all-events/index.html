@@ -248,13 +248,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><em><strong>DEV NOTES:</strong> I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.</em></p>
-<p>Select the type of events to display:</p>
+<p>All events are shown by default. Select one or more types to filter:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="event-filter-bar">
-<button class="event-filter-btn active" data-filter="conference" data-post="Conference">Conference<i class="bi bi-check"></i></button>
-<button class="event-filter-btn active" data-filter="lecture-series" data-post="Lecture Series">Lecture Series<i class="bi bi-check"></i></button>
-<button class="event-filter-btn active" data-filter="workshop" data-post="Workshop">Workshop<i class="bi bi-check"></i></button>
+<button class="event-filter-btn" data-filter="conference" data-post="Conference">Conference<i class="bi bi-check"></i></button>
+<button class="event-filter-btn" data-filter="lecture-series" data-post="Lecture Series">Lecture Series<i class="bi bi-check"></i></button>
+<button class="event-filter-btn" data-filter="workshop" data-post="Workshop">Workshop<i class="bi bi-check"></i></button>
 </div>
 </div>
 </div>
@@ -351,8 +351,8 @@ University of Manchester</p><p class="event-youtube"><i class="bi bi-youtube"></
 <div id="view-map" style="display:none">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-7a65e1326df0527ccd45" style="width:100%;height:500px;" class="maplibregl html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7a65e1326df0527ccd45">{"x":{"style":"https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json","center":[0,0],"zoom":0,"bearing":0,"pitch":0,"projection":"mercator","additional_params":[],"fullscreen_control":{"enabled":true,"position":"top-left"},"navigation_control":{"show_compass":true,"show_zoom":true,"visualize_pitch":false,"position":"top-right","orientation":"vertical"},"layers":[{"id":"poi-layer","type":"circle","source":{"type":"geojson","data":{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Date":"30 November 2026","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop at IPC7","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"Cape Town, South Africa","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop at IPC7<br>30 November 2026<br>Cape Town, South Africa"},"geometry":{"type":"Point","coordinates":[18.4832,-33.8751]}},{"type":"Feature","properties":{"Date":"15 January 2027","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"University College London, London, United Kingdom","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop<br>15 January 2027<br>University College London, London, United Kingdom"},"geometry":{"type":"Point","coordinates":[-0.1388,51.5254]}},{"type":"Feature","properties":{"Date":"06 August 2027","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop at CPEG","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"University College London, London, United Kingdom","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop at CPEG<br>06 August 2027<br>University College London, London, United Kingdom"},"geometry":{"type":"Point","coordinates":[-0.1388,51.5254]}}]},"generateId":true},"source_layer":null,"paint":{"circle-color":["match",["get","Post"],"Conference","#1f78b4","Workshop","#e31a1c","#cccccc"],"circle-opacity":0.8,"circle-radius":8,"circle-stroke-color":"#ffffff","circle-stroke-width":2,"circle-translate-anchor":"map"},"layout":{"visibility":"visible"},"slot":null,"minzoom":null,"maxzoom":null,"popup":null,"tooltip":"essential_info","hover_options":{"circle_radius":12,"circle_color":"#ffff99"},"before_id":null,"filter":null}]},"evals":[],"jsHooks":{"render":[{"code":"\n    function(el, x) {\n      // 'this' is the widget factory result; try getMap() then .map\n      var map = this.getMap ? this.getMap() : this.map;\n      if (!map) return;\n      // wait for the style + layers to be ready before exposing the reference\n      var store = function() { window._palaeoMap = map; };\n      if (map.isStyleLoaded()) store();\n      else map.once('load', store);\n    }\n  ","data":null}]}}</script>
+<div id="htmlwidget-5a09e74e8f8e25769896" style="width:100%;height:500px;" class="maplibregl html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5a09e74e8f8e25769896">{"x":{"style":"https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json","center":[0,0],"zoom":0,"bearing":0,"pitch":0,"projection":"mercator","additional_params":[],"fullscreen_control":{"enabled":true,"position":"top-left"},"navigation_control":{"show_compass":true,"show_zoom":true,"visualize_pitch":false,"position":"top-right","orientation":"vertical"},"layers":[{"id":"poi-layer","type":"circle","source":{"type":"geojson","data":{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Date":"30 November 2026","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop at IPC7","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"Cape Town, South Africa","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop at IPC7<br>30 November 2026<br>Cape Town, South Africa"},"geometry":{"type":"Point","coordinates":[18.4832,-33.8751]}},{"type":"Feature","properties":{"Date":"15 January 2027","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"University College London, London, United Kingdom","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop<br>15 January 2027<br>University College London, London, United Kingdom"},"geometry":{"type":"Point","coordinates":[-0.1388,51.5254]}},{"type":"Feature","properties":{"Date":"06 August 2027","Name":null,"Email":null,"Post":"Workshop","Title":"Palaeoverse workshop at CPEG","Link":null,"Institution":null,"Street":null,"City":null,"Province":null,"Country":null,"Expiry":null,"Description":null,"Location":"University College London, London, United Kingdom","essential_info":"<b>Workshop\u003c/b><br>Palaeoverse workshop at CPEG<br>06 August 2027<br>University College London, London, United Kingdom"},"geometry":{"type":"Point","coordinates":[-0.1388,51.5254]}}]},"generateId":true},"source_layer":null,"paint":{"circle-color":["match",["get","Post"],"Conference","#1f78b4","Workshop","#e31a1c","#cccccc"],"circle-opacity":0.8,"circle-radius":8,"circle-stroke-color":"#ffffff","circle-stroke-width":2,"circle-translate-anchor":"map"},"layout":{"visibility":"visible"},"slot":null,"minzoom":null,"maxzoom":null,"popup":null,"tooltip":"essential_info","hover_options":{"circle_radius":12,"circle_color":"#ffff99"},"before_id":null,"filter":null}]},"evals":[],"jsHooks":{"render":[{"code":"\n    function(el, x) {\n      // 'this' is the widget factory result; try getMap() then .map\n      var map = this.getMap ? this.getMap() : this.map;\n      if (!map) return;\n      // wait for the style + layers to be ready before exposing the reference\n      var store = function() { window._palaeoMap = map; };\n      if (map.isStyleLoaded()) store();\n      else map.once('load', store);\n    }\n  ","data":null}]}}</script>
 </div>
 </div>
 </div>
@@ -398,8 +398,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateListVisibility() {
     const active = getActiveFilters();
+    // No filter selected => show all events
+    const showAll = active.length === 0;
     document.querySelectorAll('[data-type]').forEach(el => {
-      el.style.display = active.includes(el.dataset.type) ? '' : 'none';
+      el.style.display = (showAll || active.includes(el.dataset.type)) ? '' : 'none';
     });
     document.querySelectorAll('.event-grid').forEach(grid => {
       const hasVisible = Array.from(grid.querySelectorAll('[data-type]'))
@@ -416,7 +418,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!window._palaeoMap) return;
     const activeTypes = getActivePostTypes();
     if (activeTypes.length === 0) {
-      window._palaeoMap.setFilter('poi-layer', ['==', ['get', 'Post'], '']);
+      // No filter selected => show all events
+      window._palaeoMap.setFilter('poi-layer', null);
     } else {
       window._palaeoMap.setFilter('poi-layer', ['in', ['get', 'Post'], ['literal', activeTypes]]);
     }
