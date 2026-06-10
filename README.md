@@ -36,6 +36,13 @@ install.packages(c(
 
 ### I want to modify the "Events" page
 
+Lecture series are directly pulled from the Google sheets "Palaeoverse > Lecture Series > Lecture Series", so this file needs to be kept up-to-date but there is nothing to be done specifically for the website.
+
+Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Website > Palaeoverse events". This is where you can update information on our events. Once this is done, on this repository:
+
+1. go to the "Actions" tab
+1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
+1. wait a few minutes for the website to update
 
 
 ### I want to modify the "People" page
