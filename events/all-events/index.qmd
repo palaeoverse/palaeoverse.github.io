@@ -25,31 +25,13 @@ events <- read_sheet(
     Location = paste(City, Country, sep = ", ")
   )
 
-# TODO: this should be removed, it's just for demo purposes
-events <- bind_rows(
-  events,
-  tibble(
-    Post = "Workshop",
-    Date = as.Date("2026-11-25"),
-    Title = "Palaeoverse workshop at IPC",
-    Location = "Cape Town, South Africa",
-    Link = "https://www.ipc7.site/index.html"
-  ),
-  tibble(
-    Post = "Workshop",
-    Date = as.Date("2027-01-15"),
-    Title = "Palaeoverse workshop",
-    Location = "UCL, London, United Kingdom",
-    Link = ""
-  ),
-  tibble(
-    Post = "Workshop",
-    Date = as.Date("2027-08-06"),
-    Title = "Palaeoverse workshop at CPEG",
-    Location = "UCL, London, United Kingdom",
-    Link = "https://pastglobalchanges.org/calendar/138858"
-  )
-)
+our_events <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1wczoSH6H9OYJNLDQaFZ6Vx97DywwtIavCawnW9a4eDw/edit?gid=0#gid=0"
+)|>
+  mutate(
+    Date = as.Date(date)
+  ) |> 
+  select(Post = type, Date, Title = event_name, Location = location, long, lat)
 
 lectures <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
@@ -74,7 +56,7 @@ lectures <- lectures |>
   ) |>
   select(Post, Date, Title, Location, Link = `Youtube link`)
 
-events <- bind_rows(events, lectures)
+events <- bind_rows(events, our_events, lectures)
 
 
 today <- Sys.Date()
@@ -89,6 +71,7 @@ future_events <- events |>
       Link
     )
   )
+
 past_events <- events |>
   filter(Date < today) |>
   arrange(desc(Date))
