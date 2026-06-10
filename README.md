@@ -41,7 +41,13 @@ Lecture series are directly pulled from the Google sheets "Palaeoverse > Lecture
 Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Website > Palaeoverse events". This is where you can update information on our events. Once this is done, on this repository:
 
 1. go to the "Actions" tab
+
+[](readme_files/triggering_deployment_1.png)
+
 1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
+
+[](readme_files/triggering_deployment_1.png)
+
 1. wait a few minutes for the website to update
 
 
@@ -52,7 +58,13 @@ Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Web
 The information for all team members is stored in the "Team info" Google sheet (on Google drive: Palaeoverse > Website > Team info). You can add new information or modify existing information there. Once this is done, on this repository:
 
 1. go to the "Actions" tab
+
+[](readme_files/triggering_deployment_1.png)
+
 1. on the left, you should see "Deploy to Github Pages". When you hover it, a "Play" button appears. Click on it to trigger manually.
+
+[](readme_files/triggering_deployment_2.png)
+
 1. wait a few minutes for the website to update
 
 **I want to add a new picture**
