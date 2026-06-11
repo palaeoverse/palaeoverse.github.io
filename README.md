@@ -7,8 +7,8 @@ This repository contains the code to build palaeoverse.org. This document detail
     * [I want to modify the "Events" page](#i-want-to-modify-the-events-page)
     * [I want to modify the "People" page](#i-want-to-modify-the-people-page)
     * [I want to modify the Code of Conduct, AI policy, or Zulip page](#i-want-to-modify-the-code-of-conduct-ai-policy-or-zulip-page)
-    * [I want to modify the style of the website](#i-want-to-modify-the-style-of-the-website)
     * [I want to modify another page not listed above](#i-want-to-modify-another-page-not-listed-above)
+    * [I want to modify the style of the website](#i-want-to-modify-the-style-of-the-website)
 
 ## Technical requirements
 
@@ -44,11 +44,11 @@ Our events (e.g. workshops) are pulled from the Google sheets "Palaeoverse > Web
 
 ![](readme_files/triggering_deployment_1.png)
 
-1. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
+2. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
 
 ![](readme_files/triggering_deployment_2.png)
 
-1. wait a few minutes for the website to update
+3. wait a few minutes for the website to update
 
 
 ### I want to modify the "People" page
@@ -61,11 +61,11 @@ The information for all team members is stored in the "Team info" Google sheet (
 
 ![](readme_files/triggering_deployment_1.png)
 
-1. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
+2. on the left, you should see "Deploy to Github Pages" with a "Play" button. Click on it to trigger the website deployment.
 
 ![](readme_files/triggering_deployment_2.png)
 
-1. wait a few minutes for the website to update
+3. wait a few minutes for the website to update
 
 **I want to add a new picture**
 
@@ -84,6 +84,13 @@ This list can be modified directly in the file "about > people > index.qmd". The
 These three documents are not only used on the website so they live in the [`palaeoverse/resources` repository]() so you should modify them there. The current repository will automatically trigger a website update if it detects that those files have changed in `palaeoverse/resources` (this update will take a few minutes to appear).
 
 
+### I want to modify another page not listed above
+
+If the change is simple enough, e.g. fixing typos or improving wording, you can directly edit the file from the Github interface.
+
+[ADD SCREENSHOTS]
+
+
 ### I want to modify the style of the website
 
 The style of the website is controlled by two files:
@@ -91,10 +98,3 @@ The style of the website is controlled by two files:
 - `_brand/_brand.yml`: this controls the general branding guidelines, e.g. the list of colours or fonts to be used in all Palaeoverse materials. **Do not modify this file by hand.** This file is a copy from the `brand.yml` that lives in the `palaeoverse/resources` repository. If the file changed there, run `quarto use brand palaeoverse/resources` in the current repository to update it here.
 
 - `styles.scss`: this controls the details of the website. If you want to modify it, it is recommended to build the site locally (cf. next section) so that you can see the actual changes in style before deploying the website.
-
-
-### I want to modify another page not listed above
-
-If the change is simple enough, e.g. fixing typos or improving wording, you can directly edit the file from the Github interface.
-
-[ADD SCREENSHOTS]
