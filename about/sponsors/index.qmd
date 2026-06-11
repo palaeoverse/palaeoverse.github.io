@@ -1,22 +1,5 @@
 ---
 title: "Sponsors"
-filters:
-  - timeline
 ---
 
-::: {.timeline .vertical-alt}
-::: {.event data-label="Nov. 2026"}
-`palaeoverse` 2.0.0 is released.
-:::
-::: {.event data-label="Feb. 2026"}
-Start of the Software Sustainability Institute support.
-:::
-::: {.event data-label="Jun. 2021"}
-**First Release**
-Launched version 1.0 to early users.
-:::
-::: {.event data-label="Jan. 2020"}
-**Project Started**
-Initial concept and planning phase.
-:::
-:::
+[**TO UPDATE**]
