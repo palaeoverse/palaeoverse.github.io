@@ -5,6 +5,7 @@ project:
 
 website:
   repo-url: https://github.com/palaeoverse/palaeoverse-quarto
+  repo-actions: [edit]
   # TODO: use palaeoverse.org once the transition is done. Need to use github.io
   # for now to check opengraph appearance.
   site-url: https://palaeoverse.github.io
