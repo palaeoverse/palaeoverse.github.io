@@ -35,22 +35,22 @@ color:
     dark-grey: "#575756"
     black: "#1D1D1B"
     white: "#FFFFFF"
-  background: light-blue
+  background: white
   foreground: dark-grey
   primary: light-blue
   secondary: dark-green
 
 typography:
   fonts:
-    - family: Atkinson Hyperlegible
+    - family: Lexend
       source: google
-    - family: Space Mono
+    - family: Roboto Mono
       source: google
   base:
-    family: Atkinson Hyperlegible
+    family: Lexend
     weight: 400
-  headings: Atkinson Hyperlegible
-  monospace: Space Mono
+  headings: Lexend
+  monospace: Roboto Mono
   link:
     color: dark-green
     decoration: underline

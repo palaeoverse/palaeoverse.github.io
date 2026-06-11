@@ -1,15 +1,28 @@
 // Brand palette colors are auto-exposed as $brand-{name} (e.g. $brand-dark-blue).
 // Semantic brand colors map to Bootstrap vars: $primary (light-blue), $secondary (dark-green),
-// $body-bg (white), $body-color (dark-grey).
+// $brand-light-blue, $body-color.
 
 /*-- scss:rules --*/
 
+body {
+  background-color: $brand-light-blue
+}
+
+.nav-footer {
+  background-color: $brand-light-blue
+}
+
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin: 4rem 0 1rem 0;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 840px;
+  height: auto;
 }
 
 .hero-title {
@@ -107,7 +120,7 @@
 }
 
 .navbar {
-  background: $body-bg;
+  background: $brand-light-blue;
   border-bottom: 1px solid $secondary;
   margin-bottom: 1em;
   text-transform: uppercase;
@@ -226,7 +239,7 @@
 
 .landing-page-btn:hover {
   background: $secondary;
-  color: $body-bg;
+  color: $brand-light-blue;
   text-decoration: none;
 }
 
@@ -369,7 +382,7 @@
   flex-direction: column;
   padding: 1.5rem;
   border-radius: 8px;
-  background: $body-bg;
+  background: $brand-light-blue;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
   position: relative;
@@ -574,7 +587,7 @@ a.event-link .event-card {
 .event-filter-btn.active {
   border-color: $secondary;
   background-color: $secondary;
-  color: $body-bg;
+  color: $brand-light-blue;
 }
 
 .event-filter-btn.active .bi-check {
@@ -616,7 +629,7 @@ a.event-link .event-card {
 .view-toggle-btn.active {
   border-color: $secondary;
   background-color: $secondary;
-  color: $body-bg;
+  color: $brand-light-blue;
 }
 
 .view-toggle-btn:hover:not(.active) {
