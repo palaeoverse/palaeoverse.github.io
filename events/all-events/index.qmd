@@ -19,7 +19,7 @@ gs4_deauth()
 events <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1escqpJM_Ljt5h5claM0xV5e9IEWBv6rNMIsuQsnUXYY/edit?gid=0#gid=0"
 ) |>
-  filter(Post %in% c("Conference", "Workshop")) |>
+  filter(Post %in% "Workshop") |>
   mutate(
     Date = as.Date(Date),
     Location = paste(City, Country, sep = ", ")
@@ -205,7 +205,6 @@ library(mapgl)
 map_dat <- events |>
   filter(Date >= today) |>
   filter(!is.na(long) & !is.na(lat)) |>
-  sf::st_as_sf(coords = c("long", "lat"), crs = 4326) |>
   mutate(
     Date = format(as.Date(Date), format = "%d %B %Y"),
     essential_info = paste0(
@@ -219,7 +218,15 @@ map_dat <- events |>
       "<br>",
       Location
     )
-  )
+  ) |>
+  # If two events happen in the same place, we aggregate their info so that
+  # the tooltip shows all events and not just the last one.
+  mutate(
+    essential_info = paste(essential_info, collapse = "<br><hr>"), 
+    .by = c(lat, long)
+  ) |>
+  distinct(essential_info, Post, lat, long) |> 
+  sf::st_as_sf(coords = c("long", "lat"), crs = 4326)
 
 maplibre(projection = "mercator", zoom = 0, height = "500px") |>
   add_fullscreen_control(position = "top-left") |>
