@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "our-packages/index.html",
-    "href": "our-packages/index.html",
-    "title": "Our packages",
-    "section": "",
-    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\n28   \n\n18k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14099\n\n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\n2   \n\n6k+\n\n     \n\n\n\nDOI: 10.1130/GES02815.1\n\n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\n97   \n\n51k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14221\n\n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\n2   \n\n9k+\n\n     \n\n\n\nDOI: 10.5281/zenodo.7342194"
-  },
-  {
-    "objectID": "blog/posts/post-with-code copy/index.html",
-    "href": "blog/posts/post-with-code copy/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
-  },
-  {
-    "objectID": "blog/posts/welcome copy/index.html",
-    "href": "blog/posts/welcome copy/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "",
@@ -56,60 +28,25 @@
     "text": "I want to present\nIf you want to present a topic that matches the theme of this Lecture Series, please get in touch with [SOMEONE]. We review talk proposals on a rolling basis [TO CHECK], but note that the first available slot might be in a few months. Check the Events page to see the list of future lectures."
   },
   {
-    "objectID": "external-resources/index.html",
-    "href": "external-resources/index.html",
-    "title": "External resources",
+    "objectID": "events/all-events/index.html",
+    "href": "events/all-events/index.html",
+    "title": "All events",
     "section": "",
-    "text": "This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.\nIf you notice any issues with this page or wish to add a resource, please contact Christopher Dean or Erin Dillon."
+    "text": "DEV NOTES: I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.\nAll events are shown by default. Select one or more types to filter:\nLecture Series\nWorkshop\nSelect the view mode:"
   },
   {
-    "objectID": "zulip/index.html",
-    "href": "zulip/index.html",
-    "title": "Zulip",
-    "section": "",
-    "text": "[TO UPDATE]\nI agree to follow the Code of Conduct and I have read the User Guide."
+    "objectID": "events/all-events/index.html#future-events",
+    "href": "events/all-events/index.html#future-events",
+    "title": "All events",
+    "section": "Future events",
+    "text": "Future events\n\n\n\nLecture SeriesENMs in the fossil recordJune 25, 2026 · 15:00 UTC  Cori Myers Register\nLecture SeriesBudding phylogenetic trees: inference with BEAST2 and post-processing with paleobuddyAugust 27, 2026 · 15:00 UTC  Bruno do Rosario Petrucci Register\nLecture SeriesCarboKitten.jlSeptember 24, 2026 · 15:00 UTC  Emilia Jarochowska Register\nLecture SeriesRecommender Systems modelling for abundance/density reconstructionsNovember 19, 2026 · 15:00 UTC  Abigail Parker Register\nWorkshopPalaeoverse workshop at IPC7November 30, 2026 · Cape Town, South Africa\nWorkshopPalaeoverse workshopJanuary 15, 2027 · University College London, London, United Kingdom\nWorkshopPalaeoverse workshop at CPEGAugust 06, 2027 · University College London, London, United Kingdom\n\nNo events match the selected filters."
   },
   {
-    "objectID": "zulip/index.html#introduction",
-    "href": "zulip/index.html#introduction",
-    "title": "Zulip",
-    "section": "Introduction",
-    "text": "Introduction\nZulip is an organized, asynchronous team chat app (mobile and desktop) for distributed teams of all sizes. The application has many useful features that allow for the creation of easy-to-follow, well-organised conversations that will not disappear, and can be viewed/interacted with at any time by users around the world."
-  },
-  {
-    "objectID": "zulip/index.html#zulip-structure-interaction",
-    "href": "zulip/index.html#zulip-structure-interaction",
-    "title": "Zulip",
-    "section": "Zulip Structure & Interaction",
-    "text": "Zulip Structure & Interaction\nZulip organises conversations into channels (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:\n\nEvents\nJobs\nPublications\nFunding\nResources\nHelp\nPalaeoverse Announcements\n\nAs a guest user, you will be able to post in the first six of these, and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.\nWithin each channel, conversations are organised into topics. This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows:\n\nChoose a relevant channel.\nClick the “start a new topic” button (square with a plus symbol inside) located next to the channel name.\nEnter the topic name (see below on how this should be formatted).\nCompose your message in the text box. If you would like to, you can preview your message before it is sent.\nClick the “send” button (arrow shaped).\n\nOnce a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message #Channel Name &gt; Topic Name (Fig. X). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised!"
-  },
-  {
-    "objectID": "zulip/index.html#topic-templates",
-    "href": "zulip/index.html#topic-templates",
-    "title": "Zulip",
-    "section": "Topic templates",
-    "text": "Topic templates\nTo keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. Topics within each channel should broadly be formatted as such:\n\nConferences & Workshops\nThe Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as relevant topics such as ecology and conservation science.\nTopics posted within the Conferences & Workshop channel should aim to take the full name of the conference or workshop being advertised (Fig. X).\nThe initial post within the topic thread should take the following format:\nConference or workshop name (in bold)\nDates:\nLocation:\nAdditional Details:\nLink to the conference web page:\nAll other information (e.g. registration reminders, circular updates) and discussion relating to a specific conference or workshop should be posted below the relevant topic.\n\n\nPublications\nRelevant publications on the themes of phylogenetics, palaeobiogeography, palaeoecology, palaeoclimate, diversity dynamics, geometric morphometrics, statistical analyses, conservation, open science, etc., should be posted here.\nTopics within the Publications channel should take the full title of the paper, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit).\nThe initial post within the topic should aim to take the following format:\nAPA-format citation (in bold):\nDOI link:\nAbstract/Additional Details:\nAll discussion relating to the research paper should be posted below the relevant topic.\n\n\nFunding\nThe Palaeoverse Zulip workspace welcomes all relevant funding advertisements. Grant opportunities are encouraged for all career stages, and can target both academic and non-academic audiences.\nTopics within the Funding channel should aim to take the grant name and funding body being advertised.\nThe initial post within the topic should take the following format:\nGrant title (in bold)\nAwarding body:\nClosing Date:\nAdditional Details:\nLink to application page\nAny other information relating to the funding opportunity should be posted below the relevant topic.\n\n\nResources\nThe Resources channel is broad in its scope. Posts are welcomed on topics such as websites, books, talks, and course materials. As the breadth of subjects posted here cover a wider range, no specific post template is provided; however, the topic title should remain short and descriptive.\nAll discussion relating to the advertised resource should be posted in the relevant topic thread.\n\n\nGeneral Help\nThe General Help channel can be used for questions relating to the topics of palaeontology, ecology, open science, conservation science, etc. As the breadth of subjects posted here will cover quite a wide range, no template is provided; however, the topic title should remain short and descriptive.\nAll responses to questions should be placed in the relevant topic thread.\n\n\nPalaeoverse Announcements\nPosts within the Palaeoverse Announcements channel will be used for announcements relating to the workspace, e.g. changes in operation, code of conduct, and wider user messages. These messages will only be permitted from members and administrators; however, as a user you will be able to interact with these."
-  },
-  {
-    "objectID": "zulip/index.html#reporting-misconduct",
-    "href": "zulip/index.html#reporting-misconduct",
-    "title": "Zulip",
-    "section": "Reporting Misconduct",
-    "text": "Reporting Misconduct\nWhen using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows:\n\nHover over the problematic message to reveal three icons on the right.\nSelect “report message”.\nFill out the requested information. Moderators will see the message you’re reporting when they review your report.\nClick “Submit” to send."
-  },
-  {
-    "objectID": "zulip/index.html#creditattribution-for-shared-work",
-    "href": "zulip/index.html#creditattribution-for-shared-work",
-    "title": "Zulip",
-    "section": "Credit/Attribution for Shared Work",
-    "text": "Credit/Attribution for Shared Work\n\nPublished work\nWhen sharing work (e.g. published papers, artwork) the appropriate credit should always be provided in the same post if it is not immediately obvious who the work can be attributed to.\nExample 1: a post with a link to a paper does not need to be accompanied by any additional text as all accreditations (e.g. authors and publisher) are made clear within the link.\nExample 2: a post comprising a single illustration file should be accompanied by additional text to provide accreditation.\n\n\nUnpublished work\nUnpublished data should not be posted unless there is explicit approval from its creator/owner. It is important to remember that all posts in the public channels can be viewed by anybody with access to the internet."
-  },
-  {
-    "objectID": "zulip/index.html#tips-and-tricks-for-zulip",
-    "href": "zulip/index.html#tips-and-tricks-for-zulip",
-    "title": "Zulip",
-    "section": "Tips and Tricks for Zulip",
-    "text": "Tips and Tricks for Zulip\nGlobal time zones: Zulip features a very useful time-stamping tool which automatically converts the displayed time to the local time zone of whoever is reading it. To use this:\n\nOpen the compose box for a message.\n\nClick the “add global time” clock icon beneath the box.\n\nSelect your intended Universal Time using the date and time picker.\n\nClick Confirm to insert the time code into your message."
+    "objectID": "events/all-events/index.html#past-events",
+    "href": "events/all-events/index.html#past-events",
+    "title": "All events",
+    "section": "Past events",
+    "text": "Past events\n\n\n\nLecture SeriesCombining palaeontological, neontological, and spatial data to understand evolution through time and space using the ppgm R packageMay 28, 2026 · 15:00 UTC  Alexandra Howard Watch on YouTube\nLecture SeriesCleaning taxonomy, time, and their messy interactions with the fossilbrush R packageApril 30, 2026 · 15:00 UTC  Joe Flannery-Sutherland Watch on YouTube\nLecture SeriesBuilding Open, Reproducible Palaeontology: A Practical Introduction to FAIR Data and MorphoBankMarch 26, 2026 · 15:00 UTC  Brooke Long-Fox · Phoenix Bioinformatics Watch on YouTube\nLecture SeriesBES data/code availability projectFebruary 26, 2026 · 15:00 UTC  Natalie Cooper Watch on YouTube\nLecture SeriesTips for TABS (Temporal Altitudinal Biogeographic Shifts)January 29, 2026 · 15:00 UTC  Johannes De Groeve\nLecture SeriesMammals as a key to evolutionary theoryDecember 18, 2025 · 15:00 UTC  Juan Cantalapiedra Watch on YouTube\nLecture SeriesThe high fidelity of trophic structure in ancient marine ecosystems: from functional diversity to food websNovember 20, 2025 · 15:00 UTC  Carrie Tyler · University of Nevada, Las Vegas Watch on YouTube\nLecture SeriesMechanistic biodiversity modelling with gen3sis: population-based simulations across regional and global domains to deep and shallow timeOctober 30, 2025 · 15:00 UTC  Oskar Hagen · Goethe University Frankfurt Watch on YouTube\nLecture SeriesThe Tree of Life and Death: What do Fossil Taxa Contribute to Morphological Phylogenetics?September 25, 2025 · 15:00 UTC  Nicolás Mongiardino Koch\n& Russell Garwood · Princeton University &\nUniversity of Manchester Watch on YouTube\nLecture SeriesModelling ancient food webs: ecosystem changes across the Pliocene marine megafaunal extinctionAugust 28, 2025 · 15:00 UTC  Amy Shipley · University of Leeds Watch on YouTube\nLecture SeriesBoth round and upward: Spiral morphometry and how to compare things that are the same, but differentJune 26, 2025 · 15:00 UTC  Katie Collins · Natural History Museum Watch on YouTube\nLecture SeriesAutomating large-scale morphometric data generation using AutoMorph and deep learningMay 29, 2025 · 16:00 UTC  Allison Hsiang · Stockholm University Watch on YouTube\nLecture SeriesModelling ancient animal habitats in space and time: linking fossils and Earth system modelsApril 24, 2025 · 16:00 UTC  Richard Stockey · University of Southampton Watch on YouTube\nLecture SeriesFOSSILPOL: The Workflow To Process Global Palaeoecological Data Of Fossil Pollen For Vegetation-Based Macroecological SynthesisMarch 27, 2025 · 16:00 UTC  Ondrej Mottl · Charles University Watch on YouTube\nLecture SeriesDDE-Outcrop3D: an interactive platform for digital outcrop modelsFebruary 27, 2025 · 16:00 UTC  Xia Wang · Chengdu University of Technology Watch on YouTube\nLecture SeriesThe ’rgplates’ interface to tectonic calculations in R: overview, updates and related projectsJanuary 30, 2025 · 16:00 UTC  Adam Kocsis Watch on YouTube\nLecture SeriesTop 10 of the best disparity metrics to use in palaeobiology; number 10 might surprise you!December 19, 2024 · 16:00 UTC  Thomas Guillerme Watch on YouTube\nLecture SeriesQuantitative approaches to understanding marine ecosystems: Insights from Stellar's Sea Cow and Ancient Food websNovember 21, 2024 · 15:00 UTC  Roxanne Banker · Providence College Watch on YouTube\nLecture SeriesBuilding modeling pipelines for stratigraphic paleobiology in ROctober 31, 2024 · 16:00 UTC  Niklas Hohmann Watch on YouTube\nLecture SeriesReproducing emergent eco-evolutionary patterns from a first-principles agent-based modelSeptember 26, 2024 · 18:00 UTC  Euan Furness Watch on YouTube\nLecture SeriesAdvancing morphological research with computed tomography: a case study on predatory rodentsAugust 29, 2024 · 18:00 UTC  Rafaela Missagia Watch on YouTube\nLecture SeriesSpatially standardized subsampling for fair comparisons and meaningful characterisations of ecological metrics through timeJuly 25, 2024 · 18:00 UTC  Gawain Antell\nLecture SeriesModels, Meaning, and the Middle CambrianJune 27, 2024 · 18:00 UTC  April Wright Watch on YouTube\nLecture SeriesNeural network models to infer diversity trajectories and the drivers of speciation and extinctionMay 30, 2024 · 14:00 UTC  Daniele Silvestro Watch on YouTube\nLecture SeriesModelling species range shifts in the past and futureMarch 28, 2024 · 14:00 UTC  Benjamin Shipley Watch on YouTube\nLecture SeriesUsing Spatial point process analyses to quantify the behavioural ecology behind trace fossilsFebruary 29, 2024 · 14:00 UTC  Emily Mitchell Watch on YouTube\nWorkshopR for Palaeobiologists: Getting started with the palaeoverse R packageDecember 07, 2023 · Ann Arbor, USA\nWorkshopTaming the BEASTFebruary 23, 2023 · Squamish, Canada\nWorkshopQuantitative methods for population dynamics in RFebruary 09, 2023 · Montpellier, France\nWorkshopAnalytical PaleobiologyJanuary 16, 2023 · Erlangen, Germany\nWorkshopModelling species distributions under global changeJanuary 05, 2023 · Copenhagen, Denmark\nWorkshopIntroduction to Analytical PalaeobiologyDecember 05, 2022 · Berlin, Germany\n\nNo events match the selected filters."
   },
   {
     "objectID": "about/governance/index.html",
@@ -124,6 +61,97 @@
     "title": "Sponsors",
     "section": "",
     "text": "[TO UPDATE]"
+  },
+  {
+    "objectID": "about/people/index.html",
+    "href": "about/people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+  },
+  {
+    "objectID": "about/people/index.html#core-team",
+    "href": "about/people/index.html#core-team",
+    "title": "People",
+    "section": "",
+    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+  },
+  {
+    "objectID": "about/people/index.html#past-contributors",
+    "href": "about/people/index.html#past-contributors",
+    "title": "People",
+    "section": "Past contributors",
+    "text": "Past contributors\n[TO CHECK AND TO COMPLETE]\n\nLucas Buffan\nHarriet Drage\nKilian Eichenseer\nBruna Farina\nSofía Galván"
+  },
+  {
+    "objectID": "blog/posts/post-with-code copy/index.html",
+    "href": "blog/posts/post-with-code copy/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "external-resources/index.html",
+    "href": "external-resources/index.html",
+    "title": "External resources",
+    "section": "",
+    "text": "This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.\nIf you notice any issues with this page or wish to add a resource, please contact Christopher Dean or Erin Dillon."
+  },
+  {
+    "objectID": "contributing/index.html",
+    "href": "contributing/index.html",
+    "title": "Contributing to Palaeoverse",
+    "section": "",
+    "text": "Thanks for stopping by! Looking to find out how you can contribute to Palaeoverse? You have come to the right place!\nWe very much appreciate and encourage community contributions, and if there is anything that is unclear within this guide, please let us know by logging an issues so we can improve it.\n\n\n\n\nTasks that need working on are logged as ‘issues’ within the respective repository e.g. current (palaeoverse issues) can be found here.\nIf you want to get involved with contributing to our packages but don’t know where to start, this is a great place to identify what tasks need working on. You can also contribute by logging issues that you have encountered such as typos, bugs, feature requests, etc.\nWe aim to maintain a list of ‘Good First Issues’ specifically for new contributors to our packages. Feel free to find one of the unclaimed ‘Good First Issues’ that interests you, claim it by adding a comment to it, and jump in!\n\n\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly on GitHub, provided it is done so in the source file. This means you’ll need to edit roxygen2 comments in the .R file, not the .Rd file.\n\n\n\nIf you would like to make a substantial change, you should first file an issue and make sure someone from the development team agrees that it’s needed. If you’ve found a bug, please file an issue that illustrates the bug with a reproducible example.\n\n\n\n\nYou (the contributor) should fork the repository (e.g. for the palaeoverse R package)\nClone the desired repository to your personal computer\nBefore changes are made, you should create a new git branch (i.e. not the main branch)\nKeep your branch in sync\nCommit your changes (make sure your commit message is concise)\nPush your commits to your forked repository\nWhen your changes are complete, you should submit your changes for merging via a pull request (“PR”) on GitHub\n\nNote that a complete pull request should include a succinct description (see function template) of what the code changes do, proper documentation (via roxygen2), and unit tests (via testthat). Only the description is required for the initial pull request and code review (see below), but pull requests will not be merged until they contain complete documentation and tests.\nIf you are not comfortable with git/GitHub, you can reach out to one of the core team via email and they can make a pull request on your behalf. However, you will be expected to respond to any reviewer comments on GitHub (see below).\nIf you don’t feel comfortable implementing changes yourself, you can submit a bug report or feature request as a GitHub issue in the proper repository (e.g. for palaeoverse issues).\n\n\n\n\nAll pull requests must be reviewed by two core developers of the Palaeoverse (core team before merging. The review process will ensure that contributions 1) meet the standards and expectations as described above, 2) successfully perform the functions that they claim to perform, and 3) don’t break any other parts of the codebase.\nSubmitting a pull request for one of Palaeoverse’s R packages will automatically initiate an R CMD check, lintr check, and test coverage check via GitHub Actions. While these checks will conduct some automatic review to ensure the package has not been broken by the new code and that the code matches the style guide (see above), a manual review is still required before the pull request can be merged.\nReviewers may have questions while reviewing your pull request. You are expected to respond to any of these questions via GitHub. If fixes and/or changes are required, you are expected to make these changes. If the required changes are minor enough, reviewers may make them for you, but this should not be expected. If you have any questions or lack the background to make the required changes, you should work with the reviewer to determine a plan of attack.\n\n\n\nPlease note that by contributing to Palaeoverse you agree to our Code of Conduct."
+  },
+  {
+    "objectID": "contributing/index.html#how-to-contribute-to-palaeoverse-software",
+    "href": "contributing/index.html#how-to-contribute-to-palaeoverse-software",
+    "title": "Contributing to Palaeoverse",
+    "section": "",
+    "text": "Tasks that need working on are logged as ‘issues’ within the respective repository e.g. current (palaeoverse issues) can be found here.\nIf you want to get involved with contributing to our packages but don’t know where to start, this is a great place to identify what tasks need working on. You can also contribute by logging issues that you have encountered such as typos, bugs, feature requests, etc.\nWe aim to maintain a list of ‘Good First Issues’ specifically for new contributors to our packages. Feel free to find one of the unclaimed ‘Good First Issues’ that interests you, claim it by adding a comment to it, and jump in!\n\n\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly on GitHub, provided it is done so in the source file. This means you’ll need to edit roxygen2 comments in the .R file, not the .Rd file.\n\n\n\nIf you would like to make a substantial change, you should first file an issue and make sure someone from the development team agrees that it’s needed. If you’ve found a bug, please file an issue that illustrates the bug with a reproducible example.\n\n\n\n\nYou (the contributor) should fork the repository (e.g. for the palaeoverse R package)\nClone the desired repository to your personal computer\nBefore changes are made, you should create a new git branch (i.e. not the main branch)\nKeep your branch in sync\nCommit your changes (make sure your commit message is concise)\nPush your commits to your forked repository\nWhen your changes are complete, you should submit your changes for merging via a pull request (“PR”) on GitHub\n\nNote that a complete pull request should include a succinct description (see function template) of what the code changes do, proper documentation (via roxygen2), and unit tests (via testthat). Only the description is required for the initial pull request and code review (see below), but pull requests will not be merged until they contain complete documentation and tests.\nIf you are not comfortable with git/GitHub, you can reach out to one of the core team via email and they can make a pull request on your behalf. However, you will be expected to respond to any reviewer comments on GitHub (see below).\nIf you don’t feel comfortable implementing changes yourself, you can submit a bug report or feature request as a GitHub issue in the proper repository (e.g. for palaeoverse issues)."
+  },
+  {
+    "objectID": "contributing/index.html#code-review",
+    "href": "contributing/index.html#code-review",
+    "title": "Contributing to Palaeoverse",
+    "section": "",
+    "text": "All pull requests must be reviewed by two core developers of the Palaeoverse (core team before merging. The review process will ensure that contributions 1) meet the standards and expectations as described above, 2) successfully perform the functions that they claim to perform, and 3) don’t break any other parts of the codebase.\nSubmitting a pull request for one of Palaeoverse’s R packages will automatically initiate an R CMD check, lintr check, and test coverage check via GitHub Actions. While these checks will conduct some automatic review to ensure the package has not been broken by the new code and that the code matches the style guide (see above), a manual review is still required before the pull request can be merged.\nReviewers may have questions while reviewing your pull request. You are expected to respond to any of these questions via GitHub. If fixes and/or changes are required, you are expected to make these changes. If the required changes are minor enough, reviewers may make them for you, but this should not be expected. If you have any questions or lack the background to make the required changes, you should work with the reviewer to determine a plan of attack."
+  },
+  {
+    "objectID": "contributing/index.html#code-of-conduct",
+    "href": "contributing/index.html#code-of-conduct",
+    "title": "Contributing to Palaeoverse",
+    "section": "",
+    "text": "Please note that by contributing to Palaeoverse you agree to our Code of Conduct."
+  },
+  {
+    "objectID": "blog/posts/welcome copy/index.html",
+    "href": "blog/posts/welcome copy/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "blog/posts/post-with-code/index.html",
+    "href": "blog/posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about/ai-policy/index.html",
@@ -210,53 +238,60 @@
     "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
-    "objectID": "about/people/index.html",
-    "href": "about/people/index.html",
-    "title": "People",
+    "objectID": "zulip/index.html",
+    "href": "zulip/index.html",
+    "title": "Zulip",
     "section": "",
-    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+    "text": "[TO UPDATE]\nI agree to follow the Code of Conduct and I have read the User Guide."
   },
   {
-    "objectID": "about/people/index.html#core-team",
-    "href": "about/people/index.html#core-team",
-    "title": "People",
+    "objectID": "zulip/index.html#introduction",
+    "href": "zulip/index.html#introduction",
+    "title": "Zulip",
+    "section": "Introduction",
+    "text": "Introduction\nZulip is an organized, asynchronous team chat app (mobile and desktop) for distributed teams of all sizes. The application has many useful features that allow for the creation of easy-to-follow, well-organised conversations that will not disappear, and can be viewed/interacted with at any time by users around the world."
+  },
+  {
+    "objectID": "zulip/index.html#zulip-structure-interaction",
+    "href": "zulip/index.html#zulip-structure-interaction",
+    "title": "Zulip",
+    "section": "Zulip Structure & Interaction",
+    "text": "Zulip Structure & Interaction\nZulip organises conversations into channels (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:\n\nEvents\nJobs\nPublications\nFunding\nResources\nHelp\nPalaeoverse Announcements\n\nAs a guest user, you will be able to post in the first six of these, and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.\nWithin each channel, conversations are organised into topics. This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows:\n\nChoose a relevant channel.\nClick the “start a new topic” button (square with a plus symbol inside) located next to the channel name.\nEnter the topic name (see below on how this should be formatted).\nCompose your message in the text box. If you would like to, you can preview your message before it is sent.\nClick the “send” button (arrow shaped).\n\nOnce a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message #Channel Name &gt; Topic Name (Fig. X). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised!"
+  },
+  {
+    "objectID": "zulip/index.html#topic-templates",
+    "href": "zulip/index.html#topic-templates",
+    "title": "Zulip",
+    "section": "Topic templates",
+    "text": "Topic templates\nTo keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. Topics within each channel should broadly be formatted as such:\n\nConferences & Workshops\nThe Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as relevant topics such as ecology and conservation science.\nTopics posted within the Conferences & Workshop channel should aim to take the full name of the conference or workshop being advertised (Fig. X).\nThe initial post within the topic thread should take the following format:\nConference or workshop name (in bold)\nDates:\nLocation:\nAdditional Details:\nLink to the conference web page:\nAll other information (e.g. registration reminders, circular updates) and discussion relating to a specific conference or workshop should be posted below the relevant topic.\n\n\nPublications\nRelevant publications on the themes of phylogenetics, palaeobiogeography, palaeoecology, palaeoclimate, diversity dynamics, geometric morphometrics, statistical analyses, conservation, open science, etc., should be posted here.\nTopics within the Publications channel should take the full title of the paper, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit).\nThe initial post within the topic should aim to take the following format:\nAPA-format citation (in bold):\nDOI link:\nAbstract/Additional Details:\nAll discussion relating to the research paper should be posted below the relevant topic.\n\n\nFunding\nThe Palaeoverse Zulip workspace welcomes all relevant funding advertisements. Grant opportunities are encouraged for all career stages, and can target both academic and non-academic audiences.\nTopics within the Funding channel should aim to take the grant name and funding body being advertised.\nThe initial post within the topic should take the following format:\nGrant title (in bold)\nAwarding body:\nClosing Date:\nAdditional Details:\nLink to application page\nAny other information relating to the funding opportunity should be posted below the relevant topic.\n\n\nResources\nThe Resources channel is broad in its scope. Posts are welcomed on topics such as websites, books, talks, and course materials. As the breadth of subjects posted here cover a wider range, no specific post template is provided; however, the topic title should remain short and descriptive.\nAll discussion relating to the advertised resource should be posted in the relevant topic thread.\n\n\nGeneral Help\nThe General Help channel can be used for questions relating to the topics of palaeontology, ecology, open science, conservation science, etc. As the breadth of subjects posted here will cover quite a wide range, no template is provided; however, the topic title should remain short and descriptive.\nAll responses to questions should be placed in the relevant topic thread.\n\n\nPalaeoverse Announcements\nPosts within the Palaeoverse Announcements channel will be used for announcements relating to the workspace, e.g. changes in operation, code of conduct, and wider user messages. These messages will only be permitted from members and administrators; however, as a user you will be able to interact with these."
+  },
+  {
+    "objectID": "zulip/index.html#reporting-misconduct",
+    "href": "zulip/index.html#reporting-misconduct",
+    "title": "Zulip",
+    "section": "Reporting Misconduct",
+    "text": "Reporting Misconduct\nWhen using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows:\n\nHover over the problematic message to reveal three icons on the right.\nSelect “report message”.\nFill out the requested information. Moderators will see the message you’re reporting when they review your report.\nClick “Submit” to send."
+  },
+  {
+    "objectID": "zulip/index.html#creditattribution-for-shared-work",
+    "href": "zulip/index.html#creditattribution-for-shared-work",
+    "title": "Zulip",
+    "section": "Credit/Attribution for Shared Work",
+    "text": "Credit/Attribution for Shared Work\n\nPublished work\nWhen sharing work (e.g. published papers, artwork) the appropriate credit should always be provided in the same post if it is not immediately obvious who the work can be attributed to.\nExample 1: a post with a link to a paper does not need to be accompanied by any additional text as all accreditations (e.g. authors and publisher) are made clear within the link.\nExample 2: a post comprising a single illustration file should be accompanied by additional text to provide accreditation.\n\n\nUnpublished work\nUnpublished data should not be posted unless there is explicit approval from its creator/owner. It is important to remember that all posts in the public channels can be viewed by anybody with access to the internet."
+  },
+  {
+    "objectID": "zulip/index.html#tips-and-tricks-for-zulip",
+    "href": "zulip/index.html#tips-and-tricks-for-zulip",
+    "title": "Zulip",
+    "section": "Tips and Tricks for Zulip",
+    "text": "Tips and Tricks for Zulip\nGlobal time zones: Zulip features a very useful time-stamping tool which automatically converts the displayed time to the local time zone of whoever is reading it. To use this:\n\nOpen the compose box for a message.\n\nClick the “add global time” clock icon beneath the box.\n\nSelect your intended Universal Time using the date and time picker.\n\nClick Confirm to insert the time code into your message."
+  },
+  {
+    "objectID": "our-packages/index.html",
+    "href": "our-packages/index.html",
+    "title": "Our packages",
     "section": "",
-    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
-  },
-  {
-    "objectID": "about/people/index.html#past-contributors",
-    "href": "about/people/index.html#past-contributors",
-    "title": "People",
-    "section": "Past contributors",
-    "text": "Past contributors\n[TO CHECK AND TO COMPLETE]\n\nLucas Buffan\nHarriet Drage\nKilian Eichenseer\nBruna Farina\nSofía Galván"
-  },
-  {
-    "objectID": "cheatsheets/index.html",
-    "href": "cheatsheets/index.html",
-    "title": "Cheat sheets",
-    "section": "",
-    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
-  },
-  {
-    "objectID": "events/all-events/index.html",
-    "href": "events/all-events/index.html",
-    "title": "All events",
-    "section": "",
-    "text": "DEV NOTES: I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.\nAll events are shown by default. Select one or more types to filter:\nConference\nLecture Series\nWorkshop\nSelect the view mode:"
-  },
-  {
-    "objectID": "events/all-events/index.html#future-events",
-    "href": "events/all-events/index.html#future-events",
-    "title": "All events",
-    "section": "Future events",
-    "text": "Future events\n\n\n\nLecture SeriesENMs in the fossil recordJune 25, 2026 · 15:00 UTC  Cori Myers Register\nLecture SeriesBudding phylogenetic trees: inference with BEAST2 and post-processing with paleobuddyAugust 27, 2026 · 15:00 UTC  Bruno do Rosario Petrucci Register\nLecture SeriesCarboKitten.jlSeptember 24, 2026 · 15:00 UTC  Emilia Jarochowska Register\nLecture SeriesRecommender Systems modelling for abundance/density reconstructionsNovember 19, 2026 · 15:00 UTC  Abigail Parker Register\nWorkshopPalaeoverse workshop at IPC7November 30, 2026 · Cape Town, South Africa\nWorkshopPalaeoverse workshopJanuary 15, 2027 · University College London, London, United Kingdom\nWorkshopPalaeoverse workshop at CPEGAugust 06, 2027 · University College London, London, United Kingdom\n\nNo events match the selected filters."
-  },
-  {
-    "objectID": "events/all-events/index.html#past-events",
-    "href": "events/all-events/index.html#past-events",
-    "title": "All events",
-    "section": "Past events",
-    "text": "Past events\n\n\n\nLecture SeriesCombining palaeontological, neontological, and spatial data to understand evolution through time and space using the ppgm R packageMay 28, 2026 · 15:00 UTC  Alexandra Howard Watch on YouTube\nLecture SeriesCleaning taxonomy, time, and their messy interactions with the fossilbrush R packageApril 30, 2026 · 15:00 UTC  Joe Flannery-Sutherland Watch on YouTube\nLecture SeriesBuilding Open, Reproducible Palaeontology: A Practical Introduction to FAIR Data and MorphoBankMarch 26, 2026 · 15:00 UTC  Brooke Long-Fox · Phoenix Bioinformatics Watch on YouTube\nLecture SeriesBES data/code availability projectFebruary 26, 2026 · 15:00 UTC  Natalie Cooper Watch on YouTube\nLecture SeriesTips for TABS (Temporal Altitudinal Biogeographic Shifts)January 29, 2026 · 15:00 UTC  Johannes De Groeve\nLecture SeriesMammals as a key to evolutionary theoryDecember 18, 2025 · 15:00 UTC  Juan Cantalapiedra Watch on YouTube\nLecture SeriesThe high fidelity of trophic structure in ancient marine ecosystems: from functional diversity to food websNovember 20, 2025 · 15:00 UTC  Carrie Tyler · University of Nevada, Las Vegas Watch on YouTube\nLecture SeriesMechanistic biodiversity modelling with gen3sis: population-based simulations across regional and global domains to deep and shallow timeOctober 30, 2025 · 15:00 UTC  Oskar Hagen · Goethe University Frankfurt Watch on YouTube\nLecture SeriesThe Tree of Life and Death: What do Fossil Taxa Contribute to Morphological Phylogenetics?September 25, 2025 · 15:00 UTC  Nicolás Mongiardino Koch\n& Russell Garwood · Princeton University &\nUniversity of Manchester Watch on YouTube\nLecture SeriesModelling ancient food webs: ecosystem changes across the Pliocene marine megafaunal extinctionAugust 28, 2025 · 15:00 UTC  Amy Shipley · University of Leeds Watch on YouTube\nLecture SeriesBoth round and upward: Spiral morphometry and how to compare things that are the same, but differentJune 26, 2025 · 15:00 UTC  Katie Collins · Natural History Museum Watch on YouTube\nLecture SeriesAutomating large-scale morphometric data generation using AutoMorph and deep learningMay 29, 2025 · 16:00 UTC  Allison Hsiang · Stockholm University Watch on YouTube\nLecture SeriesModelling ancient animal habitats in space and time: linking fossils and Earth system modelsApril 24, 2025 · 16:00 UTC  Richard Stockey · University of Southampton Watch on YouTube\nLecture SeriesFOSSILPOL: The Workflow To Process Global Palaeoecological Data Of Fossil Pollen For Vegetation-Based Macroecological SynthesisMarch 27, 2025 · 16:00 UTC  Ondrej Mottl · Charles University Watch on YouTube\nLecture SeriesDDE-Outcrop3D: an interactive platform for digital outcrop modelsFebruary 27, 2025 · 16:00 UTC  Xia Wang · Chengdu University of Technology Watch on YouTube\nLecture SeriesThe ’rgplates’ interface to tectonic calculations in R: overview, updates and related projectsJanuary 30, 2025 · 16:00 UTC  Adam Kocsis Watch on YouTube\nLecture SeriesTop 10 of the best disparity metrics to use in palaeobiology; number 10 might surprise you!December 19, 2024 · 16:00 UTC  Thomas Guillerme Watch on YouTube\nLecture SeriesQuantitative approaches to understanding marine ecosystems: Insights from Stellar's Sea Cow and Ancient Food websNovember 21, 2024 · 15:00 UTC  Roxanne Banker · Providence College Watch on YouTube\nLecture SeriesBuilding modeling pipelines for stratigraphic paleobiology in ROctober 31, 2024 · 16:00 UTC  Niklas Hohmann Watch on YouTube\nLecture SeriesReproducing emergent eco-evolutionary patterns from a first-principles agent-based modelSeptember 26, 2024 · 18:00 UTC  Euan Furness Watch on YouTube\nLecture SeriesAdvancing morphological research with computed tomography: a case study on predatory rodentsAugust 29, 2024 · 18:00 UTC  Rafaela Missagia Watch on YouTube\nLecture SeriesSpatially standardized subsampling for fair comparisons and meaningful characterisations of ecological metrics through timeJuly 25, 2024 · 18:00 UTC  Gawain Antell\nLecture SeriesModels, Meaning, and the Middle CambrianJune 27, 2024 · 18:00 UTC  April Wright Watch on YouTube\nLecture SeriesNeural network models to infer diversity trajectories and the drivers of speciation and extinctionMay 30, 2024 · 14:00 UTC  Daniele Silvestro Watch on YouTube\nLecture SeriesModelling species range shifts in the past and futureMarch 28, 2024 · 14:00 UTC  Benjamin Shipley Watch on YouTube\nConferenceThe Palaeontological Association Annual Meeting 2024March 04, 2024 · Erlangen, Germany\nConferenceProgressive Palaeontology 2024March 04, 2024 · Bristol, UK\nLecture SeriesUsing Spatial point process analyses to quantify the behavioural ecology behind trace fossilsFebruary 29, 2024 · 14:00 UTC  Emily Mitchell Watch on YouTube\nConference7th International Palaeontological CongressDecember 09, 2023 · Cape Town, South Africa\nConference12th North American Paleontological ConventionDecember 07, 2023 · Ann Arbor, USA\nConference3rd Joint Congress on Evolutionary BiologyDecember 07, 2023 · Montreal, Canada\nWorkshopR for Palaeobiologists: Getting started with the palaeoverse R packageDecember 07, 2023 · Ann Arbor, USA\nConferenceIBS Biennial ConferenceJuly 20, 2023 · Prague, Czechia\nConferenceAcross the End Permian \"Great Extinction\"May 16, 2023 · Lausanne, Switzerland\nConferencePalaeo Down Under 3March 28, 2023 · Perth, Australia\nConference14th Romanian Symposium of PalaeontologyMarch 28, 2023 · Bucharest, Romania\nConferenceConferenceMarch 25, 2023 · Birmingham, UK\nConferenceLife and PlanetMarch 10, 2023 · London, UK\nConferenceCrossing the Palaeontological-Ecological GapMarch 02, 2023 · Vilnius, Lithuania\nWorkshopTaming the BEASTFebruary 23, 2023 · Squamish, Canada\nConferenceProgressive Palaeontology 2023February 20, 2023 · Liverpool, UK\nWorkshopQuantitative methods for population dynamics in RFebruary 09, 2023 · Montpellier, France\nConference14th Symposium of the International Fossil Coral and Reef Society (IFCRS)January 26, 2023 · 26-060, Poland\nConferenceXX Annual Meeting of the European Association of Vertebrate PalaeontologistsJanuary 26, 2023 · Sabadell, Spain\nConferenceXII Brazilian Vertebrate Paleontology SymposiumJanuary 26, 2023 · Santa Maria, Brazil\nConferenceMacroecology and Biogeography 2023January 17, 2023 · Bayreuth, Germany\nWorkshopAnalytical PaleobiologyJanuary 16, 2023 · Erlangen, Germany\nWorkshopModelling species distributions under global changeJanuary 05, 2023 · Copenhagen, Denmark\nConferenceEvolution 2023December 21, 2022 · Albuquerque, USA\nConferenceMathematical and Computational Evolutionary BiologyDecember 15, 2022 · Cargèse, France\nConferenceEJIP/IMERP 2023December 06, 2022 · Lourinhã, Portugal\nConferencePalAss Annual Meeting 2023December 05, 2022 · Cambridge, England\nWorkshopIntroduction to Analytical PalaeobiologyDecember 05, 2022 · Berlin, Germany\nConferenceEGU 2023December 05, 2022 · Vienna, Austria\n\nNo events match the selected filters."
+    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\n28   \n\n18k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14099\n\n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\n2   \n\n6k+\n\n     \n\n\n\nDOI: 10.1130/GES02815.1\n\n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\n97   \n\n51k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14221\n\n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\n2   \n\n9k+\n\n     \n\n\n\nDOI: 10.5281/zenodo.7342194"
   },
   {
     "objectID": "events/workshops/index.html",
@@ -266,45 +301,10 @@
     "text": "We organize workshops of various length and objectives. You can find the complete list on our Events page.\nEach workshop is composed of a collection of self-contained modules that you can find below.\n[ADD MODULES]"
   },
   {
-    "objectID": "blog/posts/post-with-code/index.html",
-    "href": "blog/posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "cheatsheets/index.html",
+    "href": "cheatsheets/index.html",
+    "title": "Cheat sheets",
     "section": "",
-    "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
-  },
-  {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "contributing/index.html",
-    "href": "contributing/index.html",
-    "title": "Contributing to Palaeoverse",
-    "section": "",
-    "text": "Thanks for stopping by! Looking to find out how you can contribute to Palaeoverse? You have come to the right place!\nWe very much appreciate and encourage community contributions, and if there is anything that is unclear within this guide, please let us know by logging an issues so we can improve it.\n\n\n\n\nTasks that need working on are logged as ‘issues’ within the respective repository e.g. current (palaeoverse issues) can be found here.\nIf you want to get involved with contributing to our packages but don’t know where to start, this is a great place to identify what tasks need working on. You can also contribute by logging issues that you have encountered such as typos, bugs, feature requests, etc.\nWe aim to maintain a list of ‘Good First Issues’ specifically for new contributors to our packages. Feel free to find one of the unclaimed ‘Good First Issues’ that interests you, claim it by adding a comment to it, and jump in!\n\n\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly on GitHub, provided it is done so in the source file. This means you’ll need to edit roxygen2 comments in the .R file, not the .Rd file.\n\n\n\nIf you would like to make a substantial change, you should first file an issue and make sure someone from the development team agrees that it’s needed. If you’ve found a bug, please file an issue that illustrates the bug with a reproducible example.\n\n\n\n\nYou (the contributor) should fork the repository (e.g. for the palaeoverse R package)\nClone the desired repository to your personal computer\nBefore changes are made, you should create a new git branch (i.e. not the main branch)\nKeep your branch in sync\nCommit your changes (make sure your commit message is concise)\nPush your commits to your forked repository\nWhen your changes are complete, you should submit your changes for merging via a pull request (“PR”) on GitHub\n\nNote that a complete pull request should include a succinct description (see function template) of what the code changes do, proper documentation (via roxygen2), and unit tests (via testthat). Only the description is required for the initial pull request and code review (see below), but pull requests will not be merged until they contain complete documentation and tests.\nIf you are not comfortable with git/GitHub, you can reach out to one of the core team via email and they can make a pull request on your behalf. However, you will be expected to respond to any reviewer comments on GitHub (see below).\nIf you don’t feel comfortable implementing changes yourself, you can submit a bug report or feature request as a GitHub issue in the proper repository (e.g. for palaeoverse issues).\n\n\n\n\nAll pull requests must be reviewed by two core developers of the Palaeoverse (core team before merging. The review process will ensure that contributions 1) meet the standards and expectations as described above, 2) successfully perform the functions that they claim to perform, and 3) don’t break any other parts of the codebase.\nSubmitting a pull request for one of Palaeoverse’s R packages will automatically initiate an R CMD check, lintr check, and test coverage check via GitHub Actions. While these checks will conduct some automatic review to ensure the package has not been broken by the new code and that the code matches the style guide (see above), a manual review is still required before the pull request can be merged.\nReviewers may have questions while reviewing your pull request. You are expected to respond to any of these questions via GitHub. If fixes and/or changes are required, you are expected to make these changes. If the required changes are minor enough, reviewers may make them for you, but this should not be expected. If you have any questions or lack the background to make the required changes, you should work with the reviewer to determine a plan of attack.\n\n\n\nPlease note that by contributing to Palaeoverse you agree to our Code of Conduct."
-  },
-  {
-    "objectID": "contributing/index.html#how-to-contribute-to-palaeoverse-software",
-    "href": "contributing/index.html#how-to-contribute-to-palaeoverse-software",
-    "title": "Contributing to Palaeoverse",
-    "section": "",
-    "text": "Tasks that need working on are logged as ‘issues’ within the respective repository e.g. current (palaeoverse issues) can be found here.\nIf you want to get involved with contributing to our packages but don’t know where to start, this is a great place to identify what tasks need working on. You can also contribute by logging issues that you have encountered such as typos, bugs, feature requests, etc.\nWe aim to maintain a list of ‘Good First Issues’ specifically for new contributors to our packages. Feel free to find one of the unclaimed ‘Good First Issues’ that interests you, claim it by adding a comment to it, and jump in!\n\n\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly on GitHub, provided it is done so in the source file. This means you’ll need to edit roxygen2 comments in the .R file, not the .Rd file.\n\n\n\nIf you would like to make a substantial change, you should first file an issue and make sure someone from the development team agrees that it’s needed. If you’ve found a bug, please file an issue that illustrates the bug with a reproducible example.\n\n\n\n\nYou (the contributor) should fork the repository (e.g. for the palaeoverse R package)\nClone the desired repository to your personal computer\nBefore changes are made, you should create a new git branch (i.e. not the main branch)\nKeep your branch in sync\nCommit your changes (make sure your commit message is concise)\nPush your commits to your forked repository\nWhen your changes are complete, you should submit your changes for merging via a pull request (“PR”) on GitHub\n\nNote that a complete pull request should include a succinct description (see function template) of what the code changes do, proper documentation (via roxygen2), and unit tests (via testthat). Only the description is required for the initial pull request and code review (see below), but pull requests will not be merged until they contain complete documentation and tests.\nIf you are not comfortable with git/GitHub, you can reach out to one of the core team via email and they can make a pull request on your behalf. However, you will be expected to respond to any reviewer comments on GitHub (see below).\nIf you don’t feel comfortable implementing changes yourself, you can submit a bug report or feature request as a GitHub issue in the proper repository (e.g. for palaeoverse issues)."
-  },
-  {
-    "objectID": "contributing/index.html#code-review",
-    "href": "contributing/index.html#code-review",
-    "title": "Contributing to Palaeoverse",
-    "section": "",
-    "text": "All pull requests must be reviewed by two core developers of the Palaeoverse (core team before merging. The review process will ensure that contributions 1) meet the standards and expectations as described above, 2) successfully perform the functions that they claim to perform, and 3) don’t break any other parts of the codebase.\nSubmitting a pull request for one of Palaeoverse’s R packages will automatically initiate an R CMD check, lintr check, and test coverage check via GitHub Actions. While these checks will conduct some automatic review to ensure the package has not been broken by the new code and that the code matches the style guide (see above), a manual review is still required before the pull request can be merged.\nReviewers may have questions while reviewing your pull request. You are expected to respond to any of these questions via GitHub. If fixes and/or changes are required, you are expected to make these changes. If the required changes are minor enough, reviewers may make them for you, but this should not be expected. If you have any questions or lack the background to make the required changes, you should work with the reviewer to determine a plan of attack."
-  },
-  {
-    "objectID": "contributing/index.html#code-of-conduct",
-    "href": "contributing/index.html#code-of-conduct",
-    "title": "Contributing to Palaeoverse",
-    "section": "",
-    "text": "Please note that by contributing to Palaeoverse you agree to our Code of Conduct."
+    "text": "palaeoverse\n    \n      Download\n    \n  \n\n  \n    \n    rphylopic\n    \n      Download"
   }
 ]
