@@ -95,6 +95,6 @@ If the change is simple enough, e.g. fixing typos or improving wording, you can 
 
 The style of the website is controlled by two files:
 
-- `_brand/_brand.yml`: this controls the general branding guidelines, e.g. the list of colours or fonts to be used in all Palaeoverse materials. **Do not modify this file by hand.** This file is a copy from the `brand.yml` that lives in the `palaeoverse/resources` repository. If the file changed there, run `quarto use brand palaeoverse/resources` in the current repository to update it here.
+- `_brand/_brand.yml`: this controls the general branding guidelines, e.g. the list of colours or fonts to be used in all Palaeoverse materials. **Do not modify this file by hand.** This file is a copy from the `_brand.yml` that lives in the `palaeoverse/resources` repository. If the file changed there, run `quarto use brand palaeoverse/resources` in the current repository to update it here.
 
 - `styles.scss`: this controls the details of the website. If you want to modify it, it is recommended to build the site locally (cf. next section) so that you can see the actual changes in style before deploying the website.
