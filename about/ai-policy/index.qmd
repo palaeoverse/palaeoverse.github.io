@@ -2,8 +2,6 @@
 title: AI policy
 ---
 
-# AI Policy
-
 Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. Part of this initiative is to enable researchers at every career stage to learn and develop new skills. The human aspect of this work is therefore important to us. We acknowledge the potential usefulness and growing prevalence of Artificial Intelligence (AI), but wish to see it used only where reasonable and appropriate, whilst prioritising correctness, accessibility, and upskilling. We are committed to maintaining human spaces, for human interaction and engagement.
 
 The objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from [Zulip’s AI policy](https://github.com/zulip/zulip/blob/main/CONTRIBUTING.md#ai-use-policy-and-guidelines).
