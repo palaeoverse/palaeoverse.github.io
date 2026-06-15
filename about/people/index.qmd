@@ -122,12 +122,12 @@ cards <- vapply(
 cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 ```
 
-## Past contributors
+## Contributors
 
-[**TO CHECK AND TO COMPLETE**]
-
-* Lucas Buffan
-* Harriet Drage
+* Christopher D. Dean
 * Kilian Eichenseer
-* Bruna Farina
+* Alessandro Alfio Chiarenza
 * Sofía Galván
+* Lucas Buffan
+* Mark Nikolic
+* Bruna Farina
