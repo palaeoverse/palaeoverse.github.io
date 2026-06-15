@@ -234,11 +234,10 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
   add_circle_layer(
     id = "poi-layer",
     source = map_dat,
-    circle_color = match_expr(
-      "Post",
-      values = c("Conference", "Workshop"),
-      stops = c("#1f78b4", "#e31a1c")
-    ),
+    # Default color only; the real per-type colors are applied client-side in
+    # onRender below, reading the --event-color-* CSS variables from styles.scss
+    # so the map stays in sync with the event cards.
+    circle_color = "#575756",
     circle_radius = 8,
     circle_stroke_color = "#ffffff",
     circle_stroke_width = 2,
@@ -252,8 +251,23 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
       // 'this' is the widget factory result; try getMap() then .map
       var map = this.getMap ? this.getMap() : this.map;
       if (!map) return;
+      // Color the circles per event type using the --event-color-* CSS
+      // variables defined in styles.scss, so the map matches the event cards.
+      var applyColors = function() {
+        if (!map.getLayer('poi-layer')) { map.once('idle', applyColors); return; }
+        var css = getComputedStyle(document.documentElement);
+        var c = function(name) { return css.getPropertyValue(name).trim(); };
+        map.setPaintProperty('poi-layer', 'circle-color', [
+          'match', ['get', 'Post'],
+          'Workshop', c('--event-color-workshop'),
+          'Conference', c('--event-color-conference'),
+          'Hackathon', c('--event-color-hackathon'),
+          'Lecture Series', c('--event-color-lecture'),
+          '#575756'
+        ]);
+      };
       // wait for the style + layers to be ready before exposing the reference
-      var store = function() { window._palaeoMap = map; };
+      var store = function() { window._palaeoMap = map; applyColors(); };
       if (map.isStyleLoaded()) store();
       else map.once('load', store);
     }

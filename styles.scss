@@ -471,8 +471,19 @@ body {
   color: $body-color;
 }
 
+// Single source of truth for event-type colors, shared by the cards (below)
+// and the interactive map. The map in the events page reads these
+// custom properties at runtime via getComputedStyle, so the colors only need
+// to be defined here.
+:root {
+  --event-color-workshop: #{mix($brand-dark-blue, black, 60%)};
+  --event-color-hackathon: #{mix($brand-dark-peach, black, 60%)};
+  --event-color-lecture: #{$secondary};
+  --event-color-conference: #{mix($brand-dark-pink, black, 70%)};
+}
+
 .event-workshop {
-  background: mix($brand-dark-blue, black, 60%);
+  background: var(--event-color-workshop);
 
   .event-tag {
     background: mix($brand-dark-blue, black, 75%);
@@ -485,7 +496,7 @@ body {
 }
 
 .event-hackathon {
-  background: mix($brand-dark-peach, black, 60%);
+  background: var(--event-color-hackathon);
 
   .event-tag {
     background: mix($brand-dark-peach, white, 90%);
@@ -498,7 +509,7 @@ body {
 }
 
 .event-lecture {
-  background: $secondary;
+  background: var(--event-color-lecture);
 
   .event-tag {
     background: mix($brand-light-green, black, 80%);
@@ -511,7 +522,7 @@ body {
 }
 
 .event-conference {
-  background: mix($brand-dark-pink, black, 70%);
+  background: var(--event-color-conference);
 
   .event-tag {
     background: mix($brand-dark-pink, black, 90%);
