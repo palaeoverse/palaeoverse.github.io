@@ -5,7 +5,7 @@
 /*-- scss:rules --*/
 
 body {
-  background-color: $brand-light-blue
+  background-color: mix($brand-light-blue, white, 60%)
 }
 
 #quarto-appendix {
@@ -13,7 +13,7 @@ body {
 }
 
 .nav-footer {
-  background-color: $brand-light-blue
+  background-color: mix($brand-light-blue, white, 60%)
 }
 
 .hero {
@@ -124,7 +124,7 @@ body {
 }
 
 .navbar {
-  background: $brand-light-blue;
+  background: mix($brand-light-blue, white, 60%);
   border-bottom: 2px solid $secondary;
   margin-bottom: 1em;
   text-transform: uppercase;
