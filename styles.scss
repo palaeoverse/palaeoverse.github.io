@@ -9,7 +9,7 @@ body {
 }
 
 #quarto-appendix {
-  background-color: $brand-light-blue !important
+  background-color: mix($brand-light-blue, white, 60%) !important
 }
 
 .nav-footer {
@@ -26,7 +26,7 @@ body {
   gap: 0.5rem;
 }
 
-.nav-footer-center > p {
+.nav-footer-center>p {
   margin-bottom: 0;
 }
 
