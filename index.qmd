@@ -11,9 +11,9 @@ engine: knitr
 <p class="tagline">Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.</p>
 <div class="hero-buttons">
   <a href="zulip" class="landing-page-btn" target="_blank">Join the community on Zulip</a>
-  <a href="our-packages" class="landing-page-btn">Check our packages</a>
-  <a href="events" class="landing-page-btn">See our next events</a>
-  <a href="lecture-series" class="landing-page-btn">Attend our lecture series</a>
+  <a href="our-packages" class="landing-page-btn">Check out our packages</a>
+  <a href="events/all-events" class="landing-page-btn">See our next events</a>
+  <a href="events/lecture-series" class="landing-page-btn">Attend our lecture series</a>
 </div>
 ```
 
