@@ -105,6 +105,8 @@ format:
       - styles.scss
     toc: true
     anchor-sections: false
+    include-after-body:
+      - _includes/active-navbar.html
 
 
 

@@ -134,6 +134,13 @@ body {
   max-height: 45px;
 }
 
+// Solid bottom bar under the navbar link for the current page.
+// The .active class is applied by _includes/active-navbar.html, since Quarto
+// doesn't mark the active navbar item in this setup.
+.navbar .navbar-nav .nav-link.active {
+  border-bottom: solid 2px $secondary;
+}
+
 .package-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
