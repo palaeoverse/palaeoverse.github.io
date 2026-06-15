@@ -692,3 +692,113 @@ a.event-link .event-card {
 h2 {
   border-bottom: 1px solid $secondary;
 }
+
+// Use margin (not padding) for the inter-event gap, so that raising --tl-gap
+// doesn't inflate each event's box height. The logos are positioned with a
+// percentage `top`, which is relative to that box — keeping the box at content
+// height means the logos stay aligned with the text whatever the gap is.
+.timeline.vertical-alt .event:not(.tl-card) {
+  padding-bottom: 0;
+  margin-bottom: var(--tl-gap);
+}
+
+// Timeline (vertical-alt): place a logo on the opposite side of the center
+// line from the event text, so logos and text both alternate left/right.
+// Wrap the image in a ::: {.tl-logo} fenced div inside the event.
+.timeline.vertical-alt .tl-logo {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0;
+}
+
+.timeline.vertical-alt .tl-logo>*,
+.timeline.vertical-alt .tl-logo p {
+  margin: 0;
+}
+
+.timeline.vertical-alt .tl-logo img {
+  width: 100%;
+  height: auto;
+}
+
+// .tl-logo-grid: when an event has several logos, lay them out in a small
+// grid instead of stacking. display: contents on the wrapping <p> lets the
+// images become grid items directly.
+.timeline.vertical-alt .tl-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.timeline.vertical-alt .tl-logo-grid p {
+  display: contents;
+}
+
+.timeline.vertical-alt .tl-logo-grid img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+// Event text is on the left (odd) -> logo goes into the right half.
+// The event's right edge sits 30px from the line; the opposite half starts
+// another 30px past it, hence the 60px offset from the event edge.
+.timeline.vertical-alt .event:nth-child(odd) .tl-logo {
+  left: calc(100% + 60px);
+  right: auto;
+  text-align: left;
+  top: 50%
+}
+
+// Event text is on the right (even) -> logo goes into the left half.
+.timeline.vertical-alt .event:nth-child(even) .tl-logo {
+  right: calc(100% + 60px);
+  left: auto;
+  text-align: right;
+}
+
+// .tl-flip: force a single event onto the other side of the line, overriding
+// the automatic odd/even alternation (e.g. for left-side events whose
+// right-aligned text — like bullet lists — reads poorly).
+
+// Odd event flipped to the RIGHT side (left-aligned text).
+.timeline.vertical-alt .event.tl-flip:nth-child(odd) {
+  align-self: flex-end;
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.timeline.vertical-alt .event.tl-flip:nth-child(odd)::after {
+  left: calc(-30px - var(--tl-dot-size) / 2);
+  right: auto;
+}
+
+.timeline.vertical-alt .event.tl-flip:nth-child(odd) .tl-logo {
+  right: calc(100% + 60px);
+  left: auto;
+  text-align: right;
+}
+
+// Even event flipped to the LEFT side (right-aligned text).
+.timeline.vertical-alt .event.tl-flip:nth-child(even) {
+  align-self: flex-start;
+  text-align: right;
+  padding-right: 16px;
+  padding-left: 0;
+}
+
+.timeline.vertical-alt .event.tl-flip:nth-child(even)::after {
+  right: calc(-30px - var(--tl-dot-size) / 2);
+  left: auto;
+}
+
+.timeline.vertical-alt .event.tl-flip:nth-child(even) .tl-logo {
+  left: calc(100% + 60px);
+  right: auto;
+  text-align: left;
+}
