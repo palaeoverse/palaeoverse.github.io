@@ -45,6 +45,12 @@ body {
   margin-right: 0.5rem;
 }
 
+// No underline on footer links (e.g. "Contact us"); links elsewhere keep the
+// brand's default underline.
+.nav-footer a {
+  text-decoration: none;
+}
+
 .hero {
   display: flex;
   justify-content: center;
