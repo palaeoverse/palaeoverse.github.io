@@ -18,10 +18,7 @@ gs4_deauth()
 people <- read_sheet(
   "https://docs.google.com/spreadsheets/d/154vEZLxSaBz1Vc6_8za9k0ymMbjI3GKMWypRVown7Lc/edit?gid=0#gid=0",
 ) |>
-  sort_by(~last_name) |>
-  transform(
-    full_name = paste(first_name, last_name)
-  )
+  transform(full_name = paste(first_name, last_name)) 
 
 
 make_icon <- function(href, icon_class, label) {
@@ -124,10 +121,26 @@ cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 
 ## Contributors
 
-* Christopher D. Dean
-* Kilian Eichenseer
-* Alessandro Alfio Chiarenza
-* Sofía Galván
-* Lucas Buffan
-* Mark Nikolic
-* Bruna Farina
+```{r}
+#| output: asis
+
+contributors <- data.frame(
+  first_name = c("Christopher D.", "Kilian", "Alessandro", "Sofía", "Lucas", "Mark", "Bruna"), 
+  last_name = c("Dean", "Eichenseer", "Alfio Chiarenza", "Galván", "Buffan", "Nikolic", "Farina"), 
+  email_address = "", 
+  personal_website = "", 
+  linkedin_username = "", 
+  affiliation = "", 
+  github_username = "", 
+  bluesky_username = ""
+) |> 
+  transform(full_name = paste(first_name, last_name)) 
+
+contributors_cards <- vapply(
+  seq_len(nrow(contributors)),
+  function(i) make_card(contributors[i, ]),
+  character(1)
+)
+
+cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
+```
