@@ -226,6 +226,16 @@ body.homepage {
   border-bottom: solid 2px $secondary;
 }
 
+// In the collapsed mobile menu each nav-link is a block filling its row, so the
+// underline would span the full width. Shrink the active link to its content so
+// the underline only hugs the tab title. The breakpoint comes from Bootstrap's
+// own mixin (lg = the navbar-expand-lg collapse point), so it's not hardcoded.
+@include media-breakpoint-down(lg) {
+  .navbar .navbar-nav .nav-link.active {
+    display: inline-block;
+  }
+}
+
 .package-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
