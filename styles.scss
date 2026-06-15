@@ -16,6 +16,35 @@ body {
   background-color: mix($brand-light-blue, white, 60%)
 }
 
+// Lay the footer-center content (copyright/contact line + the "Edit this page"
+// repo action) on a single line instead of stacking "Edit this page" below.
+.nav-footer-center {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nav-footer-center > p {
+  margin-bottom: 0;
+}
+
+.nav-footer-center .toc-actions,
+.nav-footer-center .toc-actions ul,
+.nav-footer-center .toc-actions li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Separator so it reads "... Contact us · Edit this page".
+.nav-footer-center .toc-actions::before {
+  content: "·";
+  margin-right: 0.5rem;
+}
+
 .hero {
   display: flex;
   justify-content: center;
