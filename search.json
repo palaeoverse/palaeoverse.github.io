@@ -63,46 +63,53 @@
     "text": "Since 2022, Palaeoverse, and its activities, have received support from a number of organisations.\n\n\nStart of funding from the Software Sustainability Institute’s Research Software Maintenance Fund (AH/Z000114/1). This funding lasts until Feb. 2028.\n\n\n\n\n\nScientific Exchange grant from the Swiss National Science Fund to support the development of the rmacrostrat R package.\n\n\n\n\n\nSupport for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:\n\nMeeting support grant from The Palaeontological Society;\nThe Palaeontological Association, Transmitting Science, PRStatistics, and Jumping Rivers sponsored prizes;\nGrant-in-Aid (PA-GA202203, awarded in 2022) from The Palaeontological Association."
   },
   {
-    "objectID": "about/people/index.html",
-    "href": "about/people/index.html",
-    "title": "People",
+    "objectID": "about/ai-policy/index.html",
+    "href": "about/ai-policy/index.html",
+    "title": "AI policy",
     "section": "",
-    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
+    "text": "[TO UPDATE]\nPalaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. The objective of this initiative is also to enable researchers at every career stage to learn and develop new skills. The human aspect of this project is therefore important to us. We acknowledge the potential usefulness and growing prevalence of AI, but wish to see it used only where reasonable and appropriate.\nThe objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from Zulip’s AI policy.\n\n\nDo not post AI-generated messages, i.e., Zulip messages, Github issues, pull requests description, and other messages must be written by humans. You can use whatever tools you like for help with spelling, grammar, or translation.\nIf you need to quote an LLM answer in a conversation, put the answer in a quote block, to distinguish LLM output from your own thoughts.\n\n\n\nYou can use any tools that help you understand the codebase and write good code, including AI tools. If you used AI to generate code, you must disclose it in the PR description. Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an LLM as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested, as this wastes maintainers’ time.\nChanges in documentation (e.g., documenting a new function argument, adding a vignette, editing the changelog) can be based on LLM output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. A good rule of thumb is that if you can’t make yourself carefully read some LLM output that you generated, nobody else will want to read it either.\n\n\n\nViolating these rules may lead to message deletions or pull requests being closed, and repeated offences may lead to temporary or permanent bans."
   },
   {
-    "objectID": "about/people/index.html#core-team",
-    "href": "about/people/index.html#core-team",
-    "title": "People",
+    "objectID": "about/ai-policy/index.html#ai-for-communication",
+    "href": "about/ai-policy/index.html#ai-for-communication",
+    "title": "AI policy",
     "section": "",
-    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
+    "text": "Do not post AI-generated messages, i.e., Zulip messages, Github issues, pull requests description, and other messages must be written by humans. You can use whatever tools you like for help with spelling, grammar, or translation.\nIf you need to quote an LLM answer in a conversation, put the answer in a quote block, to distinguish LLM output from your own thoughts."
   },
   {
-    "objectID": "about/people/index.html#contributors",
-    "href": "about/people/index.html#contributors",
-    "title": "People",
-    "section": "Contributors",
-    "text": "Contributors\n\n\n\n\n\nChristopher D. Dean\n\n\n\n\n\n\n\nKilian Eichenseer\n\n\n\n\n\n\n\nAlessandro Alfio Chiarenza\n\n\n\n\n\n\n\nSofía Galván\n\n\n\n\n\n\n\nLucas Buffan\n\n\n\n\n\n\n\nMark Nikolic\n\n\n\n\n\n\n\nBruna Farina"
+    "objectID": "about/ai-policy/index.html#ai-for-coding",
+    "href": "about/ai-policy/index.html#ai-for-coding",
+    "title": "AI policy",
+    "section": "",
+    "text": "You can use any tools that help you understand the codebase and write good code, including AI tools. If you used AI to generate code, you must disclose it in the PR description. Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an LLM as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested, as this wastes maintainers’ time.\nChanges in documentation (e.g., documenting a new function argument, adding a vignette, editing the changelog) can be based on LLM output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. A good rule of thumb is that if you can’t make yourself carefully read some LLM output that you generated, nobody else will want to read it either."
   },
   {
-    "objectID": "blog/posts/post-with-code copy/index.html",
-    "href": "blog/posts/post-with-code copy/index.html",
+    "objectID": "about/ai-policy/index.html#rule-violations",
+    "href": "about/ai-policy/index.html#rule-violations",
+    "title": "AI policy",
+    "section": "",
+    "text": "Violating these rules may lead to message deletions or pull requests being closed, and repeated offences may lead to temporary or permanent bans."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/post-with-code/index.html",
+    "href": "blog/posts/post-with-code/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
   },
   {
-    "objectID": "blog/posts/welcome/index.html",
-    "href": "blog/posts/welcome/index.html",
+    "objectID": "blog/posts/welcome copy/index.html",
+    "href": "blog/posts/welcome copy/index.html",
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "external-resources/index.html",
-    "href": "external-resources/index.html",
-    "title": "External resources",
-    "section": "",
-    "text": "This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.\nIf you notice any issues with this page or wish to add a resource, please contact Christopher Dean or Erin Dillon."
   },
   {
     "objectID": "contributing/index.html",
@@ -133,53 +140,74 @@
     "text": "Please note that by contributing to Palaeoverse you agree to our Code of Conduct."
   },
   {
-    "objectID": "blog/posts/welcome copy/index.html",
-    "href": "blog/posts/welcome copy/index.html",
+    "objectID": "external-resources/index.html",
+    "href": "external-resources/index.html",
+    "title": "External resources",
+    "section": "",
+    "text": "This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.\nIf you notice any issues with this page or wish to add a resource, please contact Christopher Dean or Erin Dillon."
+  },
+  {
+    "objectID": "blog/posts/welcome/index.html",
+    "href": "blog/posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "blog/posts/post-with-code/index.html",
-    "href": "blog/posts/post-with-code/index.html",
+    "objectID": "blog/posts/post-with-code copy/index.html",
+    "href": "blog/posts/post-with-code copy/index.html",
     "title": "Post With Code",
     "section": "",
     "text": "Hello there! Let’s load the palaeoverse package:\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhead(dplyr::starwars)\n\n# A tibble: 6 × 14\n  name      height  mass hair_color skin_color eye_color birth_year sex   gender\n  &lt;chr&gt;      &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; \n1 Luke Sky…    172    77 blond      fair       blue            19   male  mascu…\n2 C-3PO        167    75 &lt;NA&gt;       gold       yellow         112   none  mascu…\n3 R2-D2         96    32 &lt;NA&gt;       white, bl… red             33   none  mascu…\n4 Darth Va…    202   136 none       white      yellow          41.9 male  mascu…\n5 Leia Org…    150    49 brown      light      brown           19   fema… femin…\n6 Owen Lars    178   120 brown, gr… light      blue            52   male  mascu…\n# ℹ 5 more variables: homeworld &lt;chr&gt;, species &lt;chr&gt;, films &lt;list&gt;,\n#   vehicles &lt;list&gt;, starships &lt;list&gt;"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "about/people/index.html",
+    "href": "about/people/index.html",
+    "title": "People",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nMay 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nMay 10, 2026\n\n\n\n\n\n\nNo matching items"
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
-    "objectID": "about/ai-policy/index.html",
-    "href": "about/ai-policy/index.html",
-    "title": "AI policy",
+    "objectID": "about/people/index.html#core-team",
+    "href": "about/people/index.html#core-team",
+    "title": "People",
     "section": "",
-    "text": "[TO UPDATE]\nPalaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. The objective of this initiative is also to enable researchers at every career stage to learn and develop new skills. The human aspect of this project is therefore important to us. We acknowledge the potential usefulness and growing prevalence of AI, but wish to see it used only where reasonable and appropriate.\nThe objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from Zulip’s AI policy.\n\n\nDo not post AI-generated messages, i.e., Zulip messages, Github issues, pull requests description, and other messages must be written by humans. You can use whatever tools you like for help with spelling, grammar, or translation.\nIf you need to quote an LLM answer in a conversation, put the answer in a quote block, to distinguish LLM output from your own thoughts.\n\n\n\nYou can use any tools that help you understand the codebase and write good code, including AI tools. If you used AI to generate code, you must disclose it in the PR description. Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an LLM as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested, as this wastes maintainers’ time.\nChanges in documentation (e.g., documenting a new function argument, adding a vignette, editing the changelog) can be based on LLM output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. A good rule of thumb is that if you can’t make yourself carefully read some LLM output that you generated, nobody else will want to read it either.\n\n\n\nViolating these rules may lead to message deletions or pull requests being closed, and repeated offences may lead to temporary or permanent bans."
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
-    "objectID": "about/ai-policy/index.html#ai-for-communication",
-    "href": "about/ai-policy/index.html#ai-for-communication",
-    "title": "AI policy",
-    "section": "",
-    "text": "Do not post AI-generated messages, i.e., Zulip messages, Github issues, pull requests description, and other messages must be written by humans. You can use whatever tools you like for help with spelling, grammar, or translation.\nIf you need to quote an LLM answer in a conversation, put the answer in a quote block, to distinguish LLM output from your own thoughts."
+    "objectID": "about/people/index.html#contributors",
+    "href": "about/people/index.html#contributors",
+    "title": "People",
+    "section": "Contributors",
+    "text": "Contributors\n\n\n\n\n\nChristopher D. Dean\n\n\n\n\n\n\n\nKilian Eichenseer\n\n\n\n\n\n\n\nAlessandro Alfio Chiarenza\n\n\n\n\n\n\n\nSofía Galván\n\n\n\n\n\n\n\nLucas Buffan\n\n\n\n\n\n\n\nMark Nikolic\n\n\n\n\n\n\n\nBruna Farina"
   },
   {
-    "objectID": "about/ai-policy/index.html#ai-for-coding",
-    "href": "about/ai-policy/index.html#ai-for-coding",
-    "title": "AI policy",
+    "objectID": "about/about-us/index.html",
+    "href": "about/about-us/index.html",
+    "title": "About us",
     "section": "",
-    "text": "You can use any tools that help you understand the codebase and write good code, including AI tools. If you used AI to generate code, you must disclose it in the PR description. Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an LLM as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested, as this wastes maintainers’ time.\nChanges in documentation (e.g., documenting a new function argument, adding a vignette, editing the changelog) can be based on LLM output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. A good rule of thumb is that if you can’t make yourself carefully read some LLM output that you generated, nobody else will want to read it either."
+    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\nFounded in 2022 by Lewis A. Jones, Palaeoverse grew out of a simple but widespread frustration: palaeontologists were independently reinventing the same workflows. Without standard tools or protocols for cleaning and preparing data, duplicated effort was the norm and reproducibility suffered. A group of early-career researchers decided to do something about it.\nThe result was the palaeoverse R package, a toolkit designed to streamline data preparation and exploration for palaeontological research. What began as a pragmatic solution to a shared problem has since grown into something larger: a formally organised initiative spanning a full software ecosystem, hands-on training workshops, community resources, and spaces for researchers at all career stages to connect and collaborate."
   },
   {
-    "objectID": "about/ai-policy/index.html#rule-violations",
-    "href": "about/ai-policy/index.html#rule-violations",
-    "title": "AI policy",
-    "section": "",
-    "text": "Violating these rules may lead to message deletions or pull requests being closed, and repeated offences may lead to temporary or permanent bans."
+    "objectID": "about/about-us/index.html#our-impact",
+    "href": "about/about-us/index.html#our-impact",
+    "title": "About us",
+    "section": "Our Impact",
+    "text": "Our Impact\nWe contribute to making palaeontology a more open, reproducible, and supportive discipline.\n\nWe develop and maintain software toolkits to support palaeontological research\nWe have trained 150+ researchers in R, open science, collaboration, and reproducibility through our workshops\nWe have organised 30+ online events, including lecture series, workshops, and open calls for the community\nWe run community spaces to offer a platform for palaeontologists to engage in healthy discussion, advertise opportunities, share new publications, and support one another"
+  },
+  {
+    "objectID": "about/about-us/index.html#contact-us",
+    "href": "about/about-us/index.html#contact-us",
+    "title": "About us",
+    "section": "Contact Us",
+    "text": "Contact Us\nEmail: info@palaeoverse.org\nAddress: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK1"
+  },
+  {
+    "objectID": "about/about-us/index.html#footnotes",
+    "href": "about/about-us/index.html#footnotes",
+    "title": "About us",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nCurrent and past members of the Palaeoverse team are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.↩︎"
   },
   {
     "objectID": "about/code-of-conduct/index.html",
