@@ -73,7 +73,7 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 <br>
-<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1111/2041-210X.14099">DOI: 10.1111/2041-210X.14099</a></div>
+<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1111/2041-210X.14099"  target="_blank">DOI: 10.1111/2041-210X.14099</a></div>
 
 
 :::
@@ -96,7 +96,7 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 <br>
-<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1130/GES02815.1">DOI: 10.1130/GES02815.1</a></div>
+<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1130/GES02815.1"  target="_blank">DOI: 10.1130/GES02815.1</a></div>
 :::
 
 ::: {.package-card}
@@ -117,7 +117,7 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 <br>
-<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.1111/2041-210X.14221">DOI: 10.1111/2041-210X.14221</a></div>
+<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1111/2041-210X.14221"  target="_blank">DOI: 10.1111/2041-210X.14221</a></div>
 :::
 
 ::: {.package-card}
@@ -138,7 +138,7 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 :::
 
 <br>
-<div style="width: 100%; text-align: center;"><a href="https://doi.org/10.5281/zenodo.7342194">DOI: 10.5281/zenodo.7342194</a></div>
+<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.5281/zenodo.7342194"  target="_blank">DOI: 10.5281/zenodo.7342194</a></div>
 :::
 
 :::
