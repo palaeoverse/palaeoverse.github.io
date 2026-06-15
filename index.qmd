@@ -1,7 +1,13 @@
 ---
+# This ensures that the brpwser tab has the name "Palaeoverse".
+# Do not use "title" param because we don't want this to appear 
+# on the page.
 pagetitle: "Palaeoverse"
 toc: false
 engine: knitr
+# Used so that we can apply some custom CSS to classes that appear
+# on all pages but that we want to customize on the homepage only.
+body-classes: homepage
 ---
 
 ```{=html}

@@ -52,6 +52,63 @@ body {
   margin: 4rem 0 1rem 0;
 }
 
+// Home page only — fits the page to one viewport and pins the footer. The
+// `homepage` body class is set via `body-classes` in index.qmd's front matter.
+body.homepage {
+  // Make the page exactly one viewport tall with the footer pinned to the
+  // bottom (no scrolling, no magic numbers). body is a flex column; the footer
+  // is the last child, so #quarto-content grows to fill the space above it.
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  #quarto-content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    // Flexing #quarto-content drops the page-columns grid that normally
+    // constrains the article width, so restore it here (matches Quarto's
+    // body-content column: minmax(500px, calc(850px - 3em))).
+    width: 100%;
+    max-width: calc(850px - 3em);
+    margin-inline: auto;
+    padding-inline: 1.5em;
+  }
+
+  .hero {
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .hero-logo {
+    width: auto;
+    max-width: 100%;
+    max-height: 190px;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .hero-buttons {
+    margin-top: 1rem;
+  }
+
+  // auto top/bottom margins center the stats in the free space between the
+  // buttons and the footer.
+  .stats-section {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1rem;
+  }
+}
+
 .hero-logo {
   width: 100%;
   max-width: 840px;
