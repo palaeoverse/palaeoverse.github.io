@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-333fd148de2a35813219c84c92be71d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-27d3c7bb2b96f28d1684498cf1c88ef6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-333fd148de2a35813219c84c92be71d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-db79564c1bcc95ead401493a5beb47df.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-7f8b24a61e2f6263f484597815ba7c6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-db79564c1bcc95ead401493a5beb47df.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -209,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#i-want-to-attend" id="toc-i-want-to-attend" class="nav-link active" data-scroll-target="#i-want-to-attend">I want to attend</a></li>
   <li><a href="#i-want-to-present" id="toc-i-want-to-present" class="nav-link" data-scroll-target="#i-want-to-present">I want to present</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/palaeoverse/palaeoverse-quarto/edit/main/events/lecture-series/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/palaeoverse/palaeoverse.github.io/edit/main/events/lecture-series/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -240,9 +240,37 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>See past and future lectures on our <a href="../../events/all-events/">Events page</a></li>
 <li>Lectures will be held from 15:00–16:00 UTC</li>
-<li>Register <a href="https://bit.ly/palaeoverse-lectures">here</a></li>
-<li>All are welcome to join and we ask that all participants abide by the <a href="../../about/code-of-conduct/">Palaeoverse Code of Conduct</a></li>
+<li>All are welcome to join</li>
 </ul>
+<p><br></p>
+<p><label class="container"> <input type="checkbox" id="coc-agree"> <span class="checkmark">I agree to follow the <a href="../about/code-of-conduct/" target="_blank">Code of Conduct</a>.</span> </label></p>
+<div class="hero-buttons">
+<p><a href="https://bit.ly/palaeoverse-lectures" id="register-lecture-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Register<i class="bi bi-box-arrow-up-right"></i></a></p>
+</div>
+<style>
+.landing-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("coc-agree");
+  const button = document.getElementById("register-lecture-btn");
+  checkbox.addEventListener("change", function () {
+    const enabled = checkbox.checked;
+    button.classList.toggle("disabled", !enabled);
+    button.setAttribute("aria-disabled", String(!enabled));
+  });
+  // block navigation while disabled (keeps pointer events so the
+  // cursor styling applies only over the link itself)
+  button.addEventListener("click", function (e) {
+    if (button.classList.contains("disabled")) {
+      e.preventDefault();
+    }
+  });
+});
+</script>
 </section>
 <section id="i-want-to-present" class="level2">
 <h2 data-anchor-id="i-want-to-present">I want to present</h2>
@@ -652,8 +680,8 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Copyright 2026, Palaeoverse ·&nbsp; <a href="mailto:LewisA.Jones@outlook.com">Contact us</a> ·&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/palaeoverse/palaeoverse-quarto/edit/main/events/lecture-series/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+<p>Copyright 2026, Palaeoverse &nbsp; ·&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>&nbsp;&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; ·&nbsp; <a href="mailto:LewisA.Jones@outlook.com">Contact us</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/palaeoverse/palaeoverse.github.io/edit/main/events/lecture-series/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

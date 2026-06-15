@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip\n  Check our packages\n  See our next events\n  Attend our lecture series\n\n\n  \n    \n      0\n      +\n    \n    Package Downloads\n  \n  \n    \n      0\n      +\n    \n    Citations"
+    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.\n\n  Join the community on Zulip\n  Check out our packages\n  See our next events\n  Attend our lecture series\n\n\n  \n    \n      0\n      +\n    \n    Package Downloads\n  \n  \n    \n      0\n      +\n    \n    Citations"
   },
   {
     "objectID": "events/lecture-series/index.html",
@@ -18,7 +18,7 @@
     "href": "events/lecture-series/index.html#i-want-to-attend",
     "title": "Lecture series",
     "section": "I want to attend",
-    "text": "I want to attend\nImportant information:\n\nSee past and future lectures on our Events page\nLectures will be held from 15:00–16:00 UTC\nRegister here\nAll are welcome to join and we ask that all participants abide by the Palaeoverse Code of Conduct"
+    "text": "I want to attend\nImportant information:\n\nSee past and future lectures on our Events page\nLectures will be held from 15:00–16:00 UTC\nAll are welcome to join\n\n\n  I agree to follow the Code of Conduct. \n\nRegister"
   },
   {
     "objectID": "events/lecture-series/index.html#i-want-to-present",
@@ -32,14 +32,14 @@
     "href": "events/all-events/index.html",
     "title": "All events",
     "section": "",
-    "text": "DEV NOTES: I manually added cards (with wrong details) to the list so that “Future events” isn’t empty.\nAll events are shown by default. Select one or more types to filter:\nLecture Series\nWorkshop\nSelect the view mode:"
+    "text": "All events are shown by default. Select one or more types to filter:\nLecture Series\nWorkshop\nSelect the view mode:"
   },
   {
     "objectID": "events/all-events/index.html#future-events",
     "href": "events/all-events/index.html#future-events",
     "title": "All events",
     "section": "Future events",
-    "text": "Future events\n\n\n\nLecture SeriesENMs in the fossil recordJune 25, 2026 · 15:00 UTC  Cori Myers Register\nLecture SeriesBudding phylogenetic trees: inference with BEAST2 and post-processing with paleobuddyAugust 27, 2026 · 15:00 UTC  Bruno do Rosario Petrucci Register\nLecture SeriesCarboKitten.jlSeptember 24, 2026 · 15:00 UTC  Emilia Jarochowska Register\nLecture SeriesRecommender Systems modelling for abundance/density reconstructionsNovember 19, 2026 · 15:00 UTC  Abigail Parker Register\nWorkshopPalaeoverse workshop at IPC7November 30, 2026 · Cape Town, South Africa\nWorkshopPalaeoverse workshopJanuary 15, 2027 · University College London, London, United Kingdom\nWorkshopPalaeoverse workshop at CPEGAugust 06, 2027 · University College London, London, United Kingdom\n\nNo events match the selected filters."
+    "text": "Future events\n\n\n\nLecture SeriesENMs in the fossil recordJune 25, 2026 · 15:00 UTC  Cori Myers Register More info\nLecture SeriesBudding phylogenetic trees: inference with BEAST2 and post-processing with paleobuddyAugust 27, 2026 · 15:00 UTC  Bruno do Rosario Petrucci Register More info\nLecture SeriesCarboKitten.jlSeptember 24, 2026 · 15:00 UTC  Emilia Jarochowska Register More info\nLecture SeriesRecommender Systems modelling for abundance/density reconstructionsNovember 19, 2026 · 15:00 UTC  Abigail Parker Register More info\nWorkshopPalaeoverse workshop at IPC7November 30, 2026 · Cape Town, South Africa\nWorkshopPalaeoverse workshopJanuary 15, 2027 · University College London, London, United Kingdom\nWorkshopPalaeoverse workshop at CPEGAugust 06, 2027 · University College London, London, United Kingdom\n\nNo events match the selected filters."
   },
   {
     "objectID": "events/all-events/index.html#past-events",
@@ -58,30 +58,30 @@
   {
     "objectID": "about/sponsors/index.html",
     "href": "about/sponsors/index.html",
-    "title": "Sponsors",
+    "title": "Sponsors and Collaborators",
     "section": "",
-    "text": "[TO UPDATE]"
+    "text": "Since 2022, Palaeoverse, and its activities, have received support from a number of organisations.\n\n\nStart of funding from the Software Sustainability Institute’s Research Software Maintenance Fund (AH/Z000114/1). This funding lasts until Feb. 2028.\n\n\n\n\n\nScientific Exchange grant from the Swiss National Science Fund to support the development of the rmacrostrat R package.\n\n\n\n\n\nSupport for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:\n\nMeeting support grant from The Palaeontological Society;\nThe Palaeontological Association, Transmitting Science, PRStatistics, and Jumping Rivers sponsored prizes;\nGrant-in-Aid (PA-GA202203, awarded in 2022) from The Palaeontological Association."
   },
   {
     "objectID": "about/people/index.html",
     "href": "about/people/index.html",
     "title": "People",
     "section": "",
-    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
     "objectID": "about/people/index.html#core-team",
     "href": "about/people/index.html#core-team",
     "title": "People",
     "section": "",
-    "text": "GFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London"
+    "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
-    "objectID": "about/people/index.html#past-contributors",
-    "href": "about/people/index.html#past-contributors",
+    "objectID": "about/people/index.html#contributors",
+    "href": "about/people/index.html#contributors",
     "title": "People",
-    "section": "Past contributors",
-    "text": "Past contributors\n[TO CHECK AND TO COMPLETE]\n\nLucas Buffan\nHarriet Drage\nKilian Eichenseer\nBruna Farina\nSofía Galván"
+    "section": "Contributors",
+    "text": "Contributors\n\n\n\n\n\nChristopher D. Dean\n\n\n\n\n\n\n\nKilian Eichenseer\n\n\n\n\n\n\n\nAlessandro Alfio Chiarenza\n\n\n\n\n\n\n\nSofía Galván\n\n\n\n\n\n\n\nLucas Buffan\n\n\n\n\n\n\n\nMark Nikolic\n\n\n\n\n\n\n\nBruna Farina"
   },
   {
     "objectID": "blog/posts/post-with-code copy/index.html",
@@ -291,7 +291,7 @@
     "href": "our-packages/index.html",
     "title": "Our packages",
     "section": "",
-    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\n28   \n\n18k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14099\n\n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\n2   \n\n6k+\n\n     \n\n\n\nDOI: 10.1130/GES02815.1\n\n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\n97   \n\n51k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14221\n\n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\n2   \n\n9k+\n\n     \n\n\n\nDOI: 10.5281/zenodo.7342194"
+    "text": "palaeoverse\nPrepare and Explore Data for Palaeobiological Analyses\n\n28   \n\n19k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14099\n\n\n\n\n\n\n\nrmacrostrat\nFetch Geologic Data from the ‘Macrostrat’ Platform\n\n2   \n\n6k+\n\n     \n\n\n\nDOI: 10.1130/GES02815.1\n\n\n\n\n\n\n\nrphylopic\nGet Silhouettes of Organisms from PhyloPic\n\n97   \n\n51k+\n\n     \n\n\n\nDOI: 10.1111/2041-210X.14221\n\n\n\n\n\n\n\nsepkoski\nSepkoski’s Fossil Marine Animal Genera Compendium\n\n2   \n\n9k+\n\n     \n\n\n\nDOI: 10.5281/zenodo.7342194"
   },
   {
     "objectID": "events/workshops/index.html",
