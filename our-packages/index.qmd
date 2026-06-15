@@ -1,6 +1,7 @@
 ---
 title: "Our packages"
 toc: false
+body-classes: packages-page
 ---
 
 ```{r}

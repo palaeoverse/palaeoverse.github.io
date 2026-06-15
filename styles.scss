@@ -233,6 +233,50 @@ body.homepage {
   margin-top: 2rem;
 }
 
+// our-packages page only: compact the cards so all four fit in one viewport.
+// The `packages-page` body class is set via `body-classes` in the page's
+// front matter.
+body.packages-page {
+  .package-grid {
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .package-card {
+    min-height: 0;
+    padding: 0.75rem 1rem;
+  }
+
+  .package-hex {
+    max-width: 130px;
+  }
+
+  .package-card h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+  }
+
+  .package-subtitle {
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .package-actions {
+    margin-top: 0.5rem !important;
+  }
+
+  // Drop the manual <br> spacer above the DOI line and tighten that line.
+  .package-card br {
+    display: none;
+  }
+
+  .package-card>div[style] {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+
 .package-card {
   display: flex;
   flex-direction: column;
