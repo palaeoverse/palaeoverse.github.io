@@ -35,7 +35,7 @@ our_events <- read_sheet(
 
 lectures <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
-) |> lectures |>
+) |> 
   filter(grepl(" ", Name)) |>
   filter(!is.na(Title)) |>
   unnest(Date) |>
@@ -112,20 +112,30 @@ render_cards <- function(df) {
     filter_key <- to_filter_key(row$Post)
     date_str <- format(row$Date, "%B %d, %Y")
     has_link <- !is.na(row$Link) && nzchar(row$Link)
-    badge <- if (
-      row$Post == "Lecture Series" && has_link && grepl("youtube", row$Link)
-    ) {
-      sprintf(
-        '<p class="event-youtube"><i class="bi bi-youtube"></i>&nbsp;<a href="%s" target="_blank">Watch on YouTube</a></p>',
-        row$Link
-      )
-    } else if (
-      row$Post == "Lecture Series" && has_link && !grepl("youtube", row$Link)
-    ) {
-      sprintf(
-        '<p class="event-register"><i class="bi bi-box-arrow-up-right"></i>&nbsp;<a href="%s" target="_blank">Register</a></p>',
-        row$Link
-      )
+    has_youtube_link <- has_link && grepl("youtube", row$Link)
+    badge <- if (row$Post == "Lecture Series") {
+      actions <- if (has_youtube_link) {
+        sprintf(
+          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-youtube"></i>&nbsp;Watch on YouTube</a>',
+          row$Link
+        )
+      } else if (has_link) {
+        register <- sprintf(
+          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-box-arrow-up-right"></i>&nbsp;Register</a>',
+          row$Link
+        )
+        more <- '<a class="event-card-btn" href="/events/lecture-series/" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
+        paste0(register, more)
+      } else {
+        ""
+      }
+      # Always wrap in .event-actions so the buttons stay pinned to the card
+      # bottom (margin-top: auto), whether there is one button or two.
+      if (nzchar(actions)) {
+        sprintf('<div class="event-actions">%s</div>', actions)
+      } else {
+        ""
+      }
     } else {
       ""
     }

@@ -545,25 +545,38 @@ a.event-link .event-card {
   cursor: pointer;
 }
 
-.event-youtube {
+.event-actions {
   margin-top: auto;
   padding-top: 0.75rem;
-  margin-bottom: 0;
-  text-align: center;
-
-  .bi-youtube {
-    font-size: 0.85em;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.event-register {
-  margin-top: auto;
-  padding-top: 0.75rem;
-  margin-bottom: 0;
-  text-align: center;
+.event-card-btn {
+  // flex-grow so buttons share the row; the 120px basis means two buttons
+  // wrap onto separate lines (stacking) once the card gets too narrow.
+  flex: 1 1 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 
-  .bi-box-arrow-up-right {
+  .bi {
     font-size: 0.85em;
+  }
+
+  &:hover,
+  &:hover .bi {
+    background: $brand-white;
+    color: $body-color;
+    text-decoration: none;
   }
 }
 
