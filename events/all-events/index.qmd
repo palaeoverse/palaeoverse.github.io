@@ -16,7 +16,7 @@ library(tidyr)
 gs4_deauth()
 
 # Expected columns: Post, Title, Date, Location, Description
-events <- read_sheet(
+past_workshops <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1escqpJM_Ljt5h5claM0xV5e9IEWBv6rNMIsuQsnUXYY/edit?gid=0#gid=0"
 ) |>
   filter(Post %in% "Workshop") |>
@@ -35,9 +35,7 @@ our_events <- read_sheet(
 
 lectures <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
-)
-
-lectures <- lectures |>
+) |> lectures |>
   filter(grepl(" ", Name)) |>
   filter(!is.na(Title)) |>
   unnest(Date) |>
@@ -56,7 +54,7 @@ lectures <- lectures |>
   ) |>
   select(Post, Date, Title, Location, Link = `Youtube link`)
 
-events <- bind_rows(events, our_events, lectures)
+events <- bind_rows(past_workshops, our_events, lectures)
 
 
 today <- Sys.Date()
@@ -164,8 +162,6 @@ render_cards <- function(df) {
   knitr::asis_output(paste(parts, collapse = "\n"))
 }
 ```
-
-***DEV NOTES:** I manually added cards (with wrong details) to the list so that "Future events" isn't empty.*
 
 All events are shown by default. Select one or more types to filter:
 ```{r}
