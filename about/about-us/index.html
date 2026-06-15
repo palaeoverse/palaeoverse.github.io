@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b5cea9314b4d5357035ff6cf4f0b225e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-645592bf3e3c9b1b0458e4ec1673a6c2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-b5cea9314b4d5357035ff6cf4f0b225e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e272391c59218257acc890d6a95528ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-fad4b04d9374c07f90b4bf69a1e446e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e272391c59218257acc890d6a95528ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -270,8 +270,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Address: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-fa3348a95a8a1a3e7e27" style="width:100%;height:500px;" class="maplibregl html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fa3348a95a8a1a3e7e27">{"x":{"style":"https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json","center":[-0.1369212,51.525385],"zoom":3,"bearing":0,"pitch":0,"projection":"mercator","additional_params":[],"fullscreen_control":{"enabled":true,"position":"top-left"},"navigation_control":{"show_compass":true,"show_zoom":true,"visualize_pitch":false,"position":"top-right","orientation":"vertical"},"layers":[{"id":"poi-layer","type":"circle","source":{"type":"geojson","data":{"type":"Point","coordinates":[-0.1369212,51.525385]},"generateId":true},"source_layer":null,"paint":{"circle-color":"#575756","circle-opacity":0.8,"circle-radius":8,"circle-stroke-color":"#ffffff","circle-stroke-width":2,"circle-translate-anchor":"map"},"layout":{"visibility":"visible"},"slot":null,"minzoom":null,"maxzoom":null,"popup":null,"tooltip":null,"hover_options":null,"before_id":null,"filter":null}]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-8dd39ff16741b73edd13" style="width:100%;height:500px;" class="maplibregl html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8dd39ff16741b73edd13">{"x":{"style":"https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json","center":[-0.1369212,51.525385],"zoom":3,"bearing":0,"pitch":0,"projection":"mercator","additional_params":[],"fullscreen_control":{"enabled":true,"position":"top-left"},"navigation_control":{"show_compass":true,"show_zoom":true,"visualize_pitch":false,"position":"top-right","orientation":"vertical"},"layers":[{"id":"poi-layer","type":"circle","source":{"type":"geojson","data":{"type":"Point","coordinates":[-0.1369212,51.525385]},"generateId":true},"source_layer":null,"paint":{"circle-color":"#575756","circle-opacity":0.8,"circle-radius":8,"circle-stroke-color":"#ffffff","circle-stroke-width":2,"circle-translate-anchor":"map"},"layout":{"visibility":"visible"},"slot":null,"minzoom":null,"maxzoom":null,"popup":null,"tooltip":null,"hover_options":null,"before_id":null,"filter":null}]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -285,6 +285,39 @@ ul.task-list li input[type="checkbox"] {
 <li id="fn1"><p><a href="../../about/people/" target="_blank">Current and past members of the Palaeoverse team</a> are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
+<script>
+// Quarto doesn't add an `active` class to the current page's navbar link in
+// this setup, so do it ourselves: match each top-level navbar link's path
+// against the current page and mark it.
+document.addEventListener('DOMContentLoaded', function () {
+  function norm(path) {
+    path = path.replace(/index\.html$/, '');
+    if (!path.endsWith('/')) path += '/';
+    return path;
+  }
+  var current = norm(window.location.pathname);
+  var links = document.querySelectorAll(
+    '.navbar a.nav-link[href], .navbar a.dropdown-item[href]'
+  );
+  links.forEach(function (a) {
+    // Never match dropdown toggles themselves: they use href="#", which
+    // resolves to the current page (matching everywhere), and the href can be
+    // rewritten at runtime — so exclude them by class. They get `active` only
+    // via the parent-marking below, when one of their menu items is current.
+    if (a.classList.contains('dropdown-toggle')) return;
+    if (a.host !== window.location.host) return;
+    if (norm(a.pathname) !== current) return;
+
+    a.classList.add('active');
+    // If this is a menu item, also light up its parent dropdown toggle.
+    var dropdown = a.closest('.nav-item.dropdown');
+    if (dropdown) {
+      var toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
+      if (toggle) toggle.classList.add('active');
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

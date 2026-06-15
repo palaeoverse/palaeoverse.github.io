@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b5cea9314b4d5357035ff6cf4f0b225e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-645592bf3e3c9b1b0458e4ec1673a6c2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-b5cea9314b4d5357035ff6cf4f0b225e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e272391c59218257acc890d6a95528ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-fad4b04d9374c07f90b4bf69a1e446e6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e272391c59218257acc890d6a95528ca.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -237,6 +237,39 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+// Quarto doesn't add an `active` class to the current page's navbar link in
+// this setup, so do it ourselves: match each top-level navbar link's path
+// against the current page and mark it.
+document.addEventListener('DOMContentLoaded', function () {
+  function norm(path) {
+    path = path.replace(/index\.html$/, '');
+    if (!path.endsWith('/')) path += '/';
+    return path;
+  }
+  var current = norm(window.location.pathname);
+  var links = document.querySelectorAll(
+    '.navbar a.nav-link[href], .navbar a.dropdown-item[href]'
+  );
+  links.forEach(function (a) {
+    // Never match dropdown toggles themselves: they use href="#", which
+    // resolves to the current page (matching everywhere), and the href can be
+    // rewritten at runtime — so exclude them by class. They get `active` only
+    // via the parent-marking below, when one of their menu items is current.
+    if (a.classList.contains('dropdown-toggle')) return;
+    if (a.host !== window.location.host) return;
+    if (norm(a.pathname) !== current) return;
+
+    a.classList.add('active');
+    // If this is a menu item, also light up its parent dropdown toggle.
+    var dropdown = a.closest('.nav-item.dropdown');
+    if (dropdown) {
+      var toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
+      if (toggle) toggle.classList.add('active');
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
