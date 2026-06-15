@@ -570,13 +570,21 @@ a.event-link .event-card {
 
   .bi {
     font-size: 0.85em;
+    // Bootstrap Icons' default vertical-align: -0.125em is ignored inside a
+    // flex container, so nudge the glyph back down to line up with the label.
+    line-height: 1;
+    transform: translateY(0.07em);
   }
 
-  &:hover,
-  &:hover .bi {
+  &:hover {
     background: $brand-white;
     color: $body-color;
     text-decoration: none;
+  }
+
+  // Only recolor the icon on hover; don't give it its own background.
+  &:hover .bi {
+    color: $body-color;
   }
 }
 

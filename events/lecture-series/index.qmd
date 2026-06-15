@@ -12,8 +12,48 @@ Important information:
 
 - See past and future lectures on our [Events page](/events/all-events/)
 - Lectures will be held from 15:00--16:00 UTC
-- Register [here](https://bit.ly/palaeoverse-lectures) 
-- All are welcome to join and we ask that all participants abide by the [Palaeoverse Code of Conduct](/about/code-of-conduct/)
+- All are welcome to join
+
+<br>
+
+<label class="container">
+  <input type="checkbox" id="coc-agree">
+  <span class="checkmark">I agree to follow the [Code of Conduct](../about/code-of-conduct/){target="_blank"}.</span>
+</label>
+
+<div class="hero-buttons">
+  <a href="https://bit.ly/palaeoverse-lectures" id="register-lecture-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Register<i class="bi bi-box-arrow-up-right"></i></a>
+</div>
+
+```{=html}
+<style>
+.landing-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("coc-agree");
+  const button = document.getElementById("register-lecture-btn");
+  checkbox.addEventListener("change", function () {
+    const enabled = checkbox.checked;
+    button.classList.toggle("disabled", !enabled);
+    button.setAttribute("aria-disabled", String(!enabled));
+  });
+  // block navigation while disabled (keeps pointer events so the
+  // cursor styling applies only over the link itself)
+  button.addEventListener("click", function (e) {
+    if (button.classList.contains("disabled")) {
+      e.preventDefault();
+    }
+  });
+});
+</script>
+```
+
+
+
 
 ## I want to present
 
