@@ -1,0 +1,49 @@
+---
+title: "About us"
+toc: false
+---
+
+Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.
+
+Founded in 2022 by Lewis A. Jones, Palaeoverse grew out of a simple but widespread frustration: palaeontologists were independently reinventing the same workflows. Without standard tools or protocols for cleaning and preparing data, duplicated effort was the norm and reproducibility suffered. A group of early-career researchers decided to do something about it.
+
+The result was the [palaeoverse R package](https://palaeoverse.palaeoverse.org/), a toolkit designed to streamline data preparation and exploration for palaeontological research. What began as a pragmatic solution to a shared problem has since grown into something larger: a formally organised initiative spanning a full software ecosystem, hands-on training workshops, community resources, and spaces for researchers at all career stages to connect and collaborate.
+
+## Our Impact
+
+We contribute to making palaeontology a more open, reproducible, and supportive discipline.
+
+- We develop and maintain software toolkits to support palaeontological research
+- We have trained 150+ researchers in R, open science, collaboration, and reproducibility through our workshops
+- We have organised 30+ online events, including lecture series, workshops, and open calls for the community
+- We run community spaces to offer a platform for palaeontologists to engage in healthy discussion, advertise opportunities, share new publications, and support one another
+
+
+## Contact Us
+
+Email: [info@palaeoverse.org](mailto:info@palaeoverse.org)
+
+Address: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK[^1]
+
+```{r}
+#| echo: false
+library(mapgl)
+
+map_dat <- data.frame(lat = 51.525385, long = -0.1369212) |>
+  sf::st_as_sf(coords = c("long", "lat"), crs = 4326) 
+
+maplibre(projection = "mercator", zoom = 3, height = "500px", center = c(-0.1369212, 51.525385)) |>
+  add_fullscreen_control(position = "top-left") |>
+  add_navigation_control() |>
+  add_circle_layer(
+    id = "poi-layer",
+    source = map_dat,
+    circle_color = "#575756",
+    circle_radius = 8,
+    circle_stroke_color = "#ffffff",
+    circle_stroke_width = 2,
+    circle_opacity = 0.8
+  ) 
+```
+
+[^1]: [Current and past members of the Palaeoverse team](../../about/people/){target="_blank"} are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
