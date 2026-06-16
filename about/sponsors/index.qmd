@@ -12,21 +12,35 @@ Since 2022, Palaeoverse, and its activities, have received support from a number
 
 
 ::: {.timeline .vertical-alt style="--tl-gap: 5rem;"}
-::: {.event data-label="Feb. 2026"}
+
+::: {.event data-label="Mar. 2026" data-location="left"}
+[Zulip](https://zulip.com/) is an organized team chat app designed for efficient communication. It sponsors our access to the Zulip Cloud Standard.
+
+::: {.tl-logo}
+![](../../_img/other_logos/zulip-logo.png){width="40%"}
+:::
+:::
+
+
+::: {.event data-label="Feb. 2026" data-location="right"}
 Start of funding from the [Software Sustainability Institute](https://www.software.ac.uk/)’s Research Software Maintenance Fund (AH/Z000114/1). This funding lasts until Feb. 2028.
 
 ::: {.tl-logo}
 ![](../../_img/ssi_logos/RED LOGOS/SSI_PRIMARY-LOGO.png)
 :::
 :::
-::: {.event data-label="2024"}
+
+
+::: {.event data-label="2024" data-location="left"}
 Scientific Exchange grant from the [Swiss National Science Fund](https://www.snf.ch/en) to support the development of the rmacrostrat R package.
 
 ::: {.tl-logo .tl-logo-snf}
 ![](../../_img/snf_logos/png/SNF_logo_standard_web_color_pos_e.png)
 :::
 :::
-::: {.event .tl-flip data-label="Sep. 2023"}
+
+
+::: {.event data-label="Sep. 2023" data-location="right"}
 Support for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:
 
 * Meeting support grant from [The Palaeontological Society](https://www.paleosoc.org);

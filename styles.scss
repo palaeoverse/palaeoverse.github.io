@@ -888,6 +888,8 @@ h2 {
   gap: 0.75rem 1rem;
   align-items: center;
   justify-items: center;
+  // A tall multi-logo grid centers vertically (single logos use the base 30%).
+  top: 50%;
 }
 
 .timeline.vertical-alt .tl-logo-grid p {
@@ -917,44 +919,49 @@ h2 {
   text-align: right;
 }
 
-// .tl-flip: force a single event onto the other side of the line, overriding
-// the automatic odd/even alternation (e.g. for left-side events whose
-// right-aligned text — like bullet lists — reads poorly).
+// data-location: pin an event to a specific side of the line instead of relying
+// on the automatic odd/even alternation (which shifts whenever events are added
+// or reordered). Put data-location="left" or "right" on the .event; the logo
+// (.tl-logo) automatically goes to the opposite side.
+//
+// .vertical-alt is repeated to raise specificity above both the extension's
+// :nth-child rules and the nth-child .tl-logo rules above, so these win
+// regardless of stylesheet load order.
 
-// Odd event flipped to the RIGHT side (left-aligned text).
-.timeline.vertical-alt .event.tl-flip:nth-child(odd) {
-  align-self: flex-end;
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.timeline.vertical-alt .event.tl-flip:nth-child(odd)::after {
-  left: calc(-30px - var(--tl-dot-size) / 2);
-  right: auto;
-}
-
-.timeline.vertical-alt .event.tl-flip:nth-child(odd) .tl-logo {
-  right: calc(100% + 60px);
-  left: auto;
-  text-align: right;
-}
-
-// Even event flipped to the LEFT side (right-aligned text).
-.timeline.vertical-alt .event.tl-flip:nth-child(even) {
+// Text on the LEFT half -> logo on the right.
+.timeline.vertical-alt.vertical-alt .event[data-location="left"] {
   align-self: flex-start;
   text-align: right;
   padding-right: 16px;
   padding-left: 0;
 }
 
-.timeline.vertical-alt .event.tl-flip:nth-child(even)::after {
+.timeline.vertical-alt.vertical-alt .event[data-location="left"]::after {
   right: calc(-30px - var(--tl-dot-size) / 2);
   left: auto;
 }
 
-.timeline.vertical-alt .event.tl-flip:nth-child(even) .tl-logo {
+.timeline.vertical-alt.vertical-alt .event[data-location="left"] .tl-logo {
   left: calc(100% + 60px);
   right: auto;
   text-align: left;
+}
+
+// Text on the RIGHT half -> logo on the left.
+.timeline.vertical-alt.vertical-alt .event[data-location="right"] {
+  align-self: flex-end;
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="right"]::after {
+  left: calc(-30px - var(--tl-dot-size) / 2);
+  right: auto;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="right"] .tl-logo {
+  right: calc(100% + 60px);
+  left: auto;
+  text-align: right;
 }
