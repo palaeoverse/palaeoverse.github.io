@@ -57,7 +57,7 @@ website:
       - text: Resources
         menu:
           - href: https://workshop.palaeoverse.org/
-            text: Courses
+            text: Past workshops
             icon: box-arrow-up-right
             target: _blank
           # - href: https://dashboard.palaeoverse.org/
