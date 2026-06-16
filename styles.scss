@@ -965,3 +965,12 @@ h2 {
   left: auto;
   text-align: right;
 }
+
+// Modules page
+.quarto-grid-item {
+  background: #a3d0d2;
+}
+
+.quarto-grid-item .card-body {
+  color: $body-color;
+}

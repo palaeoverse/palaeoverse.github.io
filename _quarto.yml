@@ -56,15 +56,13 @@ website:
           #   text: Contributing
       - text: Resources
         menu:
-          - href: https://workshop.palaeoverse.org/
-            text: Past workshops
-            icon: box-arrow-up-right
-            target: _blank
+          - href: resources/modules
+            text: Modules
           # - href: https://dashboard.palaeoverse.org/
           #   text: Dashboard
           #   icon: box-arrow-up-right
           #   target: _blank
-          - href: external-resources
+          - href: resources/external-resources
             text: External resources
       - text: Events
         menu:

@@ -1,0 +1,11 @@
+---
+title: Modules
+listing:
+  categories: true
+  contents: posts
+  feed: true
+  sort: "date desc"
+  type: grid
+---
+
+This page contains a list of modules that we use in our [Workshops](../../events/all-events), but they can also serve as standalone resources.
