@@ -91,15 +91,15 @@ Topics posted within the **Conferences & Workshop** channel should aim to take t
 
 The initial post within the topic thread should take the following format:
 
-**Conference or workshop name (in bold)**
-
-Dates:
-
-Location:
-
-Additional Details:
-
-Link to the conference web page:
+> **Conference or workshop name (in bold)**
+> 
+> Dates:
+> 
+> Location:
+> 
+> Additional Details:
+> 
+> Link to the conference web page:
 
 All other information (e.g. registration reminders, circular updates) and discussion relating to a specific conference or workshop should be posted below the relevant topic. 
 
@@ -111,12 +111,12 @@ Topics within the **Publications** channel should take the **full title of the p
 
 The initial post within the topic should aim to take the following format:
 
-APA-format citation **(in bold)**:
-
-DOI link:
-
-Abstract/Additional Details:
-
+> APA-format citation **(in bold)**:
+> 
+> DOI link:
+> 
+> Abstract/Additional Details:
+ 
 All discussion relating to the research paper should be posted below the relevant topic.
 
 ### Funding
@@ -127,15 +127,15 @@ Topics within the **Funding** channel should aim to take the grant name and fund
 
 The initial post within the topic should take the following format:
 
-**Grant title (in bold)**
-
-Awarding body:
-
-Closing Date:
-
-Additional Details:
-
-Link to application page
+> **Grant title (in bold)**
+> 
+> Awarding body:
+> 
+> Closing Date:
+> 
+> Additional Details:
+> 
+> Link to application page
 
 Any other information relating to the funding opportunity should be posted below the relevant topic.
 
