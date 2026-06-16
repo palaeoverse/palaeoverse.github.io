@@ -38,14 +38,14 @@ jobs:
             tmp="$(mktemp)"
             curl -fsSL "$BASE/$1" -o "$tmp"
             {
-              printf '%s\n' '---' "title: \"$3\"" '---' ''
+              printf '%s\n' '---' "pagetitle: \"$3\"" '---' ''
               cat "$tmp"
             } > "$2"
             rm -f "$tmp"
           }
 
           download AI_policy.md       about/ai-policy/index.qmd        "AI Policy"
-          download CODE_OF_CONDUCT.md about/code-of-conduct/index.qmd  "Code of Conduct"
+          download CODE_OF_CONDUCT.md about/code-of-conduct/index.qmd  "Palaeoverse Code of Conduct"
           download CONTRIBUTING.md    contributing/index.qmd           "Contributing"
 
       - name: Commit and push if changed
