@@ -1,5 +1,6 @@
 ---
 title: "External resources"
+toc: false
 execute:
   echo: false
   message: false
@@ -21,11 +22,91 @@ If you notice any issues with this page or wish to add a resource, please contac
 
 .ReactTable {
   background: transparent;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* reactable clips cells/inners with overflow:hidden and scrolls the table body;
+   override those (with enough specificity to beat reactable.css) so the open
+   filter dropdown can spill out, and keep the header above the body rows. */
+.Reactable .rt-table,
+.Reactable .rt-thead,
+.Reactable .rt-tr-filters,
+.Reactable .rt-td-filter,
+.Reactable .rt-td-filter .rt-td-inner {
+  overflow: visible !important;
+}
+
+.Reactable .rt-thead {
+  z-index: 3;
+}
+
+.Reactable .rt-td-filter:has(.multi-filter[open]) {
+  z-index: 4;
+}
+
+.multi-filter {
+  position: relative;
+  font-size: 0.85rem;
+}
+
+.multi-filter > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multi-filter > summary::-webkit-details-marker {
+  display: none;
+}
+
+.multi-filter > summary::after {
+  content: "▾";
+  float: right;
+  margin-left: 6px;
+}
+
+.multi-filter__menu {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  margin-top: 2px;
+  max-height: 220px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.multi-filter__option {
+  display: block;
+  white-space: nowrap;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.multi-filter__option:hover {
+  background: #f2f2f2;
+}
+
+.multi-filter__option > input {
+  margin-right: 6px;
 }
 ```
 
+
+::: {.column-screen}
+
 ```{r}
 library(brand.yml)
+library(htmltools)
 library(googlesheets4)
 library(reactable)
 
@@ -38,54 +119,120 @@ dat <- read_sheet(
 ) |>
   as.data.frame()
 
-reactable(
-  dat,
-  columns = list(
-    `Link` = colDef(cell = function(value) {
-      htmltools::tags$a(
-        href = value,
-        target = "_blank",
-        value
+dropdown_with_checkboxes <- colDef(
+  filterInput = function(values, name) {
+    tags$details(
+      class = "multi-filter",
+      "data-col" = name,
+      tags$summary(sprintf("Filter %s", name)),
+      tags$div(
+        class = "multi-filter__menu",
+        lapply(sort(unique(values)), function(value) {
+          tags$label(
+            class = "multi-filter__option",
+            tags$input(
+              type = "checkbox",
+              value = value,
+              # Collect every ticked box; clear the filter when none are ticked.
+              onchange = sprintf(
+                "var picked = Array.from(this.closest('.multi-filter').querySelectorAll('input:checked')).map(function(c) { return c.value; }); Reactable.setFilter('external-resources', '%s', picked.length ? picked : undefined)",
+                name
+              )
+            ),
+            value
+          )
+        })
       )
-    })
-  ),
-  rowStyle = function(index) {
-    switch(
-      dat[index, "Category"],
-      "Occurrence" = list(
-        background = brand$color$palette$light_blue
-      ),
-      "3D Data" = list(
-        background = brand$color$palette$mid_blue
-      ),
-      "Traits" = list(
-        background = brand$color$palette$light_beige
-      ),
-      "Covariates" = list(
-        background = brand$color$palette$light_pink
-      ),
-      "Other Database Resources" = list(
-        background = brand$color$palette$mid_grey
-      ),
-      "Coding Resources" = list(
-        background = brand$color$palette$light_green
-      ),
-      "Data Visualization" = list(
-        background = brand$color$palette$dark_green,
-        color = "white"
-      ),
-      "Associations and Networks" = list(
-        background = brand$color$palette$dark_peach,
-        color = "white"
-      ),
-      "E-Books" = list(
-        background = brand$color$palette$dark_orange,
-        color = "white"
-      ),
-      "unreachable"
     )
   },
+  filterMethod = JS(
+    "function(rows, columnId, filterValue) {
+    return rows.filter(function(row) {
+      return filterValue.includes(row.values[columnId]);
+    });
+  }"
+  )
+)
+
+
+reactable(
+  dat,
+  elementId = "external-resources",
+  columns = list(
+    Category = dropdown_with_checkboxes,
+    Type = dropdown_with_checkboxes,
+    Link = colDef(cell = function(value) {
+      htmltools::tags$a(href = value, target = "_blank", value)
+    })
+  ),
   filterable = TRUE,
   searchable = TRUE
 )
 ```
+
+```{r}
+# Make the dropdowns interdependent: each column's checkboxes only show values
+# that still exist in the rows passing the OTHER dropdowns' current selections.
+htmltools::tagList(
+  htmltools::tags$script(htmltools::HTML(paste0(
+    "window.__extData = ",
+    jsonlite::toJSON(dat[, c("Category", "Type")], dataframe = "rows"),
+    ";"
+  ))),
+  htmltools::tags$script(htmltools::HTML("
+(function() {
+  var cols = ['Category', 'Type'];
+  function selected(col) {
+    var set = new Set();
+    document
+      .querySelectorAll('.multi-filter[data-col=' + col + '] input[type=checkbox]:checked')
+      .forEach(function(c) { set.add(c.value); });
+    return set;
+  }
+  function update() {
+    var data = window.__extData || [];
+    cols.forEach(function(col) {
+      var others = cols
+        .filter(function(c) { return c !== col; })
+        .map(function(c) { return { col: c, set: selected(c) }; });
+      var available = new Set();
+      data.forEach(function(row) {
+        var keep = others.every(function(o) {
+          return o.set.size === 0 || o.set.has(row[o.col]);
+        });
+        if (keep) available.add(row[col]);
+      });
+      document
+        .querySelectorAll('.multi-filter[data-col=' + col + '] .multi-filter__option')
+        .forEach(function(opt) {
+          var cb = opt.querySelector('input[type=checkbox]');
+          opt.style.display = (available.has(cb.value) || cb.checked) ? '' : 'none';
+        });
+    });
+  }
+  function init() {
+    if (!document.querySelector('.multi-filter input[type=checkbox]')) {
+      setTimeout(init, 300);
+      return;
+    }
+    document.addEventListener('change', function(e) {
+      if (e.target.matches && e.target.matches('.multi-filter input[type=checkbox]')) {
+        update();
+      }
+    });
+    // Close any open dropdown when clicking outside of it.
+    document.addEventListener('click', function(e) {
+      document.querySelectorAll('.multi-filter[open]').forEach(function(d) {
+        if (!d.contains(e.target)) d.open = false;
+      });
+    });
+    update();
+  }
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init);
+})();
+"))
+)
+```
+
+:::
