@@ -6,7 +6,7 @@ title: "Zulip"
 
 <label class="container">
   <input type="checkbox" id="coc-agree">
-  <span class="checkmark">I agree to follow the [Code of Conduct](../about/code-of-conduct/){target="_blank"} and I have read the [User Guide]().</span>
+  <span class="checkmark">I agree to follow the [Code of Conduct](../about/code-of-conduct/){target="_blank"} and I have read the User Guide below.</span>
 </label>
 
 <div class="hero-buttons">
