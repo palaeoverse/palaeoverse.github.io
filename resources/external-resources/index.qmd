@@ -9,7 +9,7 @@ execute:
 
 This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.
 
-If you notice any issues with this page or wish to add a resource, please contact [Christopher Dean](christopherdaviddean@gmail.com) or [Erin Dillon](emdillon23@gmail.com).
+If you notice any issues with this page or wish to add a resource, please contact [Christopher Dean](mailto:christopherdaviddean@gmail.com) or [Erin Dillon](mailto:emdillon23@gmail.com).
 
 ```{css}
 .rt-td-inner > a {
