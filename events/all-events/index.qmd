@@ -45,14 +45,15 @@ lectures <- read_sheet(
     Date = as.Date(Date),
     Location = if_else(
       !is.na(Affiliation),
-      paste0(Name, " · ", Affiliation),
+      paste0(Name, " (", Affiliation, ")"),
       Name
     )
   ) |>
+  # Only show time for future lectures
   mutate(
-    Location = paste0(`Time (UTC)`, " <br> ", Location)
+    `Time (UTC)` = if_else(Date < Sys.Date(), NA, `Time (UTC)`)
   ) |>
-  select(Post, Date, Title, Location, Link = `Youtube link`)
+  select(Post, Date, Time = `Time (UTC)`, Title, Location, Link = `Youtube link`)
 
 events <- bind_rows(past_workshops, our_events, lectures)
 
@@ -111,6 +112,11 @@ render_cards <- function(df) {
     css <- type_to_css(row$Post)
     filter_key <- to_filter_key(row$Post)
     date_str <- format(row$Date, "%B %d, %Y")
+    time_str <- if (is.na(row$Time)) {
+      ""
+    } else {
+      paste0(" · ", row$Time)
+    }
     has_link <- !is.na(row$Link) && nzchar(row$Link)
     has_youtube_link <- has_link && grepl("youtube", row$Link)
     badge <- if (row$Post == "Lecture Series") {
@@ -140,11 +146,12 @@ render_cards <- function(df) {
       ""
     }
     card_div <- sprintf(
-      '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s · %s</p>%s</div>',
+      '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s %s <br> %s</p>%s</div>',
       css,
       row$Post,
       row$Title,
       date_str,
+      time_str,
       row$Location,
       badge
     )
