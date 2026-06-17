@@ -4,8 +4,8 @@ on:
   push:
     branches: [gh-pages]
   schedule:
-    # Every Monday at 8am
-    - cron: "0 8 * * 1"
+    # Every day at 8am
+    - cron: "0 8 * * *"
 
 
 concurrency:
