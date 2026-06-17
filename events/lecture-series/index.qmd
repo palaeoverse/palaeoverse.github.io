@@ -10,7 +10,7 @@ The Palaeoverse Lecture Series is a monthly online presentation dedicated to sof
 
 Important information:
 
-- See past and future lectures on our [Events page](/events/all-events/)
+- See past and future lectures on our [Events page](/events/all-events/){target="_blank"}
 - Lectures will be held from 15:00--16:00 UTC
 - All are welcome to join
 
@@ -18,7 +18,7 @@ Important information:
 
 <label class="container">
   <input type="checkbox" id="coc-agree">
-  <span class="checkmark">I agree to follow the [Code of Conduct](../about/code-of-conduct/){target="_blank"}.</span>
+  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/){target="_blank"}.</span>
 </label>
 
 <div class="hero-buttons">
