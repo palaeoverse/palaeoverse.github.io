@@ -1,3 +1,7 @@
+---
+pagetitle: "Contributing"
+---
+
 # Contributing to Palaeoverse
 
 Thanks for stopping by! Looking to find out how you can contribute to **Palaeoverse**? You have come to the right place! 

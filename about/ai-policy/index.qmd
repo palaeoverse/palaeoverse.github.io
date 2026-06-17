@@ -1,0 +1,27 @@
+---
+pagetitle: "AI Policy"
+---
+
+# AI Policy
+
+Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. Part of this initiative is to enable researchers at every career stage to learn and develop new technical and social skills. The human aspect of this work is therefore important to us and we are committed to maintaining spaces for human interaction and engagement. We acknowledge the potential usefulness and growing prevalence of Artificial Intelligence (AI), but wish to see it used only where reasonable and appropriate, whilst prioritising accuracy, accessibility, and upskilling. 
+
+The objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from [Zulip’s AI policy](https://github.com/zulip/zulip/blob/main/CONTRIBUTING.md#ai-use-policy-and-guidelines).
+
+## AI for communication
+
+Do not post AI-generated messages: Zulip messages, Github issues, pull request (PR) descriptions, and other messages must be written by humans. If you need to quote an AI answer in a conversation, put the answer in a quote block (starting with “\>” in [Markdown](https://www.markdownguide.org/basic-syntax/)) to distinguish AI output from your own thoughts. 
+
+You can use any tool you like for help with spelling, grammar, or translation, but ultimately must take personal responsibility for the messages you post.
+
+## AI for coding
+
+You can use any tool that helps you understand the Palaeoverse code repositories and write good code, including AI tools. If you used AI to generate code, you must disclose it in the pull request description and mention the tool and version used (e.g. Claude Opus 4.8, or OpenAI Codex 5.3). Additionally, you always need to understand and explain the changes you're proposing to make, whether or not you used an AI as part of your process to produce them. The answer to "Why is X an improvement?" should never be "I'm not sure. The AI did it.".
+
+Do not submit an AI-generated PR you haven't personally understood and tested.
+
+Changes in documentation (e.g. documenting a new function argument, adding a vignette, editing the changelog) can be based on AI output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. It needs to be understood and appreciated by human readers. A good rule of thumb is that if you can't make yourself carefully read some AI output that you generated, nobody else will want to read it either.
+
+## Rule violations
+
+Not following these rules will be treated as a [Code of Conduct](https://palaeoverse.github.io/about/code-of-conduct/) violation and will be addressed as detailed in the [“Enforcement guidelines” section](https://palaeoverse.github.io/about/code-of-conduct/#enforcement-guidelines).

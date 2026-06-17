@@ -1,5 +1,5 @@
 ---
-pagetitle: "Code of Conduct"
+pagetitle: "Palaeoverse Code of Conduct"
 ---
 
 # Palaeoverse Code of Conduct 
