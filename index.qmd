@@ -84,14 +84,12 @@ n_downloads <- cranlogs::cran_downloads(
   <div class="stat-item">
     <div class="stat-value">
       <span class="stat-number" data-target=`r paste0(sum(n_downloads$count))`>0</span>
-      <span class="stat-suffix">+</span>
     </div>
     <span class="stat-label">Package Downloads</span>
   </div>
   <div class="stat-item">
     <div class="stat-value">
       <span class="stat-number" data-target=`r paste0(total_citations)`>0</span>
-      <span class="stat-suffix">+</span>
     </div>
     <span class="stat-label">Citations</span>
   </div>
