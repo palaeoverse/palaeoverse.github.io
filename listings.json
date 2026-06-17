@@ -1,17 +1,17 @@
 [
   {
+    "listing": "/resources/modules/index.html",
+    "items": [
+      "/resources/modules/posts/ggplot/index.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/post-with-code/index.html",
       "/blog/posts/post-with-code copy/index.html",
       "/blog/posts/welcome copy/index.html",
       "/blog/posts/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/resources/modules/index.html",
-    "items": [
-      "/resources/modules/posts/ggplot/index.html"
     ]
   }
 ]
