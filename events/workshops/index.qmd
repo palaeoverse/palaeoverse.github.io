@@ -1,0 +1,8 @@
+---
+title: Workshops
+toc: false
+---
+
+We organize workshops of various length and objectives. You can find the complete list on our [Events page](../all-events){target="_blank"} and the content of past workshops [here](https://workshop.palaeoverse.org/){target="_blank"}.
+
+Each workshop is composed of a collection of self-contained modules that you can find on the [Modules page](../../resources/modules/){target="_blank"}.

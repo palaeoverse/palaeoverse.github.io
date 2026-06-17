@@ -1,0 +1,982 @@
+// Brand palette colors are auto-exposed as $brand-{name} (e.g. $brand-dark-blue).
+// Semantic brand colors map to Bootstrap vars: $primary (light-blue), $secondary (dark-green),
+// $brand-light-blue, $body-color.
+
+/*-- scss:rules --*/
+
+body {
+  background-color: mix($brand-light-blue, white, 60%)
+}
+
+#quarto-appendix {
+  background-color: mix($brand-light-blue, white, 60%) !important
+}
+
+.nav-footer {
+  background-color: mix($brand-light-blue, white, 60%)
+}
+
+// Lay the footer-center content (copyright/contact line + the "Edit this page"
+// repo action) on a single line instead of stacking "Edit this page" below.
+.nav-footer-center {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nav-footer-center>p {
+  margin-bottom: 0;
+}
+
+.nav-footer-center .toc-actions,
+.nav-footer-center .toc-actions ul,
+.nav-footer-center .toc-actions li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Separator so it reads "... Contact us · Edit this page".
+.nav-footer-center .toc-actions::before {
+  content: "·";
+  margin-right: 0.5rem;
+}
+
+// No underline on footer links (e.g. "Contact us"); links elsewhere keep the
+// brand's default underline.
+.nav-footer a {
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 1rem 0;
+}
+
+// Home page only — fits the page to one viewport and pins the footer. The
+// `homepage` body class is set via `body-classes` in index.qmd's front matter.
+body.homepage {
+  // Make the page exactly one viewport tall with the footer pinned to the
+  // bottom (no scrolling, no magic numbers). body is a flex column; the footer
+  // is the last child, so #quarto-content grows to fill the space above it.
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  #quarto-content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    // Flexing #quarto-content drops the page-columns grid that normally
+    // constrains the article width, so restore it here (matches Quarto's
+    // body-content column: minmax(500px, calc(850px - 3em))).
+    width: 100%;
+    max-width: calc(850px - 3em);
+    margin-inline: auto;
+    padding-inline: 1.5em;
+  }
+
+  .hero {
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .hero-logo {
+    width: auto;
+    max-width: 100%;
+    max-height: 190px;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .hero-buttons {
+    margin-top: 1rem;
+  }
+
+  // auto top/bottom margins center the stats in the free space between the
+  // buttons and the footer.
+  .stats-section {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1rem;
+  }
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 840px;
+  height: auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-buttons {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-logo {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.1rem;
+  color: $secondary;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-suffix {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $body-color;
+}
+
+@media (max-width: 480px) {
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .stat-value {
+    font-size: 2.25rem;
+  }
+
+  .stat-suffix {
+    font-size: 1.9rem;
+  }
+}
+
+.navbar {
+  background: $brand-light-blue;
+  border-bottom: 2px solid $secondary;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.navbar-logo {
+  max-height: 45px;
+}
+
+// Solid bottom bar under the navbar link for the current page.
+// The .active class is applied by _includes/active-navbar.html, since Quarto
+// doesn't mark the active navbar item in this setup.
+.navbar .navbar-nav .nav-link.active {
+  border-bottom: solid 2px $secondary;
+}
+
+// In the collapsed mobile menu each nav-link is a block filling its row, so the
+// underline would span the full width. Shrink the active link to its content so
+// the underline only hugs the tab title. The breakpoint comes from Bootstrap's
+// own mixin (lg = the navbar-expand-lg collapse point), so it's not hardcoded.
+@include media-breakpoint-down(lg) {
+  .navbar .navbar-nav .nav-link.active {
+    display: inline-block;
+  }
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+// our-packages page only: compact the cards so all four fit in one viewport.
+// The `packages-page` body class is set via `body-classes` in the page's
+// front matter.
+body.packages-page {
+  .package-grid {
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .package-card {
+    min-height: 0;
+    padding: 0.75rem 1rem;
+  }
+
+  .package-hex {
+    max-width: 130px;
+  }
+
+  .package-card h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+  }
+
+  .package-subtitle {
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .package-actions {
+    margin-top: 0.5rem !important;
+  }
+
+  // Drop the manual <br> spacer above the DOI line and tighten that line.
+  .package-card br {
+    display: none;
+  }
+
+  .package-card>div[style] {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+
+.package-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  background: #a3d0d2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(0);
+  will-change: transform;
+}
+
+.package-card>section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.package-card .package-actions {
+  margin-top: auto !important;
+  margin-bottom: 0.5rem;
+}
+
+.package-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: $secondary;
+  color: inherit;
+  text-decoration: none;
+}
+
+.package-card .package-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.package-card .package-actions,
+.package-card>div[style] {
+  position: relative;
+  z-index: 1;
+}
+
+.package-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.package-card>p:has(img),
+.package-card figure {
+  margin-bottom: 0;
+}
+
+.package-subtitle {
+  display: block;
+  font-style: italic;
+  color: $body-color;
+  margin-bottom: 0.75rem;
+}
+
+.package-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem !important;
+}
+
+.package-actions p {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.landing-page-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border: 2px solid $secondary;
+  border-radius: 4px;
+  color: $secondary;
+  background: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.landing-page-btn:hover {
+  background: $secondary;
+  color: $brand-light-blue;
+  text-decoration: none;
+}
+
+.package-stars,
+.package-repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.package-repo {
+  color: $secondary;
+}
+
+.package-stars i,
+.package-repo i {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.package-repo {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.package-repo:hover {
+  color: $brand-dark-blue;
+  text-decoration: none;
+}
+
+.package-hex {
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.cheatsheet-img {
+  max-width: 100%;
+  max-height: 280px;
+  width: auto;
+  height: 280px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.person-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #a3d0d2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.person-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.person-info {
+  padding: 0.75rem 1rem 1rem;
+  text-align: center;
+}
+
+.person-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.person-affiliation {
+  font-size: 0.85rem;
+  color: $body-color;
+  margin: 0.25rem 0 0;
+}
+
+.person-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.person-icon {
+  color: $body-color;
+  font-size: 1.15rem;
+  line-height: 1;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .person-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .person-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: $brand-light-blue;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.resource-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: $secondary;
+}
+
+.resource-card .package-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.resource-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.resource-card p {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.resource-card .landing-page-btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Quarto sets overflow-x: auto on .cell-output-display; suppress it 
+// in the grid with event cards to avoid horizontal scrolling. 
+.cell-output-display:has(.event-grid),
+.cell-output-display:has(.event-filter-bar) {
+  overflow-x: visible;
+}
+
+.event-grid {
+  display: grid;
+  // minmax(0, 1fr) instead of 1fr so columns keep an equal width even when a
+  // card has long/unbreakable content. Plain 1fr means minmax(auto, 1fr), whose
+  // auto minimum is the content min-content size; Chrome and Firefox resolve
+  // that differently, which made columns uneven on Chrome but even on Firefox.
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.event-card h3 {
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.event-tag {
+  align-self: flex-start;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.event-date {
+  font-style: italic;
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: $body-color;
+}
+
+// Single source of truth for event-type colors, shared by the cards (below)
+// and the interactive map. The map in the events page reads these
+// custom properties at runtime via getComputedStyle, so the colors only need
+// to be defined here.
+:root {
+  --event-color-workshop: #{mix($brand-dark-blue, black, 60%)};
+  --event-color-hackathon: #{mix($brand-dark-peach, black, 60%)};
+  --event-color-lecture: #{$secondary};
+  --event-color-conference: #{mix($brand-dark-pink, black, 70%)};
+}
+
+.event-workshop {
+  background: var(--event-color-workshop);
+
+  .event-tag {
+    background: mix($brand-dark-blue, black, 75%);
+    color: $brand-white;
+  }
+
+  * {
+    color: $brand-white;
+  }
+}
+
+.event-hackathon {
+  background: var(--event-color-hackathon);
+
+  .event-tag {
+    background: mix($brand-dark-peach, white, 90%);
+    color: $brand-white;
+  }
+
+  * {
+    color: $brand-white;
+  }
+}
+
+.event-lecture {
+  background: var(--event-color-lecture);
+
+  .event-tag {
+    background: mix($brand-light-green, black, 80%);
+    color: $brand-white;
+  }
+
+  * {
+    color: $brand-white;
+  }
+}
+
+.event-conference {
+  background: var(--event-color-conference);
+
+  .event-tag {
+    background: mix($brand-dark-pink, black, 90%);
+    color: $brand-white;
+  }
+
+  * {
+    color: $brand-white;
+  }
+}
+
+a.event-link,
+.event-item {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+a.event-link .event-card {
+  cursor: pointer;
+}
+
+.event-actions {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.event-card-btn {
+  // flex-grow so buttons share the row; the 120px basis means two buttons
+  // wrap onto separate lines (stacking) once the card gets too narrow.
+  flex: 1 1 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  .bi {
+    font-size: 0.85em;
+    // Bootstrap Icons' default vertical-align: -0.125em is ignored inside a
+    // flex container, so nudge the glyph back down to line up with the label.
+    line-height: 1;
+    transform: translateY(0.07em);
+  }
+
+  &:hover {
+    background: $brand-white;
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  // Only recolor the icon on hover; don't give it its own background.
+  &:hover .bi {
+    color: $body-color;
+  }
+}
+
+.event-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-filter-btn {
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: transparent;
+  color: $body-color;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.event-filter-btn .bi-check {
+  display: none;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+
+.event-filter-btn.active {
+  border-color: $secondary;
+  background-color: $secondary;
+  color: $brand-light-blue;
+}
+
+.event-filter-btn.active .bi-check {
+  display: inline;
+}
+
+.event-filter-btn:hover:not(.active) {
+  border-color: $secondary;
+  color: $secondary;
+}
+
+.event-empty-msg {
+  margin-top: 0.25rem;
+  color: $body-color;
+}
+
+.view-toggle-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.view-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: transparent;
+  color: $body-color;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-toggle-btn.active {
+  border-color: $secondary;
+  background-color: $secondary;
+  color: $brand-light-blue;
+}
+
+.view-toggle-btn:hover:not(.active) {
+  border-color: $secondary;
+  color: $secondary;
+}
+
+@media (max-width: 992px) {
+  .event-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .event-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  border-bottom: 1px solid $secondary;
+}
+
+// Use margin (not padding) for the inter-event gap, so that raising --tl-gap
+// doesn't inflate each event's box height. The logos are positioned with a
+// percentage `top`, which is relative to that box — keeping the box at content
+// height means the logos stay aligned with the text whatever the gap is.
+.timeline.vertical-alt .event:not(.tl-card) {
+  padding-bottom: 0;
+  margin-bottom: var(--tl-gap);
+}
+
+// Timeline (vertical-alt): place a logo on the opposite side of the center
+// line from the event text, so logos and text both alternate left/right.
+// Wrap the image in a ::: {.tl-logo} fenced div inside the event.
+.timeline.vertical-alt .tl-logo {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 100%;
+  margin: 0;
+}
+
+.timeline.vertical-alt .tl-logo>*,
+.timeline.vertical-alt .tl-logo p {
+  margin: 0;
+}
+
+.timeline.vertical-alt .tl-logo img {
+  width: 100%;
+  height: auto;
+}
+
+// .tl-logo-grid: when an event has several logos, lay them out in a small
+// grid instead of stacking. display: contents on the wrapping <p> lets the
+// images become grid items directly.
+.timeline.vertical-alt .tl-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: center;
+  justify-items: center;
+  // A tall multi-logo grid centers vertically (single logos use the base 30%).
+  top: 50%;
+}
+
+.timeline.vertical-alt .tl-logo-grid p {
+  display: contents;
+}
+
+.timeline.vertical-alt .tl-logo-grid img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+// Event text is on the left (odd) -> logo goes into the right half.
+// The event's right edge sits 30px from the line; the opposite half starts
+// another 30px past it, hence the 60px offset from the event edge.
+.timeline.vertical-alt .event:nth-child(odd) .tl-logo {
+  left: calc(100% + 60px);
+  right: auto;
+  text-align: left;
+  top: 50%
+}
+
+// Event text is on the right (even) -> logo goes into the left half.
+.timeline.vertical-alt .event:nth-child(even) .tl-logo {
+  right: calc(100% + 60px);
+  left: auto;
+  text-align: right;
+}
+
+// data-location: pin an event to a specific side of the line instead of relying
+// on the automatic odd/even alternation (which shifts whenever events are added
+// or reordered). Put data-location="left" or "right" on the .event; the logo
+// (.tl-logo) automatically goes to the opposite side.
+//
+// .vertical-alt is repeated to raise specificity above both the extension's
+// :nth-child rules and the nth-child .tl-logo rules above, so these win
+// regardless of stylesheet load order.
+
+// Text on the LEFT half -> logo on the right.
+.timeline.vertical-alt.vertical-alt .event[data-location="left"] {
+  align-self: flex-start;
+  text-align: right;
+  padding-right: 16px;
+  padding-left: 0;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="left"]::after {
+  right: calc(-30px - var(--tl-dot-size) / 2);
+  left: auto;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="left"] .tl-logo {
+  left: calc(100% + 60px);
+  right: auto;
+  text-align: left;
+}
+
+// Text on the RIGHT half -> logo on the left.
+.timeline.vertical-alt.vertical-alt .event[data-location="right"] {
+  align-self: flex-end;
+  text-align: left;
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="right"]::after {
+  left: calc(-30px - var(--tl-dot-size) / 2);
+  right: auto;
+}
+
+.timeline.vertical-alt.vertical-alt .event[data-location="right"] .tl-logo {
+  right: calc(100% + 60px);
+  left: auto;
+  text-align: right;
+}
+
+// Modules page
+.quarto-grid-item {
+  background: #a3d0d2;
+}
+
+.quarto-grid-item .card-body {
+  color: $body-color;
+}

@@ -1,0 +1,59 @@
+---
+title: "Sponsors and Collaborators"
+filters:
+  - timeline
+---
+
+<!-- Palaeoverse is currently (March 2026 to February 2028) supported by the UKRI via the [Software Sustainability Institute](https://www.software.ac.uk/)’s Research Software Maintenance Fund (AH/Z000114/1). -->
+
+<!-- ![](../../_img/ssi_logos/RED LOGOS/SSI_PRIMARY-LOGO.png) -->
+
+Since 2022, Palaeoverse, and its activities, have received support from a number of organisations.
+
+
+::: {.timeline .vertical-alt style="--tl-gap: 5rem;"}
+
+::: {.event data-label="Mar. 2026" data-location="left"}
+[Zulip](https://zulip.com/) is an organized team chat app designed for efficient communication. It sponsors our access to the Zulip Cloud Standard.
+
+::: {.tl-logo}
+![](../../_img/other_logos/zulip-logo.png){width="40%"}
+:::
+:::
+
+
+::: {.event data-label="Feb. 2026" data-location="right"}
+Start of funding from the [Software Sustainability Institute](https://www.software.ac.uk/)’s Research Software Maintenance Fund (AH/Z000114/1). This funding lasts until Feb. 2028.
+
+::: {.tl-logo}
+![](../../_img/ssi_logos/RED LOGOS/SSI_PRIMARY-LOGO.png)
+:::
+:::
+
+
+::: {.event data-label="2024" data-location="left"}
+Scientific Exchange grant from the [Swiss National Science Fund](https://www.snf.ch/en) to support the development of the rmacrostrat R package.
+
+::: {.tl-logo .tl-logo-snf}
+![](../../_img/snf_logos/png/SNF_logo_standard_web_color_pos_e.png)
+:::
+:::
+
+
+::: {.event data-label="Sep. 2023" data-location="right"}
+Support for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:
+
+* Meeting support grant from [The Palaeontological Society](https://www.paleosoc.org);
+* [The Palaeontological Association](https://www.palass.org/), [Transmitting Science](https://www.transmittingscience.com/), PRStatistics, and [Jumping Rivers](https://www.jumpingrivers.com/) sponsored prizes;
+* Grant-in-Aid (PA-GA202203, awarded in 2022) from [The Palaeontological Association](https://palass.org).
+
+::: {.tl-logo .tl-logo-grid}
+![](../../_img/other_logos/jr-logo.png)
+![](../../_img/other_logos/palass-logo.png)
+![](../../_img/other_logos/palsoc-logo.png)
+![](../../_img/other_logos/pr-logo.png)
+![](../../_img/other_logos/ts-logo.png)
+:::
+:::
+
+:::

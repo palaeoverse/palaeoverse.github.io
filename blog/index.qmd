@@ -1,1 +1,12 @@
-Hello, this is the page about blog posts.
+---
+title: "Blog"
+listing:
+  # (additional metadata excluded for brevity)
+  categories: true
+  contents: posts
+  feed: true
+  sort: "date desc"
+  type: grid
+  sort-ui: false
+  filter-ui: false
+---

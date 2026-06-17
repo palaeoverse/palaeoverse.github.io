@@ -1,0 +1,372 @@
+---
+title: "All events"
+toc: false
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+library(googlesheets4)
+library(dplyr)
+library(tidyr)
+
+# We don't need to pass credentials to googlesheets since the sheet is publicly available.
+gs4_deauth()
+
+# Expected columns: Post, Title, Date, Location, Description
+past_workshops <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1escqpJM_Ljt5h5claM0xV5e9IEWBv6rNMIsuQsnUXYY/edit?gid=0#gid=0"
+) |>
+  filter(Post %in% "Workshop") |>
+  mutate(
+    Date = as.Date(Date),
+    Location = paste(City, Country, sep = ", ")
+  )
+
+our_events <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1wczoSH6H9OYJNLDQaFZ6Vx97DywwtIavCawnW9a4eDw/edit?gid=0#gid=0"
+)|>
+  mutate(
+    Date = as.Date(date)
+  ) |> 
+  select(Post = type, Date, Title = event_name, Location = location, long, lat)
+
+lectures <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
+) |> 
+  filter(grepl(" ", Name)) |>
+  filter(!is.na(Title)) |>
+  unnest(Date) |>
+  # Weird column names but it's because we need to bind this to the events above
+  mutate(
+    Post = "Lecture Series",
+    Date = as.Date(Date),
+    Location = if_else(
+      !is.na(Affiliation),
+      paste0(Name, " (", Affiliation, ")"),
+      Name
+    )
+  ) |>
+  # Only show time for future lectures
+  mutate(
+    `Time (UTC)` = if_else(Date < Sys.Date(), NA, `Time (UTC)`)
+  ) |>
+  select(Post, Date, Time = `Time (UTC)`, Title, Location, Link = `Youtube link`)
+
+events <- bind_rows(past_workshops, our_events, lectures)
+
+
+today <- Sys.Date()
+
+future_events <- events |>
+  filter(Date >= today) |>
+  arrange(Date) |>
+  mutate(
+    Link = if_else(
+      Post == "Lecture Series",
+      "https://ucl.zoom.us/webinar/register/WN_iUjEJ46wTaidN4gAGV-wVQ",
+      Link
+    )
+  )
+
+past_events <- events |>
+  filter(Date < today) |>
+  arrange(desc(Date))
+
+type_to_css <- function(type) {
+  switch(
+    tolower(type),
+    "workshop" = "event-workshop",
+    "conference" = "event-conference",
+    "hackathon" = "event-hackathon",
+    "lecture series" = "event-lecture",
+    stop("The event type should be one of the types above.")
+  )
+}
+
+to_filter_key <- function(type) tolower(gsub(" ", "-", type))
+
+render_filter <- function(all_events) {
+  categories <- sort(unique(all_events$Post))
+  buttons <- sapply(categories, function(cat) {
+    sprintf(
+      '<button class="event-filter-btn" data-filter="%s" data-post="%s">%s<i class="bi bi-check"></i></button>',
+      to_filter_key(cat),
+      cat,
+      cat
+    )
+  })
+  knitr::asis_output(paste0(
+    '<div class="event-filter-bar">\n',
+    paste(buttons, collapse = "\n"),
+    '\n</div>'
+  ))
+}
+
+render_cards <- function(df) {
+  parts <- '<div class="event-grid">'
+  for (i in seq_len(nrow(df))) {
+    row <- df[i, ]
+    css <- type_to_css(row$Post)
+    filter_key <- to_filter_key(row$Post)
+    date_str <- format(row$Date, "%B %d, %Y")
+    time_str <- if (is.na(row$Time)) {
+      ""
+    } else {
+      paste0(" · ", row$Time)
+    }
+    has_link <- !is.na(row$Link) && nzchar(row$Link)
+    has_youtube_link <- has_link && grepl("youtube", row$Link)
+    badge <- if (row$Post == "Lecture Series") {
+      actions <- if (has_youtube_link) {
+        sprintf(
+          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-youtube"></i>&nbsp;Watch on YouTube</a>',
+          row$Link
+        )
+      } else if (has_link) {
+        register <- sprintf(
+          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-box-arrow-up-right"></i>&nbsp;Register</a>',
+          row$Link
+        )
+        more <- '<a class="event-card-btn" href="/events/lecture-series/" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
+        paste0(register, more)
+      } else {
+        ""
+      }
+      # Always wrap in .event-actions so the buttons stay pinned to the card
+      # bottom (margin-top: auto), whether there is one button or two.
+      if (nzchar(actions)) {
+        sprintf('<div class="event-actions">%s</div>', actions)
+      } else {
+        ""
+      }
+    } else {
+      ""
+    }
+    card_div <- sprintf(
+      '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s %s <br> %s</p>%s</div>',
+      css,
+      row$Post,
+      row$Title,
+      date_str,
+      time_str,
+      row$Location,
+      badge
+    )
+    if (has_link && row$Post != "Lecture Series") {
+      item <- sprintf(
+        '<a href="%s" target="_blank" class="event-link" data-type="%s">%s</a>',
+        row$Link,
+        filter_key,
+        card_div
+      )
+    } else {
+      item <- sprintf(
+        '<div class="event-item" data-type="%s">%s</div>',
+        filter_key,
+        card_div
+      )
+    }
+    parts <- c(parts, item)
+  }
+  parts <- c(parts, "</div>")
+  parts <- c(
+    parts,
+    '<p class="event-empty-msg" style="display:none"><em>No events match the selected filters.</em></p>'
+  )
+  knitr::asis_output(paste(parts, collapse = "\n"))
+}
+```
+
+All events are shown by default. Select one or more types to filter:
+```{r}
+render_filter(events)
+```
+
+Select the view mode:
+
+```{=html}
+<div class="view-toggle-bar">
+  <button class="view-toggle-btn active" data-view="list"><i class="bi bi-list-ul"></i> List</button>
+  <button class="view-toggle-btn" data-view="map"><i class="bi bi-map"></i> Map</button>
+</div>
+```
+
+::: {#view-list}
+
+## Future events
+
+```{r}
+render_cards(future_events)
+```
+
+## Past events
+
+```{r}
+render_cards(past_events)
+```
+
+:::
+
+::: {#view-map style="display:none"}
+
+```{r}
+library(mapgl)
+
+map_dat <- events |>
+  filter(Date >= today) |>
+  filter(!is.na(long) & !is.na(lat)) |>
+  mutate(
+    Date = format(as.Date(Date), format = "%d %B %Y"),
+    essential_info = paste0(
+      "<b>",
+      Post,
+      "</b>",
+      "<br>",
+      Title,
+      "<br>",
+      Date,
+      "<br>",
+      Location
+    )
+  ) |>
+  # If two events happen in the same place, we aggregate their info so that
+  # the tooltip shows all events and not just the last one.
+  mutate(
+    essential_info = paste(essential_info, collapse = "<br><hr>"), 
+    .by = c(lat, long)
+  ) |>
+  distinct(essential_info, Post, lat, long) |> 
+  sf::st_as_sf(coords = c("long", "lat"), crs = 4326)
+
+maplibre(projection = "mercator", zoom = 0, height = "500px") |>
+  add_fullscreen_control(position = "top-left") |>
+  add_navigation_control() |>
+  add_circle_layer(
+    id = "poi-layer",
+    source = map_dat,
+    # Default color only; the real per-type colors are applied client-side in
+    # onRender below, reading the --event-color-* CSS variables from styles.scss
+    # so the map stays in sync with the event cards.
+    circle_color = "#575756",
+    circle_radius = 8,
+    circle_stroke_color = "#ffffff",
+    circle_stroke_width = 2,
+    circle_opacity = 0.8,
+    tooltip = "essential_info",
+    hover_options = list(circle_radius = 12, circle_color = "#ffff99")
+  ) |>
+  htmlwidgets::onRender(
+    "
+    function(el, x) {
+      // 'this' is the widget factory result; try getMap() then .map
+      var map = this.getMap ? this.getMap() : this.map;
+      if (!map) return;
+      // Color the circles per event type using the --event-color-* CSS
+      // variables defined in styles.scss, so the map matches the event cards.
+      var applyColors = function() {
+        if (!map.getLayer('poi-layer')) { map.once('idle', applyColors); return; }
+        var css = getComputedStyle(document.documentElement);
+        var c = function(name) { return css.getPropertyValue(name).trim(); };
+        map.setPaintProperty('poi-layer', 'circle-color', [
+          'match', ['get', 'Post'],
+          'Workshop', c('--event-color-workshop'),
+          'Conference', c('--event-color-conference'),
+          'Hackathon', c('--event-color-hackathon'),
+          'Lecture Series', c('--event-color-lecture'),
+          '#575756'
+        ]);
+      };
+      // wait for the style + layers to be ready before exposing the reference
+      var store = function() { window._palaeoMap = map; applyColors(); };
+      if (map.isStyleLoaded()) store();
+      else map.once('load', store);
+    }
+  "
+  )
+```
+
+:::
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // View toggle (list / map)
+  const toggleBtns = document.querySelectorAll('.view-toggle-btn');
+  const listView = document.getElementById('view-list');
+  const mapView = document.getElementById('view-map');
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      if (this.dataset.view === 'list') {
+        listView.style.display = '';
+        mapView.style.display = 'none';
+      } else {
+        listView.style.display = 'none';
+        mapView.style.display = '';
+        // Maplibre initialises at 0×0 when hidden; resize after display
+        setTimeout(function () {
+          if (window._palaeoMap) window._palaeoMap.resize();
+        }, 10);
+      }
+    });
+  });
+
+  // Event type filter
+  const filterBtns = document.querySelectorAll('.event-filter-btn');
+
+  function getActiveFilters() {
+    return Array.from(filterBtns)
+      .filter(b => b.classList.contains('active'))
+      .map(b => b.dataset.filter);
+  }
+
+  function getActivePostTypes() {
+    return Array.from(filterBtns)
+      .filter(b => b.classList.contains('active'))
+      .map(b => b.dataset.post);
+  }
+
+  function updateListVisibility() {
+    const active = getActiveFilters();
+    // No filter selected => show all events
+    const showAll = active.length === 0;
+    document.querySelectorAll('[data-type]').forEach(el => {
+      el.style.display = (showAll || active.includes(el.dataset.type)) ? '' : 'none';
+    });
+    document.querySelectorAll('.event-grid').forEach(grid => {
+      const hasVisible = Array.from(grid.querySelectorAll('[data-type]'))
+        .some(el => el.style.display !== 'none');
+      const msg = grid.nextElementSibling;
+      if (msg && msg.classList.contains('event-empty-msg')) {
+        grid.style.display = hasVisible ? '' : 'none';
+        msg.style.display = hasVisible ? 'none' : '';
+      }
+    });
+  }
+
+  function updateMapFilter() {
+    if (!window._palaeoMap) return;
+    const activeTypes = getActivePostTypes();
+    if (activeTypes.length === 0) {
+      // No filter selected => show all events
+      window._palaeoMap.setFilter('poi-layer', null);
+    } else {
+      window._palaeoMap.setFilter('poi-layer', ['in', ['get', 'Post'], ['literal', activeTypes]]);
+    }
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      this.classList.toggle('active');
+      updateListVisibility();
+      updateMapFilter();
+    });
+  });
+});
+</script>
+```

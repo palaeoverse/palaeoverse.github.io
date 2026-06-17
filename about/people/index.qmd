@@ -1,0 +1,149 @@
+---
+title: "People"
+toc: false
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+## Core team
+
+```{r}
+#| output: asis
+library(googlesheets4)
+
+gs4_deauth()
+
+people <- read_sheet(
+  "https://docs.google.com/spreadsheets/d/154vEZLxSaBz1Vc6_8za9k0ymMbjI3GKMWypRVown7Lc/edit?gid=0#gid=0",
+) |>
+  transform(full_name = paste(first_name, last_name)) 
+
+
+make_icon <- function(href, icon_class, label) {
+  sprintf(
+    '<a href="%s" title="%s" target="_blank" rel="noopener" class="person-icon"><i class="bi %s"></i></a>',
+    href,
+    label,
+    icon_class
+  )
+}
+
+make_card <- function(row) {
+  icons <- character(0)
+
+  if (!is.na(row$email_address) && nzchar(row$email_address)) {
+    icons <- c(
+      icons,
+      make_icon(paste0("mailto:", row$email_address), "bi-envelope", "Email")
+    )
+  }
+  if (!is.na(row$personal_website) && nzchar(row$personal_website)) {
+    if (!startsWith(row$personal_website, "http")) {
+      row$personal_website <- paste0("https://", row$personal_website)
+    }
+    icons <- c(icons, make_icon(row$personal_website, "bi-globe", "Website"))
+  }
+  if (!is.na(row$bluesky_username) && nzchar(row$bluesky_username)) {
+    icons <- c(
+      icons,
+      make_icon(
+        paste0(
+          "https://bsky.app/profile/",
+          row$bluesky_username,
+          ".bsky.social"
+        ),
+        "bi-bluesky",
+        "Bluesky"
+      )
+    )
+  }
+  if (!is.na(row$github_username) && nzchar(row$github_username)) {
+    icons <- c(
+      icons,
+      make_icon(
+        paste0("https://github.com/", row$github_username),
+        "bi-github",
+        "GitHub"
+      )
+    )
+  }
+  if (!is.na(row$linkedin_username) && nzchar(row$linkedin_username)) {
+    if (!startsWith(row$linkedin_username, "http")) {
+      row$linkedin_username <- paste0("https://", row$linkedin_username)
+    }
+    icons <- c(
+      icons,
+      make_icon(row$linkedin_username, "bi-linkedin", "LinkedIn")
+    )
+  }
+
+  icons_html <- if (length(icons) > 0) {
+    paste0('<div class="person-icons">', paste(icons, collapse = ""), "</div>")
+  } else {
+    ""
+  }
+
+  affiliation_html <- if (!is.na(row$affiliation) && nzchar(row$affiliation)) {
+    paste0('<p class="person-affiliation">', row$affiliation, "</p>")
+  } else {
+    ""
+  }
+
+  path_to_picture <- paste0("../../_img/profiles/", row$first_name, ".png")
+  if (!file.exists(path_to_picture)) {
+    path_to_picture <- "../../_img/profiles/default.png"
+  }
+
+  paste0(
+    '<div class="person-card">',
+    '<img src="',
+    path_to_picture,
+    '" class="person-avatar" alt="',
+    row$full_name,
+    '">',
+    '<div class="person-info">',
+    '<h3>',
+    row$full_name,
+    "</h3>",
+    affiliation_html,
+    icons_html,
+    "</div>",
+    "</div>"
+  )
+}
+
+cards <- vapply(
+  seq_len(nrow(people)),
+  function(i) make_card(people[i, ]),
+  character(1)
+)
+cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
+```
+
+## Contributors
+
+```{r}
+#| output: asis
+
+contributors <- data.frame(
+  first_name = c("Christopher D.", "Kilian", "Alessandro", "Sofía", "Lucas", "Mark", "Bruna"), 
+  last_name = c("Dean", "Eichenseer", "Alfio Chiarenza", "Galván", "Buffan", "Nikolic", "Farina"), 
+  email_address = "", 
+  personal_website = "", 
+  linkedin_username = "", 
+  affiliation = "", 
+  github_username = "", 
+  bluesky_username = ""
+) |> 
+  transform(full_name = paste(first_name, last_name)) 
+
+contributors_cards <- vapply(
+  seq_len(nrow(contributors)),
+  function(i) make_card(contributors[i, ]),
+  character(1)
+)
+
+cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
+```

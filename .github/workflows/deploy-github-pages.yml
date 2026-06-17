@@ -19,8 +19,12 @@ jobs:
         with:
           use-public-rspm: true
 
+      # List generated with pak::pkg_sysreqs("mapgl")
+      - name: Install required dependencies for mapgl
+        run: sudo apt install cmake make libuv1-dev zlib1g-dev pandoc libabsl-dev libssl-dev libgdal-dev libgeos-dev libproj-dev libsqlite3-dev libudunits2-dev
+
       - name: Install R dependencies
-        run: install.packages(c("dplyr", "googlesheets4", "rmarkdown"))
+        run: install.packages(c("tidyverse", "googlesheets4", "jsonlite", "rmarkdown", "cranlogs", "openalexR", "mapgl", "gh", "reactable", "brand.yml", "patchwork"))
         shell: Rscript {0}
 
       - name: Set up Quarto

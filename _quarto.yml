@@ -4,44 +4,95 @@ project:
     - _img/
 
 website:
-  title: "Palaeoverse"
-  # TODO: update this link when we make this the actual website
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
+  repo-actions: [edit]
+  # TODO: use palaeoverse.org once the transition is done. Need to use github.io
+  # for now to check opengraph appearance.
+  site-url: https://palaeoverse.github.io
+  favicon: _brand/logos/favicon.png
+  open-graph:
+    title: Palaeoverse
+    description: A community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.
+    image: _brand/logos/logo-opengraph.png
+    locale: en_GB
+
+  page-footer:
+    border: false
+    center: >
+      Copyright 2026, Palaeoverse &nbsp; &middot;&nbsp;
+      <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>&nbsp;&nbsp;
+      <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;
+      <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+      <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp;
+       &middot;&nbsp; <a href="mailto:LewisA.Jones@outlook.com">Contact us</a>
+
   navbar:
+    pinned: true
+    logo: _brand/logos/logo-text.png
+
     right:
+      - text: About
+        menu:
+          - href: about/about-us
+            text: About us
+          - href: about/people
+            text: People
+          # - href: about/governance
+          #   text: Governance
+          - href: about/code-of-conduct
+            text: Code of Conduct
+          - href: about/ai-policy
+            text: AI policy
+          - href: about/sponsors
+            text: Sponsors
       - href: zulip
         text: Zulip
       - text: Software
-        menu:
-          - href: our-packages
-            text: Our packages
-          - href: cheatsheets
-            text: Cheat sheets
-          - href: contributing
-            text: Contributing
-      - href: people
-        text: People
-      - href: events
-        text: Events
+        href: our-packages
+          # - href: cheatsheets
+          #   text: Cheat sheets
+          # - href: contributing
+          #   text: Contributing
       - text: Resources
         menu:
-          - href: https://workshop.palaeoverse.org/
-            text: Courses
-            icon: box-arrow-up-right
-            target: _blank
-          - href: https://dashboard.palaeoverse.org/
-            text: Dashboard
-            icon: box-arrow-up-right
-            target: _blank
-          - href: external-resources
+          - href: resources/modules
+            text: Modules
+          # - href: https://dashboard.palaeoverse.org/
+          #   text: Dashboard
+          #   icon: box-arrow-up-right
+          #   target: _blank
+          - href: resources/external-resources
             text: External resources
-      - href: blog
-        text: Blog
-      - href: about
-        text: About
+      - text: Events
+        menu:
+          - href: events/all-events
+            text: All events
+          - href: events/lecture-series
+            text: Lecture series
+          - href: events/workshops
+            text: Workshops
+      # - href: blog
+      #   text: Blog
       - icon: github
         href: https://github.com/palaeoverse
         aria-label: GitHub
+        target: _blank
+      - icon: bluesky
+        href: https://bsky.app/profile/palaeoverse.bsky.social
+        aria-label: BlueSky
+        target: _blank
+      - icon: linkedin
+        href: https://www.linkedin.com/company/palaeoverse
+        aria-label: LinkedIn
+        target: _blank
+      - icon: instagram
+        href: https://www.instagram.com/palaeoverse/
+        aria-label: Instagram
+        target: _blank
+      - icon: youtube
+        href: https://www.youtube.com/@ThePalaeoverse
+        aria-label: YouTube
         target: _blank
 
 format:
@@ -49,9 +100,11 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.css
+      - styles.scss
     toc: true
     anchor-sections: false
+    include-after-body:
+      - _includes/active-navbar.html
 
 
 

@@ -1,0 +1,60 @@
+---
+title: Lecture series
+toc: true
+---
+
+The Palaeoverse Lecture Series is a monthly online presentation dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work. The format remains flexible and will generally include a short seminar followed by a demonstration of the speaker’s software toolkit and/or method, concluding with a Q&A session.
+
+
+## I want to attend
+
+Important information:
+
+- See past and future lectures on our [Events page](/events/all-events/){target="_blank"}
+- Lectures will be held from 15:00--16:00 UTC
+- All are welcome to join
+
+<br>
+
+<label class="container">
+  <input type="checkbox" id="coc-agree">
+  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/){target="_blank"}.</span>
+</label>
+
+<div class="hero-buttons">
+  <a href="https://bit.ly/palaeoverse-lectures" id="register-lecture-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Register<i class="bi bi-box-arrow-up-right"></i></a>
+</div>
+
+```{=html}
+<style>
+.landing-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("coc-agree");
+  const button = document.getElementById("register-lecture-btn");
+  checkbox.addEventListener("change", function () {
+    const enabled = checkbox.checked;
+    button.classList.toggle("disabled", !enabled);
+    button.setAttribute("aria-disabled", String(!enabled));
+  });
+  // block navigation while disabled (keeps pointer events so the
+  // cursor styling applies only over the link itself)
+  button.addEventListener("click", function (e) {
+    if (button.classList.contains("disabled")) {
+      e.preventDefault();
+    }
+  });
+});
+</script>
+```
+
+
+
+
+## I want to present
+
+If you want to present a topic that matches the theme of this Lecture Series, please get in touch with [Cecily Nicholl](mailto:cecily.nicholl@ucl.ac.uk). We review talk proposals on a rolling basis, but note that the first available slot might be in a few months. Check the [Events page](/events/all-events/) to see the list of future lectures. 

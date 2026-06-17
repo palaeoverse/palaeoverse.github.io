@@ -2,27 +2,24 @@
 title: "Cheat sheets"
 ---
 
-::: {.package-grid}
+```{=html}
+<div class="package-grid">
 
-::: {.package-card}
-![](../_img/cheatsheet-palaeoverse.png){.cheatsheet-img}
+  <a href="../_img/cheatsheet-palaeoverse.png" target="_blank" class="package-card">
+    <img src="../_img/cheatsheet-palaeoverse.png" class="cheatsheet-img" alt="palaeoverse cheat sheet">
+    <h3>palaeoverse</h3>
+    <div class="package-actions">
+      <span class="package-btn">Download</span>
+    </div>
+  </a>
 
-### palaeoverse
+  <a href="../_img/cheatsheet-rphylopic.png" target="_blank" class="package-card">
+    <img src="../_img/cheatsheet-rphylopic.png" class="cheatsheet-img" alt="rphylopic cheat sheet">
+    <h3>rphylopic</h3>
+    <div class="package-actions">
+      <span class="package-btn">Download</span>
+    </div>
+  </a>
 
-::: {.package-actions}
-[Download](../_img/cheatsheet-palaeoverse.png){.package-btn target="_blank"}
-:::
-:::
-
-
-::: {.package-card}
-![](../_img/cheatsheet-rphylopic.png){.cheatsheet-img}
-
-### rphylopic
-
-::: {.package-actions}
-[Download](../_img/cheatsheet-rphylopic.png){.package-btn target="_blank"}
-:::
-:::
-
-:::
+</div>
+```
