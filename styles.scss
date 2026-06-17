@@ -215,7 +215,7 @@ body.homepage {
 }
 
 .navbar {
-  background: mix($brand-light-blue, white, 60%);
+  background: $brand-light-blue;
   border-bottom: 2px solid $secondary;
   margin-bottom: 1em;
   text-transform: uppercase;
