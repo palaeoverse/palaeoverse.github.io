@@ -1,0 +1,45 @@
+name: Check links
+
+on:
+  push:
+    branches: [gh-pages]
+  schedule:
+    # Every Monday at 8am
+    - cron: "0 8 * * 1"
+
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          # _site only exists on gh-pages, so check it out explicitly.
+          # This also makes the scheduled run work (which otherwise
+          # defaults to the main branch).
+          ref: gh-pages
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@6da1d14f3a43098a294b7696d93d938aa8d20fc0 # v2
+        with:
+          # DOIs links work fine locally but not via lychee.
+          #
+          # --max-concurrency, --max-retries, --retry-wait-time and --timeout make
+          # the check more robust against transient "Connection failed" errors that
+          # happen when lychee hits a single host (e.g. palaeoverse.org) with too
+          # many simultaneous requests.
+          args: |
+            _site 
+            --root-dir=_site 
+            --max-concurrency 4 
+            --max-retries 5 
+            --retry-wait-time 5 
+            --timeout 30 
+            --exclude '(^https://doi\.org/.*$)' 
+            --accept 200,429,999
+          fail: true
