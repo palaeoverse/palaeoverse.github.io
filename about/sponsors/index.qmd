@@ -44,7 +44,7 @@ Scientific Exchange grant from the [Swiss National Science Fund](https://www.snf
 Support for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:
 
 * Meeting support grant from [The Palaeontological Society](https://www.paleosoc.org);
-* [The Palaeontological Association](https://www.palass.org/), [Transmitting Science](https://www.transmittingscience.com/), [PRStatistics](https://www.prstatistics.com/), and [Jumping Rivers](https://www.jumpingrivers.com/) sponsored prizes;
+* [The Palaeontological Association](https://www.palass.org/), [Transmitting Science](https://www.transmittingscience.com/), PRStatistics, and [Jumping Rivers](https://www.jumpingrivers.com/) sponsored prizes;
 * Grant-in-Aid (PA-GA202203, awarded in 2022) from [The Palaeontological Association](https://palass.org).
 
 ::: {.tl-logo .tl-logo-grid}

@@ -40,6 +40,9 @@ make_card <- function(row) {
     )
   }
   if (!is.na(row$personal_website) && nzchar(row$personal_website)) {
+    if (!startsWith(row$personal_website, "http")) {
+      row$personal_website <- paste0("https://", row$personal_website)
+    }
     icons <- c(icons, make_icon(row$personal_website, "bi-globe", "Website"))
   }
   if (!is.na(row$bluesky_username) && nzchar(row$bluesky_username)) {

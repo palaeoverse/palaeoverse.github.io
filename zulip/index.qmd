@@ -8,7 +8,7 @@ title: "Zulip"
 </label>
 
 <div class="hero-buttons">
-  <a href="zulip" id="zulip-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a>
+  <a href="https://palaeoverse.zulipchat.com/" id="zulip-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a>
 </div>
 
 ```{=html}
