@@ -585,7 +585,11 @@ body.packages-page {
 
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // minmax(0, 1fr) instead of 1fr so columns keep an equal width even when a
+  // card has long/unbreakable content. Plain 1fr means minmax(auto, 1fr), whose
+  // auto minimum is the content min-content size; Chrome and Firefox resolve
+  // that differently, which made columns uneven on Chrome but even on Firefox.
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
@@ -827,13 +831,13 @@ a.event-link .event-card {
 
 @media (max-width: 992px) {
   .event-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 600px) {
   .event-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
