@@ -2,8 +2,6 @@
 title: "Zulip"
 ---
 
-[**TO UPDATE**]
-
 <label class="container">
   <input type="checkbox" id="coc-agree">
   <span class="checkmark">I agree to follow the [Code of Conduct](../about/code-of-conduct/){target="_blank"} and I have read the User Guide below.</span>
@@ -46,25 +44,27 @@ Zulip is an organized, asynchronous team chat app (mobile and desktop) for distr
 
 ## Zulip Structure & Interaction
 
-Zulip organises conversations into **channels** (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:
+Zulip organises conversations into **channels** (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1A). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:
 
 * Events
+
+* Funding
 
 * Jobs
 
 * Publications
 
-* Funding
-
 * Resources
 
 * Help
 
-* Palaeoverse Announcements
+* Announcements
 
-As a guest user, you will be able to post in the first six of these, and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.
+As a guest user, you will be able to post in the first six of these (all channels bar “Announcements”), and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.
 
-Within each channel, conversations are organised into [**topics**](https://zulip.com/help/introduction-to-topics)**.** This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows:
+![Figure 1: Channels and topics in the Palaeoverse Zulip workspace](figures/Zulip_Fig_1.png)
+
+Within each channel, conversations are organised into [**topics**](https://zulip.com/help/introduction-to-topics) (Fig. 1B). This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. To view the existing topics, just click on the channel you are interested in. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows (Fig. 2):
 
 * Choose a relevant channel.
 
@@ -72,12 +72,17 @@ Within each channel, conversations are organised into [**topics**](https://zulip
 
 * Enter the topic name (see below on how this should be formatted).
 
-* Compose your message in the text box. If you would like to, you can [preview your message](https://zulip.com/help/preview-your-message-before-sending) before it is sent.
+* Compose your message relating to the topic in the text box. If you would like to, you can [preview your message](https://zulip.com/help/preview-your-message-before-sending) before it is sent using the eye symbol.
 
 * Click the “send”  button (arrow shaped).
 
 
-Once a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message \#Channel Name \> Topic Name (Fig. X). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised\!
+![Figure 2: Composing topics and messages in the Palaeoverse Zulip workspace](figures/Zulip_Fig_2.png)
+
+Once a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message \#Channel Name \> Topic Name (Fig. 3). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised!
+
+![Figure 3: Responding to topics in the Palaeoverse Zulip workspace](figures/Zulip_Fig_3.png)
+
 
 ## Topic templates
 
@@ -87,21 +92,22 @@ To keep channels easy to navigate, we have provided channel-specific templates t
 
 The Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as relevant topics such as ecology and conservation science.
 
-Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised (Fig. X). 
+Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised. 
 
 The initial post within the topic thread should take the following format:
 
 > **Conference or workshop name (in bold)**
 > 
-> Dates:
-> 
 > Location:
 > 
-> Additional Details:
+> Dates:
+> 
+> Additional Details (if applicable):
 > 
 > Link to the conference web page:
 
 All other information (e.g. registration reminders, circular updates) and discussion relating to a specific conference or workshop should be posted below the relevant topic. 
+
 
 ### Publications
 
@@ -111,13 +117,14 @@ Topics within the **Publications** channel should take the **full title of the p
 
 The initial post within the topic should aim to take the following format:
 
-> APA-format citation **(in bold)**:
+> **APA-format citation (in bold)**:
 > 
 > DOI link:
 > 
 > Abstract/Additional Details:
- 
+
 All discussion relating to the research paper should be posted below the relevant topic.
+
 
 ### Funding
 
@@ -139,33 +146,40 @@ The initial post within the topic should take the following format:
 
 Any other information relating to the funding opportunity should be posted below the relevant topic.
 
+
 ### Resources
 
 The **Resources** channel is broad in its scope. Posts are welcomed on topics such as websites, books, talks, and course materials. As the breadth of subjects posted here cover a wider range, no specific post template is provided; however, the topic title should remain short and descriptive.
 
 All discussion relating to the advertised resource should be posted in the relevant topic thread.
 
-### General Help
 
-The **General Help** channel can be used for questions relating to the topics of palaeontology, ecology, open science, conservation science, etc. As the breadth of subjects posted here will cover quite a wide range, no template is provided; however, the topic title should remain short and descriptive.
+### Help
+
+The **Help** channel can be used for questions relating to the topics of palaeontology, ecology, open science, conservation science, etc. As the breadth of subjects posted here will cover quite a wide range, no template is provided; however, the topic title should remain short and descriptive.
 
 All responses to questions should be placed in the relevant topic thread. 
 
-### Palaeoverse Announcements
 
-Posts within the **Palaeoverse Announcements** channel will be used for announcements relating to the workspace, e.g. changes in operation, code of conduct, and wider user messages. These messages will only be permitted from members and administrators; however, as a user you will be able to interact with these. 
+### Announcements
+
+Posts within the **Announcements** channel will be used for announcements relating to the workspace, e.g. changes in operation, code of conduct, and wider user messages. These messages will only be permitted from members and administrators; however, as a user you will be able to interact with these. 
+
 
 ## Reporting Misconduct
 
-When using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows:
+When using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows (Fig. 4):
 
-* Hover over the problematic message to reveal three icons on the right.
+* Hover over the problematic message to reveal the three dots icon on the right.
 
 * Select “report message”.
 
 * Fill out the requested information. Moderators will see the message you’re reporting when they review your report.
 
-* Click “Submit**”** to send.
+* Click “**Submit**” to send.
+
+![Figure 4: Reporting a message in the Palaeoverse Zulip workspace](figures/Zulip_Fig_4.png)
+
 
 ## Credit/Attribution for Shared Work
 
@@ -183,9 +197,11 @@ Unpublished data should not be posted unless there is explicit approval from its
 
 ## Tips and Tricks for Zulip
 
-**Global time zones**: Zulip features a very useful time-stamping tool which automatically converts the displayed time to the local time zone of whoever is reading it. To use this:
+**Global time zones**: Zulip features a very useful time-stamping tool which automatically converts the displayed time to the local time zone of whoever is reading it (Fig. 5). To use this:
 
 * Open the compose box for a message.  
 * Click the “add global time” clock icon beneath the box.   
 * Select your intended Universal Time using the date and time picker.  
 * Click Confirm to insert the time code into your message.
+
+![Figure 5: Using global time zones in the Palaeoverse Zulip workspace](figures/Zulip_Fig_5.png)
