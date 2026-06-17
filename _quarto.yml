@@ -45,9 +45,13 @@ website:
           - href: about/ai-policy
             text: AI policy
           - href: about/sponsors
-            text: Sponsors
-      - href: zulip
-        text: Zulip
+            text: Sponsors      
+      - text: Zulip
+        menu:
+          - href: zulip/join-zulip
+            text: Join Zulip
+          - href: zulip/user-guide
+            text: User guide
       - text: Software
         href: our-packages
           # - href: cheatsheets
