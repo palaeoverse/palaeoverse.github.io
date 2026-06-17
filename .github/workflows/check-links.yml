@@ -2,9 +2,7 @@ name: Check links
 
 on:
   push:
-    branches: gh-pages
-  pull_request:
-    branches: main
+    branches: [gh-pages]
   schedule:
     # Every Monday at 8am
     - cron: "0 8 * * 1"
@@ -19,6 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          # _site only exists on gh-pages, so check it out explicitly.
+          # This also makes the scheduled run work (which otherwise
+          # defaults to the main branch).
+          ref: gh-pages
 
       - name: Link Checker
         id: lychee
