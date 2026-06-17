@@ -63,6 +63,34 @@
     "text": "Since 2022, Palaeoverse, and its activities, have received support from a number of organisations.\n\n\nZulip is an organized team chat app designed for efficient communication. It sponsors our access to the Zulip Cloud Standard.\n\n\n\n\n\nStart of funding from the Software Sustainability Institute’s Research Software Maintenance Fund (AH/Z000114/1). This funding lasts until Feb. 2028.\n\n\n\n\n\nScientific Exchange grant from the Swiss National Science Fund to support the development of the rmacrostrat R package.\n\n\n\n\n\nSupport for the “R for Palaeobiologists: Workshop and Hackathon” at University College London:\n\nMeeting support grant from The Palaeontological Society;\nThe Palaeontological Association, Transmitting Science, PRStatistics, and Jumping Rivers sponsored prizes;\nGrant-in-Aid (PA-GA202203, awarded in 2022) from The Palaeontological Association."
   },
   {
+    "objectID": "about/ai-policy/index.html",
+    "href": "about/ai-policy/index.html",
+    "title": "AI Policy",
+    "section": "",
+    "text": "Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. Part of this initiative is to enable researchers at every career stage to learn and develop new technical and social skills. The human aspect of this work is therefore important to us and we are committed to maintaining spaces for human interaction and engagement. We acknowledge the potential usefulness and growing prevalence of Artificial Intelligence (AI), but wish to see it used only where reasonable and appropriate, whilst prioritising accuracy, accessibility, and upskilling.\nThe objective of this policy is to provide some guidelines regarding AI usage on our various platforms, such as Github and Zulip. This policy is adapted from Zulip’s AI policy.\n\n\nDo not post AI-generated messages: Zulip messages, Github issues, pull request (PR) descriptions, and other messages must be written by humans. If you need to quote an AI answer in a conversation, put the answer in a quote block (starting with “&gt;” in Markdown) to distinguish AI output from your own thoughts.\nYou can use any tool you like for help with spelling, grammar, or translation, but ultimately must take personal responsibility for the messages you post.\n\n\n\nYou can use any tool that helps you understand the Palaeoverse code repositories and write good code, including AI tools. If you used AI to generate code, you must disclose it in the pull request description and mention the tool and version used (e.g. Claude Opus 4.8, or OpenAI Codex 5.3). Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an AI as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested.\nChanges in documentation (e.g. documenting a new function argument, adding a vignette, editing the changelog) can be based on AI output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. It needs to be understood and appreciated by human readers. A good rule of thumb is that if you can’t make yourself carefully read some AI output that you generated, nobody else will want to read it either.\n\n\n\nNot following these rules will be treated as a Code of Conduct violation and will be addressed as detailed in the “Enforcement guidelines” section."
+  },
+  {
+    "objectID": "about/ai-policy/index.html#ai-for-communication",
+    "href": "about/ai-policy/index.html#ai-for-communication",
+    "title": "AI Policy",
+    "section": "",
+    "text": "Do not post AI-generated messages: Zulip messages, Github issues, pull request (PR) descriptions, and other messages must be written by humans. If you need to quote an AI answer in a conversation, put the answer in a quote block (starting with “&gt;” in Markdown) to distinguish AI output from your own thoughts.\nYou can use any tool you like for help with spelling, grammar, or translation, but ultimately must take personal responsibility for the messages you post."
+  },
+  {
+    "objectID": "about/ai-policy/index.html#ai-for-coding",
+    "href": "about/ai-policy/index.html#ai-for-coding",
+    "title": "AI Policy",
+    "section": "",
+    "text": "You can use any tool that helps you understand the Palaeoverse code repositories and write good code, including AI tools. If you used AI to generate code, you must disclose it in the pull request description and mention the tool and version used (e.g. Claude Opus 4.8, or OpenAI Codex 5.3). Additionally, you always need to understand and explain the changes you’re proposing to make, whether or not you used an AI as part of your process to produce them. The answer to “Why is X an improvement?” should never be “I’m not sure. The AI did it.”.\nDo not submit an AI-generated PR you haven’t personally understood and tested.\nChanges in documentation (e.g. documenting a new function argument, adding a vignette, editing the changelog) can be based on AI output, but it remains your responsibility to read through the entire text and ensure that it makes sense to you and represents your ideas concisely. It needs to be understood and appreciated by human readers. A good rule of thumb is that if you can’t make yourself carefully read some AI output that you generated, nobody else will want to read it either."
+  },
+  {
+    "objectID": "about/ai-policy/index.html#rule-violations",
+    "href": "about/ai-policy/index.html#rule-violations",
+    "title": "AI Policy",
+    "section": "",
+    "text": "Not following these rules will be treated as a Code of Conduct violation and will be addressed as detailed in the “Enforcement guidelines” section."
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
