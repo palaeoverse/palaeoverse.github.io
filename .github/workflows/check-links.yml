@@ -34,7 +34,7 @@ jobs:
           # happen when lychee hits a single host (e.g. palaeoverse.org) with too
           # many simultaneous requests.
           args: |
-            _site 
+            . 
             --root-dir=_site 
             --max-concurrency 4 
             --max-retries 5 
