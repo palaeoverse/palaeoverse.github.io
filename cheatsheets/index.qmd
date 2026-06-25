@@ -5,7 +5,7 @@ title: "Cheat sheets"
 ```{=html}
 <div class="package-grid">
 
-  <a href="../_img/cheatsheet-palaeoverse.png" target="_blank" class="package-card">
+  <a href="../_img/cheatsheet-palaeoverse.png" class="package-card">
     <img src="../_img/cheatsheet-palaeoverse.png" class="cheatsheet-img" alt="palaeoverse cheat sheet">
     <h3>palaeoverse</h3>
     <div class="package-actions">
@@ -13,7 +13,7 @@ title: "Cheat sheets"
     </div>
   </a>
 
-  <a href="../_img/cheatsheet-rphylopic.png" target="_blank" class="package-card">
+  <a href="../_img/cheatsheet-rphylopic.png" class="package-card">
     <img src="../_img/cheatsheet-rphylopic.png" class="cheatsheet-img" alt="rphylopic cheat sheet">
     <h3>rphylopic</h3>
     <div class="package-actions">

@@ -46,4 +46,4 @@ maplibre(projection = "mercator", zoom = 3, height = "500px", center = c(-0.1343
   ) 
 ```
 
-[^1]: [Current and past members of the Palaeoverse team](../../about/people/){target="_blank"} are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
+[^1]: [Current and past members of the Palaeoverse team](../../about/people/) are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
