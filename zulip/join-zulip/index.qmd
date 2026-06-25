@@ -1,6 +1,8 @@
 ---
-title: "Join Zulip"
+pagetitle: "Join Zulip"
 ---
+
+# Join Zulip
 
 Sign up to our Palaeoverse Zulip Workspace!
 
@@ -12,30 +14,30 @@ As with any community space, we feel it is important to establish some expectati
 
 We understand that at times, disputes are likely to occur in our workspace; however, it is expected that respect and professional courtesy are maintained at all times, and we encourage our users to read the following resources: [How to Disagree Well](https://www.ucl.ac.uk/about/disagreeing-well/online-resource){target="_blank"}.
 
-> **Disclaimer:**
-> 
-> By default, Zulip stores messages/posts indefinitely, allowing for a full-text search of your complete history. The public channels on this workspace are accessible to anyone on the Internet via the Zulip API. The following information can therefore be accessed by anybody with internet access:
-> 
->   * Palaeoverse Workspace settings (linkifiers, custom emoji, permissions settings, etc.)
-> 
->   * Names of users
-> 
->   * Affiliations of users
-> 
->   * Career stage of users
-> 
->   * All posts in the public channels
-> 
->   * Names of user groups and their membership
-> 
-> By registering to join this workspace, you are agreeing to these details becoming public.
-> 
-> 
-> By registering for this workspace, you acknowledge that your email address will be visible to the workspace Admins.
->
-> This is a public forum: the views shared by the poster are their own, and are not necessarily endorsed by Palaeoverse.
->
-> By joining this workspace, you confirm that you are over the age of 18.
+## Disclaimer
+
+By default, Zulip stores messages/posts indefinitely, allowing for a full-text search of your complete history. The public channels on this workspace are accessible to anyone on the Internet via the Zulip API. The following information can therefore be accessed by anybody with internet access:
+
+  * Palaeoverse Workspace settings (linkifiers, custom emoji, permissions settings, etc.)
+
+  * Names of users
+
+  * Affiliations of users
+
+  * Career stage of users
+
+  * All posts in the public channels
+
+  * Names of user groups and their membership
+
+By registering to join this workspace, you are agreeing to these details becoming public.
+
+
+By registering for this workspace, you acknowledge that your email address will be visible to the workspace Admins.
+
+This is a public forum: the views shared by the poster are their own, and are not necessarily endorsed by Palaeoverse.
+
+By joining this workspace, you confirm that you are over the age of 18.
 
 ---
 

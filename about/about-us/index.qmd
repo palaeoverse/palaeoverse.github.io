@@ -1,6 +1,6 @@
 ---
 title: "About us"
-toc: false
+toc: true
 ---
 
 Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.

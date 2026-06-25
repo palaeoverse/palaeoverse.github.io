@@ -1,7 +1,8 @@
 ---
-title: Workshops
-toc: false
+pagetitle: "Workshops"
 ---
+
+# Workshops
 
 We organize workshops of various length and objectives. You can find the complete list on our [Events page](../all-events){target="_blank"} and the content of past workshops [here](https://workshop.palaeoverse.org/){target="_blank"}.
 
