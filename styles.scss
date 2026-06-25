@@ -5,15 +5,15 @@
 /*-- scss:rules --*/
 
 body {
-  background-color: mix($brand-light-blue, white, 60%)
+  background-color: mix($brand-light-blue, white, 20%)
 }
 
 #quarto-appendix {
-  background-color: mix($brand-light-blue, white, 60%) !important
+  background-color: mix($brand-light-blue, white, 20%) !important
 }
 
 .nav-footer {
-  background-color: mix($brand-light-blue, white, 60%)
+  background-color: mix($brand-light-blue, white, 20%)
 }
 
 // Lay the footer-center content (copyright/contact line + the "Edit this page"
