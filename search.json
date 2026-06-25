@@ -189,18 +189,18 @@
     "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Lausanne\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nScience Graphic Design\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
-    "objectID": "about/people/index.html#core-team",
-    "href": "about/people/index.html#core-team",
+    "objectID": "about/people/index.html#current-team-members",
+    "href": "about/people/index.html#current-team-members",
     "title": "People",
     "section": "",
     "text": "University College London\n\n\n\n\n\n\n\n\n\n\n\nSyracuse University\n\n\n\n\n\n\n\n\n\n\n\nGFZ Helmholtz Centre for Geosciences\n\n\n\n\n\n\n\n\n\n\n\nSmithsonian Tropical Research Institute\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Lausanne\n\n\n\n\n\n\n\n\n\n\n\nUniversity of São Paulo\n\n\n\n\n\n\n\n\n\n\n\nScience Graphic Design\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Birmingham\n\n\n\n\n\n\n\n\n\n\n\nUniversity College London\n\n\n\n\n\n\n\n\n\n\n\nUtrecht University"
   },
   {
-    "objectID": "about/people/index.html#contributors",
-    "href": "about/people/index.html#contributors",
+    "objectID": "about/people/index.html#former-team-members",
+    "href": "about/people/index.html#former-team-members",
     "title": "People",
-    "section": "Contributors",
-    "text": "Contributors\n\n\n\n\n\nChristopher D. Dean\n\n\n\n\n\n\n\nKilian Eichenseer\n\n\n\n\n\n\n\nAlessandro Alfio Chiarenza\n\n\n\n\n\n\n\nSofía Galván\n\n\n\n\n\n\n\nLucas Buffan\n\n\n\n\n\n\n\nMark Nikolic\n\n\n\n\n\n\n\nBruna Farina"
+    "section": "Former team members",
+    "text": "Former team members\n\n\n\n\n\nChristopher D. Dean\n\n\n\n\n\n\n\nKilian Eichenseer\n\n\n\n\n\n\n\nAlessandro Alfio Chiarenza\n\n\n\n\n\n\n\nSofía Galván\n\n\n\n\n\n\n\nLucas Buffan\n\n\n\n\n\n\n\nMark Nikolic\n\n\n\n\n\n\n\nBruna Farina"
   },
   {
     "objectID": "blog/posts/post-with-code copy/index.html",
@@ -347,7 +347,14 @@
     "href": "zulip/join-zulip/index.html",
     "title": "Join Zulip",
     "section": "",
-    "text": "Sign up to our Palaeoverse Zulip Workspace!\nThis is a space to interact with fellow palaeontologists, share useful resources, and post announcements for the broader palaeontological community.\nIf you are unfamiliar with Zulip as a communication tool, please refer closely to our personalised user guide. By registering to join this workspace, you are agreeing to follow the guidelines laid out in this document to the best of your ability. Detailed instructions for how to interact with the workspace are also provided in the description of each of our public channels. Please make sure to refer to these before posting. A more exhaustive guide on using Zulip, by the app’s developers, is provided here.\nAs with any community space, we feel it is important to establish some expectations of behaviour whilst interacting with other users. Therefore by registering to join this workspace, you are confirming that you have read, and agree to our Code of Conduct (CoC). Though the workspace enlists a dedicated team of moderators, if you personally suspect any breach of the rules, we kindly ask that you report these as soon as possible following the instructions provided in our user guide or via the methods detailed in our CoC.\nWe understand that at times, disputes are likely to occur in our workspace; however, it is expected that respect and professional courtesy are maintained at all times, and we encourage our users to read the following resources: How to Disagree Well.\n\nDisclaimer:\nBy default, Zulip stores messages/posts indefinitely, allowing for a full-text search of your complete history. The public channels on this workspace are accessible to anyone on the Internet via the Zulip API. The following information can therefore be accessed by anybody with internet access:\n\nPalaeoverse Workspace settings (linkifiers, custom emoji, permissions settings, etc.)\nNames of users\nAffiliations of users\nCareer stage of users\nAll posts in the public channels\nNames of user groups and their membership\n\nBy registering to join this workspace, you are agreeing to these details becoming public.\nBy registering for this workspace, you acknowledge that your email address will be visible to the workspace Admins.\nThis is a public forum: the views shared by the poster are their own, and are not necessarily endorsed by Palaeoverse.\nBy joining this workspace, you confirm that you are over the age of 18.\n\n\n  I agree to follow the Code of Conduct and I have read the User Guide. \n\nJoin the community on Zulip"
+    "text": "Sign up to our Palaeoverse Zulip Workspace!\nThis is a space to interact with fellow palaeontologists, share useful resources, and post announcements for the broader palaeontological community.\nIf you are unfamiliar with Zulip as a communication tool, please refer closely to our personalised user guide. By registering to join this workspace, you are agreeing to follow the guidelines laid out in this document to the best of your ability. Detailed instructions for how to interact with the workspace are also provided in the description of each of our public channels. Please make sure to refer to these before posting. A more exhaustive guide on using Zulip, by the app’s developers, is provided here.\nAs with any community space, we feel it is important to establish some expectations of behaviour whilst interacting with other users. Therefore by registering to join this workspace, you are confirming that you have read, and agree to our Code of Conduct (CoC). Though the workspace enlists a dedicated team of moderators, if you personally suspect any breach of the rules, we kindly ask that you report these as soon as possible following the instructions provided in our user guide or via the methods detailed in our CoC.\nWe understand that at times, disputes are likely to occur in our workspace; however, it is expected that respect and professional courtesy are maintained at all times, and we encourage our users to read the following resources: How to Disagree Well.\n\n\nBy default, Zulip stores messages/posts indefinitely, allowing for a full-text search of your complete history. The public channels on this workspace are accessible to anyone on the Internet via the Zulip API. The following information can therefore be accessed by anybody with internet access:\n\nPalaeoverse Workspace settings (linkifiers, custom emoji, permissions settings, etc.)\nNames of users\nAffiliations of users\nCareer stage of users\nAll posts in the public channels\nNames of user groups and their membership\n\nBy registering to join this workspace, you are agreeing to these details becoming public.\nBy registering for this workspace, you acknowledge that your email address will be visible to the workspace Admins.\nThis is a public forum: the views shared by the poster are their own, and are not necessarily endorsed by Palaeoverse.\nBy joining this workspace, you confirm that you are over the age of 18.\n\n  I agree to follow the Code of Conduct and I have read the User Guide. \n\nJoin the community on Zulip"
+  },
+  {
+    "objectID": "zulip/join-zulip/index.html#disclaimer",
+    "href": "zulip/join-zulip/index.html#disclaimer",
+    "title": "Join Zulip",
+    "section": "",
+    "text": "By default, Zulip stores messages/posts indefinitely, allowing for a full-text search of your complete history. The public channels on this workspace are accessible to anyone on the Internet via the Zulip API. The following information can therefore be accessed by anybody with internet access:\n\nPalaeoverse Workspace settings (linkifiers, custom emoji, permissions settings, etc.)\nNames of users\nAffiliations of users\nCareer stage of users\nAll posts in the public channels\nNames of user groups and their membership\n\nBy registering to join this workspace, you are agreeing to these details becoming public.\nBy registering for this workspace, you acknowledge that your email address will be visible to the workspace Admins.\nThis is a public forum: the views shared by the poster are their own, and are not necessarily endorsed by Palaeoverse.\nBy joining this workspace, you confirm that you are over the age of 18.\n\n  I agree to follow the Code of Conduct and I have read the User Guide. \n\nJoin the community on Zulip"
   },
   {
     "objectID": "our-packages/index.html",
@@ -361,7 +368,7 @@
     "href": "events/workshops/index.html",
     "title": "Workshops",
     "section": "",
-    "text": "We organize workshops of various length and objectives. You can find the complete list on our Events page and the content of past workshops here.\nEach workshop is composed of a collection of self-contained modules that you can find on the Modules page."
+    "text": "Workshops\nWe organize workshops of various length and objectives. You can find the complete list on our Events page and the content of past workshops here.\nEach workshop is composed of a collection of self-contained modules that you can find on the Modules page."
   },
   {
     "objectID": "cheatsheets/index.html",
