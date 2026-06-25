@@ -8,9 +8,9 @@ Sign up to our Palaeoverse Zulip Workspace!
 
 This is a space to interact with fellow palaeontologists, share useful resources, and post announcements for the broader palaeontological community.
 
-If you are unfamiliar with Zulip as a communication tool, please refer closely to our [personalised user guide](../user-guide/){target="_blank"}. By registering to join this workspace, you are agreeing to follow the guidelines laid out in this document to the best of your ability. Detailed instructions for how to interact with the workspace are also provided in the description of each of our public channels. Please make sure to refer to these before posting. A more exhaustive guide on using Zulip, by the app’s developers, is provided [here](https://zulip.com/help/){target="_blank"}.
+If you are unfamiliar with Zulip as a communication tool, please refer closely to our [personalised user guide](../user-guide/). By registering to join this workspace, you are agreeing to follow the guidelines laid out in this document to the best of your ability. Detailed instructions for how to interact with the workspace are also provided in the description of each of our public channels. Please make sure to refer to these before posting. A more exhaustive guide on using Zulip, by the app’s developers, is provided [here](https://zulip.com/help/){target="_blank"}.
 
-As with any community space, we feel it is important to establish some expectations of behaviour whilst interacting with other users. Therefore by registering to join this workspace, you are confirming that you have read, and agree to our [Code of Conduct](../../about/code-of-conduct/){target="_blank"} (CoC). Though the workspace enlists a dedicated team of moderators, if you personally suspect any breach of the rules, we kindly ask that you report these as soon as possible following the instructions provided in our user guide or via the methods detailed in our CoC.
+As with any community space, we feel it is important to establish some expectations of behaviour whilst interacting with other users. Therefore by registering to join this workspace, you are confirming that you have read, and agree to our [Code of Conduct](../../about/code-of-conduct/) (CoC). Though the workspace enlists a dedicated team of moderators, if you personally suspect any breach of the rules, we kindly ask that you report these as soon as possible following the instructions provided in our user guide or via the methods detailed in our CoC.
 
 We understand that at times, disputes are likely to occur in our workspace; however, it is expected that respect and professional courtesy are maintained at all times, and we encourage our users to read the following resources: [How to Disagree Well](https://www.ucl.ac.uk/about/disagreeing-well/online-resource){target="_blank"}.
 
@@ -43,7 +43,7 @@ By joining this workspace, you confirm that you are over the age of 18.
 
 <label class="container">
   <input type="checkbox" id="coc-agree">
-  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/){target="_blank"} and I have read the [User Guide](../user-guide/){target="_blank"}.</span>
+  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/) and I have read the [User Guide](../user-guide/).</span>
 </label>
 
 <div class="hero-buttons">
