@@ -7,7 +7,7 @@ execute:
   warning: false
 ---
 
-## Core team
+## Current team members
 
 ```{r}
 #| output: asis
@@ -122,7 +122,7 @@ cards <- vapply(
 cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 ```
 
-## Contributors
+## Former team members
 
 ```{r}
 #| output: asis
