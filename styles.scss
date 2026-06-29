@@ -920,6 +920,15 @@ h2 {
 // Modules page
 .quarto-grid-item {
   background: #a3d0d2;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+// Round the card image (top corners) to match the more rounded card.
+.quarto-grid-item .card-img-top,
+.quarto-grid-item img.thumbnail-image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .quarto-grid-item .card-body {
