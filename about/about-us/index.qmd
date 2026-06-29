@@ -23,6 +23,6 @@ We contribute to making palaeontology a more open, reproducible, and supportive 
 
 Email: [info@palaeoverse.org](mailto:info@palaeoverse.org)
 
-Address: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK[^1]
+Address: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK
 
-[^1]: [Current and past members of the Palaeoverse team](../../about/people/) are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
+[Current and past members of the Palaeoverse team](../../about/people/) are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
