@@ -485,6 +485,11 @@ body.packages-page {
 .person-info {
   padding: 0.75rem 1rem 1rem;
   text-align: center;
+  // Fill the card height so the icon row can be pinned to the bottom, aligning
+  // logos across cards regardless of name/affiliation length.
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .person-info h3 {
@@ -502,7 +507,9 @@ body.packages-page {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
-  margin-top: 0.6rem;
+  // Push to the bottom so icon rows line up across cards.
+  margin-top: auto;
+  padding-top: 0.6rem;
 }
 
 .person-icon {
