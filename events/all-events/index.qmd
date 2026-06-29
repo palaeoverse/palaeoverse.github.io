@@ -126,12 +126,7 @@ render_cards <- function(df) {
           row$Link
         )
       } else if (has_link) {
-        register <- sprintf(
-          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-box-arrow-up-right"></i>&nbsp;Register</a>',
-          row$Link
-        )
-        more <- '<a class="event-card-btn" href="/events/lecture-series/" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
-        paste0(register, more)
+        '<a class="event-card-btn" href="/events/lecture-series/"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
       } else {
         ""
       }
