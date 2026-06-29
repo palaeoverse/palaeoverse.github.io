@@ -866,121 +866,55 @@ h2 {
   border-bottom: 1px solid $secondary;
 }
 
-// Use margin (not padding) for the inter-event gap, so that raising --tl-gap
-// doesn't inflate each event's box height. The logos are positioned with a
-// percentage `top`, which is relative to that box — keeping the box at content
-// height means the logos stay aligned with the text whatever the gap is.
-.timeline.vertical-alt .event:not(.tl-card) {
-  padding-bottom: 0;
-  margin-bottom: var(--tl-gap);
-}
-
-// Timeline (vertical-alt): place a logo on the opposite side of the center
-// line from the event text, so logos and text both alternate left/right.
-// Wrap the image in a ::: {.tl-logo} fenced div inside the event.
-.timeline.vertical-alt .tl-logo {
-  position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  width: 100%;
-  margin: 0;
-}
-
-.timeline.vertical-alt .tl-logo>*,
-.timeline.vertical-alt .tl-logo p {
-  margin: 0;
-}
-
-.timeline.vertical-alt .tl-logo img {
-  width: 100%;
-  height: auto;
-}
-
-// .tl-logo-grid: when an event has several logos, lay them out in a small
-// grid instead of stacking. display: contents on the wrapping <p> lets the
-// images become grid items directly.
-.timeline.vertical-alt .tl-logo-grid {
+// Sponsors page: a responsive wall of logos. Each logo sits in its own cell,
+// centred and scaled to a consistent height so the differently sized source
+// images read as a uniform grid.
+.logo-wall {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2.5rem 2rem;
   align-items: center;
   justify-items: center;
-  // A tall multi-logo grid centers vertically (single logos use the base 30%).
-  top: 50%;
+  margin: 2.5rem 0;
 }
 
-.timeline.vertical-alt .tl-logo-grid p {
-  display: contents;
+.logo-wall p {
+  margin: 0;
 }
 
-.timeline.vertical-alt .tl-logo-grid img {
-  width: 100%;
-  max-width: 200px;
+.logo-wall img {
+  max-width: 100%;
+  max-height: 90px;
+  width: auto;
   height: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-// Event text is on the left (odd) -> logo goes into the right half.
-// The event's right edge sits 30px from the line; the opposite half starts
-// another 30px past it, hence the 60px offset from the event edge.
-.timeline.vertical-alt .event:nth-child(odd) .tl-logo {
-  left: calc(100% + 60px);
-  right: auto;
-  text-align: left;
-  top: 50%
-}
+// Lightbox (GLightbox) tweaks for the sponsors gallery: give the opened image
+// some breathing room, and separate the caption text from the image with a
+// rule between the title and the description.
+.glightbox-clean {
+  .gslide-image img {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+  }
 
-// Event text is on the right (even) -> logo goes into the left half.
-.timeline.vertical-alt .event:nth-child(even) .tl-logo {
-  right: calc(100% + 60px);
-  left: auto;
-  text-align: right;
-}
+  .gslide-description {
+    padding: 1.25rem 1.5rem;
+  }
 
-// data-location: pin an event to a specific side of the line instead of relying
-// on the automatic odd/even alternation (which shifts whenever events are added
-// or reordered). Put data-location="left" or "right" on the .event; the logo
-// (.tl-logo) automatically goes to the opposite side.
-//
-// .vertical-alt is repeated to raise specificity above both the extension's
-// :nth-child rules and the nth-child .tl-logo rules above, so these win
-// regardless of stylesheet load order.
-
-// Text on the LEFT half -> logo on the right.
-.timeline.vertical-alt.vertical-alt .event[data-location="left"] {
-  align-self: flex-start;
-  text-align: right;
-  padding-right: 16px;
-  padding-left: 0;
-}
-
-.timeline.vertical-alt.vertical-alt .event[data-location="left"]::after {
-  right: calc(-30px - var(--tl-dot-size) / 2);
-  left: auto;
-}
-
-.timeline.vertical-alt.vertical-alt .event[data-location="left"] .tl-logo {
-  left: calc(100% + 60px);
-  right: auto;
-  text-align: left;
-}
-
-// Text on the RIGHT half -> logo on the left.
-.timeline.vertical-alt.vertical-alt .event[data-location="right"] {
-  align-self: flex-end;
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.timeline.vertical-alt.vertical-alt .event[data-location="right"]::after {
-  left: calc(-30px - var(--tl-dot-size) / 2);
-  right: auto;
-}
-
-.timeline.vertical-alt.vertical-alt .event[data-location="right"] .tl-logo {
-  right: calc(100% + 60px);
-  left: auto;
-  text-align: right;
+  .gslide-title {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $secondary;
+  }
 }
 
 // Modules page
