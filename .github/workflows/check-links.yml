@@ -1,7 +1,7 @@
 name: Check links
 
 on:
-  workflow_dispatch: # to trigger manually
+  workflow_dispatch: # to
   push:
     branches: [gh-pages]
   schedule:
@@ -36,6 +36,7 @@ jobs:
           # many simultaneous requests.
           args: |
             . 
+            --root-dir=.
             --max-concurrency 4 
             --max-retries 5 
             --retry-wait-time 5 
