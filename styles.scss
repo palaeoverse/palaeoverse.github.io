@@ -304,7 +304,7 @@ body.packages-page {
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  background: #a3d0d2;
+  background: $brand-light-blue;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
   position: relative;
@@ -471,7 +471,7 @@ body.packages-page {
   flex-direction: column;
   overflow: hidden;
   border-radius: 8px;
-  background: #a3d0d2;
+  background: $brand-light-blue;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -919,7 +919,7 @@ h2 {
 
 // Modules page
 .quarto-grid-item {
-  background: #a3d0d2;
+  background: $brand-light-blue;
   border-radius: 16px;
   overflow: hidden;
 }
