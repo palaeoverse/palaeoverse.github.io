@@ -1,6 +1,7 @@
 name: Check links
 
 on:
+  workflow_dispatch: # to trigger manually
   push:
     branches: [gh-pages]
   schedule:
