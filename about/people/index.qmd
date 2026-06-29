@@ -114,9 +114,12 @@ make_card <- function(row) {
   )
 }
 
+people_active <- people[people$role == "active", ]
+people_past <- people[people$role == "past", ]
+
 cards <- vapply(
-  seq_len(nrow(people)),
-  function(i) make_card(people[i, ]),
+  seq_len(nrow(people_active)),
+  function(i) make_card(people_active[i, ]),
   character(1)
 )
 cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
@@ -126,22 +129,9 @@ cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 
 ```{r}
 #| output: asis
-
-contributors <- data.frame(
-  first_name = c("Christopher D.", "Kilian", "Alessandro", "Sofía", "Lucas", "Mark", "Bruna"), 
-  last_name = c("Dean", "Eichenseer", "Alfio Chiarenza", "Galván", "Buffan", "Nikolic", "Farina"), 
-  email_address = "", 
-  personal_website = "", 
-  linkedin_username = "", 
-  affiliation = "", 
-  github_username = "", 
-  bluesky_username = ""
-) |> 
-  transform(full_name = paste(first_name, last_name)) 
-
 contributors_cards <- vapply(
-  seq_len(nrow(contributors)),
-  function(i) make_card(contributors[i, ]),
+  seq_len(nrow(people_past)),
+  function(i) make_card(people_past[i, ]),
   character(1)
 )
 
@@ -154,7 +144,7 @@ cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '
 library(mapgl)
 
 # Have to keep one column on top of lat/lon otherwise mapgl() errors
-map_dat <- people |> 
+map_dat <- people_active |> 
   transform(full_name = paste(first_name, last_name))  |>
   dplyr::mutate(
     people_info = paste0(full_name, ", ", affiliation),
