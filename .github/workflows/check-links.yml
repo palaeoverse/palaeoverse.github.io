@@ -35,7 +35,6 @@ jobs:
           # many simultaneous requests.
           args: |
             . 
-            --root-dir=_site 
             --max-concurrency 4 
             --max-retries 5 
             --retry-wait-time 5 
