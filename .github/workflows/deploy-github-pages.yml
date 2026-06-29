@@ -11,6 +11,7 @@ name: Deploy to Github Pages
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
     steps:
