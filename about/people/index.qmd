@@ -147,3 +147,34 @@ contributors_cards <- vapply(
 
 cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
 ```
+
+
+```{r}
+#| echo: false
+library(mapgl)
+
+# Have to keep one column on top of lat/lon otherwise mapgl() errors
+map_dat <- people |> 
+  transform(full_name = paste(first_name, last_name))  |>
+  dplyr::mutate(
+    people_info = paste0(full_name, ", ", affiliation),
+    people_info = paste(people_info, collapse = "<br><hr>"), 
+    .by = c(lat, lon)
+  ) |>
+  sf::st_as_sf(coords = c("lon", "lat"), crs = 4326) 
+
+maplibre(projection = "mercator", zoom = 0, height = "500px", center = c(-0.1343463, 51.525385)) |>
+  add_fullscreen_control(position = "top-left") |>
+  add_navigation_control() |>
+  add_circle_layer(
+    id = "poi-layer",
+    source = map_dat,
+    circle_color = "#575756",
+    circle_radius = 8,
+    circle_stroke_color = "#ffffff",
+    circle_stroke_width = 2,
+    circle_opacity = 0.8,
+    tooltip = "people_info",
+    hover_options = list(circle_radius = 12)
+  ) 
+```

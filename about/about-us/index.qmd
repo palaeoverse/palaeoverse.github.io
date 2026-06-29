@@ -25,25 +25,4 @@ Email: [info@palaeoverse.org](mailto:info@palaeoverse.org)
 
 Address: Palaeoverse, G02, Department of Earth Sciences, University College London, 5 Gower Pl, London WC1E 6BS, UK[^1]
 
-```{r}
-#| echo: false
-library(mapgl)
-
-map_dat <- data.frame(lat = 51.525385, long = -0.1343463) |>
-  sf::st_as_sf(coords = c("long", "lat"), crs = 4326) 
-
-maplibre(projection = "mercator", zoom = 3, height = "500px", center = c(-0.1343463, 51.525385)) |>
-  add_fullscreen_control(position = "top-left") |>
-  add_navigation_control() |>
-  add_circle_layer(
-    id = "poi-layer",
-    source = map_dat,
-    circle_color = "#575756",
-    circle_radius = 8,
-    circle_stroke_color = "#ffffff",
-    circle_stroke_width = 2,
-    circle_opacity = 0.8
-  ) 
-```
-
 [^1]: [Current and past members of the Palaeoverse team](../../about/people/) are based all over the world, including Brazil, France, Germany, Panama, Switzerland, UK, USA, and more. Reach out if you have any questions, would like more information, or would like to work with us.
