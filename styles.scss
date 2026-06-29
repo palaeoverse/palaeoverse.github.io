@@ -16,9 +16,19 @@ body {
   background-color: mix($brand-light-blue, white, 15%)
 }
 
+// Quarto's footer splits into three equal columns (left/center/right). The
+// left and right are empty spacers, so collapse them and let the center use the
+// full available width — otherwise the center wraps long before the page is
+// actually full.
+.nav-footer-left,
+.nav-footer-right {
+  flex: 0 0 auto;
+}
+
 // Lay the footer-center content (copyright/contact line + the "Edit this page"
 // repo action) on a single line instead of stacking "Edit this page" below.
 .nav-footer-center {
+  flex: 1 1 auto;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -37,6 +47,9 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  // Keep "Edit this page" on a single line; it can wrap as a whole below the
+  // copyright line if the footer is too narrow, but the words won't split.
+  white-space: nowrap;
 }
 
 // Separator so it reads "... Contact us · Edit this page".
