@@ -1,0 +1,4 @@
+# Applied to every page under training/modules/ (the listing and each module).
+# The injected script no-ops on the listing page.
+include-after-body:
+  - _module-page.html

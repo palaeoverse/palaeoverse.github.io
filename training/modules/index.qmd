@@ -2,7 +2,8 @@
 title: Modules
 listing:
   id: modules
-  contents: posts
+  # Posts are all qmd files but the current file
+  contents: "*/index.qmd"
   sort: "date desc"
   template: listing-template.ejs
   fields: [title, description, image, date, categories, difficulty, path]

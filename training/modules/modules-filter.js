@@ -74,8 +74,29 @@
       if (emptyMsg) emptyMsg.hidden = visible !== 0;
     }
 
+    // Allow deep-linking from a module page, e.g. ".../#category=tidyverse",
+    // so clicking a tag opens the list pre-filtered to that tag.
+    function preselectFromUrl() {
+      const hash = location.hash.replace(/^#/, "");
+      if (!hash) return;
+      const params = new URLSearchParams(hash);
+      const setIfPresent = (select, value) => {
+        if (value && Array.from(select.options).some((o) => o.value === value)) {
+          select.value = value;
+        }
+      };
+      setIfPresent(categorySelect, params.get("category"));
+      setIfPresent(difficultySelect, params.get("difficulty"));
+    }
+
     difficultySelect.addEventListener("change", applyFilters);
     categorySelect.addEventListener("change", applyFilters);
+    window.addEventListener("hashchange", function () {
+      preselectFromUrl();
+      applyFilters();
+    });
+
+    preselectFromUrl();
     applyFilters();
   });
 })();

@@ -964,8 +964,9 @@ h2 {
 
 .modules-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: 1rem;
+  column-gap: 0.1rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -1000,6 +1001,9 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  // Fill the card height so the category tags can be pinned to the bottom,
+  // aligning them across cards regardless of title/description length.
+  flex: 1;
   padding: 1rem 1.1rem 1.2rem;
 }
 
@@ -1030,7 +1034,9 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-top: 0.25rem;
+  // Push to the bottom so the tag rows line up across cards.
+  margin-top: auto;
+  padding-top: 0.5rem;
 }
 
 .module-cat {
@@ -1044,4 +1050,37 @@ h2 {
 .modules-empty {
   margin: 2rem 0;
   font-style: italic;
+}
+
+// Module page: "back to the list" button, injected before the title block by
+// posts/_module-page.html.
+.back-to-modules {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: $secondary;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: mix($secondary, black, 85%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+// Category badges turned into filter links on a module page.
+a.module-category-link {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
