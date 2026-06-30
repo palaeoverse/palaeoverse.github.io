@@ -1,0 +1,87 @@
+# This workflow compares modules in the palaeoverse/modules repo with modules in 
+# "training/modules". It:
+# - adds new or modified modules 
+# - does not touch unmodified modules 
+# - deletes modules that no longer appear in palaeoverse/modules (e.g. 
+#   because they were renamed)
+#
+# Importantly, it doesn't render the modules. Instead, it commits the changes to the
+# main branch, which triggers the workflow that renders and deploys the website. Modules
+# are rendered there. 
+
+on:
+  workflow_dispatch: # To trigger this workflow manually.
+  repository_dispatch: # Trigger this workflow when there is a change in
+                       # palaeoverse/modules. See the workflow there.
+    types: [sync-modules]
+
+name: Sync modules from palaeoverse/modules
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PALAEOVERSE_WEBSITE_TRIGGER_DEPLOYMENT }}
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Sync module sources from palaeoverse/modules
+        shell: Rscript {0}
+        run: |
+          # Clone palaeoverse/modules
+          dest <- "training/modules"
+          tmp <- tempfile("modules-")
+          dir.create(tmp)
+          if (system2("git", c("clone", "--depth", "1",
+                "https://github.com/palaeoverse/modules.git", tmp)) != 0L) {
+            stop("Failed to clone palaeoverse/modules")
+          }
+
+          # Upstream modules = top-level directories only (loose files such as
+          # README.md / LICENSE.md and the repo's own .git/.github are ignored).
+          upstream <- setdiff(
+            list.dirs(tmp, full.names = FALSE, recursive = FALSE),
+            c(".git", ".github")
+          )
+          message("Upstream modules: ", paste(upstream, collapse = ", "))
+
+          # Remove modules that no longer exist upstream. Only the sub-directories 
+          # of `dest` are modules; root files (index.qmd, _metadata.yml, modules-filter.js, 
+          # ...) are infrastructure and are kept.
+          local <- list.dirs(dest, full.names = FALSE, recursive = FALSE)
+          for (name in setdiff(local, upstream)) {
+            message("Removing stale module: ", name)
+            unlink(file.path(dest, name), recursive = TRUE)
+          }
+
+          # Replace each module. Unchanged modules will not appear as modified.
+          for (name in upstream) {
+            target <- file.path(dest, name)
+            unlink(target, recursive = TRUE)
+            dir.create(target, recursive = TRUE, showWarnings = FALSE)
+            src <- list.files(file.path(tmp, name), full.names = TRUE,
+                              all.files = TRUE, no.. = TRUE)
+            file.copy(src, target, recursive = TRUE)
+          }
+
+          # Delete palaeoverse/modules we cloned at the beginning
+          unlink(tmp, recursive = TRUE)
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add training/modules _freeze/training/modules
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: sync modules from palaeoverse/modules"
+          # Pushing to main triggers deploy-github-pages.yml, which renders the
+          # (new or modified) modules and deploys the website.
+          git push
