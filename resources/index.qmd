@@ -1,5 +1,5 @@
 ---
-title: "External resources"
+title: "Resources"
 toc: false
 execute:
   echo: false
@@ -233,4 +233,4 @@ htmltools::tagList(
 
 :::
 
-This external resource table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.
+This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.

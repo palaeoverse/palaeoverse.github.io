@@ -58,24 +58,18 @@ website:
           #   text: Cheat sheets
           # - href: contributing
           #   text: Contributing
-      - text: Resources
-        menu:
-          - href: resources/modules
-            text: Modules
-          # - href: https://dashboard.palaeoverse.org/
-          #   text: Dashboard
-          #   icon: box-arrow-up-right
-          #   target: _blank
-          - href: resources/external-resources
-            text: External resources
-      - text: Events
-        menu:
-          - href: events/all-events
-            text: All events
-          - href: events/lecture-series
-            text: Lecture series
-          - href: events/workshops
+      - text: Training
+        menu: 
+          - href: training/workshops
             text: Workshops
+          - href: training/modules
+            text: Modules
+          - href: training/lecture-series
+            text: Lecture series
+      - text: Resources
+        href: resources
+      - text: Events
+        href: events
       # - href: blog
       #   text: Blog
       - icon: github
