@@ -934,3 +934,114 @@ h2 {
 .quarto-grid-item .card-body {
   color: $body-color;
 }
+
+// Custom modules listing (training/modules) with difficulty + category filters.
+.modules-filters {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.modules-filter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  max-width: 30%;
+
+  select {
+    width: 100%;
+    font-weight: 400;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid $secondary;
+    border-radius: 8px;
+    background: #fff;
+    color: $body-color;
+  }
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: $brand-light-blue;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 80%;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+  }
+}
+
+.module-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.module-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.module-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.module-card-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $body-color;
+}
+
+.module-difficulty {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: $secondary;
+  color: #fff;
+}
+
+.module-card-cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.module-cat {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: mix($brand-light-blue, white, 50%);
+  color: $body-color;
+}
+
+.modules-empty {
+  margin: 2rem 0;
+  font-style: italic;
+}

@@ -1,11 +1,30 @@
 ---
 title: Modules
 listing:
-  categories: true
+  id: modules
   contents: posts
-  feed: true
   sort: "date desc"
-  type: grid
+  template: listing-template.ejs
+  fields: [title, description, image, date, categories, difficulty, path]
+  feed: true
+resources:
+  - modules-filter.js
 ---
 
-This page contains a list of modules that we use in our [Workshops](../../events/all-events), but they can also serve as standalone resources.
+This page contains a list of modules that we use in our [Workshops](../workshops/), but they can also serve as standalone resources.
+
+```{=html}
+<div class="modules-filters">
+  <label class="modules-filter">Difficulty
+    <select id="filter-difficulty"><option value="">All</option></select>
+  </label>
+  <label class="modules-filter">Category
+    <select id="filter-category"><option value="">All</option></select>
+  </label>
+</div>
+```
+
+::: {#modules}
+:::
+
+<script src="modules-filter.js"></script>
