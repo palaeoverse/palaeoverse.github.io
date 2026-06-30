@@ -3,7 +3,7 @@
 # that break our modules, even if the content didn't change.
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # to be able to manually trigger
   schedule:
     # Every Monday at 8am
     - cron: "0 8 * * 1"
