@@ -23,12 +23,19 @@ jobs:
         with:
           use-public-rspm: true
 
-      # List generated with pak::pkg_sysreqs("mapgl")
-      - name: Install required dependencies for mapgl
-        run: sudo apt install cmake make libuv1-dev zlib1g-dev pandoc libabsl-dev libssl-dev libgdal-dev libgeos-dev libproj-dev libsqlite3-dev libudunits2-dev
+      - name: Install pak
+        run: install.packages("pak")
+        shell: Rscript {0}
 
+      # Detect every package the site (including the synced modules) depends on,
+      # instead of hardcoding a list, so newly added modules using new packages
+      # work without editing this workflow. pak installs the system requirements
+      # (e.g. those mapgl needs: gdal/geos/proj/...) automatically on this runner.
       - name: Install R dependencies
-        run: install.packages(c("tidyverse", "googlesheets4", "jsonlite", "rmarkdown", "cranlogs", "openalexR", "mapgl", "gh", "reactable", "brand.yml", "patchwork"))
+        run: |
+          deps <- pak::scan_deps(".")
+          pkgs <- setdiff(unique(deps$package), "R")
+          pak::pak(pkgs)
         shell: Rscript {0}
 
       - name: Set up Quarto
@@ -40,3 +47,17 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Modules use `freeze: auto`, so the render above re-executes only the
+      # modules whose source changed and reuses the committed freeze for the rest.
+      # Push that refreshed freeze to main so the next render reuses it
+      # instead of recomputing the same modules every time. Pushes made with
+      # GITHUB_TOKEN do not trigger workflows, so this does not loop.
+      - name: Commit refreshed module freeze
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _freeze
+          git diff --cached --quiet && echo "No freeze changes" && exit 0
+          git commit -m "chore: update module freeze [skip ci]"
+          git push
