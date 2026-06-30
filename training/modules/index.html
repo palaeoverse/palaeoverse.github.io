@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f47c100dc7e9f47bb44416c34d526e36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-425a11cdc627b473a9f836907921dbcb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-f47c100dc7e9f47bb44416c34d526e36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-5a7a8723d4e38836d2047ed44e7a4ffa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e2f79c0bcf7793bfaef8b2c438f1f609.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-5a7a8723d4e38836d2047ed44e7a4ffa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,20 +78,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-modules .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-image','listing-date','listing-categories','listing-difficulty','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-include-after-body","listing-title","listing-description","listing-author","listing-date","listing-categories","listing-difficulty","listing-image","listing-execute","listing-editor","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-modules'] = new List('listing-modules', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -137,7 +137,7 @@ window.Quarto = {
 
 <meta property="og:title" content="Palaeoverse">
 <meta property="og:description" content="A community-driven initiative advancing open science in palaeontology through shared tools, training, and resources.">
-<meta property="og:image" content="https://palaeoverse.github.io/resources/modules/_brand/logos/logo-opengraph.png">
+<meta property="og:image" content="https://palaeoverse.github.io/training/modules/_brand/logos/logo-opengraph.png">
 <meta property="og:locale" content="en_GB">
 </head>
 
@@ -206,39 +206,32 @@ window.Quarto = {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Resources</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-training" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Training</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-training">    
         <li>
-    <a class="dropdown-item" href="../../resources/modules">
+    <a class="dropdown-item" href="../../training/workshops">
+ <span class="dropdown-text">Workshops</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../training/modules">
  <span class="dropdown-text">Modules</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../resources/external-resources">
- <span class="dropdown-text">External resources</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-events" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Events</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-events">    
-        <li>
-    <a class="dropdown-item" href="../../events/all-events">
- <span class="dropdown-text">All events</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../events/lecture-series">
+    <a class="dropdown-item" href="../../training/lecture-series">
  <span class="dropdown-text">Lecture series</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../events/workshops">
- <span class="dropdown-text">Workshops</span></a>
-  </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../events"> 
+<span class="menu-text">Events</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/palaeoverse" target="_blank"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -275,9 +268,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YmVnaW5uZXI=">beginner <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YXZpeg==">dataviz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cg==">r <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGlkeXZlcnNl">tidyverse <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -300,51 +293,43 @@ window.Quarto = {
 </header>
 
 
-<p>This page contains a list of modules that we use in our <a href="../../events/all-events">Workshops</a>, but they can also serve as standalone resources.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ciUyQ3RpZHl2ZXJzZSUyQ2RhdGF2aXolMkNiZWdpbm5lcg==" data-listing-date-sort="1781222400000" data-listing-file-modified-sort="1782810313503" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2732">
-<a href="../../resources/modules/posts/ggplot/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../resources/modules/posts/ggplot/images/2d_density.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
+<p>This page contains a list of modules that we use in our <a href="../workshops/">Workshops</a>, but they can also serve as standalone resources.</p>
+<div class="modules-filters">
+  <label class="modules-filter">Difficulty
+    <select id="filter-difficulty"><option value="">All</option></select>
+  </label>
+  <label class="modules-filter">Category
+    <select id="filter-category"><option value="">All</option></select>
+  </label>
+</div>
+<div id="listing-modules" class="quarto-listing quarto-listing-container-custom">
+<div class="modules-grid">
+<a class="module-card" href="../../training/modules/ggplot/index.html" data-difficulty="beginner" data-categories="r|tidyverse|dataviz"><img class="module-card-img" src="../../training/modules/ggplot/images/2d_density.png" alt="Plotting in R with ggplot2">
+<div class="module-card-body">
+<span class="module-difficulty difficulty-beginner">Beginner</span>
+<h3 class="module-card-title">
 Plotting in R with ggplot2
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cg=='); return false;">r</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGlkeXZlcnNl'); return false;">tidyverse</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpeg=='); return false;">dataviz</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmVnaW5uZXI='); return false;">beginner</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Visualizing your data with the grammar of graphics</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Will Gearty
-</div>
-<div class="listing-date">
-Jun 12, 2026
+</h3>
+<p class="module-card-desc">
+Visualizing your data with the grammar of graphics
+</p>
+<div class="module-card-cats">
+<span class="module-cat">r</span><span class="module-cat">tidyverse</span><span class="module-cat">dataviz</span>
 </div>
 </div>
+</a>
 </div>
-</div></a>
-</div>
-</div>
+<p class="modules-empty" hidden="">
+No modules match the selected filters.
+</p>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<script src="modules-filter.js"></script>
+
+
+
+
+</main> <!-- /main -->
 <script>
 // Quarto doesn't add an `active` class to the current page's navbar link in
 // this setup, so do it ourselves: match each top-level navbar link's path
@@ -377,6 +362,46 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+</script>
+<script>
+  // Shared behaviour for every module (included via _metadata.yml):
+  //  1) a "back to the modules list" button at the top, and
+  //  2) turning each category badge into a link that opens the list filtered by
+  //     that tag. Modules live at training/modules/<name>/index.html, so the
+  //     listing page is always one level up.
+  (function () {
+    function ready(fn) {
+      if (document.readyState !== "loading") {
+        fn();
+      } else {
+        document.addEventListener("DOMContentLoaded", fn);
+      }
+    }
+
+    ready(function () {
+      // The metadata also applies to the listing page itself; skip it there.
+      if (document.querySelector(".modules-grid")) return;
+
+      var header = document.getElementById("title-block-header");
+      if (header) {
+        var back = document.createElement("a");
+        back.className = "back-to-modules";
+        back.href = "../index.html";
+        back.innerHTML = '<i class="bi bi-arrow-left"></i> All modules';
+        header.parentNode.insertBefore(back, header);
+      }
+
+      document.querySelectorAll(".quarto-category").forEach(function (el) {
+        var cat = el.textContent.trim();
+        var link = document.createElement("a");
+        link.className = "quarto-category module-category-link";
+        link.href =
+          "../index.html#category=" + encodeURIComponent(cat.toLowerCase());
+        link.textContent = cat;
+        el.replaceWith(link);
+      });
+    });
+  })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -779,7 +804,7 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2026, Palaeoverse &nbsp; ·&nbsp; <a href="https://github.com/palaeoverse" target="_blank"><i class="bi bi-github"></i></a>&nbsp;&nbsp; <a href="https://bsky.app/profile/palaeoverse.bsky.social" target="_blank"><i class="bi bi-bluesky"></i></a>&nbsp;&nbsp; <a href="https://www.linkedin.com/company/palaeoverse" target="_blank"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp; <a href="https://www.instagram.com/palaeoverse/" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp; <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp; ·&nbsp; <a href="mailto:info@palaeoverse.org">Contact us</a></p>
-<div class="toc-actions"><ul><li><a href="https://github.com/palaeoverse/palaeoverse.github.io/edit/main/resources/modules/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/palaeoverse/palaeoverse.github.io/edit/main/training/modules/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

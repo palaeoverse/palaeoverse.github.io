@@ -1,8 +1,8 @@
 [
   {
-    "listing": "/resources/modules/index.html",
+    "listing": "/training/modules/index.html",
     "items": [
-      "/resources/modules/posts/ggplot/index.html"
+      "/training/modules/ggplot/index.html"
     ]
   },
   {
