@@ -1,0 +1,68 @@
+# This workflow deletes the "_freeze" folder that contains the cached content of 
+# modules and re-renders the website. This is to catch potential changes in packages
+# that break our modules, even if the content didn't change.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every Monday at 8am
+    - cron: "0 8 * * 1"
+
+name: Refresh module freeze
+
+jobs:
+  refresh-freeze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install pak
+        run: install.packages("pak")
+        shell: Rscript {0}
+
+      # Detect every package the site (including the synced modules) depends on,
+      # instead of hardcoding a list, so newly added modules using new packages
+      # work without editing this workflow. pak installs the system requirements
+      # (e.g. those mapgl needs: gdal/geos/proj/...) automatically on this runner.
+      - name: Install R dependencies
+        run: |
+          deps <- pak::scan_deps(".")
+          pkgs <- setdiff(unique(deps$package), "R")
+          pak::pak(pkgs)
+        shell: Rscript {0}
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Delete the tracked freeze so the render below cannot reuse any cached
+      # module output and must re-execute every module from scratch.
+      - name: Delete module freeze
+        run: rm -rf _freeze/training
+
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Push the freshly regenerated freeze back to main so the daily deploy
+      # reuses it instead of recomputing every module. Pushes made with
+      # GITHUB_TOKEN do not trigger workflows, so this does not loop.
+      - name: Commit refreshed module freeze
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _freeze/training
+          git diff --cached --quiet && echo "No freeze changes" && exit 0
+          git commit -m "chore: rebuild module freeze [skip ci]"
+          git push
