@@ -28,7 +28,7 @@ suppressMessages({
     .limit = Inf
   )
   stars_sepkoski <- gh(
-    "GET /repos/LewisAJones/sepkoski/stargazers",
+    "GET /repos/palaeoverse/sepkoski/stargazers",
     .accept = "application/vnd.github.star+json",
     .limit = Inf
   )
@@ -131,11 +131,11 @@ names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 [Sepkoski's Fossil Marine Animal Genera Compendium]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="LewisAJones/sepkoski"><i class="bi bi-star-fill"></i>`r stars["sepkoski"]`</span>
+<span class="package-stars" data-repo="palaeoverse/sepkoski"><i class="bi bi-star-fill"></i>`r stars["sepkoski"]`</span>
 &nbsp;
 <span><i class="bi bi-download"></i><p>`r n_downloads["sepkoski"]`</p></span>
 &nbsp;&nbsp;&nbsp;
-<a href="https://github.com/LewisAJones/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
+<a href="https://github.com/palaeoverse/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 :::
 
 <br>
