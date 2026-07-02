@@ -26,7 +26,7 @@ Zulip organises conversations into **channels** (listed with a globe icon on the
 
 As a guest user, you will be able to post in the first six of these (all channels bar “Announcements”), and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.
 
-![Figure 1: Channels and topics in the Palaeoverse Zulip workspace](figures/Zulip_Fig_1.png)
+![Figure 1: Channels and topics in the Palaeoverse Zulip workspace.](figures/Zulip_Fig_1.png)
 
 Within each channel, conversations are organised into [**topics**](https://zulip.com/help/introduction-to-topics) (Fig. 1B). This means that many discussions can happen simultaneously within the same channel, and everyone can respond in their own time without the feed becoming confusing. To view the existing topics, just click on the channel you are interested in. When you want to start up a new conversation or post about an opportunity, you should create a new topic as follows (Fig. 2):
 
@@ -41,11 +41,11 @@ Within each channel, conversations are organised into [**topics**](https://zulip
 * Click the “send”  button (arrow shaped).
 
 
-![Figure 2: Composing topics and messages in the Palaeoverse Zulip workspace](figures/Zulip_Fig_2.png)
+![Figure 2: Composing topics and messages in the Palaeoverse Zulip workspace.](figures/Zulip_Fig_2.png)
 
 Once a topic is created, all users will be able to respond to this. When you start composing a response, it will automatically be addressed to the topic that you are reading or have clicked on. This will be confirmed in the textbox with the text: Message \#Channel Name \> Topic Name (Fig. 3). If your message is posted in the wrong place, it may be moved by administrators. Don’t worry if this happens, it is just to keep the space organised!
 
-![Figure 3: Responding to topics in the Palaeoverse Zulip workspace](figures/Zulip_Fig_3.png)
+![Figure 3: Responding to topics in the Palaeoverse Zulip workspace.](figures/Zulip_Fig_3.png)
 
 
 ## Topic templates
@@ -142,7 +142,7 @@ When using the Palaeoverse Zulip Public Workspace, it is important to act in a w
 
 * Click “**Submit**” to send.
 
-![Figure 4: Reporting a message in the Palaeoverse Zulip workspace](figures/Zulip_Fig_4.png)
+![Figure 4: Reporting a message in the Palaeoverse Zulip workspace.](figures/Zulip_Fig_4.png)
 
 
 ## Credit/Attribution for Shared Work
@@ -168,4 +168,4 @@ Unpublished data should not be posted unless there is explicit approval from its
 * Select your intended Universal Time using the date and time picker.  
 * Click Confirm to insert the time code into your message.
 
-![Figure 5: Using global time zones in the Palaeoverse Zulip workspace](figures/Zulip_Fig_5.png)
+![Figure 5: Using global time zones in the Palaeoverse Zulip workspace.](figures/Zulip_Fig_5.png)
