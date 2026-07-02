@@ -15,7 +15,7 @@ toc: false
 
 We develop self-contained training modules on topics ranging from data visualisation with `ggplot2` to R package development. These modules are also used in our [Workshops](../workshops/).
 
-More content coming soon...
+Coming soon...
 
 <!-- ```{=html}
 <div class="modules-filters">
