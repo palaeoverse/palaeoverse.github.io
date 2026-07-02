@@ -18,7 +18,7 @@
     "href": "training/workshops/index.html",
     "title": "Workshops",
     "section": "",
-    "text": "Workshops\nWe organize workshops of various length and objectives. You can find the complete list on our Events page and the content of past workshops here.\nEach workshop is composed of a collection of self-contained modules that you can find on the Modules page."
+    "text": "Workshops\nWe organise workshops on various topics, ranging from data visualisation with ggplot2 to using Palaeoverse packages, debugging R code, or creating R packages. These workshops are open to people with any skill level: whether you are a novice or an advanced R programmer, there will be something that matches your experience.\nThis content is also available as self-contained modules listed on the Modules page, and past workshop teaching materials are available here.\nWe have trained more than 150 researchers, and we will organise several workshops as of 2027. You can find the complete list on our Events page. Reach out to info@palaeoverse.org if you have any questions or if you are interested in helping organise more workshops."
   },
   {
     "objectID": "events/index.html",
