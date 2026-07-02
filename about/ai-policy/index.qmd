@@ -24,4 +24,4 @@ Changes in documentation (e.g. documenting a new function argument, adding a vig
 
 ## Rule violations
 
-Not following these rules will be treated as a [Code of Conduct](https://palaeoverse.github.io/about/code-of-conduct/) violation and will be addressed as detailed in the [“Enforcement guidelines” section](https://palaeoverse.github.io/about/code-of-conduct/#enforcement-guidelines).
+Not following these rules will be treated as a [Code of Conduct](https://palaeoverse.org/about/code-of-conduct/) violation and will be addressed as detailed in the [“Enforcement guidelines” section](https://palaeoverse.org/about/code-of-conduct/#enforcement-guidelines).

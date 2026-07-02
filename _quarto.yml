@@ -6,9 +6,7 @@ project:
 website:
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
   repo-actions: [edit]
-  # TODO: use palaeoverse.org once the transition is done. Need to use github.io
-  # for now to check opengraph appearance.
-  site-url: https://palaeoverse.github.io
+  site-url: https://palaeoverse.org
   favicon: _brand/logos/favicon.png
   open-graph:
     title: Palaeoverse

@@ -44,7 +44,7 @@ Instances of other abusive, harassing, discriminatory, or otherwise unacceptable
 
 Anonymous reporting is available through the “Report Misconduct” form; however, it should be understood that this form of complaint may limit the ability of those responsible for reviewing the report to seek clarification, request additional information, or provide updates regarding the outcome. Anonymous reports will nevertheless be considered and addressed to the greatest possible extent.
 
-Individuals who do not feel comfortable using the reporting form may instead contact members of the [Palaeoverse Core Team](https://palaeoverse.github.io/about/people/) directly via email. Reports will be handled as confidentially as possible, consistent with the need to investigate concerns and protect the safety and well-being of community members. All members of the community who receive reports are obligated to respect the privacy and security of the reporter of any incident. 
+Individuals who do not feel comfortable using the reporting form may instead contact members of the [Palaeoverse Core Team](https://palaeoverse.org/about/people/) directly via email. Reports will be handled as confidentially as possible, consistent with the need to investigate concerns and protect the safety and well-being of community members. All members of the community who receive reports are obligated to respect the privacy and security of the reporter of any incident. 
 
 ## Enforcement Procedure
 

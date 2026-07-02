@@ -1,1 +1,1 @@
-This repository contains the code to build palaeoverse.github.io (eventually this will be moved to palaeoverse/palaeoverse-quarto).
+This repository contains the code to build palaeoverse.org.
