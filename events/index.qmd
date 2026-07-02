@@ -15,16 +15,6 @@ library(tidyr)
 # We don't need to pass credentials to googlesheets since the sheet is publicly available.
 gs4_deauth()
 
-# Expected columns: Post, Title, Date, Location, Description
-past_workshops <- read_sheet(
-  "https://docs.google.com/spreadsheets/d/1escqpJM_Ljt5h5claM0xV5e9IEWBv6rNMIsuQsnUXYY/edit?gid=0#gid=0"
-) |>
-  filter(Post %in% "Workshop") |>
-  mutate(
-    Date = as.Date(Date),
-    Location = paste(City, Country, sep = ", ")
-  )
-
 our_events <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1wczoSH6H9OYJNLDQaFZ6Vx97DywwtIavCawnW9a4eDw/edit?gid=0#gid=0"
 )|>
@@ -55,7 +45,7 @@ lectures <- read_sheet(
   ) |>
   select(Post, Date, Time = `Time (UTC)`, Title, Location, Link = `Youtube link`)
 
-events <- bind_rows(past_workshops, our_events, lectures)
+events <- bind_rows(our_events, lectures)
 
 
 today <- Sys.Date()
@@ -79,7 +69,7 @@ type_to_css <- function(type) {
   switch(
     tolower(type),
     "workshop" = "event-workshop",
-    "conference" = "event-conference",
+    "misc." = "event-misc",
     "hackathon" = "event-hackathon",
     "lecture series" = "event-lecture",
     stop("The event type should be one of the types above.")
@@ -268,7 +258,7 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
         map.setPaintProperty('poi-layer', 'circle-color', [
           'match', ['get', 'Post'],
           'Workshop', c('--event-color-workshop'),
-          'Conference', c('--event-color-conference'),
+          'Misc.', c('--event-color-misc'),
           'Hackathon', c('--event-color-hackathon'),
           'Lecture Series', c('--event-color-lecture'),
           '#575756'

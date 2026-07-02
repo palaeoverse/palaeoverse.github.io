@@ -655,7 +655,7 @@ body.packages-page {
   --event-color-workshop: #{mix($brand-dark-blue, black, 60%)};
   --event-color-hackathon: #{mix($brand-dark-peach, black, 60%)};
   --event-color-lecture: #{$secondary};
-  --event-color-conference: #{mix($brand-dark-pink, black, 70%)};
+  --event-color-misc: #{mix($brand-dark-peach, black, 60%)};
 }
 
 .event-workshop {
@@ -697,11 +697,11 @@ body.packages-page {
   }
 }
 
-.event-conference {
-  background: var(--event-color-conference);
+.event-misc {
+  background: var(--event-color-misc);
 
   .event-tag {
-    background: mix($brand-dark-pink, black, 90%);
+    background: mix($brand-dark-peach, white, 90%);
     color: $brand-white;
   }
 
