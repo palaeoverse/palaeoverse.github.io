@@ -11,9 +11,13 @@
 
 on:
   workflow_dispatch: # To trigger this workflow manually.
-  repository_dispatch: # Trigger this workflow when there is a change in
-                       # palaeoverse/modules. See the workflow there.
-    types: [sync-modules]
+
+  # TODO: enable this back when we are happy with the number of modules that are ready.
+  # For now we just have a "coming soon..." placeholder.
+  #
+  # repository_dispatch: # Trigger this workflow when there is a change in
+  #                      # palaeoverse/modules. See the workflow there.
+  #   types: [sync-modules]
 
 name: Sync modules from palaeoverse/modules
 
