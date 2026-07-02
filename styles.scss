@@ -282,8 +282,11 @@ body.packages-page {
     font-size: 0.85rem;
   }
 
+  // Keep the actions row (and the DOI line below it) pinned to the bottom of
+  // the card so icons and links line up across cards even when the subtitles
+  // wrap to different numbers of lines.
   .package-actions {
-    margin-top: 0.5rem !important;
+    margin-top: auto !important;
   }
 
   // Drop the manual <br> spacer above the DOI line and tighten that line.
