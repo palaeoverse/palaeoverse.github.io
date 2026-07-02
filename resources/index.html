@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e5bf90dec7637c068099e82d0a74a764.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-546c8e2a50932824adeace8d6e7ab314.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-e5bf90dec7637c068099e82d0a74a764.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-13d0dbec8c9a03c791cd4601ecca842a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ab582263cb7623f52f3d3ba729fdc13d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-13d0dbec8c9a03c791cd4601ecca842a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -218,25 +218,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Resources</h1>
-</div>
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Resources</h1></header>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <div class="cell">
@@ -328,9 +312,29 @@ ul.task-list li input[type="checkbox"] {
 .multi-filter__option > input {
   margin-right: 6px;
 }
+
+.resources-text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Quarto promotes the "# Resources" heading into the page title block, which
+   sits in the narrow centred body-content column while the intro text lives in
+   a full-width `.column-screen`. Span the title across the same full-width grid
+   track and inset it 5% so the heading lines up with `.resources-text`. */
+#title-block-header {
+  grid-column: screen-start / screen-end;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 </style>
 </div>
 <div class="column-screen">
+<section id="resources" class="level1 resources-text">
+
+<p>This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.</p>
+<p>If you want to add entries to this table or correct existing ones, please reach out to <a href="mailto:info@palaeoverse.org">info@palaeoverse.org</a>.</p>
+</section>
 <div class="cell">
 <div class="cell-output-display">
 <div class="reactable html-widget html-fill-item" id="external-resources" style="width:auto;height:auto;"></div>
@@ -396,7 +400,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.</p>
 
 
 
