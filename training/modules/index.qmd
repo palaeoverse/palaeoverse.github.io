@@ -1,6 +1,7 @@
 ---
 title: Modules
 toc: false
+# TODO: once we have modules
 # listing:
 #   id: modules
 #   # Posts are all qmd files but the current file
@@ -28,6 +29,7 @@ Coming soon:
 
 Check again in late 2026!
 
+<!-- # TODO: once we have modules -->
 <!-- ```{=html}
 <div class="modules-filters">
   <label class="modules-filter">Difficulty
