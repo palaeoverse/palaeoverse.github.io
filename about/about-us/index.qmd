@@ -13,11 +13,7 @@ Founded in 2022 by Lewis A. Jones, Palaeoverse grew out of a simple but widespre
 
 The result was the [palaeoverse R package](https://palaeoverse.palaeoverse.org/), a toolkit designed to streamline data preparation and exploration for palaeontological research. What began as a pragmatic solution to a shared problem has since grown into something larger: a formally organised initiative spanning a full software ecosystem, hands-on training workshops, community resources, and spaces for researchers at all career stages to connect and collaborate.
 
-::: {layout-ncol=2}
 ![](../../_img/other_pictures/team_ucl.png)
-
-![](../../_img/other_pictures/methods-eco-evol-cover.jpg)
-:::
 
 
 ## Our Impact
@@ -29,7 +25,7 @@ We contribute to making palaeontology a more open, reproducible, and supportive 
 - We have organised 30+ online events, including lecture series, workshops, and open calls for the community
 - We run community spaces to offer a platform for palaeontologists to engage in healthy discussion, advertise opportunities, share new publications, and support one another
 
-![](../../_img/other_pictures/workshop.png)
+![](../../_img/other_pictures/workshop.png){width="70%" fig-align="center"}
 
 ## Contact Us
 
