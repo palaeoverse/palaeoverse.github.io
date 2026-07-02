@@ -1,6 +1,8 @@
 ---
-title: "Zulip User Guide"
+pagetitle: "Zulip User Guide"
 ---
+
+# Zulip User Guide
 
 ## Introduction
 
