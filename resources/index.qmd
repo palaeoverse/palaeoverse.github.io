@@ -1,11 +1,12 @@
 ---
-title: "Resources"
+pagetitle: "Resources"
 toc: false
 execute:
   echo: false
   message: false
   warning: false
 ---
+
 
 ```{css}
 .rt-td-inner > a {
@@ -95,10 +96,34 @@ execute:
 .multi-filter__option > input {
   margin-right: 6px;
 }
+
+.resources-text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Quarto promotes the "# Resources" heading into the page title block, which
+   sits in the narrow centred body-content column while the intro text lives in
+   a full-width `.column-screen`. Span the title across the same full-width grid
+   track and inset it 5% so the heading lines up with `.resources-text`. */
+#title-block-header {
+  grid-column: screen-start / screen-end;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 ```
 
 
 ::: {.column-screen}
+
+::: {.resources-text}
+
+# Resources
+
+This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.
+
+If you want to add entries to this table or correct existing ones, please reach out to [info@palaeoverse.org](mailto:info@palaeoverse.org).
+:::
 
 ```{r}
 library(brand.yml)
@@ -232,5 +257,3 @@ htmltools::tagList(
 ```
 
 :::
-
-This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.
