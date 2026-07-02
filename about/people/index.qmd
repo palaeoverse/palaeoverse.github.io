@@ -125,20 +125,6 @@ cards <- vapply(
 cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 ```
 
-## Former team members
-
-```{r}
-#| output: asis
-contributors_cards <- vapply(
-  seq_len(nrow(people_past)),
-  function(i) make_card(people_past[i, ]),
-  character(1)
-)
-
-cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
-```
-
-
 ```{r}
 #| echo: false
 library(mapgl)
@@ -167,4 +153,17 @@ maplibre(projection = "mercator", zoom = 0, height = "500px", center = c(-0.1343
     tooltip = "people_info",
     hover_options = list(circle_radius = 12)
   ) 
+```
+
+## Former team members
+
+```{r}
+#| output: asis
+contributors_cards <- vapply(
+  seq_len(nrow(people_past)),
+  function(i) make_card(people_past[i, ]),
+  character(1)
+)
+
+cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
 ```
