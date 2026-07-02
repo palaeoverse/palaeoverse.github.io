@@ -20,7 +20,7 @@ body-classes: homepage
   <a href="our-packages" class="landing-page-btn">Check out our packages</a>
   <a href="events" class="landing-page-btn">See our next events</a>
   <a href="training/lecture-series" class="landing-page-btn">Attend our lecture series</a>
-  <a href="training/modules" class="landing-page-btn">See our modules</a>
+  <a href="training/modules" class="landing-page-btn">See our training modules</a>
 </div>
 ```
 
