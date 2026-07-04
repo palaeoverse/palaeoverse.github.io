@@ -7,7 +7,7 @@ body-classes: packages-page
 ```{r}
 #| echo: false
 library(cranlogs)
-library(gh)
+library(jsonlite)
 
 n_downloads <- cranlogs::cran_downloads(
   packages = c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
@@ -21,34 +21,23 @@ n_downloads <- round(n_downloads, digits = 1)
 n_downloads <- paste0(round(n_downloads, digits = -3) / 1000, "k+")
 names(n_downloads) <- nms
 
-suppressMessages({
-  stars_palaeoverse <- gh(
-    "GET /repos/palaeoverse/palaeoverse/stargazers",
-    .accept = "application/vnd.github.star+json",
-    .limit = Inf
-  )
-  stars_sepkoski <- gh(
-    "GET /repos/palaeoverse/sepkoski/stargazers",
-    .accept = "application/vnd.github.star+json",
-    .limit = Inf
-  )
-  stars_rphylopic <- gh(
-    "GET /repos/palaeoverse/rphylopic/stargazers",
-    .accept = "application/vnd.github.star+json",
-    .limit = Inf
-  )
-  stars_rmacrostrat <- gh(
-    "GET /repos/palaeoverse/rmacrostrat/stargazers",
-    .accept = "application/vnd.github.star+json",
-    .limit = Inf
-  )
-})
+# Read star counts from the public GitHub repo endpoint without a token. These
+# repos are public, so the request needs no authentication -- and must stay
+# unauthenticated, because CI's default GITHUB_TOKEN is scoped to this repo only
+# and returns 403 on other repos' resources.
+get_stars <- function(repo) {
+  fromJSON(paste0("https://api.github.com/repos/", repo))$stargazers_count
+}
 
-stars <- c(
-  length(stars_palaeoverse),
-  length(stars_sepkoski),
-  length(stars_rphylopic),
-  length(stars_rmacrostrat)
+stars <- vapply(
+  c(
+    "palaeoverse/palaeoverse",
+    "palaeoverse/sepkoski",
+    "palaeoverse/rphylopic",
+    "palaeoverse/rmacrostrat"
+  ),
+  get_stars,
+  numeric(1)
 )
 names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 ```
