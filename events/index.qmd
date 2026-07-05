@@ -127,6 +127,9 @@ render_cards <- function(df) {
       } else {
         ""
       }
+    } else if (has_link) {
+      '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>',
+      row$Link
     } else {
       ""
     }
