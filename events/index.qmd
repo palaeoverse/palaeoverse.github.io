@@ -21,7 +21,7 @@ our_events <- read_sheet(
   mutate(
     Date = as.Date(date)
   ) |> 
-  select(Post = type, Date, Title = event_name, Location = location, long, lat)
+  select(Post = type, Date, Title = event_name, Location = location, long, lat, Link = link)
 
 lectures <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
