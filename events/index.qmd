@@ -145,20 +145,11 @@ render_cards <- function(df) {
       row$Location,
       badge
     )
-    if (has_link && row$Post != "Lecture Series") {
-      item <- sprintf(
-        '<a href="%s" target="_blank" class="event-link" data-type="%s">%s</a>',
-        row$Link,
-        filter_key,
-        card_div
-      )
-    } else {
-      item <- sprintf(
-        '<div class="event-item" data-type="%s">%s</div>',
-        filter_key,
-        card_div
-      )
-    }
+    item <- sprintf(
+      '<div class="event-item" data-type="%s">%s</div>',
+      filter_key,
+      card_div
+    )
     parts <- c(parts, item)
   }
   parts <- c(parts, "</div>")
