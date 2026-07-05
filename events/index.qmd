@@ -109,8 +109,8 @@ render_cards <- function(df) {
     }
     has_link <- !is.na(row$Link) && nzchar(row$Link)
     has_youtube_link <- has_link && grepl("youtube", row$Link)
-    actions <- if (row$Post == "Lecture Series") {
-      if (has_youtube_link) {
+    if (row$Post == "Lecture Series") {
+      actions <- if (has_youtube_link) {
         sprintf(
           '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-youtube"></i>&nbsp;Watch on YouTube</a>',
           row$Link
@@ -120,13 +120,16 @@ render_cards <- function(df) {
       } else {
         ""
       }
-    } else if (has_link) {
-      sprintf(
-        '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>',
-        row$Link
-      )
-    } else {
+    }
+    if (row$Post != "Lecture Series") {
+      actions <- if (has_link) {
+        sprintf(
+          '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>',
+          row$Link
+        )
+      } else {
       ""
+      }
     }
     # Always wrap in .event-actions so the buttons stay pinned to the card
     # bottom (margin-top: auto), whether there is one button or two.
