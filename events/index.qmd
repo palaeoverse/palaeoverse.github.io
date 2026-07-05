@@ -116,7 +116,7 @@ render_cards <- function(df) {
           row$Link
         )
       } else if (has_link) {
-        '<a class="event-card-btn" href="/events/lecture-series/"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
+        '<a class="event-card-btn" href="/training/lecture-series/"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
       } else {
         ""
       }
