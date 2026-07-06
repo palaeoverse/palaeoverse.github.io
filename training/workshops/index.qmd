@@ -2,6 +2,13 @@
 title: "Workshops"
 ---
 
+We organise in-person and online workshops covering a wide range of topics such as:
+
+- Using the Palaeoverse R packages
+- Data visualisation with ggplot2
+- Debugging R code
+- Developing your own R packages
+
 We have workshops designed for all experience levels, from complete beginners who are learning R for the first time, to experienced users who are looking to develop new skills.
 To date, we have trained more than 150 researchers and continue to expand our training programme, with several new workshops planned from late 2026 onwards. A complete list of upcoming and past workshops can be found on our [Events page](../../events).
 
