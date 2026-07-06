@@ -1,8 +1,6 @@
 ---
-pagetitle: "Join Zulip"
+title: "Join Zulip"
 ---
-
-# Join Zulip
 
 Sign up to our Palaeoverse Zulip Workspace!
 

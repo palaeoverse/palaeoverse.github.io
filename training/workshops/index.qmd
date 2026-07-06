@@ -1,8 +1,6 @@
 ---
-pagetitle: "Workshops"
+title: "Workshops"
 ---
-
-# Workshops
 
 We organise workshops on various topics, ranging from data visualisation with `ggplot2` to using Palaeoverse packages, debugging R code, or creating R packages. These workshops are open to people with any skill level: whether you are a novice or an advanced R programmer, there will be something that matches your experience.
 

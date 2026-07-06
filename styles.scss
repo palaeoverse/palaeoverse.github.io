@@ -71,6 +71,11 @@ body {
   margin: 4rem 0 1rem 0;
 }
 
+.quarto-figure {
+  margin: 2.5rem 0 2.5rem 0;
+  display: inline-block;
+}
+
 // Home page only — fits the page to one viewport and pins the footer. The
 // `homepage` body class is set via `body-classes` in index.qmd's front matter.
 body.homepage {

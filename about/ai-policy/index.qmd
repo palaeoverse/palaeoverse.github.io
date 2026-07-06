@@ -1,8 +1,6 @@
 ---
-pagetitle: "AI Policy"
+title: "AI Policy"
 ---
-
-# AI Policy
 
 Palaeoverse is a community-driven initiative advancing open science in palaeontology through shared tools, training, and resources. Part of this initiative is to enable researchers at every career stage to learn and develop new technical and social skills. The human aspect of this work is therefore important to us and we are committed to maintaining spaces for human interaction and engagement. We acknowledge the potential usefulness and growing prevalence of Artificial Intelligence (AI), but wish to see it used only where reasonable and appropriate, whilst prioritising accuracy, accessibility, and upskilling. 
 

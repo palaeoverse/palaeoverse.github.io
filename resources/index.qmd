@@ -1,5 +1,5 @@
 ---
-pagetitle: "Resources"
+title: "Resources"
 toc: false
 execute:
   echo: false

@@ -6,3 +6,4 @@ _site
 # Ignore all _freeze except for the modules
 _freeze/*
 !_freeze/training
+.DS_Store

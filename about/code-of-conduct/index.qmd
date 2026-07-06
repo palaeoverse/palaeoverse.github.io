@@ -1,8 +1,6 @@
 ---
-pagetitle: "Palaeoverse Code of Conduct"
+title: "Palaeoverse Code of Conduct"
 ---
-
-# Palaeoverse Code of Conduct 
 
 Palaeoverse was established in 2022 as a community-driven initiative dedicated to advancing open science through shared tools, training, and resources. To help ensure that our community remains inclusive and respectful, we feel that it is important to establish some expectations of behaviour when interacting within our spaces. 
 

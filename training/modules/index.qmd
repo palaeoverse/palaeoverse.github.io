@@ -14,10 +14,7 @@ toc: false
 #   - modules-filter.js
 ---
 
-<br>
-
 We develop self-contained training modules on topics ranging from data visualisation with `ggplot2` to R package development. These modules are also used in our [Workshops](../workshops/).
-
 
 Coming soon:
 
@@ -25,7 +22,6 @@ Coming soon:
 * Using Palaeoverse packages
 * R package development
 * and more
-
 
 Check again in late 2026!
 
