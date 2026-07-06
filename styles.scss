@@ -75,6 +75,18 @@ body {
   margin: 2rem 0 2rem 0;
 }
 
+.quarto-figure > figure {
+  display: table;        /* shrinks figure to fit its widest child (the image) */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quarto-figure > figure > figcaption {
+  display: table-caption; /* caption now takes the table's (=image's) width */
+  caption-side: bottom;
+  text-align: center;
+}
+
 // Home page only — fits the page to one viewport and pins the footer. The
 // `homepage` body class is set via `body-classes` in index.qmd's front matter.
 body.homepage {
