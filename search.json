@@ -74,7 +74,7 @@
     "href": "zulip/user-guide/index.html#reporting-misconduct",
     "title": "Zulip User Guide",
     "section": "Reporting Misconduct",
-    "text": "Reporting Misconduct\nWhen using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows (Fig. 4):\n\nHover over the problematic message to reveal the three dots icon on the right.\nSelect “report message”.\nFill out the requested information. Moderators will see the message you’re reporting when they review your report.\nClick “Submit” to send.\n\n\n\n\nFigure 4: Reporting a message in the Palaeoverse Zulip workspace."
+    "text": "Reporting Misconduct\nWhen using the Palaeoverse Zulip Public Workspace, it is important to act in a way that is conducive to a positive and enriching environment. If you discover any instances of unacceptable behaviour that do not align with this ethos (as laid out in our Code of Conduct), we request that you report the incident as follows (Fig. 4):\n\nHover over the problematic message to reveal the three dots icon on the right.\nSelect “report message”.\nFill out the requested information. Moderators (Zulip Administrators and Owner) will see the message you’re reporting when they review your report and follow the protocol outlined in our Code of Conduct.\nClick “Submit” to send.\n\n\n\n\nFigure 4: Reporting a message in the Palaeoverse Zulip workspace."
   },
   {
     "objectID": "zulip/user-guide/index.html#creditattribution-for-shared-work",
