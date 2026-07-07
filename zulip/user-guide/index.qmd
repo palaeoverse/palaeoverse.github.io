@@ -150,7 +150,7 @@ When using the Palaeoverse Zulip Public Workspace, it is important to act in a w
 
 * Select “report message”.
 
-* Fill out the requested information. Moderators will see the message you’re reporting when they review your report.
+* Fill out the requested information. Moderators (Zulip Administrators and Owner) will see the message you’re reporting when they review your report and follow the protocol outlined in our Code of Conduct.
 
 * Click “**Submit**” to send.
 
