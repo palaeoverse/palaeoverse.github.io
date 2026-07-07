@@ -1,5 +1,6 @@
 ---
 title: "Workshops"
+toc: false
 ---
 
 We organise in-person and online workshops covering a wide range of topics such as:
