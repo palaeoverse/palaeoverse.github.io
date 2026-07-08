@@ -70,9 +70,9 @@ The Palaeoverse Zulip workspace welcomes conference and workshop advertisements 
 
 Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised. 
 
-The initial post within the topic thread should take the following format:
+The initial post within the topic thread should try to take the following format, or similar:
 
-> **Conference or workshop name (in bold)**
+> **Conference or workshop name (in bold)**:
 > 
 > Location:
 > 
@@ -91,7 +91,7 @@ Relevant publications on the themes of phylogenetics, palaeobiogeography, palaeo
 
 Topics within the **Publications** channel should take the **full title of the paper**, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit).
 
-The initial post within the topic should aim to take the following format:
+The initial post within the topic should aim to take the following format, or similar:
 
 > **APA-format citation (in bold)**:
 > 
@@ -102,15 +102,40 @@ The initial post within the topic should aim to take the following format:
 All discussion relating to the research paper should be posted below the relevant topic.
 
 
+### Jobs
+
+The Palaeoverse Zulip workspace welcomes relevant job advertisements in the fields of palaeontology, ecology, open science, conservation science, etc. Academic employment opportunities should include PhD positions, even if these are technically studentships.
+
+Topics within the **Jobs** channel should aim to take the **job title and hiring institution**. 
+
+The initial post within the topic should try to take the following format, or similar:
+
+> **Job title (in bold)**:
+> 
+> Location:
+>
+> Hours:
+>
+> Salary:
+>
+> Closing Date:
+>
+> Additional Details:
+>
+> Link to the job web page
+
+Any other information relating to a specific job should be posted below the relevant topic.
+
+
 ### Funding
 
 The Palaeoverse Zulip workspace welcomes all relevant funding advertisements. Grant opportunities are encouraged for all career stages, and can target both academic and non-academic audiences.
 
 Topics within the **Funding** channel should aim to take the grant name and funding body being advertised. 
 
-The initial post within the topic should take the following format:
+The initial post within the topic should try take the following format, or similar:
 
-> **Grant title (in bold)**
+> **Grant title (in bold)**:
 > 
 > Awarding body:
 > 
