@@ -62,13 +62,13 @@ Once a topic is created, all users will be able to respond to this. When you sta
 
 ## Topic templates
 
-To keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. Topics within each channel should broadly be formatted as such:
+To keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. These are provided below.
 
 ### Conferences & Workshops
 
-The Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as relevant topics such as ecology and conservation science.
+The Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as other relevant themes such as ecology and conservation science.
 
-Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised. 
+Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit). 
 
 The initial post within the topic thread should try to take the following format, or similar:
 
@@ -89,7 +89,7 @@ All other information (e.g. registration reminders, circular updates) and discus
 
 Relevant publications on the themes of phylogenetics, palaeobiogeography, palaeoecology, palaeoclimate, diversity dynamics, geometric morphometrics, statistical analyses, conservation, open science, etc., should be posted here.
 
-Topics within the **Publications** channel should take the **full title of the paper**, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit).
+Topics within the **Publications** channel should take the **full title of the paper**, but shortened versions will be allowed if the title length exceeds 60 characters.
 
 The initial post within the topic should aim to take the following format, or similar:
 
@@ -106,7 +106,7 @@ All discussion relating to the research paper should be posted below the relevan
 
 The Palaeoverse Zulip workspace welcomes relevant job advertisements in the fields of palaeontology, ecology, open science, conservation science, etc. Academic employment opportunities should include PhD positions, even if these are technically studentships.
 
-Topics within the **Jobs** channel should aim to take the **job title and hiring institution**. 
+Topics within the **Jobs** channel should aim to take the **job title and hiring institution**, but shortened versions will be allowed if the title length exceeds 60 characters. 
 
 The initial post within the topic should try to take the following format, or similar:
 
@@ -131,7 +131,7 @@ Any other information relating to a specific job should be posted below the rele
 
 The Palaeoverse Zulip workspace welcomes all relevant funding advertisements. Grant opportunities are encouraged for all career stages, and can target both academic and non-academic audiences.
 
-Topics within the **Funding** channel should aim to take the grant name and funding body being advertised. 
+Topics within the **Funding** channel should aim to take the **grant name and funding body** being advertised, but shortened versions will be allowed if the title length exceeds 60 characters. 
 
 The initial post within the topic should try take the following format, or similar:
 
