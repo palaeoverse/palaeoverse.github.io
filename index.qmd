@@ -126,3 +126,5 @@ n_downloads <- cranlogs::cran_downloads(
 })();
 </script>
 ```
+
+<script data-goatcounter="https://palaeoverse.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
