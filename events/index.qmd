@@ -69,7 +69,7 @@ type_to_css <- function(type) {
   switch(
     tolower(type),
     "workshop" = "event-workshop",
-    "misc." = "event-misc",
+    "other" = "event-other",
     "hackathon" = "event-hackathon",
     "lecture series" = "event-lecture",
     stop("The event type should be one of the types above.")
@@ -79,7 +79,7 @@ type_to_css <- function(type) {
 to_filter_key <- function(type) tolower(gsub(" ", "-", type))
 
 render_filter <- function(all_events) {
-  categories <- sort(unique(all_events$Post))
+  categories <- c("Lecture Series", "Workshop", "Other")
   buttons <- sapply(categories, function(cat) {
     sprintf(
       '<button class="event-filter-btn" data-filter="%s" data-post="%s">%s<i class="bi bi-check"></i></button>',
@@ -257,7 +257,7 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
         map.setPaintProperty('poi-layer', 'circle-color', [
           'match', ['get', 'Post'],
           'Workshop', c('--event-color-workshop'),
-          'Misc.', c('--event-color-misc'),
+          'Other', c('--event-color-other'),
           'Hackathon', c('--event-color-hackathon'),
           'Lecture Series', c('--event-color-lecture'),
           '#575756'
