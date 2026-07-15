@@ -1,5 +1,5 @@
 ---
-# This ensures that the brpwser tab has the name "Palaeoverse".
+# This ensures that the browser tab has the name "Palaeoverse".
 # Do not use "title" param because we don't want this to appear 
 # on the page.
 pagetitle: "Palaeoverse"
@@ -10,6 +10,7 @@ engine: knitr
 body-classes: homepage
 ---
 
+<!-- Main logo, tag line, and buttons -->
 ```{=html}
 <div class="hero">
   <img src="_brand/logos/logo-text.png" class="hero-logo" alt="Palaeoverse">
@@ -26,13 +27,16 @@ body-classes: homepage
 
 ```{r}
 #| echo: false
-### Number of citations
+
+### Number of citations (accessed via OpenAlex).
+### See https://github.com/palaeoverse/palaeoverse.github.io/blob/500a79bc3d8c7939cc8dc2988b804600099913b4/index.qmd#L49
+### for an alternative using Google Scholar that failed in CI.
 library(openalexR)
 citations_raw <- oa_fetch(
   entity = "works",
   doi = c(
     # palaeoverse
-    "https://doi.org/10.1111/2041-210x.14099",
+    "10.1111/2041-210x.14099",
     # rmacrostrat
     "10.1130/GES02815.1",
     # rphylopic
@@ -46,33 +50,7 @@ citations <- citations_raw[, c("title", "cited_by_count")]
 
 total_citations <- sum(citations$cited_by_count)
 
-### Alternative with scholar which works locally but always has a warning
-### "Cannot connect to Google Scholar. Is the ID you provided correct?"
-### in CI.
-# library(scholar)
-
-# lewis_id <- "X0AvsOkAAAAJ"
-# palaeoverse_id <- "YsMSGLbcyi4C"
-# rphylopic_id <- "_FxGoFyzp5QC"
-# rmacrostrat_id <- "ZeXyd9-uunAC"
-
-# palaeoverse_citations <- get_article_cite_history(
-#   lewis_id,
-#   palaeoverse_id
-# )$cites
-# rphylopic_citations <- get_article_cite_history(lewis_id, rphylopic_id)$cites
-# rmacrostrat_citations <- get_article_cite_history(
-#   lewis_id,
-#   rmacrostrat_id
-# )$cites
-
-# total_citations <- sum(
-#   palaeoverse_citations,
-#   rphylopic_citations,
-#   rmacrostrat_citations
-# )
-
-### Number of downloads
+### Number of downloads (using a starting date that predates all packages)
 n_downloads <- cranlogs::cran_downloads(
   packages = c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
   from = "2015-01-01",
@@ -80,6 +58,8 @@ n_downloads <- cranlogs::cran_downloads(
 )
 ```
 
+
+<!-- This adds the animated download and citation counts. -->
 ```{=html}
 <div class="stats-section">
   <div class="stat-item">
@@ -96,6 +76,7 @@ n_downloads <- cranlogs::cran_downloads(
   </div>
 </div>
 
+<!-- Adjust the "duration" variable for faster or slower counts (value is in milliseconds) -->
 <script>
 (function () {
   function animateCounter(el) {
@@ -127,4 +108,5 @@ n_downloads <- cranlogs::cran_downloads(
 </script>
 ```
 
+<!-- This is for site analytics. -->
 <script data-goatcounter="https://palaeoverse.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
