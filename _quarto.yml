@@ -52,8 +52,6 @@ website:
             text: User guide
       - text: Software
         href: our-packages
-          # - href: cheatsheets
-          #   text: Cheat sheets
           # - href: contributing
           #   text: Contributing
       - text: Training

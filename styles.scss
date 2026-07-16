@@ -462,17 +462,6 @@ body.packages-page {
   display: block;
 }
 
-.cheatsheet-img {
-  max-width: 100%;
-  max-height: 280px;
-  width: auto;
-  height: 280px;
-  object-fit: contain;
-  margin: 0 auto;
-  display: block;
-  border-radius: 4px;
-}
-
 @media (max-width: 768px) {
   .package-grid {
     grid-template-columns: 1fr;
