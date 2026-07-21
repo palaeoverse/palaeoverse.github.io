@@ -99,6 +99,7 @@ format:
     anchor-sections: false
     include-after-body:
       - _includes/active-navbar.html
+      - _includes/goatcounter.html
 
 
 
