@@ -7,7 +7,7 @@ execute:
   warning: false
 ---
 
-
+<!-- Custom CSS for the resources table -->
 ```{css}
 .rt-td-inner > a {
   color: inherit !important;
@@ -17,15 +17,17 @@ execute:
 	border-bottom: none;
 }
 
-.ReactTable {
-  background: transparent;
+.resources-text {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* reactable clips cells/inners with overflow:hidden and scrolls the table body;
-   override those (with enough specificity to beat reactable.css) so the open
-   filter dropdown can spill out, and keep the header above the body rows. */
+.ReactTable {
+  background: transparent;
+}
+
+/* Make sure the filter dropdowns appear above the table instead of being hidden behind
+the rows. */
 .Reactable .rt-table,
 .Reactable .rt-thead,
 .Reactable .rt-tr-filters,
@@ -47,13 +49,17 @@ execute:
   font-size: 0.85rem;
 }
 
+.multi-filter > summary,
+.multi-filter__menu {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .multi-filter > summary {
   list-style: none;
   cursor: pointer;
   padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -76,9 +82,6 @@ execute:
   margin-top: 2px;
   max-height: 220px;
   overflow-y: auto;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -97,15 +100,7 @@ execute:
   margin-right: 6px;
 }
 
-.resources-text {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-/* Quarto promotes the "# Resources" heading into the page title block, which
-   sits in the narrow centred body-content column while the intro text lives in
-   a full-width `.column-screen`. Span the title across the same full-width grid
-   track and inset it 5% so the heading lines up with `.resources-text`. */
+/* We want the page title to be left aligned, just like the text. */
 #title-block-header {
   grid-column: screen-start / screen-end;
   padding-left: 5%;
