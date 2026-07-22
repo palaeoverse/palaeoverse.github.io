@@ -2,133 +2,91 @@
 title: "Our packages"
 toc: false
 body-classes: packages-page
+execute:
+  echo: false
+  message: false
+  warning: false
 ---
 
+<!-- Compute the number of downloads and Github stars for each package. -->
 ```{r}
-#| echo: false
 library(cranlogs)
+library(dplyr)
 library(jsonlite)
 
 n_downloads <- cranlogs::cran_downloads(
   packages = c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
   from = "2015-01-01",
   to = Sys.Date()
-)
-n_downloads <- n_downloads[, c("count", "package")]
-n_downloads <- tapply(n_downloads$count, n_downloads$package, sum)
-nms <- names(n_downloads)
-n_downloads <- round(n_downloads, digits = 1)
-n_downloads <- paste0(round(n_downloads, digits = -3) / 1000, "k+")
-names(n_downloads) <- nms
+) |> 
+  select(count, package) |> 
+  summarise(n_downloads = sum(count), .by = package) |> 
+  mutate(n_downloads = paste0(round(n_downloads, digits = -3) / 1000, "k+"))
 
-# Read star counts from the public GitHub repo endpoint without a token. These
-# repos are public, so the request needs no authentication -- and must stay
-# unauthenticated, because CI's default GITHUB_TOKEN is scoped to this repo only
-# and returns 403 on other repos' resources.
+# As of July 2026, Github only allows admins of a repo to call the "stargazers" API.
+# https://github.blog/changelog/2026-06-30-upcoming-access-restrictions-to-public-api-endpoints-and-ui-views/
 get_stars <- function(repo) {
-  fromJSON(paste0("https://api.github.com/repos/", repo))$stargazers_count
+  fromJSON(paste0("https://api.github.com/repos/palaeoverse/", repo))$stargazers_count
 }
 
 stars <- vapply(
-  c(
-    "palaeoverse/palaeoverse",
-    "palaeoverse/sepkoski",
-    "palaeoverse/rphylopic",
-    "palaeoverse/rmacrostrat"
-  ),
+  c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat"),
   get_stars,
   numeric(1)
 )
 names(stars) <- c("palaeoverse", "sepkoski", "rphylopic", "rmacrostrat")
 ```
 
-::: {.package-grid}
+<!-- Build the cards -->
+```{r}
+#| output: asis
 
+# One row per package; cards are rendered in this order.
+packages <- data.frame(
+  name = c("palaeoverse", "rmacrostrat", "rphylopic", "sepkoski"),
+  subtitle = c(
+    "Prepare and Explore Data for Palaeobiological Analyses",
+    "Fetch Geologic Data from the 'Macrostrat' Platform",
+    "Get Silhouettes of Organisms from PhyloPic",
+    "Sepkoski's Fossil Marine Animal Genera Compendium"
+  ),
+  doi = c(
+    "10.1111/2041-210X.14099",
+    "10.1130/GES02815.1",
+    "10.1111/2041-210X.14221",
+    "10.5281/zenodo.7342194"
+  ),
+  stringsAsFactors = FALSE
+)
+
+render_card <- function(name, subtitle, doi) {
+  n_dl <- n_downloads[n_downloads$package == name, "n_downloads"]
+  sprintf('
 ::: {.package-card}
-<a class="card-link" href="https://palaeoverse.palaeoverse.org/" target="_blank" aria-label="Visit palaeoverse website"></a>
+<a class="card-link" href="https://%1$s.palaeoverse.org/" target="_blank" aria-label="Visit %1$s website"></a>
 
-![](../_img/hex-palaeoverse.png){.package-hex}
+![](../_img/hex-%1$s.png){.package-hex}
 
-### palaeoverse
+### %1$s
 
-[Prepare and Explore Data for Palaeobiological Analyses]{.package-subtitle}
+[%2$s]{.package-subtitle}
 
 ::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/palaeoverse"><i class="bi bi-star-fill"></i>`r stars["palaeoverse"]`</span>
+<span class="package-stars" data-repo="palaeoverse/%1$s"><i class="bi bi-star-fill"></i>%3$s</span>
 &nbsp;
-<span><i class="bi bi-download"></i><p>`r n_downloads["palaeoverse"]`</p></span>
+<span><i class="bi bi-download"></i><p>%4$s</p></span>
 &nbsp;&nbsp;&nbsp;
-<a href="https://github.com/palaeoverse/palaeoverse" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
-
+<a href="https://github.com/palaeoverse/%1$s" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
 :::
 
 <br>
-<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1111/2041-210X.14099"  target="_blank">DOI: 10.1111/2041-210X.14099</a></div>
-
-
+<div style="width: 100%%; text-align: center; z-index: 1"><a href="https://doi.org/%5$s"  target="_blank">DOI: %5$s</a></div>
 :::
+', name, subtitle, stars[name], n_dl, doi)
+}
 
-::: {.package-card}
-<a class="card-link" href="https://rmacrostrat.palaeoverse.org/" target="_blank" aria-label="Visit rmacrostrat website"></a>
-
-![](../_img/hex-rmacrostrat.png){.package-hex}
-
-### rmacrostrat
-
-[Fetch Geologic Data from the 'Macrostrat' Platform]{.package-subtitle}
-
-::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/rmacrostrat"><i class="bi bi-star-fill"></i>`r stars["rmacrostrat"]`</span>
-&nbsp;
-<span><i class="bi bi-download"></i><p>`r n_downloads["rmacrostrat"]`</p></span>
-&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/palaeoverse/rmacrostrat" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
-:::
-
-<br>
-<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1130/GES02815.1"  target="_blank">DOI: 10.1130/GES02815.1</a></div>
-:::
-
-::: {.package-card}
-<a class="card-link" href="https://rphylopic.palaeoverse.org/" target="_blank" aria-label="Visit rphylopic website"></a>
-
-![](../_img/hex-rphylopic.png){.package-hex}
-
-### rphylopic
-
-[Get Silhouettes of Organisms from PhyloPic]{.package-subtitle}
-
-::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/rphylopic"><i class="bi bi-star-fill"></i>`r stars["rphylopic"]`</span>
-&nbsp;
-<span><i class="bi bi-download"></i><p>`r n_downloads["rphylopic"]`</p></span>
-&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/palaeoverse/rphylopic" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
-:::
-
-<br>
-<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.1111/2041-210X.14221"  target="_blank">DOI: 10.1111/2041-210X.14221</a></div>
-:::
-
-::: {.package-card}
-<a class="card-link" href="https://sepkoski.palaeoverse.org/" target="_blank" aria-label="Visit sepkoski website"></a>
-
-![](../_img/hex-sepkoski.png){.package-hex}
-
-### sepkoski
-
-[Sepkoski's Fossil Marine Animal Genera Compendium]{.package-subtitle}
-
-::: {.package-actions}
-<span class="package-stars" data-repo="palaeoverse/sepkoski"><i class="bi bi-star-fill"></i>`r stars["sepkoski"]`</span>
-&nbsp;
-<span><i class="bi bi-download"></i><p>`r n_downloads["sepkoski"]`</p></span>
-&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/palaeoverse/sepkoski" target="_blank" class="package-repo"><i class="bi bi-github"></i></a>
-:::
-
-<br>
-<div style="width: 100%; text-align: center; z-index: 1"><a href="https://doi.org/10.5281/zenodo.7342194"  target="_blank">DOI: 10.5281/zenodo.7342194</a></div>
-:::
-
-:::
+cat('::: {.package-grid}\n')
+cards <- mapply(render_card, packages$name, packages$subtitle, packages$doi)
+cat(cards, sep = "\n")
+cat('\n:::\n')
+```
