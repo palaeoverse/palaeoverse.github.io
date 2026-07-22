@@ -12,15 +12,16 @@ execute:
 ```{r}
 #| output: asis
 library(googlesheets4)
-
+library(mapgl)
 gs4_deauth()
 
+# Read the "Team info" google sheets
 people <- read_sheet(
   "https://docs.google.com/spreadsheets/d/154vEZLxSaBz1Vc6_8za9k0ymMbjI3GKMWypRVown7Lc/edit?gid=0#gid=0",
 ) |>
-  transform(full_name = paste(first_name, last_name)) 
+  transform(full_name = paste(first_name, last_name))
 
-
+# Helper function to easily add icon + link in each card (email, linkedin, etc)
 make_icon <- function(href, icon_class, label) {
   sprintf(
     '<a href="%s" title="%s" target="_blank" rel="noopener" class="person-icon"><i class="bi %s"></i></a>',
@@ -30,9 +31,16 @@ make_icon <- function(href, icon_class, label) {
   )
 }
 
+# Helper function to easily create a card. This gathers the person's name, affiliation,
+# the path to the picture to be used (stored in the "_img" folder), and create icons
+# depending on the information stored in the google sheets.
+#
+# Input "row" corresponds to one row of the dataframe containing the team info.
 make_card <- function(row) {
   icons <- character(0)
 
+  # An empty cell in the google sheets can be NA or empty text so we always need to check
+  # that it's neither.
   if (!is.na(row$email_address) && nzchar(row$email_address)) {
     icons <- c(
       icons,
@@ -40,6 +48,8 @@ make_card <- function(row) {
     )
   }
   if (!is.na(row$personal_website) && nzchar(row$personal_website)) {
+    # Links the google sheets sometimes start with "www" or something else
+    # -> ensure we add https
     if (!startsWith(row$personal_website, "http")) {
       row$personal_website <- paste0("https://", row$personal_website)
     }
@@ -114,9 +124,8 @@ make_card <- function(row) {
   )
 }
 
+# Create the cards for active team members first
 people_active <- people[people$role == "active", ]
-people_past <- people[people$role == "past", ]
-
 cards <- vapply(
   seq_len(nrow(people_active)),
   function(i) make_card(people_active[i, ]),
@@ -126,20 +135,26 @@ cat('<div class="person-grid">\n', paste(cards, collapse = "\n"), '\n</div>\n')
 ```
 
 ```{r}
-#| echo: false
-library(mapgl)
+# Create the map to show the location of active team members only.
 
-# Have to keep one column on top of lat/lon otherwise mapgl() errors
-map_dat <- people_active |> 
-  transform(full_name = paste(first_name, last_name))  |>
+# We have to keep one column on top of lat/lon otherwise mapgl() errors.
+# https://github.com/walkerke/mapgl/issues/212
+map_dat <- people_active |>
+  transform(full_name = paste(first_name, last_name)) |>
   dplyr::mutate(
     people_info = paste0(full_name, ", ", affiliation),
-    people_info = paste(people_info, collapse = "<br><hr>"), 
+    people_info = paste(people_info, collapse = "<br><hr>"),
     .by = c(lat, lon)
   ) |>
-  sf::st_as_sf(coords = c("lon", "lat"), crs = 4326) 
+  sf::st_as_sf(coords = c("lon", "lat"), crs = 4326)
 
-maplibre(projection = "mercator", zoom = 0, height = "500px", center = c(-0.1343463, 51.525385)) |>
+maplibre(
+  projection = "mercator",
+  zoom = 0,
+  height = "500px",
+  # Centered on UCL
+  center = c(-0.1343463, 51.525385)
+) |>
   add_fullscreen_control(position = "top-left") |>
   add_navigation_control() |>
   add_circle_layer(
@@ -152,18 +167,24 @@ maplibre(projection = "mercator", zoom = 0, height = "500px", center = c(-0.1343
     circle_opacity = 0.8,
     tooltip = "people_info",
     hover_options = list(circle_radius = 12)
-  ) 
+  )
 ```
 
 ## Former team members
 
 ```{r}
 #| output: asis
+
+# Now create the cards for past team members
+people_past <- people[people$role == "past", ]
 contributors_cards <- vapply(
   seq_len(nrow(people_past)),
   function(i) make_card(people_past[i, ]),
   character(1)
 )
-
-cat('<div class="person-grid">\n', paste(contributors_cards, collapse = "\n"), '\n</div>\n')
+cat(
+  '<div class="person-grid">\n',
+  paste(contributors_cards, collapse = "\n"),
+  '\n</div>\n'
+)
 ```
