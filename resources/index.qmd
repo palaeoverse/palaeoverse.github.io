@@ -118,7 +118,7 @@ execute:
 
 ::: {.resources-text}
 
-This table was created by Christopher Dean and Erin Dillon to help the community to find relevant palaeobiological resources.
+This table was created by Christopher Dean and Erin Dillon to help the community find relevant palaeobiological resources.
 
 If you want to add entries to this table or correct existing ones, please reach out to [info@palaeoverse.org](mailto:info@palaeoverse.org).
 :::
