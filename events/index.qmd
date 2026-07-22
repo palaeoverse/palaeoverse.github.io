@@ -10,61 +10,62 @@ execute:
 ```{r}
 library(googlesheets4)
 library(dplyr)
+library(mapgl)
 library(tidyr)
 
 # We don't need to pass credentials to googlesheets since the sheet is publicly available.
 gs4_deauth()
 
+# Two files to gather and bind:
+# - google sheets with lecture series
+# - google sheets with our events
+
 our_events <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1wczoSH6H9OYJNLDQaFZ6Vx97DywwtIavCawnW9a4eDw/edit?gid=0#gid=0"
 )|>
   mutate(
-    Date = as.Date(date)
+    date = as.Date(date)
   ) |> 
-  select(Post = type, Date, Title = event_name, Location = location, long, lat, Link = link)
+  select(type = type, date, title = event_name, extra_info = location, long, lat, link)
 
 lectures <- read_sheet(
   "https://docs.google.com/spreadsheets/d/1-CxROgJQ3MKTpunj429rvh7Q-_XVnnRbK4-HjaNazFI/edit?gid=679046529#gid=679046529"
 ) |> 
-  filter(grepl(" ", Name)) |>
-  filter(!is.na(Title)) |>
+  # This google sheets has some custom delimiter rows, so we only keep the rows that actually
+  # correspond to lecture series.
+  filter(grepl(" ", Name), !is.na(Title)) |>
   unnest(Date) |>
-  # Weird column names but it's because we need to bind this to the events above
   mutate(
-    Post = "Lecture Series",
-    Date = as.Date(Date),
-    Location = if_else(
+    type = "Lecture Series",
+    date = as.Date(Date),
+    extra_info = if_else(
       !is.na(Affiliation),
       paste0(Name, " (", Affiliation, ")"),
       Name
     )
   ) |>
   # Only show time for future lectures
-  mutate(
-    `Time (UTC)` = if_else(Date < Sys.Date(), NA, `Time (UTC)`)
-  ) |>
-  select(Post, Date, Time = `Time (UTC)`, Title, Location, Link = `Youtube link`)
+  mutate(time = if_else(date < Sys.Date(), NA, `Time (UTC)`)) |>
+  select(type, date, time, title = Title, extra_info, link = `Youtube link`)
 
 events <- bind_rows(our_events, lectures)
-
 
 today <- Sys.Date()
 
 future_events <- events |>
-  filter(Date >= today) |>
-  arrange(Date) |>
+  filter(date >= today) |>
+  arrange(date) |>
+  # Future lecture series shouldn't link to youtube but to our "Lecture series" page instead
   mutate(
-    Link = if_else(
-      Post == "Lecture Series",
-      "../lecture-series",
-      Link
-    )
+    link = if_else(type == "Lecture Series", "../lecture-series", link)
   )
 
 past_events <- events |>
-  filter(Date < today) |>
-  arrange(desc(Date))
+  filter(date < today) |>
+  arrange(desc(date))
 
+# Helper function to add a custom CSS class to a card depending on the type of event.
+# This is necessary to give different colours to cards for instance.
 type_to_css <- function(type) {
   switch(
     tolower(type),
@@ -76,16 +77,16 @@ type_to_css <- function(type) {
   )
 }
 
-to_filter_key <- function(type) tolower(gsub(" ", "-", type))
-
-render_filter <- function(all_events) {
+# Helper function to create the filter buttons at the top of the page to select the type of
+# events that we want to see.
+render_filter <- function() {
+  # This is hardcoded because it determines the order of filter buttons (we want "Other" to be last)
   categories <- c("Lecture Series", "Workshop", "Other")
-  buttons <- sapply(categories, function(cat) {
+  buttons <- sapply(categories, function(category) {
     sprintf(
-      '<button class="event-filter-btn" data-filter="%s" data-post="%s">%s<i class="bi bi-check"></i></button>',
-      to_filter_key(cat),
-      cat,
-      cat
+      '<button class="event-filter-btn" data-filter="%s">%s<i class="bi bi-check"></i></button>',
+      category,
+      category
     )
   })
   knitr::asis_output(paste0(
@@ -95,25 +96,32 @@ render_filter <- function(all_events) {
   ))
 }
 
+# Helper function to render the cards for all past or all future events.
+#
+# "df" is a dataframe that contains all past events or all future events.
 render_cards <- function(df) {
   parts <- '<div class="event-grid">'
   for (i in seq_len(nrow(df))) {
     row <- df[i, ]
-    css <- type_to_css(row$Post)
-    filter_key <- to_filter_key(row$Post)
-    date_str <- format(row$Date, "%B %d, %Y")
-    time_str <- if (is.na(row$Time)) {
+    css <- type_to_css(row$type)
+
+    date_str <- format(row$date, "%B %d, %Y")
+
+    # The time is only present for future lecture series
+    time_str <- if (is.na(row$time)) {
       ""
     } else {
-      paste0(" · ", row$Time)
+      paste0(" · ", row$time)
     }
-    has_link <- !is.na(row$Link) && nzchar(row$Link)
-    has_youtube_link <- has_link && grepl("youtube", row$Link)
-    if (row$Post == "Lecture Series") {
-      actions <- if (has_youtube_link) {
+
+    # Create the button if needed (some future events don't have a link yet)
+    has_link <- !is.na(row$link) && nzchar(row$link)
+    has_youtube_link <- has_link && grepl("youtube", row$link)
+    if (row$type == "Lecture Series") {
+      button <- if (has_youtube_link) {
         sprintf(
           '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-youtube"></i>&nbsp;Watch on YouTube</a>',
-          row$Link
+          row$link
         )
       } else if (has_link) {
         '<a class="event-card-btn" href="/training/lecture-series/"><i class="bi bi-info-circle"></i>&nbsp;More info</a>'
@@ -121,41 +129,45 @@ render_cards <- function(df) {
         ""
       }
     }
-    if (row$Post != "Lecture Series") {
-      actions <- if (has_link) {
+    if (row$type != "Lecture Series") {
+      button <- if (has_link) {
         sprintf(
           '<a class="event-card-btn" href="%s" target="_blank"><i class="bi bi-info-circle"></i>&nbsp;More info</a>',
-          row$Link
+          row$link
         )
       } else {
       ""
       }
     }
-    # Always wrap in .event-actions so the buttons stay pinned to the card
-    # bottom (margin-top: auto), whether there is one button or two.
-    badge <- if (nzchar(actions)) {
-      sprintf('<div class="event-actions">%s</div>', actions)
+
+    # Add a custom class for CSS
+    button <- if (nchar(button) > 0) {
+      sprintf('<div class="event-actions">%s</div>', button)
     } else {
       ""
     }
+
     card_div <- sprintf(
       '<div class="event-card %s"><span class="event-tag">%s</span><h3>%s</h3><p class="event-date">%s %s <br> %s</p>%s</div>',
       css,
-      row$Post,
-      row$Title,
+      row$type,
+      row$title,
       date_str,
       time_str,
-      row$Location,
-      badge
+      row$extra_info,
+      button
     )
     item <- sprintf(
       '<div class="event-item" data-type="%s">%s</div>',
-      filter_key,
+      row$type,
       card_div
     )
     parts <- c(parts, item)
   }
   parts <- c(parts, "</div>")
+
+  # We always add a (hidden) <p> that indicates that our filters didn't return anything.
+  # We use JavaScript below to show this text if the list of events is empty.
   parts <- c(
     parts,
     '<p class="event-empty-msg" style="display:none"><em>No events match the selected filters.</em></p>'
@@ -166,8 +178,10 @@ render_cards <- function(df) {
 
 All events are shown by default. Select one or more types to filter:
 ```{r}
-render_filter(events)
+render_filter()
 ```
+
+<!-- Some raw HTML to determine whether we show the events as a grid or as a map. -->
 
 Select the view mode:
 
@@ -197,23 +211,14 @@ render_cards(past_events)
 ::: {#view-map style="display:none"}
 
 ```{r}
-library(mapgl)
-
+# The map only shows future events.
 map_dat <- events |>
-  filter(Date >= today) |>
+  filter(date >= today) |>
   filter(!is.na(long) & !is.na(lat)) |>
   mutate(
-    Date = format(as.Date(Date), format = "%d %B %Y"),
+    date = format(as.Date(date), format = "%d %B %Y"),
     essential_info = paste0(
-      "<b>",
-      Post,
-      "</b>",
-      "<br>",
-      Title,
-      "<br>",
-      Date,
-      "<br>",
-      Location
+      "<b>", type, "</b>", "<br>", title, "<br>", date, "<br>", extra_info
     )
   ) |>
   # If two events happen in the same place, we aggregate their info so that
@@ -222,7 +227,7 @@ map_dat <- events |>
     essential_info = paste(essential_info, collapse = "<br><hr>"), 
     .by = c(lat, long)
   ) |>
-  distinct(essential_info, Post, lat, long) |> 
+  distinct(essential_info, type, lat, long) |> 
   sf::st_as_sf(coords = c("long", "lat"), crs = 4326)
 
 maplibre(projection = "mercator", zoom = 0, height = "500px") |>
@@ -231,9 +236,10 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
   add_circle_layer(
     id = "poi-layer",
     source = map_dat,
-    # Default color only; the real per-type colors are applied client-side in
-    # onRender below, reading the --event-color-* CSS variables from styles.scss
-    # so the map stays in sync with the event cards.
+    # The colour specified here doesn't matter. We use some JavaScript below to read the 
+    # colors defined in our SCSS file so that the colour matches between the grid view and 
+    # the map view. 
+    # This way, we only need to define the colours once in the SCSS file.
     circle_color = "#575756",
     circle_radius = 8,
     circle_stroke_color = "#ffffff",
@@ -242,6 +248,8 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
     tooltip = "essential_info",
     hover_options = list(circle_radius = 12, circle_color = "#ffff99")
   ) |>
+  # When the user loads this page, we grab the colours defined in the SCSS file and
+  # apply them to each point depending on the event type.
   htmlwidgets::onRender(
     "
     function(el, x) {
@@ -274,6 +282,14 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
 
 :::
 
+
+<!-- 
+Custom JavaScript that:
+
+1) applies the filters about the event types we want to display;
+1) either shows the map or the grid.
+
+-->
 ```{=html}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -309,12 +325,6 @@ document.addEventListener('DOMContentLoaded', function () {
       .map(b => b.dataset.filter);
   }
 
-  function getActivePostTypes() {
-    return Array.from(filterBtns)
-      .filter(b => b.classList.contains('active'))
-      .map(b => b.dataset.post);
-  }
-
   function updateListVisibility() {
     const active = getActiveFilters();
     // No filter selected => show all events
@@ -335,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateMapFilter() {
     if (!window._palaeoMap) return;
-    const activeTypes = getActivePostTypes();
+    const activeTypes = getActiveFilters();
     if (activeTypes.length === 0) {
       // No filter selected => show all events
       window._palaeoMap.setFilter('poi-layer', null);
