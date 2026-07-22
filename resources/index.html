@@ -43,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-50db7f3496b96cf61c848824d92787f9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1efa644efa561ae15c05c675d39f7a6e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-41952f334b04cc61fb8ee2a678f5f01d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-1efa644efa561ae15c05c675d39f7a6e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6abec5de1ce7482aa1fec4064f4f901d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-22e5cb9d030773d88aef7c60608cfdae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6abec5de1ce7482aa1fec4064f4f901d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -239,6 +239,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- Custom CSS for the resources table -->
 <div class="cell">
 <style type="text/css">
 .rt-td-inner > a {
@@ -249,15 +250,17 @@ ul.task-list li input[type="checkbox"] {
     border-bottom: none;
 }
 
-.ReactTable {
-  background: transparent;
+.resources-text {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-/* reactable clips cells/inners with overflow:hidden and scrolls the table body;
-   override those (with enough specificity to beat reactable.css) so the open
-   filter dropdown can spill out, and keep the header above the body rows. */
+.ReactTable {
+  background: transparent;
+}
+
+/* Make sure the filter dropdowns appear above the table instead of being hidden behind
+the rows. */
 .Reactable .rt-table,
 .Reactable .rt-thead,
 .Reactable .rt-tr-filters,
@@ -279,13 +282,17 @@ ul.task-list li input[type="checkbox"] {
   font-size: 0.85rem;
 }
 
+.multi-filter > summary,
+.multi-filter__menu {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .multi-filter > summary {
   list-style: none;
   cursor: pointer;
   padding: 4px 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -308,9 +315,6 @@ ul.task-list li input[type="checkbox"] {
   margin-top: 2px;
   max-height: 220px;
   overflow-y: auto;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -329,15 +333,7 @@ ul.task-list li input[type="checkbox"] {
   margin-right: 6px;
 }
 
-.resources-text {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-/* Quarto promotes the "# Resources" heading into the page title block, which
-   sits in the narrow centred body-content column while the intro text lives in
-   a full-width `.column-screen`. Span the title across the same full-width grid
-   track and inset it 5% so the heading lines up with `.resources-text`. */
+/* We want the page title to be left aligned, just like the text. */
 #title-block-header {
   grid-column: screen-start / screen-end;
   padding-left: 5%;
