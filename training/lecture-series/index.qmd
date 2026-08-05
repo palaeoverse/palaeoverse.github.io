@@ -1,6 +1,9 @@
 ---
 title: "Lecture series"
 toc: true
+# Redirect from old website
+aliases:
+  - /lectures.html
 ---
 
 The Palaeoverse Lecture Series is a monthly online presentation dedicated to software development and methodological approaches in palaeontology, with the aim of promoting the use of new tools in the field and to give researchers a platform to showcase their work. The format remains flexible and will generally include a short seminar followed by a demonstration of the speaker’s software toolkit and/or method, concluding with a Q&A session.

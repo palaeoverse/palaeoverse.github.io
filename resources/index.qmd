@@ -1,6 +1,9 @@
 ---
 title: "Resources"
 toc: false
+# Redirect from old website
+aliases:
+  - /external.html
 execute:
   echo: false
   message: false

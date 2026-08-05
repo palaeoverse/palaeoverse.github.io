@@ -8,6 +8,15 @@ engine: knitr
 # Used so that we can apply some custom CSS to classes that appear
 # on all pages but that we want to customize on the homepage only.
 body-classes: homepage
+# Redirect pages from the previous website (those have no equivalent
+# on the new one so we just redirect to homepage).
+aliases:
+  - /cheatsheets.html
+  - /directory.html
+  - /funding.html
+  - /form/directory.html
+  - /form/grant.html
+  - /form/reviewer.html
 ---
 
 <!-- Main logo, tag line, and buttons -->
