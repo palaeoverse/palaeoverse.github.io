@@ -22,7 +22,7 @@ We contribute to making palaeontology a more open, reproducible, and supportive 
 - We have organised 30+ online events, including lecture series, workshops, and open calls for the community
 - We run community spaces to offer a platform for palaeontologists to engage in healthy discussion, advertise opportunities, share new publications, and support one another
 
-![Workshop instructors and participants at the NAPC 2025 meeting in Zurich, Switzerland.](../../_img/other_pictures/workshop.png){width="70%" fig-align="center"}
+![Workshop instructors and participants at the CPEG 2025 meeting in Zurich, Switzerland.](../../_img/other_pictures/workshop.png){width="70%" fig-align="center"}
 
 ## Contact Us
 
