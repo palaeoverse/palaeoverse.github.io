@@ -8,7 +8,7 @@ Zulip is an organized, asynchronous team chat app (mobile and desktop) for distr
 
 ## Zulip Structure & Interaction
 
-Zulip organises conversations into **channels** (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1A). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from seven channels:
+Zulip organises conversations into **channels** (listed with a globe icon on the left-hand side of the app/webpage) (Fig. 1A). Each of these covers a broad theme. The Palaeoverse Public Workspace is formed from eight channels:
 
 * Events
 
@@ -20,11 +20,13 @@ Zulip organises conversations into **channels** (listed with a globe icon on the
 
 * Resources
 
+* Community
+
 * Help
 
 * Announcements
 
-As a guest user, you will be able to post in the first six of these (all channels bar “Announcements”), and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.
+As a guest user, you will be able to post in the first seven of these (all channels bar “Announcements”), and interact with all of them. These channels were established by Palaeoverse administrators, and will remain constant. Although you won’t personally be able to create a new channel, we will consider any requests, and you should contact the administrators if you wish to add something new.
 
 <br>
 
@@ -153,6 +155,14 @@ Any other information relating to the funding opportunity should be posted below
 The **Resources** channel is broad in its scope. Posts are welcomed on topics such as websites, books, talks, and course materials. As the breadth of subjects posted here cover a wider range, no specific post template is provided; however, the topic title should remain short and descriptive.
 
 All discussion relating to the advertised resource should be posted in the relevant topic thread.
+
+
+### Community
+
+The **Community** channel is also broad in its scope. This is a place to share things such as surveys, open nominations for awards, competitions, society news, or other community-focused topics. As the subjects posted here could be highly variable in nature, no specific post template is provided; however, the topic title should remain short and descriptive.
+The Community channel is also broad in its scope. This is a place to share things such as surveys, open nominations for awards, competitions, society news, or other community-focused topics. As the subjects posted here could be highly variable in nature, no specific post template is provided; however, the topic title should remain short and descriptive.
+
+All discussion relating to the post should be written in the relevant topic thread.
 
 
 ### Help
