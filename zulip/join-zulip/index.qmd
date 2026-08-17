@@ -47,7 +47,7 @@ By joining this workspace, you confirm that you are over the age of 18.
 </label>
 
 <div class="hero-buttons">
-  <a href="https://palaeoverse.zulipchat.com/join/cuv2ajmfslimch5bdxr23rgm/" id="zulip-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a>
+  <a href="https://palaeoverse.zulipchat.com/join/r3knvfvpgpppvn5v6oht42hu/" id="zulip-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Join the community on Zulip <i class="bi bi-box-arrow-up-right"></i></a>
 </div>
 
 ```{=html}
