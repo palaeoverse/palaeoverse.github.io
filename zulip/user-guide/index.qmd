@@ -66,15 +66,15 @@ Once a topic is created, all users will be able to respond to this. When you sta
 
 To keep channels easy to navigate, we have provided channel-specific templates that should aim to be used when starting a new topic. These are provided below.
 
-### Conferences & Workshops
+### Events
 
-The Palaeoverse Zulip workspace welcomes conference and workshop advertisements on the themes of palaeontology and open science, as well as other relevant themes such as ecology and conservation science.
+The Palaeoverse Zulip workspace welcomes event (e.g. conference and workshop) advertisements on the themes of palaeontology and open science, as well as other relevant themes such as ecology and conservation science.
 
-Topics posted within the **Conferences & Workshop** channel should aim to take the **full name of the conference or workshop** being advertised, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit). 
+Topics posted within the **Events** channel should aim to take the **full name of the event** being advertised, but shortened versions will be allowed if the title length exceeds 60 characters (Zulip-imposed limit). 
 
 The initial post within the topic thread should try to take the following format, or similar:
 
-> **Conference or workshop name (in bold)**:
+> **Event name (in bold)**:
 > 
 > Location:
 > 
