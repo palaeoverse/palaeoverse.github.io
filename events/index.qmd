@@ -263,7 +263,7 @@ maplibre(projection = "mercator", zoom = 0, height = "500px") |>
         var css = getComputedStyle(document.documentElement);
         var c = function(name) { return css.getPropertyValue(name).trim(); };
         map.setPaintProperty('poi-layer', 'circle-color', [
-          'match', ['get', 'Post'],
+          'match', ['get', 'type'],
           'Workshop', c('--event-color-workshop'),
           'Other', c('--event-color-other'),
           'Hackathon', c('--event-color-hackathon'),
@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // No filter selected => show all events
       window._palaeoMap.setFilter('poi-layer', null);
     } else {
-      window._palaeoMap.setFilter('poi-layer', ['in', ['get', 'Post'], ['literal', activeTypes]]);
+      window._palaeoMap.setFilter('poi-layer', ['in', ['get', 'type'], ['literal', activeTypes]]);
     }
   }
 
