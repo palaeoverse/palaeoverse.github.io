@@ -3,12 +3,12 @@ title: "Sponsors and Collaborators"
 lightbox: auto
 ---
 
-[Palaeoverse](https://www.ucl.ac.uk/mathematical-physical-sciences/news/2025/nov/software-sustainability-institute-set-strengthen-palaeontologys-software-infrastructure) is currently (March 2026 to February 2028) supported by the UKRI via the [Software Sustainability Institute](https://www.software.ac.uk/)’s Research Software Maintenance Fund via the project 'Converting Users to Contributors: Enabling the Sustainable Maintenance and Development of Palaeoverse' (AH/Z000114/1). Over the next two years, our goal is to evolve Palaeoverse into a community-driven project — one where users are supported and encouraged to contribute to development, maintenance, and review, rather than relying on the current core team.
+[Palaeoverse](https://www.ucl.ac.uk/mathematical-physical-sciences/news/2025/nov/software-sustainability-institute-set-strengthen-palaeontologys-software-infrastructure) is currently (March 2026 to February 2028) supported by the UKRI via the [Institute for Research Software](https://www.software.ac.uk/)’s Research Software Maintenance Fund via the project 'Converting Users to Contributors: Enabling the Sustainable Maintenance and Development of Palaeoverse' (AH/Z000114/1). Over the next two years, our goal is to evolve Palaeoverse into a community-driven project — one where users are supported and encouraged to contribute to development, maintenance, and review, rather than relying on the current core team.
 
 Since 2022, Palaeoverse, and its activities, have received support from a number of organisations. Click a logo to read more about their contribution.
 
 ::: {.logo-wall}
-![](../../_img/ssi_logos/RED LOGOS/SSI_PRIMARY-LOGO.png){group="sponsors" title="Software Sustainability Institute — February 2026" description="Funding from the Software Sustainability Institute's Research Software Maintenance Fund (AH/Z000114/1), supported by UKRI. This funding runs until February 2028."}
+![](../../_img/institute_for_research_software/Primary%20logo.png){group="sponsors" title="Institute for Research Software — February 2026" description="Funding from the Institute for Research Software's Research Software Maintenance Fund (AH/Z000114/1), supported by UKRI. This funding runs until February 2028."}
 
 ![](../../_img/other_logos/zulip-logo.png){group="sponsors" title="Zulip — March 2026" description="Zulip is an organized team chat app designed for efficient communication. It sponsors our access to the Zulip Cloud Standard."}
 
