@@ -179,6 +179,12 @@ reactable(
     Category = dropdown_with_checkboxes,
     Type = dropdown_with_checkboxes,
     Link = colDef(cell = function(value) {
+      # A NA link would become href = null in JSON, which would make reactable crash
+      # and return a blank table
+      # https://github.com/palaeoverse/palaeoverse.github.io/issues/21
+      if (is.na(value)) {
+        return("")
+      }
       htmltools::tags$a(href = value, target = "_blank", value)
     })
   ),
