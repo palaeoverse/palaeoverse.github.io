@@ -62,6 +62,8 @@ website:
             text: Modules
           - href: training/lecture-series
             text: Lecture series
+          - href: training/mentorship-scheme
+            text: Mentorship Scheme
       - text: Resources
         href: resources
       - text: Events
