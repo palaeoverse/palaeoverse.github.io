@@ -17,7 +17,7 @@ Through the Palaeoverse Mentorship Programme, you will upskill from software use
 
 By the programme's end, you will become a champion for open science, open-source tools, and reproducibility in palaeobiology. You will be able to implement robust data science workflows in R more efficiently, and will gain the skills to design and publish new software collaboratively to a professional standard. You will also be primed to convey these skills to your peers, setting you up for continued success in academic or industry settings.
 
-Detailed information on the Palaeoverse Mentorship Programme can be found below. If you have a question that is not addressed fully, or want to discuss your application with us, then please reach out on social media or via email [info@palaeoverse.org]. You can also join our community platform on [Zulip](https://palaeoverse.org/zulip/join-zulip/) and ask questions in the Community channel.
+Detailed information on the Palaeoverse Mentorship Programme can be found below. If you have a question that is not addressed fully, or want to discuss your application with us, then please reach out on social media or via email [info@palaeoverse.org](mailto:info@palaeoverse.org). You can also join our community platform on [Zulip](https://palaeoverse.org/zulip/join-zulip/) and ask questions in the Community channel.
 
 ## How to apply
 
@@ -55,3 +55,41 @@ Please note that final content may be subject to change.
 
 At the end of the programme, you will receive a certificate of participation, endorsing your skillsets in code development, data science best practises, and open science principles.
 
+
+---
+
+<label class="container">
+  <input type="checkbox" id="coc-agree">
+  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/).</span>
+</label>
+
+<div class="hero-buttons">
+  <a href="https://palaeoverse.zulipchat.com/join/u6obaklnxjxqfgspfcrtwtpd/" id="mentorship-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Apply for the mentorship scheme <i class="bi bi-box-arrow-up-right"></i></a>
+</div>
+
+```{=html}
+<style>
+.landing-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.getElementById("coc-agree");
+  const button = document.getElementById("mentorship-btn");
+  checkbox.addEventListener("change", function () {
+    const enabled = checkbox.checked;
+    button.classList.toggle("disabled", !enabled);
+    button.setAttribute("aria-disabled", String(!enabled));
+  });
+  // block navigation while disabled (keeps pointer events so the
+  // cursor styling applies only over the link itself)
+  button.addEventListener("click", function (e) {
+    if (button.classList.contains("disabled")) {
+      e.preventDefault();
+    }
+  });
+});
+</script>
+```
