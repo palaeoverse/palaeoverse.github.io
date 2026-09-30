@@ -3,11 +3,15 @@ title: "Mentorship Scheme"
 toc: false
 ---
 
+<br>
+
 **Do you use data science tools for palaeobiological research?** 
 
 **Are you interested in learning how to create these tools from scratch?** 
 
 **Would you like to improve the clarity and reproducibility of your workflows?** 
+
+<br>
 
 Through the Palaeoverse Mentorship Programme, you will upskill from software user to creator across six months of online learning, working alongside a cohort of early career researchers and under the mentorship of experienced Palaeoverse members. You will learn best practices for coding and package design in the R programming language as well as how to manage a software development project from start to finish. The programme will culminate in code contributions to the Palaeoverse software ecosystem, and will deliver transferable data science skills that you can apply in your own research. There will also be opportunities to develop your own teaching skills at future in-person Palaeoverse workshops, hackathons and conference events.
 
