@@ -2,3 +2,52 @@
 title: "Mentorship Scheme"
 toc: false
 ---
+
+**Do you use data science tools for palaeobiological research?** 
+
+**Are you interested in learning how to create these tools from scratch?** 
+
+**Would you like to improve the clarity and reproducibility of your workflows?** 
+
+Through the Palaeoverse Mentorship Programme, you will upskill from software user to creator across six months of online learning, working alongside a cohort of early career researchers and under the mentorship of experienced Palaeoverse members. You will learn best practices for coding and package design in the R programming language as well as how to manage a software development project from start to finish. The programme will culminate in code contributions to the Palaeoverse software ecosystem, and will deliver transferable data science skills that you can apply in your own research. There will also be opportunities to develop your own teaching skills at future in-person Palaeoverse workshops, hackathons and conference events.
+
+By the programme's end, you will become a champion for open science, open-source tools, and reproducibility in palaeobiology. You will be able to implement robust data science workflows in R more efficiently, and will gain the skills to design and publish new software collaboratively to a professional standard. You will also be primed to convey these skills to your peers, setting you up for continued success in academic or industry settings.
+
+Detailed information on the Palaeoverse Mentorship Programme can be found below. If you have a question that is not addressed fully, or want to discuss your application with us, then please reach out on social media or via email [info@palaeoverse.org]. You can also join our community platform on [Zulip](https://palaeoverse.org/zulip/join-zulip/) and ask questions in the Community channel.
+
+## How to apply
+
+Applications for the first cohort of the Palaeoverse Mentorship Programme will open in October, and will close at 12:00 UTC on the 11th of December 2026. Decisions on applications will be conveyed in mid December. The programme will commence at the beginning of February 2027.
+
+Palaeoverse maintains a [Code of Conduct](https://palaeoverse.org/about/code-of-conduct/) to establish expectations of behaviour for all events and community spaces we operate, including the Palaeoverse Mentorship Programme. We therefore ask all applicants to familiarise themselves with its content before submission, in addition to the application criteria outlined above.
+
+## Who is the programme for?
+
+The programme is intended for early career researchers who currently use R in their work, and who wish to advance their coding ability and develop skills in collaborative software development and open science. We anticipate that it will be most beneficial to MSc/PhD students or recent doctoral graduates with a reasonable foundation in R, but who have little to no prior experience with GitHub workflows, package development, or contributing to open-source projects. The programme is targeted towards software development for palaeobiology, therefore an undergraduate or master’s degree in palaeobiology or a related discipline (geology, evolutionary biology, etc.) will benefit your application. 
+
+The programme is not intended as an introduction to R programming, nor will other programming languages be directly addressed. Applicants should be comfortable with most or all of the following:
+
+* importing and manipulating simple data in R
+* working with basic R data structures (e.g. vectors, data frames, lists)
+* writing and running their own scripts, or a script written by someone else
+* installing R packages and using their functions
+
+We seek to widen the diversity of people involved in open science, especially in palaeobiology, via our mentee cohorts. We therefore actively encourage applications from underrepresented groups in the palaeobiology, open science, and software development communities.
+
+## How does the programme work?
+
+The Palaeoverse Mentorship Programme will be run online over six months. All content will be delivered in English using the digital platforms Github, Zoom and Zulip. Live sessions will take place at the start of each month, with the time zone to be decided based on the geographic composition of the cohort. As such, you will need a laptop with a webcam, mic, and a reliable internet connection. All other content can be completed asynchronously, at your own pace, allowing you to balance its completion with your other commitments. Programme time is anticipated to occupy no more than 3-4 hours a week.
+
+At the start of the programme, you will be paired with a mentor from the Palaeoverse Team who will support your development towards championing open science and software engineering in palaeobiology. There will be a live seminar with the entire cohort in the first week of each month. Live sessions will be recorded in case you are unable to attend, although all mentees will be asked to prioritise live attendance where possible. In the other weeks, you will complete a self-guided or collaborative learning module, or work on code contributions to the Palaeoverse ecosystem of R packages, supported by mentor meetings in the first and third weeks. Mentor meetings will be organised at your mutual discretion to maintain flexibility.
+
+The course will be structured as follows:
+
+* Months 1-2: Modules in scripting, function design and data science
+* Month 3: First code contribution
+* Months 4-5: Modules in advanced R package design and optional topics
+* Month 6: Second code contribution and presentation of the completed project
+
+Please note that final content may be subject to change.
+
+At the end of the programme, you will receive a certificate of participation, endorsing your skillsets in code development, data science best practises, and open science principles.
+
