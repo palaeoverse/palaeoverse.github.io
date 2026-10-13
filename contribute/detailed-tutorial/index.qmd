@@ -24,11 +24,11 @@ Besides R, you will need to use a variety of tools to ease the development proce
       
     You might need to restart RStudio (or the IDE that you use, if you use one) after installing it. This tool runs in the terminal, not the R console. You can check that it is correctly installed by running `jarl -V` to print its version number. 
 
-![](terminal_button.png)
+![](terminal_button.png){fig-alt="A screenshot of RStudio. On the bottom left section, the 'Terminal' pane (next to the 'Console' pane) is circled in red."}
 
-![](air_version.png)
+![](air_version.png){fig-alt="A screenshot of RStudio. In the terminal, the command `air -V` prints the version number of Air."}
 
-![](jarl_version.png)
+![](jarl_version.png){fig-alt="A screenshot of RStudio. In the terminal, the command `jarl -V` prints the version number of Jarl."}
 
 - [Git](https://git-scm.com/): this is a version control tool, which is key in the software development process. It allows us to make and suggest changes to packages.  
     
@@ -44,7 +44,7 @@ You need to have an idea of what you want to change in the package. This could b
 
 Once you have installed the tools detailed above and know what you want to do, it is time to fork and clone the relevant repository so that you have a local copy you can modify. You can then create a new branch that very briefly summarizes the type of change, e.g. "fix-typo-palaeorotate" or "add-arg-XXX-lat-bins-degrees". Giving a readable name to a branch makes it easier to switch between branches in the future. It is also important to create a new branch early in the process so that we avoid pushing to "main" by mistake.
 
-![](new_branch.png)
+![](new_branch.png){fig-alt="A screenshot of RStudio. In the top-right section, in the 'Git' pane, the button 'New branch' is circled in red."}
 
 Once this is done, run `pak::local_install_dev_deps()` to install all packages used by this package (e.g. because they provide some functionality that is essential to the package, or because they help in the development process but are not strictly necessary for external users).
 
@@ -128,7 +128,7 @@ You can run `devtools::test()` at any point in the development process to run th
 
 In RStudio, you can also use the button "Test" in the "Build" pane:
 
-![](test_button.png)
+![](test_button.png){fig-alt="A screenshot of RStudio. In the top-right section, in the 'Build' pane, the buttons 'Install', 'Check', and 'Test' are circled in red."}
 
 A good place to start is to try and throw errors from any new argument input error handling (and if you get an unexpected result, it's worth revisiting the error handling). Looking at files changed in this PR, we can see three types of changes:
 
@@ -182,7 +182,7 @@ If all checks pass, you are ready to create a PR!
 
 Commit all your changes to your branch, and then push your branch. On the GitHub repository, you should now see a yellow block suggesting to "Compare and open a pull request". You can follow this button to prepare a PR. 
 
-![](make_pr.gif)
+![](make_pr.gif){fig-alt="A gif that shows the process to make a pull request. Starting from RStudio, in the 'Git' pane, the user toggles the tickbox for modified files, and clicks on the 'Commit' button, which opens a modal. In this modal, the user writes 'my message', then clicks on 'Commit', which opens a second modal. After closing this second modal, the user clicks on push. The user then goes to Github, where a yellow tooltip suggests opening a pull request."}
 
 You will need to add a title and a PR description. Prepare a concise description that explains the new feature or the bug fix. Note that if this PR is related to an issue, you can add "Fixes #[ISSUE NUMBER]" or "Closes #1234" in the PR description (not the PR title) to automatically link the issue and PR, which will also close the issue 1234 when the PR is merged.
 
