@@ -52,12 +52,6 @@ website:
             text: User guide
       - text: Software
         href: our-packages
-      - text: Contribute
-        menu:
-          - href: contribute/general-guide
-            text: General guide
-          - href: contribute/detailed-tutorial
-            text: Detailed tutorial
       - text: Training
         menu: 
           - href: training/workshops
@@ -70,6 +64,12 @@ website:
         href: resources
       - text: Events
         href: events
+      - text: Contribute
+        menu:
+          - href: contribute/general-guide
+            text: General guide
+          - href: contribute/detailed-tutorial
+            text: Detailed tutorial
       # - href: blog
       #   text: Blog
       - icon: github
