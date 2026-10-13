@@ -101,7 +101,11 @@ make_card <- function(row) {
     ""
   }
 
-  path_to_picture <- paste0("../../_img/profiles/", row$first_name, ".png")
+  path_to_picture <- paste0(
+    "../../_img/profiles/",
+    gsub(" ", "_", row$full_name),
+    ".png"
+  )
   if (!file.exists(path_to_picture)) {
     path_to_picture <- "../../_img/profiles/default.png"
   }
