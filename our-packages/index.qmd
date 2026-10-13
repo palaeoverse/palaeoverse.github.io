@@ -8,6 +8,8 @@ execute:
   warning: false
 ---
 
+If you are interested in contributing to our packages, see our [general contributing guide](../contribute/general-guide/) and [detailed tutorial](../contribute/detailed-tutorial/).
+
 <!-- Compute the number of downloads and Github stars for each package. -->
 ```{r}
 library(cranlogs)
