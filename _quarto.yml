@@ -63,7 +63,13 @@ website:
           - href: training/lecture-series
             text: Lecture series
       - text: Resources
-        href: resources
+        menu: 
+          - href: resources/resources
+            text: Resources
+          - href: resources/general-contributing-guide
+            text: General contributing guide
+          - href: resources/detailed-contributing-guide
+            text: Detailed contributing guide
       - text: Events
         href: events
       # - href: blog

@@ -1,0 +1,72 @@
+---
+title: "General contributing guide"
+toc: true
+---
+
+Thanks for stopping by! Looking to find out how you can contribute to **Palaeoverse**? You have come to the right place!
+
+We very much appreciate and encourage community contributions. Your contributions help shape and improve Palaeoverse packages to address community needs. Contributing is also a great way to build your coding and computational skills, share your expertise, and expand your research network. Contributions are recognized in a variety of ways, including in documentation files and on the Palaeoverse website, depending on the nature of the contribution.
+
+If there is anything that is unclear within this guide, please let us know via Zulip, [email](mailto:info@palaeoverse.org), or by logging an [issue](https://github.com/palaeoverse/resources/issues) so we can improve it.
+
+There are multiple ways to contribute to **Palaeoverse**. This page will go through each of them, from engaging with the community to contributing code.
+
+## Joining the community on Zulip
+
+Zulip is where the community gathers to exchange and share useful resources, such as publications, job postings, event announcements, and tutorials, as well as have interesting discussions. [**Anyone** can join this community](../../zulip/join-zulip/).
+
+## Sharing knowledge and resources
+
+In addition to participating on Zulip, you can also share knowledge or resources by presenting in our monthly [lecture series](../../training/lecture-series/), or suggesting additions to our [list of resources](../resources/).
+
+More generally, if you are interested in what we do, feel free to reach out at [info@palaeoverse.org](mailto:info@palaeoverse.org). 
+
+The remaining sections will focus on the software components of Palaeoverse. Engaging in these subsequent steps requires having a GitHub account (more information [here](https://docs.github.com/en/get-started/start-your-journey)).
+
+## Logging or discussing GitHub issues
+
+Code-oriented tasks that need working on are logged as Github 'issues' within the respective [Palaeoverse GitHub repositories](https://github.com/palaeoverse/) (e.g. current `rphylopic` issues can be found at [github.com/palaeoverse/rphylopic](https://github.com/palaeoverse/palaeoverse/issues)). If you find a bug in our code, or want to request a new function or feature, this is the best place to document it. Here you can also discuss outstanding issues, including helping us to prioritise tasks (even adding an emoji in support or protest to an issue is useful).
+
+## Contributing to code or documentation
+
+If you want to get involved with contributing code or documentation to our packages (e.g. fix a bug or improve a vignette) but don't know where to start, you can begin by browsing the [outstanding issues](https://github.com/search?q=org%3Apalaeoverse+is%3Aissue+is%3Aopen&type=issues). Once you find an issue that you want to address, we ask that you add a message in the issue to let people know that you are working on it.
+
+If you are just getting started with collaborative coding, we recommend looking for issues labelled 'Good First Issue'. These issues are relatively small and/or simple in scope, and are less of a time commitment than larger feature requests. Feel free to find an unclaimed 'Good First Issue' that interests you, ‘claim’ it by adding a comment to it, and jump in!
+
+The section below presents an overview of the process to contribute code, but we also have a more [detailed guide](../detailed-contributing-guide/) to explain the entire process, from installing required tools to submitting your changes in a pull request.
+
+### Contribution workflow (pull request process)
+
+The contribution workflow below requires you to have basic knowledge of git and Github. [If this is not the case](https://happygitwithr.com/), you can reach out to one of the [core team members](../../about/people/) via email and they can make a pull request on your behalf, or help to guide you through the pull request and review process. However, you will be expected to respond to any reviewer comments on GitHub yourself (see below).
+
+To make a pull request:
+
+1. You (the contributor) should fork the repository (e.g. for the [`palaeoverse`](https://github.com/palaeoverse/palaeoverse) R package)  
+2. Clone the desired repository to your personal computer  
+3. Create a new git branch for your modifications (you should not make changes directly on the main branch)  
+4. Make your changes  
+5. Commit your changes (make sure your commit message is informative and concise)  
+6. Push your commits to your forked repository  
+7. When your changes are complete, you should submit them for merging via a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (“PR”) on GitHub
+
+Note that a complete pull request should include a succinct description of what the code changes do, proper documentation (via [`roxygen2`](https://roxygen2.r-lib.org)), and unit tests (via [`testthat`](https://testthat.r-lib.org/)). Only the description is required for the initial pull request and code review (see below), but pull requests will not be merged until they contain complete documentation and tests.
+
+You also have to ensure that you follow our [AI policy](../../about/ai-policy/).
+
+### Minor changes
+
+You can fix typos, spelling mistakes, or grammatical errors in function documentation and vignettes directly on GitHub (note that Github will automatically create a fork for you). However, note that fixing typos in the function documentation (those in the "Reference" page on the package website) requires editing the source in the corresponding .R file and then running `devtools::document()`. *Do not manually edit an .Rd file in the man folder*.
+
+### Substantial changes
+
+If you would like to make a substantial change (e.g. add a new argument to an existing function or create a new function), you should first file an issue and make sure someone from the development team agrees that it’s needed (this prevents potentially wasted effort). 
+
+If you’ve found a bug, please file an issue that illustrates the bug with a reproducible example. The [`reprex`](https://reprex.tidyverse.org/) package is very useful to build a minimal reproducible example.
+
+### The life of a pull request
+
+Submitting a pull request for one of Palaeoverse's R packages will automatically initiate several checks via GitHub Actions, such as R CMD check, linting and formatting checks, and test coverage check (among others). These checks will conduct some automatic review to ensure the new code doesn’t break any existing functionality and follows code standards. 
+
+Once these automated checks pass, at least two members of the Palaeoverse [core team](../../about/people/) will manually review the changes before merging the pull request. This review should happen within a few days of opening a pull request. Note that if your pull request is not complete, it should be converted to draft.
+
+Submitting a pull request is a big step, but it rarely happens that a pull request can be merged as-is. Like during the peer-review process for a journal article, reviewers will have questions and comments that you will need to address via the GitHub interface. If fixes and/or changes are required, you are expected to make these changes. Handling reviewers’ feedback might not be easy and can even feel adversarial sometimes, but remember that everyone has the same objective: producing good quality software. The [Tidyteam code review guide](https://code-review.tidyverse.org/author/handling-comments.html) is a great resource to understand better what is expected from you during code review and how reviewers will assess your code.
