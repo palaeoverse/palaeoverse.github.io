@@ -58,7 +58,7 @@ In this section, we will use an existing merged pull request as a case study to 
 
 The PR that we follow (["Improved binning for time_bins"](https://github.com/palaeoverse/palaeoverse/pull/131)) is a new feature: it adds the argument `n_bins` to `time_bins()` and improves this function's performance. If you check the "Files changed" tab on Github, you can see that four files were modified:
 
-- ``man/time_bins.Rd``
+- `man/time_bins.Rd`
 - `R/time_bins.R`  
 - `tests/testthat/test-time_bins.R`
 - `NEWS.md`
