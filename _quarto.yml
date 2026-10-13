@@ -52,8 +52,12 @@ website:
             text: User guide
       - text: Software
         href: our-packages
-          # - href: contributing
-          #   text: Contributing
+      - text: Contribute
+        menu:
+          - href: contribute/general-guide
+            text: General guide
+          - href: contribute/detailed-tutorial
+            text: Detailed tutorial
       - text: Training
         menu: 
           - href: training/workshops
@@ -63,13 +67,7 @@ website:
           - href: training/lecture-series
             text: Lecture series
       - text: Resources
-        menu: 
-          - href: resources/resources
-            text: Resources
-          - href: resources/general-contributing-guide
-            text: General contributing guide
-          - href: resources/detailed-contributing-guide
-            text: Detailed contributing guide
+        href: resources
       - text: Events
         href: events
       # - href: blog

@@ -17,7 +17,7 @@ Zulip is where the community gathers to exchange and share useful resources, suc
 
 ## Sharing knowledge and resources
 
-In addition to participating on Zulip, you can also share knowledge or resources by presenting in our monthly [lecture series](../../training/lecture-series/), or suggesting additions to our [list of resources](../resources/).
+In addition to participating on Zulip, you can also share knowledge or resources by presenting in our monthly [lecture series](../../training/lecture-series/), or suggesting additions to our [list of resources](../../resources/).
 
 More generally, if you are interested in what we do, feel free to reach out at [info@palaeoverse.org](mailto:info@palaeoverse.org). 
 
