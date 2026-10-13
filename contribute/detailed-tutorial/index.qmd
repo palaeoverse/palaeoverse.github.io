@@ -1,7 +1,9 @@
 ---
-title: "Detailed contributing guide"
+title: "Detailed tutorial"
 toc: true
 ---
+
+This page details the process to contribute code or documentation to one of [our R packages](../../our-packages/). See the [general guide](../general-guide/) to learn more ways to contribute to Palaeoverse.
 
 ## Required tools
 

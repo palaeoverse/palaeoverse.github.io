@@ -1,5 +1,5 @@
 ---
-title: "General contributing guide"
+title: "General guide"
 toc: true
 ---
 
