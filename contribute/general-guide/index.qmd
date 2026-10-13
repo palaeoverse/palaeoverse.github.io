@@ -1,5 +1,5 @@
 ---
-title: "General guide"
+title: "Contribute to Palaeoverse"
 toc: true
 ---
 

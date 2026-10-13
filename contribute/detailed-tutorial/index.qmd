@@ -1,5 +1,5 @@
 ---
-title: "Detailed tutorial"
+title: "Contribute to our packages"
 toc: true
 ---
 

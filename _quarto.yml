@@ -67,9 +67,9 @@ website:
       - text: Contribute
         menu:
           - href: contribute/general-guide
-            text: General guide
+            text: Contribute to Palaeoverse
           - href: contribute/detailed-tutorial
-            text: Detailed tutorial
+            text: Contribute to our packages
       # - href: blog
       #   text: Blog
       - icon: github
