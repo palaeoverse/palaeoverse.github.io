@@ -32,7 +32,7 @@ Besides R, you will need to use a variety of tools to ease the development proce
 
 - [Git](https://git-scm.com/): this is a version control tool, which is key in the software development process. It allows us to make and suggest changes to packages.  
     
-- [Github](https://github.com/): this is the platform that stores the code for all of Palaeoverse. It also provides the interface to suggest, review, and implement code changes. [Create a Github account](https://github.com/signup) if you don't have one already.
+- [Github](https://github.com/): this is the platform that stores the code for all of Palaeoverse. It also provides the interface to suggest, review, and implement code changes. [Create a Github account](https://github.com) if you don't have one already.
 
 You can check some of our [workshop materials](https://workshop.palaeoverse.org/2025-GSA-workshop/02_workflow/) to see how to get started with Git, Github, and RStudio. Alternatively, the book ["Happy Git and Github for the useR"](https://happygitwithr.com/) is a useful, and free, resource. In this tutorial, we assume that you have already done these steps.
 

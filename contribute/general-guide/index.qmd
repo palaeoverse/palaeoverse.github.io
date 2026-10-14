@@ -33,7 +33,7 @@ If you want to get involved with contributing code or documentation to our packa
 
 If you are just getting started with collaborative coding, we recommend looking for issues labelled 'Good First Issue'. These issues are relatively small and/or simple in scope, and are less of a time commitment than larger feature requests. Feel free to find an unclaimed 'Good First Issue' that interests you, ‘claim’ it by adding a comment to it, and jump in!
 
-The section below presents an overview of the process to contribute code, but we also have a more [detailed guide](../detailed-contributing-guide/) to explain the entire process, from installing required tools to submitting your changes in a pull request.
+The section below presents an overview of the process to contribute code, but we also have a more [detailed guide](../detailed-tutorial/) to explain the entire process, from installing required tools to submitting your changes in a pull request.
 
 ### Contribution workflow (pull request process)
 
