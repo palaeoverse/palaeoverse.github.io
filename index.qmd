@@ -40,20 +40,21 @@ aliases:
 ### Number of citations (accessed via OpenAlex).
 ### See https://github.com/palaeoverse/palaeoverse.github.io/blob/500a79bc3d8c7939cc8dc2988b804600099913b4/index.qmd#L49
 ### for an alternative using Google Scholar that failed in CI.
-library(openalexR)
-citations_raw <- oa_fetch(
-  entity = "works",
-  doi = c(
-    # palaeoverse
-    "10.1111/2041-210x.14099",
-    # rmacrostrat
-    "10.1130/GES02815.1",
-    # rphylopic
-    "10.1111/2041-210X.14221",
-    # sepkoski
-    "10.5281/zenodo.7342194"
-  )
+dois <- c(
+  # palaeoverse
+  "10.1111/2041-210x.14099",
+  # rmacrostrat
+  "10.1130/GES02815.1",
+  # rphylopic
+  "10.1111/2041-210X.14221",
+  # sepkoski
+  "10.5281/zenodo.7342194"
 )
+citations_raw <- jsonlite::fromJSON(paste0(
+  "https://api.openalex.org/works?filter=doi:",
+  paste(dois, collapse = "|"),
+  "&select=doi,title,cited_by_count"
+))$results
 
 citations <- citations_raw[, c("title", "cited_by_count")]
 

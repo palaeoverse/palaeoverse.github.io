@@ -52,8 +52,6 @@ website:
             text: User guide
       - text: Software
         href: our-packages
-          # - href: contributing
-          #   text: Contributing
       - text: Training
         menu: 
           - href: training/workshops
@@ -68,6 +66,12 @@ website:
         href: resources
       - text: Events
         href: events
+      - text: Contribute
+        menu:
+          - href: contribute/general-guide
+            text: Contribute to Palaeoverse
+          - href: contribute/detailed-tutorial
+            text: Contribute to our packages
       # - href: blog
       #   text: Blog
       - icon: github
