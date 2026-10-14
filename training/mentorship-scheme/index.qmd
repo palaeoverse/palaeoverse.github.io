@@ -58,38 +58,6 @@ At the end of the programme, you will receive a certificate of participation, en
 
 ---
 
-<label class="container">
-  <input type="checkbox" id="coc-agree">
-  <span class="checkmark">I agree to follow the [Code of Conduct](../../about/code-of-conduct/).</span>
-</label>
-
 <div class="hero-buttons">
-  <a href="https://palaeoverse.zulipchat.com/join/u6obaklnxjxqfgspfcrtwtpd/" id="mentorship-btn" class="landing-page-btn disabled" target="_blank" aria-disabled="true">Apply for the mentorship scheme <i class="bi bi-box-arrow-up-right"></i></a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhxCJbZc5VOSmHaPqMwU9UR6f6qMRCQuBX30li0b9YbsOycQ/viewform" id="mentorship-btn" class="landing-page-btn" target="_blank">Apply for the mentorship scheme <i class="bi bi-box-arrow-up-right"></i></a>
 </div>
-
-```{=html}
-<style>
-.landing-page-btn.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-</style>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const checkbox = document.getElementById("coc-agree");
-  const button = document.getElementById("mentorship-btn");
-  checkbox.addEventListener("change", function () {
-    const enabled = checkbox.checked;
-    button.classList.toggle("disabled", !enabled);
-    button.setAttribute("aria-disabled", String(!enabled));
-  });
-  // block navigation while disabled (keeps pointer events so the
-  // cursor styling applies only over the link itself)
-  button.addEventListener("click", function (e) {
-    if (button.classList.contains("disabled")) {
-      e.preventDefault();
-    }
-  });
-});
-</script>
-```
