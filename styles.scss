@@ -16,6 +16,13 @@ body {
   background-color: mix($brand-light-blue, white, 15%)
 }
 
+// Left sidebar in some modules
+nav.sidebar.sidebar-navigation:not(.rollup),
+div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents,
+.quarto-sidebar-toggle-contents {
+  background-color: mix($brand-light-blue, white, 15%)
+}
+
 // Quarto's footer splits into three equal columns (left/center/right). The
 // left and right are empty spacers, so collapse them and let the center use the
 // full available width — otherwise the center wraps long before the page is
