@@ -33,15 +33,15 @@ We seek to widen the diversity of people involved in open science, especially in
 
 ## How does the scheme work?
 
-The Palaeoverse Mentorship Scheme will be run online over six months. All content will be delivered in English using the digital platforms Github, Zoom and Zulip. Live sessions will take place at the start of each month, with the time zone to be decided based on the geographic composition of the cohort. As such, you will need a laptop with a webcam, mic, and a reliable internet connection. All other content can be completed asynchronously, at your own pace, allowing you to balance its completion with your other commitments. Scheme time is anticipated to occupy no more than 3-4 hours a week.
+The Palaeoverse Mentorship Scheme will be run online over six months. All content will be delivered in English using the digital platforms Github, Zoom and Zulip. Live sessions will take place at the start of each month, with the time zone to be decided based on the geographic composition of the cohort. As such, you will need a laptop with a webcam, mic, and a reliable internet connection. All other content can be completed asynchronously, at your own pace, allowing you to balance its completion with your other commitments. Scheme time is anticipated to occupy no more than 3--4 hours a week.
 
 At the start of the scheme, you will be paired with a mentor from the Palaeoverse Team who will support your development towards championing open science and software engineering in palaeobiology. There will be a live seminar with the entire cohort in the first week of each month. Live sessions will be recorded in case you are unable to attend, although all mentees will be asked to prioritise live attendance where possible. In the other weeks, you will complete a self-guided or collaborative learning module, or work on code contributions to the Palaeoverse ecosystem of R packages, supported by mentor meetings in the first and third weeks. Mentor meetings will be organised at your mutual discretion to maintain flexibility.
 
 The course will be structured as follows:
 
-* Months 1-2: Modules in scripting, function design and data science
+* Months 1--2: Modules in scripting, function design and data science
 * Month 3: First code contribution
-* Months 4-5: Modules in advanced R package design and optional topics
+* Months 4--5: Modules in advanced R package design and optional topics
 * Month 6: Second code contribution and presentation of the completed project
 
 Please note that final content may be subject to change.
