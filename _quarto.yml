@@ -2,6 +2,12 @@ project:
   type: website
   resources:
     - _img/
+  # build a sidebar for each multi-page module (see sync_sidebars.r)
+  pre-render: sync_sidebars.r training/modules
+
+# the generated sidebars; Quarto reads this after pre-render runs
+metadata-files:
+  - _sidebars.yml
 
 website:
   repo-url: https://github.com/palaeoverse/palaeoverse.github.io
@@ -100,6 +106,4 @@ format:
     include-after-body:
       - _includes/active-navbar.html
       - _includes/goatcounter.html
-
-
 
