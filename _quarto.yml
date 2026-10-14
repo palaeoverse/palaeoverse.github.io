@@ -2,7 +2,7 @@ project:
   type: website
   resources:
     - _img/
-  # build a sidebar for each multi-page module (see sync_sidebars.r)
+  # build a sidebar for each module with a _sidebar.yml (see sync_sidebars.r)
   pre-render: sync_sidebars.r training/modules
 
 # the generated sidebars; Quarto reads this after pre-render runs
