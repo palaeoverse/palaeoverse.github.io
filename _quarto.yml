@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - _img/
+    - _brand/logos/logo.png
   # build a sidebar for each module with a _sidebar.yml (see sync_sidebars.r)
   pre-render: sync_sidebars.r training/modules training/modules-dev
 

@@ -9,6 +9,9 @@ for (const item of items) {
   html += '<a class="module-card" href="' + item.path + '" data-difficulty="' + diff + '" data-categories="' + catsAttr + '">';
   if (item.image) {
     html += '<img class="module-card-img" src="' + item.image + '" alt="' + item.title + '">';
+  } else {
+    // Relative path so it also resolves in PR previews served from a sub-path
+    html += '<img class="module-card-img module-card-img-placeholder" src="../../_brand/logos/logo.png" alt="Palaeoverse logo">';
   }
   html += '<div class="module-card-body">';
   if (item.difficulty) {

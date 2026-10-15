@@ -1015,6 +1015,12 @@ h2 {
   display: block;
 }
 
+// The square logo would be cropped by `cover`
+.module-card-img-placeholder {
+  object-fit: contain;
+  padding: 1rem;
+}
+
 .module-card-body {
   display: flex;
   flex-direction: column;
