@@ -1,0 +1,32 @@
+---
+title: Modules
+toc: false
+listing:
+  id: modules
+  # Posts are all qmd files but the current file
+  contents: "*/index.qmd"
+  sort: "date desc"
+  template: listing-template.ejs
+  fields: [title, description, image, date, categories, difficulty, path]
+  feed: true
+resources:
+  - modules-filter.js
+---
+
+We develop self-contained training modules on topics ranging from data visualisation with `ggplot2` to R package development. These modules are also used in our [Workshops](../workshops/). Existing modules from our past workshops can be found [here](https://workshop.palaeoverse.org/){target="_blank"}.
+
+```{=html}
+<div class="modules-filters">
+  <label class="modules-filter">Difficulty
+    <select id="filter-difficulty"><option value="">All</option></select>
+  </label>
+  <label class="modules-filter">Category
+    <select id="filter-category"><option value="">All</option></select>
+  </label>
+</div>
+```
+
+::: {#modules}
+:::
+
+<script src="modules-filter.js"></script>

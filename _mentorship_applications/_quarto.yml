@@ -1,0 +1,3 @@
+# Standalone project so that rendering here doesn't pick up the website config
+project:
+  type: default

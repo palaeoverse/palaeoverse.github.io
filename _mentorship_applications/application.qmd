@@ -1,0 +1,54 @@
+---
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 2.5cm
+      y: 2.5cm
+    fontsize: 11pt
+params:
+  row: 1
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| output: asis
+library(dplyr)
+
+app <- readRDS("applications.rds") |>
+  slice(params$row) |>
+  select(-any_of(c("Email Address", "Full name", "Affiliation")))
+
+# Escape all punctuation so that applicants' text is never parsed as markdown,
+# and keep their paragraph breaks
+format_answer <- function(x) {
+  if (is.na(x) || trimws(x) == "") {
+    return("*No answer provided.*")
+  }
+  paragraphs <- trimws(strsplit(x, "\n+")[[1]])
+  paste(gsub("([[:punct:]])", "\\\\\\1", paragraphs), collapse = "\n\n")
+}
+
+cat("# Application", sprintf("%03d", params$row), "\n\n")
+cat("Submitted on", format(app$Timestamp, "%d %B %Y (%H:%M)"), "\n\n")
+
+questions <- setdiff(names(app), "Timestamp")
+is_declaration <- startsWith(questions, "I confirm")
+
+for (q in questions[!is_declaration]) {
+  # Drop the "(max N characters, including spaces):" instructions
+  label <- sub("\\s*\\(max [^)]*\\):?\\s*$", "", q)
+  cat(paste0("**", label, "**\n\n"))
+  cat(format_answer(as.character(app[[q]])), "\n\n")
+}
+
+if (any(is_declaration)) {
+  cat("## Declarations\n\n")
+  for (q in questions[is_declaration]) {
+    cat("- ", q, " **", app[[q]], "**\n", sep = "")
+  }
+}
+```

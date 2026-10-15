@@ -16,14 +16,14 @@
 # pulls this file in with `metadata-files: [_sidebars.yml]`. Register this as
 # `pre-render` so it runs before every render.
 #
-# Usage: Rscript sync_sidebars.r [modules_dir]   (run from the project root)
-#   modules_dir: where the module directories live, relative to the project
+# Usage: Rscript sync_sidebars.r [modules_dir ...]   (run from the project root)
+#   modules_dir: where the module directories live (one or more), relative to the project
 #                root (default "."; "training/modules" on the website)
 
 library(yaml)
 
 args        <- commandArgs(trailingOnly = TRUE)
-modules_dir <- if (length(args) > 0) args[[1]] else "."
+modules_dir <- if (length(args) > 0) args else "."
 out         <- "_sidebars.yml"
 
 # make the local paths of a sidebar item relative to the project root

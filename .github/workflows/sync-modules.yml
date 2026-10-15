@@ -1,5 +1,5 @@
 # This workflow compares modules in the palaeoverse/modules repo with modules in 
-# "training/modules". It:
+# "training/modules-dev". It:
 # - adds new or modified modules 
 # - does not touch unmodified modules 
 # - deletes modules that no longer appear in palaeoverse/modules (e.g. 
@@ -12,12 +12,9 @@
 on:
   workflow_dispatch: # To trigger this workflow manually.
 
-  # TODO: enable this back when we are happy with the number of modules that are ready.
-  # For now we just have a "coming soon..." placeholder.
-  #
-  # repository_dispatch: # Trigger this workflow when there is a change in
-  #                      # palaeoverse/modules. See the workflow there.
-  #   types: [sync-modules]
+  repository_dispatch: # Trigger this workflow when there is a change in
+                       # palaeoverse/modules. See the workflow there.
+    types: [sync-modules]
 
 name: Sync modules from palaeoverse/modules
 
@@ -41,7 +38,7 @@ jobs:
         shell: Rscript {0}
         run: |
           # Clone palaeoverse/modules
-          dest <- "training/modules"
+          dest <- "training/modules-dev"
           tmp <- tempfile("modules-")
           dir.create(tmp)
           if (system2("git", c("clone", "--depth", "1",
@@ -83,7 +80,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add training/modules _freeze/training/modules
+          git add training/modules-dev _freeze/training/modules-dev
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "chore: sync modules from palaeoverse/modules"
           # Pushing to main triggers deploy-github-pages.yml, which renders the

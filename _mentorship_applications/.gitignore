@@ -1,0 +1,9 @@
+# Applicants' data must never be committed
+applications.rds
+key.csv
+pdfs/
+*.pdf
+*.typ
+
+/.quarto/
+**/*.quarto_ipynb

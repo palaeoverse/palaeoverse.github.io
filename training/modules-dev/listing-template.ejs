@@ -1,0 +1,33 @@
+<%
+// Build the listing as a single HTML string with no embedded newlines so
+// Pandoc treats it as a raw HTML block instead of parsing it as Markdown.
+let html = '<div class="modules-grid">';
+for (const item of items) {
+  const diff = (item.difficulty || '').toLowerCase();
+  const cats = item.categories || [];
+  const catsAttr = cats.map(function (c) { return c.toLowerCase(); }).join('|');
+  html += '<a class="module-card" href="' + item.path + '" data-difficulty="' + diff + '" data-categories="' + catsAttr + '">';
+  if (item.image) {
+    html += '<img class="module-card-img" src="' + item.image + '" alt="' + item.title + '">';
+  }
+  html += '<div class="module-card-body">';
+  if (item.difficulty) {
+    html += '<span class="module-difficulty difficulty-' + diff + '">' + item.difficulty + '</span>';
+  }
+  html += '<h3 class="module-card-title">' + item.title + '</h3>';
+  if (item.description) {
+    html += '<p class="module-card-desc">' + item.description + '</p>';
+  }
+  if (cats.length) {
+    html += '<div class="module-card-cats">';
+    for (const cat of cats) {
+      html += '<span class="module-cat">' + cat + '</span>';
+    }
+    html += '</div>';
+  }
+  html += '</div></a>';
+}
+html += '</div>';
+html += '<p class="modules-empty" hidden>No modules match the selected filters.</p>';
+%>
+<%= html %>

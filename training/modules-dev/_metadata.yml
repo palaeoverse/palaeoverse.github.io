@@ -1,0 +1,6 @@
+# Applied to every page under training/modules-dev/ (the listing and each module).
+# The injected script no-ops on the listing page.
+include-after-body:
+  - _module-page.html
+
+filters: [required_packages.lua, session_info.lua]
