@@ -21,8 +21,8 @@ if (length(pkgs) > 0) {
 ]=]
 
 function Pandoc(doc)
-  -- skip slides and the modules listing page
-  if quarto.doc.is_format("revealjs") or doc.meta.listing then return nil end
+  -- skip slides and the landing page next to this filter
+  if quarto.doc.is_format("revealjs") or quarto.doc.input_file == quarto.utils.resolve_path("index.qmd") then return nil end
 
   local ok, out = pcall(pandoc.pipe, quarto.paths.rscript(), { "-", quarto.doc.input_file }, detect)
   if not ok then
