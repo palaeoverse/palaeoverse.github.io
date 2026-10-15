@@ -3,4 +3,4 @@
 include-after-body:
   - _module-page.html
 
-filters: [required_packages.lua]
+filters: [required_packages.lua, session_info.lua]
