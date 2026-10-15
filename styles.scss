@@ -421,6 +421,7 @@ body.packages-page {
   color: $secondary;
   background-color: mix($brand-light-blue, white, 60%);
   text-decoration: none;
+  text-align: center;
   font-weight: 500;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
