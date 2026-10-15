@@ -17,7 +17,8 @@ cat(sort(pkgs), sep = "\n")
 ]=]
 
 function Pandoc(doc)
-  if quarto.doc.is_format("revealjs") then return nil end
+  -- skip slides and the modules listing page
+  if quarto.doc.is_format("revealjs") or doc.meta.listing then return nil end
 
   local ok, out = pcall(pandoc.pipe, quarto.paths.rscript(), { "-", quarto.doc.input_file }, detect)
   if not ok then
