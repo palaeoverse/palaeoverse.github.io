@@ -4,8 +4,8 @@ toc: false
 # TODO: once we have modules
 # listing:
 #   id: modules
-#   # Posts are all qmd files but the current file
-#   contents: "*/index.qmd"
+#   # each module's main page
+#   contents: ["*/index.qmd", "!*/*/index.qmd"]
 #   sort: "date desc"
 #   template: listing-template.ejs
 #   fields: [title, description, image, date, categories, difficulty, path]
