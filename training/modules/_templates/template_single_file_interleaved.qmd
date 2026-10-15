@@ -14,6 +14,10 @@ format:
   revealjs:
     smaller: true
     output-file: index-slides.html
+    css: style/template.css
+    slide-number: c/t
+    include-in-header: style/header.html
+    include-after-body: style/footer.html
 execute:
   output-location: fragment
   echo: true
@@ -24,6 +28,9 @@ editor:
   markdown:
     wrap: 72
 ---
+
+<!-- ENSURE THAT THIS DOCUMENT FOLLOWS THE MODULE STRUCTURE DESCRIBED IN THE GUIDELINES -->
+<!-- https://docs.google.com/document/d/16cxSA2bA1MnrnpzmN2yzJNCwJVO7Hm5ceyz10sCmnzY/edit?tab=t.0 -->
 
 ## Introduction
 
@@ -37,8 +44,8 @@ Consecutive paragraphs can share one block.
 ::: {.content-visible when-format="revealjs"}
 Content for the slides only goes in a `.content-visible when-format="revealjs"` block.
 
--   a bullet summary for the slide
--   which would be redundant on the page
+- a bullet summary for the slide
+- which would be redundant on the page
 :::
 
 ::: {.content-hidden when-format="revealjs"}
@@ -79,8 +86,8 @@ A first point.
 A second point, one advance later.
 
 ::: {.incremental}
--   then this
--   then this
+- then this
+- then this
 :::
 
 ## Handling a long slide
@@ -112,16 +119,17 @@ visible. If you want to hide a solution until you advance, wrap it in a
 
 ::: {.callout-note}
 ## A note
+
 Visible in both outputs, box and all.
 :::
 
-:::: {.callout-caution}
+::: {.callout-caution}
 ## An exercise solution
-::: {.fragment}
+::::: {.fragment}
 Wrapped in a `.fragment`, so it appears on the next advance in the deck while
 staying plain prose on the website.
+:::::
 :::
-::::
 
 ## More info
 
