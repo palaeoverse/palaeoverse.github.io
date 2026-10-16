@@ -23,6 +23,10 @@ div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents,
   background-color: mix($brand-light-blue, white, 15%)
 }
 
+div.sidebar-menu-container>ul>li.sidebar-item {
+  padding-top: 0.5em;
+}
+
 // Quarto's footer splits into three equal columns (left/center/right). The
 // left and right are empty spacers, so collapse them and let the center use the
 // full available width — otherwise the center wraps long before the page is
@@ -248,6 +252,18 @@ body.homepage {
   border-bottom: 2px solid $secondary;
   margin-bottom: 1em;
   text-transform: uppercase;
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 0;
+  }
+}
+
+// When we have a left sidebar (e.g. in some modules) on phone screens, ensure that
+// there is no space between the navbar and the sidebar. 
+@include media-breakpoint-down(lg) {
+  #quarto-header:has(.quarto-secondary-nav) .navbar {
+    margin-bottom: 0;
+  }
 }
 
 .navbar-logo {
