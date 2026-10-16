@@ -27,6 +27,14 @@ div.sidebar-menu-container>ul>li.sidebar-item {
   padding-top: 0.5em;
 }
 
+// Quarto sets `white-space: nowrap` on the sidebar on small screens, so long
+// item titles overflow instead of wrapping.
+@include media-breakpoint-down(lg) {
+  #quarto-sidebar .sidebar-menu-container {
+    white-space: normal;
+  }
+}
+
 // Quarto's footer splits into three equal columns (left/center/right). The
 // left and right are empty spacers, so collapse them and let the center use the
 // full available width — otherwise the center wraps long before the page is
