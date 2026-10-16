@@ -48,7 +48,6 @@ sidebars <- lapply(
     list(
       id = gsub("/", "-", dir),
       style = "floating",
-      title = "In this module",
       alignment = "left",
       "collapse-level" = 1,
       contents = lapply(read_yaml(f), prefix, dir)
