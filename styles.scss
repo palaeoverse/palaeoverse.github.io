@@ -1133,6 +1133,17 @@ a.module-category-link {
   }
 }
 
+// Code input
+div.sourceCode {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #0d725a;
+}
+
+pre {
+  border-radius: 4px;
+}
+
 // Code output
 .cell-output {
   background-color: rgba(233, 236, 239, .65);
