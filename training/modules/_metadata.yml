@@ -6,3 +6,5 @@ include-after-body:
 filters: [required_packages.lua, session_info.lua, source_link.lua]
 
 repo-actions: false
+
+code-link: true

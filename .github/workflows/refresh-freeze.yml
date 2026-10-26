@@ -33,11 +33,13 @@ jobs:
       # instead of hardcoding a list, so newly added modules using new packages
       # work without editing this workflow. pak installs the system requirements
       # (e.g. those mapgl needs: gdal/geos/proj/...) automatically on this runner.
+      #
+      # downlit and xml2 are needed to link functions to their docs
       - name: Install R dependencies
         run: |
           deps <- pak::scan_deps(".")
           pkgs <- setdiff(unique(deps$package), "R")
-          pak::pak(c(pkgs, "sessioninfo"))
+          pak::pak(c(pkgs, "sessioninfo", "downlit", "xml2"))
         shell: Rscript {0}
 
       - name: Set up Quarto
