@@ -59,6 +59,13 @@ div.sidebar-menu-container>ul>li.sidebar-item {
   margin-bottom: 0;
 }
 
+// Sponsor line: full-width row below the copyright line and "Edit this page".
+.nav-footer-center>p+p {
+  flex-basis: 100%;
+  order: 1;
+  text-align: center;
+}
+
 .nav-footer-center .toc-actions,
 .nav-footer-center .toc-actions ul,
 .nav-footer-center .toc-actions li {
@@ -81,6 +88,12 @@ div.sidebar-menu-container>ul>li.sidebar-item {
 // brand's default underline.
 .nav-footer a {
   text-decoration: none;
+}
+
+// Sponsor link uses the same style as links in the page body.
+.nav-footer a.footer-sponsor {
+  color: $link-color;
+  text-decoration: underline;
 }
 
 .hero {

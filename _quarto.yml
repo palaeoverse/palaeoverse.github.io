@@ -32,6 +32,8 @@ website:
       <a href="https://www.youtube.com/@ThePalaeoverse" target="_blank"><i class="bi bi-youtube"></i></a>&nbsp;&nbsp;
        &middot;&nbsp; <a href="mailto:info@palaeoverse.org">Contact us</a>
 
+      Supported by the <a class="footer-sponsor" href="https://www.software.ac.uk/" target="_blank">Institute for Research Software</a> (2026–2028)
+
   navbar:
     pinned: true
     logo: _brand/logos/logo-text.png
