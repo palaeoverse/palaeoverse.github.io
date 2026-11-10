@@ -1161,3 +1161,15 @@ pre {
 .cell-output {
   background-color: rgba(233, 236, 239, .65);
 }
+
+// For proper rendering of "diff" code blocks since Quarto won't do it: 
+// https://github.com/orgs/quarto-dev/discussions/8387
+code.sourceCode.diff span.va {
+  color: #b4f1b4;
+  background: #1b4721;
+}
+
+code.sourceCode.diff span.st {
+  color: #ffd8d3;
+  background-color: #78191b;
+}
