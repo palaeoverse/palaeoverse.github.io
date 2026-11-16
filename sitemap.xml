@@ -2,102 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://palaeoverse.org/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.524Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.197Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/governance/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/sponsors/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/about-us/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/zulip/join-zulip/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.539Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.227Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/contribute/general-guide/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.524Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.197Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/our-packages/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.524Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.197Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules-dev/ggplot/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.529Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.220Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules-dev/ggplot/index-slides.html</loc>
-    <lastmod>2026-11-16T11:30:26.529Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.220Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules-dev/piping/index-slides.html</loc>
-    <lastmod>2026-11-16T11:30:26.531Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.221Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.org/training/modules-dev/browser_reprex/index-slides.html</loc>
+    <lastmod>2026-11-16T13:06:35.218Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules/ggplot/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.538Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.227Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules/ggplot/index-slides.html</loc>
-    <lastmod>2026-11-16T11:30:26.538Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.227Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/workshops/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.538Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.227Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/lecture-series/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.525Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.198Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/mentorship-scheme/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.525Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.198Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.538Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.227Z</lastmod>
+  </url>
+  <url>
+    <loc>https://palaeoverse.org/training/modules-dev/browser_reprex/index.html</loc>
+    <lastmod>2026-11-16T13:06:35.218Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules-dev/piping/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.531Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.221Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/training/modules-dev/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.530Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.220Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/contribute/detailed-tutorial/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.514Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/zulip/user-guide/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.545Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.233Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/resources/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.524Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.198Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/code-of-conduct/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/people/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/about/ai-policy/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.513Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.189Z</lastmod>
   </url>
   <url>
     <loc>https://palaeoverse.org/events/index.html</loc>
-    <lastmod>2026-11-16T11:30:26.524Z</lastmod>
+    <lastmod>2026-11-16T13:06:35.197Z</lastmod>
   </url>
 </urlset>
