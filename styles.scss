@@ -1153,6 +1153,12 @@ div.sourceCode {
   border: 1px solid #0d725a;
 }
 
+// Code blocks without a language aren't wrapped in div.sourceCode
+:not(.cell-output) > pre:not(.sourceCode) {
+  background-color: rgba(233, 236, 239, .65);
+  border: 1px solid #0d725a;
+}
+
 pre {
   border-radius: 4px;
 }
