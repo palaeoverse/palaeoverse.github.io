@@ -38,11 +38,11 @@
       return s.charAt(0).toUpperCase() + s.slice(1);
     }
 
-    function populate(select, values) {
+    function populate(select, values, label = titleCase) {
       values.forEach((value) => {
         const opt = document.createElement("option");
         opt.value = value;
-        opt.textContent = titleCase(value);
+        opt.textContent = label(value);
         select.appendChild(opt);
       });
     }
@@ -53,7 +53,8 @@
       return (ia === -1 ? Infinity : ia) - (ib === -1 ? Infinity : ib);
     });
     populate(difficultySelect, sortedDifficulties);
-    populate(categorySelect, Array.from(categories).sort());
+    // categories are shown as written in the modules (e.g. "r", "tidyverse")
+    populate(categorySelect, Array.from(categories).sort(), (c) => c);
 
     function applyFilters() {
       const wantDifficulty = difficultySelect.value;
