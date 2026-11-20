@@ -1036,7 +1036,7 @@ h2 {
   color: inherit;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  max-width: 80%;
+  max-width: 90%;
 
   &:hover {
     transform: translateY(-3px);
@@ -1154,7 +1154,7 @@ div.sourceCode {
 }
 
 // Code blocks without a language aren't wrapped in div.sourceCode
-:not(.cell-output) > pre:not(.sourceCode) {
+:not(.cell-output)>pre:not(.sourceCode) {
   background-color: rgba(233, 236, 239, .65);
   border: 1px solid #0d725a;
 }
